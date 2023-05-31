@@ -1,0 +1,188 @@
+<section xml:id="section-loci">
+  <title>Loci</title>
+  <subsection xml:id="subsection-loci-definition">
+    <title>Definition of a Locus</title>
+    <p>
+      Spans were the first way to define linear and affine subspaces.
+      There is another approach to describe these object, which I
+      describe in this section. I'll start with the main definition.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          Consider any set of equations in the variables
+          <m>x_1, x_2, \ldots, x_n</m>. The <term>locus</term> in
+          <m>\RR^n</m> of this set of equations is the set of vectors
+          that satisfy <em>all</em> of the equations. The plural
+          of a locus is <term>loci</term>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      In general, the equations can be of any sort. The unit circle
+      in <m>\RR^2</m> is most commonly defined as the locus of the
+      equation <m>x^2 + y^2 = 1</m>. The graph of a function is the
+      locus of the equation <m>y = f(x)</m>. However, linear
+      algebra excludes curved objects. The subset is concerned with 
+      linear/affine objects: things that are straight and flat. So, I
+      don't want loci of just any kind of equation: I want loci of
+      linear equations. The idea is likely familiar, but let me
+      formally define it anyway. 
+    </p>
+    <definition xml:id="definition-linear-equation">
+      <statement>
+        <p>
+          Let <m>a_i</m> and <m>c</m> be real numbers. A <term>linear
+          equation</term> in the variables <m>x_1, x_2, \ldots x_n</m>
+          is an equation of the following form.
+          <me>
+            a_1 x_1 + a_2 x_2 + \ldots + a_n x_n = c
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      <xref ref="proposition-spans-subspaces" /> claimed that all
+      linear subspaces were described by spans. Shortly afterward, I
+      showed that all affine subspaces were described by offset spans.
+      In addition to spans, I can also use loci to describe any affine
+      or linear subspace. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Any linear or affine subspace of <m>\RR^n</m> can be
+          described as the locus of finitely many linear equations.
+          Likewise, the locus of any number of linear equations is
+          either an affine subspace of <m>\RR^n</m> or the empty set.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      It is quite valuable to have these two different descriptions of
+      linear and affine subspaces. Each description (spans or loci)
+      has strengths and weaknesses. Depending on what calculations I
+      want to do, using either a span or a locus description may help
+      a great deal.
+    </p>
+    <p>
+      There is also a nice contrast in the constructions of spans and
+      loci. Spans are essentially built up by adding more and more
+      vectors, more and more directions. The span of no vectors is the
+      origin. The span of one vector is a line. The span of two
+      linearly independent vectors is a plane. This process continues
+      (if the ambient dimension is large enough) to make object of
+      higher and higher dimensions as more linearly independent
+      vectors are added to the span. 
+    </p>
+      In contrast, loci are built top-down, by starting with the
+      ambient space and reducing the number of points by imposing
+      restrictions in the form of linear equations. The locus of no
+      equations is the entire space, since all points trivially
+      satisfy no equations. The locus of one equation should be
+      something of one dimension less that the ambient space, as one
+      restriction is imposed. The locus of two equations should be
+      something of two dimensions less than the ambient space, as two
+      restrictions are imposed. This continues: the dimension of a
+      locus, at least ideally, is the dimensions of the ambient space
+      minus the number of equations or restrictions. 
+    <p>
+      To be more specific, in <m>\RR^2</m>, adding the equation
+      <m>x=3</m> restricts to a vertical line passing through the
+      <m>x</m>-axis at <m>\begin{pmatrix} 3 \\ 0 \end{pmatrix}</m>.
+      Likewise, the equation <m>y=4</m> restricts to a horizontal line
+      passing through the <m>y</m>-axis at <m>\begin{pmatrix} 0 \\ 4
+      \end{pmatrix}</m>.  If I consider the locus of <em>both</em>
+      equations, there is only one point remaining: <m>\begin{pmatrix}
+      3 \\ 4 \end{pmatrix}</m> is the only point that satisfies both
+      equations. In this way, each additional equation potentially
+      adds an additional restriction and leads to a smaller linear or
+      affine subspaces.
+    </p>
+    <p>
+      As with spans, there can be the problem of redundant
+      information. In <m>\RR^3</m>, the locus of the equation <m>x + y
+      + z = 1</m> is a plane. If I also add the equation <m>2x + 2y +
+      2z = 2</m>, however, I don't get a line. The second equation is
+      a multiple of the first, and any points that satisfy the first
+      equation also satisfy the second. The second equation is
+      redundant and unnecessary. Determining what is redundant (and
+      determining the dimension of a locus) will rely on calculation
+      tools introduced in <xref ref="section-dimensions-loci" />.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-familiar-loci">
+    <title>Familiar Loci</title>
+    <p>
+      I can define some familiar objects which are presented as the
+      locus of one linear equation. 
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A <term>line</term> in <m>\RR^2</m> is the locus of the
+          equation <m>ax + by = c</m> for <m>a,b,c \in \RR</m>. In
+          general, the line is affine. The line is linear if
+          <m>c=0</m>.
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          A <term>plane</term> in <m>\RR^3</m> is the locus of the
+          linear equation <m>ax + by + cz = d</m>. In general, the
+          plane is affine. The plane is linear if <m>d=0</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      If we think of a plane in <m>\RR^3</m> as the locus of one
+      linear equation, the important dimensional fact about a plane is
+      not that it has dimension two but that it has dimension one less
+      than its ambient space <m>\RR^3</m>.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A <term>hyperplane</term> in <m>\RR^n</m> is the locus of
+          one linear equation: <m>a_1 x_1 + a_2 x_2 + \ldots + a_n x_n
+          = c</m>. It has dimension <m>n-1</m>. It is, in general,
+          affine. The hyperplane is linear if <m>c=0</m>.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="subsection-intersection">
+    <title>Intersection</title>
+    <definition>
+      <statement>
+        <p>
+          If <m>A</m> and <m>B</m> are sets, their intersection <m>A
+          \cap B</m> is the set of all points they have in common.
+          The intersection of affine subspaces is also an affine
+          subspace. If <m>A</m> and <m>B</m> are both linear, the
+          intersection is also linear.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <statement>
+        <p>
+          Loci of more than one equation can be understood as
+          intersections. Consider
+          the locus of two equations, say the example I used from
+          <m>\RR^2</m> before: the locus of <m>x=3</m> and <m>y=4</m>.
+          I defined this directly as a single locus. However, I
+          could just as easily think of this as the intersection of
+          the two lines given by <m>x=3</m> and <m>y=4</m> separately.
+          In this way, it is the intersection of two loci. Similarly,
+          all loci are the intersection of the planes or hyperplanes
+          defined by each individual linear equation.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>
+
+

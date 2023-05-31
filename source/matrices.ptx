@@ -1,0 +1,246 @@
+<section xml:id="section-matrices">
+  <title>Matrices</title>
+  <subsection xml:id="subsection-matrices">
+    <title>Definition of a Matrix</title>
+    <definition>
+      <statement>
+        <p>
+          A <term>matrix</term> is a rectangular array of scalars. If
+          the matrix has <m>m</m> rows and <m>n</m> columns, it is
+          called an <m>m \times n</m> matrix. The scalars in the
+          matrix are called the <term>entries</term>,
+          <term>components</term> or <term>coefficients</term>.
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          The rows of a matrix are called the <term>row vectors</term>
+          of the matrix. Likewise, the columns are called <term>column
+          vectors</term> of the matrix.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      The array of numbers is written in rows and columns, enclosed in
+      either square or round brackets. Here are two ways of writing a
+      particular <m>3\times 2</m> matrix with integer coefficients.
+      <md>
+        <mrow>
+          \amp \begin{pmatrix} 5 \amp  6 \\ -4 \amp  -4 \\ 0 \amp  -3
+          \end{pmatrix} \amp \amp \begin{bmatrix} 5 \amp
+          6 \\ -4 \amp  -4 \\ 0 \amp  -3 \end{bmatrix} 
+        </mrow>
+      </md>
+    </p>
+    <p>
+      The rows of this matrix are the following three vectors.
+      <md>
+        <mrow>
+          \amp \begin{pmatrix} 5 \\ 6 \end{pmatrix} \amp
+          \amp \begin{pmatrix} -4 \\-4 \end{pmatrix} \amp
+          \amp \begin{pmatrix} 0 \\ -3 \end{pmatrix}
+        </mrow>
+      </md>
+    </p>
+    <p>
+      The columns of this matrix are the following two vectors.
+      <md>
+        <mrow>
+          \amp \begin{pmatrix} 5 \\ -4 \\ 0 \end{pmatrix} \amp 
+          \amp \begin{pmatrix} 6 \\ -4 \\ -3 \end{pmatrix}
+        </mrow>
+      </md>
+    </p>
+    <p>
+      In these notes, I'll use curved brackets for matrices; however,
+      in many texts and books, square brackets are very common. Both
+      notations are conventional and acceptable.
+    </p>
+    <p>
+      If I wanted to write a general matrix, I can use a double
+      subscript.
+      <me>
+        \begin{pmatrix} 
+          a_{11} \amp a_{12} \amp \ldots \amp a_{1m} \\ 
+          a_{21} \amp a_{22} \amp \ldots \amp a_{2m} \\ 
+          \vdots \amp \vdots \amp \vdots \amp \vdots \\ 
+          a_{n1} \amp a_{n2} \amp \ldots \amp a_{nm} 
+        \end{pmatrix}
+      </me>
+    </p>
+    <p>
+      By convention, in an arbitrary matrix entry <m>a_{ij}</m> the
+      first subscript tells us the row and the second subscript tells
+      us the column. For example, <m>a_{64}</m> is the entry in the
+      sixth row and the fourth column. In the rare occurrence where
+      matrices with more than 10 rows or columns are used, I can
+      separate the indices by commas: <m>a_{12,15}</m> would be in the
+      twelfth row and the fifteenth column. Sometimes I write <m>A =
+      a_{ij}</m> as short-hand for the entire matrix when the size is
+      understood or undetermined.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A <term>square matrix</term> is a matrix with the same
+          number of rows as columns. Here are two examples.
+          <md>
+            <mrow>
+              \amp \begin{pmatrix} 4 \amp -2 \amp 8 \\ -3 \amp -3 \amp
+              -3 \\ 0 \amp 0 \amp -1 \end{pmatrix} \amp \amp
+              \begin{pmatrix} 0 \amp 0 \amp 0 \amp 1 \amp 0 \\ 1 \amp
+              0 \amp 0 \amp 1 \amp 0 \\ 1 \amp 0 \amp 1 \amp 1 \amp 0
+              \\ 0 \amp 1 \amp 0 \amp 0 \amp 0 \\ 0 \amp 1 \amp 1 \amp
+              1 \amp 0 \end{pmatrix}
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          The <term>zero matrix</term> is the unique matrix (one for
+          every size <m>m \times n)</m> where all the coefficients are
+          all zero.
+          <md>
+            <mrow>
+              \amp \begin{pmatrix} 0 \amp 0 \\ 0 \amp 0 \\ 0 \amp 0
+              \end{pmatrix} \amp \amp \begin{pmatrix} 0 \amp 0 \amp 0
+              \amp 0 \amp 0 \amp 0 \\ 0 \amp 0 \amp 0 \amp 0 \amp 0
+              \amp 0 \\ 0 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\ 0 \amp
+              0 \amp 0 \amp 0 \amp 0 \amp 0 \\ 0 \amp 0 \amp 0 \amp 0
+              \amp 0 \amp 0 \\ 0 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0
+              \end{pmatrix} 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          The <term>diagonal entries</term> of a matrix are all
+          entries <m>a_{ii}</m> where the row and column indices are
+          the same. A <term>diagonal matrix</term> is a matrix where
+          all the non-diagonal entries are zero.
+          <md>
+            <mrow>
+              \amp \begin{pmatrix} 5 \amp  0 \\ 0 \amp  2 \\ 0 \amp  0
+              \end{pmatrix} \amp \amp \begin{pmatrix} 1 \amp  0 \amp
+              0 \amp  0 \\ 0 \amp  -4 \amp  0 \amp  0 \\ 0 \amp  0
+              \amp  8 \amp  0 \\ 0 \amp  0 \amp  0 \amp  0
+              \end{pmatrix} 
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          The <term>identity matrix</term> is the unique <m>n \times
+          n</m> matrix (one for each <m>n</m>) where the diagonal
+          entries are all <m>1</m>, and all other entries are <m>0</m>.
+          There are several notations for the identity. When the size
+          <m>n</m> is understood, it can be written as <m>I</m> or
+          <m>Id</m>. When I want to clarify the size of the matrix, I
+          will write <m>I_n</m> for the <m>n \times n</m> identity
+          matrix. 
+          <md>
+            <mrow>
+              \amp \begin{pmatrix} 1 \amp 0 \\ 0 \amp 1 \end{pmatrix}
+              \amp \amp \begin{pmatrix} 1 \amp 0 \amp 0 \\ 0 \amp 1
+              \amp 0 \\ 0 \amp 0 \amp 1 \end{pmatrix} \amp \amp
+              \begin{pmatrix} 1 \amp 0 \amp 0 \amp 0 \\ 0 \amp 1 \amp
+              0 \amp 0 \\ 0 \amp 0 \amp 1 \amp 0 \\ 0 \amp 0 \amp 0
+              \amp 1 \end{pmatrix}
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      When I defined vectors, I also defined addition term-by-term. I
+      can do the same for matrices.
+    </p>
+    <definition>  
+      <statement>
+        If <m>A</m> and <m>B</m> are both <m>n \times m</m> matrices,
+        then the sum <m>A + B</m> is the <m>n \times m</m> matrix
+        formed by simply adding the entries of the two matrices in
+        their apporpriate position. 
+      </statement>
+    </definition>
+    <p>
+      The definition of vector addition is extremely important to the
+      geometry of vectors. It turns out that matrix addition is less
+      central to the geometry presented in this course. This operation
+      will show up in a couple of places, but it is much less
+      important that the operation of matrix multiplication, which
+      will be presented later in <xref
+      ref="section-matrices-and-transformations" />, 
+    </p>
+    <p>
+      Sometimes it is useful add separation to the organization of the
+      matrix.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          An <term>extended matrix</term> is a matrix with a vertical
+          division separating the columns into two groups.
+          <me>
+            \left( \begin{array}{ccc|c} -3 \amp 0 \amp 6 \amp 1 \\
+            4 \amp -2 \amp 2 \amp -1 \\ 0 \amp 0 \amp 3 \amp -7
+            \end{array} \right)
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          The <term>transpose</term> of a matrix is the matrix formed
+          by switching the rows and columns. Alternatively, it is the
+          mirror of the matrix over the diagonal. If <m>A =
+          a_{ij}</m> is a matrix expressed in indices, then the
+          transpose is written <m>A^T</m> and has entries
+          <m>a_{ji}</m> with indices switched.
+          <md>
+            <mrow>
+              A \amp = \begin{pmatrix} 3 \amp 0 \amp 6 \amp -1 \\
+              4 \amp -2 \amp -7 \amp 0 \\ 6 \amp -6 \amp -1
+              \amp -2 \end{pmatrix} \amp A^T \amp = \begin{pmatrix} 3
+              \amp 4 \amp 6 \\ 0 \amp -2 \amp -6 \\ 6 \amp -7
+              \amp -1 \\ -1 \amp 0 \amp -2 \end{pmatrix} 
+            </mrow>
+            <mrow>
+              A \amp = \begin{pmatrix} 0 \amp 0 \amp 8 \amp -5 \\ 0
+              \amp 1 \amp 1 \amp -2 \\ 0 \amp 6 \amp 6 \amp -1
+              \\ 0 \amp 0 \amp -4 \amp -4 \end{pmatrix} \amp A^T
+              \amp = \begin{pmatrix} 0 \amp 0 \amp 0 \amp 0 \\ 0
+              \amp 1 \amp 6 \amp 0 \\ 8 \amp 1 \amp 6 \amp -4 \\
+              -5 \amp -2 \amp -1 \amp -4 \end{pmatrix}
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          The set of all <m>n \times m</m> matrices with real
+          coefficients is written <m>M_{n,m}(\RR)</m>. For square
+          matrices (<m>n \times n</m>), I simply write
+          <m>M_n(\RR)</m>. If I wanted to change the set of scalars
+          to some other number set <m>S</m> (such as <m>\ZZ</m>), we 
+          would write <m>M_{n,m}(S)</m> or <m>M_n(S)</m>.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+</section>
+ 

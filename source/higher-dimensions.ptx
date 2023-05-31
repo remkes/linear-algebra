@@ -1,0 +1,1211 @@
+<section xml:id="section-higher-dimensions">
+  <title>Higher Dimensions</title>
+  <subsection xml:id="subsection-higher-dimensions">
+    <title>New Environments</title>
+    <p>
+      In the definitions in the previous section, I defined Euclidean
+      space was defined in any dimension. If I want to work in seven
+      dimensions, I simply need to write vectors with seven
+      components. This is a strange and new thing. Conventional
+      geometry deals with things I can draw and see, which are things
+      that necessarily exist in two or three dimensions. Higher
+      dimensions are something new and bizzare.
+    </p>
+    <p>
+      In this section, I want to talk through some constructions that
+      might help to build some intuition and familiarity with higher
+      dimensions. I need indirect methods, since I can't see higher
+      dimensional spaces. 
+    </p>
+    <p>
+      In some contexts, particularly physics after general
+      relativility, the fourth dimension is often treated as time.
+      That's not the approach in this course. I am interested in
+      treating all these higher dimensions as environments for
+      geometry. I want to imagine objects, paths, intersections, and
+      many other geometric ideas in these higher dimensions. In the
+      applications of linear algebra, higher dimensions can be given a
+      huge variety of interpretation, including treating one dimension
+      as time. Those applications come afterwards. In linear algebra,
+      I can treat all dimensions geometrically. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-spheres">
+    <title>Spheres</title>
+    <p>
+      In the plane, all points that are exactly one unit from the
+      origin form the unit circle. In three dimensional space, all
+      points that are exactly one unit from the origin form the
+      unit sphere. Following this logic, I can construct
+      <sq>spheres</sq> in higher dimensions. In any <m>\RR^n</m>, all
+      objects which are exactly one unit from the origin form the
+      sphere in that dimension. 
+    </p>
+    <p>
+      The naming convention for these spheres in mathematics is
+      slightly unexpected. A sphere is usually considered a hollow
+      object: it doesn't include the points inside it, which are
+      closer than one unit to the origin. The normal sphere in
+      <m>\RR^3</m> is, in this way, thought of as a two-dimensional
+      surface in three dimensions. On the surface of the sphere (like
+      on the surface of the earth), movement in a small area looks
+      like movement in two dimensions. For this reason, the sphere in
+      <m>\RR^3</m> is called the <m>2</m>-sphere. Following this
+      logic, the sphere in <m>\RR^n</m> is called the
+      <m>(n-1)</m>-sphere. 
+    </p>
+    <p>
+      What do I know about these higher-dimensional spheres? First,
+      I can look at their equations. In <m>\RR^2</m>,  the circle
+      has the equation <m>x^2 + y^2 = 1</m>. In <m>\RR^3</m> the sphere
+      (the <m>2</m>-sphere) has equation <m>x^2 + y^2 + z^2 = 1</m>.
+      The sphere (<m>3</m>-sphere) in <m>\RR^4</m> has equation <m>w^2
+      + x^2 + y^2 + z^2 = 1</m>. The sphere
+      (<m>(n-1)</m>-sphere) in <m>\RR^n</m> has equation <m>x_1^2 +
+      x_2^2 + \ldots + x_n^2 = 1</m>.
+    </p>
+    <p>
+      These equations are useful for studying the algebra of the
+      object. I can determine which points are on any given sphere
+      using these equations. The points
+      <md>
+        <mrow>
+        \amp \begin{pmatrix}
+          1 \\ 0 \\ 0 \\ 0
+        \end{pmatrix} \amp \amp 
+        \begin{pmatrix}
+          \frac{1}{\sqrt{3}} \\ \frac{-1}{\sqrt{3}} \\ 0 \\
+          \frac{-1}{\sqrt{3}} 
+        \end{pmatrix} \amp \amp 
+        \begin{pmatrix}
+          \frac{-2}{\sqrt{12}} \\ \frac{-1}{\sqrt{12}} \\
+          \frac{2}{\sqrt{12}} \\ \frac{\sqrt{3}}{\sqrt{12}} 
+        \end{pmatrix} \amp \amp 
+        \begin{pmatrix}
+          0 \\ 0 \\ \frac{7}{\sqrt{74}} \\ \frac{5}{\sqrt{74}}
+        \end{pmatrix} 
+        </mrow>
+      </md>
+      are all points on the <m>3</m>-sphere in <m>\RR^4</m>, since
+      they all satisfy the equation of that sphere. However, these
+      equations aren't that useful for getting an intuitive sense of
+      what these spheres look like.
+    </p>
+    <p>
+      Getting this intuitive sense is fundamentally difficult.
+      It is worth repeating that the major challenge of higher
+      dimensions geometry is the fact that I can't see it, since I
+      am so used to seeing the geometry I am working with. However,
+      there are still some indirect geometric ways of thinking that
+      can help me understand higher-dimensional objects. 
+    </p>
+    <p>
+      If I take the normal sphere in <m>\RR^3</m> and slice it
+      horizontally, each cross-section is a circle. The cross-section
+      at the widest point is a unit circle, and as I move up or down,
+      the cross-sections are smaller and smaller circles. I can think
+      of the sphere as an object whose slices are all circles (though
+      it is not the unique object with that property). I could also
+      think of the sphere as an infinite stack of infinitely thin
+      circles, starting with small circles, growing to the equator and
+      the unit circles, and then shrinking again as I move up the
+      sphere.
+    </p>
+    <p>
+      This notion of slicing works in higher dimensions. The
+      <m>3</m>-sphere in <m>\RR^4</m> has slices, which are spheres.
+      That's a bizarre idea (because trying to think in four
+      dimensions is a bizarre task), and one that defies
+      visualization. But it is a way of thinking about the
+      <m>3</m>-sphere. It is an object whose slices are spheres and
+      can be thought of as infinitely many spheres stacked up. This is
+      still strange: the stacking happens in a new direction, so that
+      all points on <qt>adjacent</qt> spheres are right next to each
+      other, just like the circles stack up to make the ordinary
+      sphere are right next to each other. But maybe this helps us
+      think a bit about what kind of object the <m>3</m>-sphere is. 
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-cubes">
+    <title>Cubes</title>
+    <p>
+      After the sphere, I want to consider square objects. To
+      understand the higher-dimensional cubes, I want to talk about
+      how to build each cube from lower-dimensional pieces. I'll
+      start at the very beginning, in <m>\RR^1</m>, which is just the
+      number line. 
+    </p>
+    <p>
+      The <sq>cube</sq> in <m>\RR</m> is the interval
+      <m>[0,1]</m>. It can be defined by the inequality <m>0
+      \leq x \leq 1</m> for <m>x \in \RR</m>.
+    </p>
+    <p>
+      In <m>\RR^2</m>, the <sq>cube</sq> is just the
+      ordinary square. It is all vectors
+      <m>\begin{pmatrix} x \\ y \end{pmatrix}</m> such that <m>0
+      \leq x \leq 1</m> and <m>0 \leq y \leq 1</m>. The square
+      can be formed by taking two intervals (1-dimensional cubes) and
+      connecting the matching vertices. This will become the way in
+      which I build higher-dimensional cubes: each cube is formed of
+      two cubes from the previous dimension with all the matching
+      vertices connected. 
+    </p>
+    <figure xml:id="figure-square">
+      <caption>The Square</caption>
+      <image xml:id="figure12" width="50%">
+        <asymptote>
+          size(10cm);
+
+          dot((0,0));
+          dot((0,2));
+          dot((2,0));
+          dot((2,2));
+
+          draw((0,0)--(0,2)--(2,2)--(2,0)--(0,0));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Let's look at <m>\RR^3</m> and follow the algorithm I suggested.
+      If I take two squares and connect the matching vertices, I do
+      indeed get the ordinary cube. One of the two squares is the
+      front of the cube, and the other is the back (or top and bottom,
+      left and right, depending on how you orient the pieces). To make
+      this a bit more clear, in <xref ref="figure-cube" />, I've drawn
+      the two original squares in black and the four connecting lines
+      in red. I could also describe the cube (including its interior)
+      as all points where the coordinates satisfy <m>x \in [0,1]</m>,
+      <m>y \in [0,1]</m> and <m>z \in [0,1]</m>. 
+    </p>
+    <figure xml:id="figure-cube">
+      <caption>The Cube</caption>
+      <image xml:id="figure11" width="50%">
+        <asymptote>
+          size(10cm);
+
+          dot((0,0));
+          dot((0,5));
+          dot((5,0));
+          dot((5,5));
+          draw((0,0)--(0,5)--(5,5)--(5,0)--(0,0));
+
+          dot((2,2));
+          dot((2,7));
+          dot((7,2));
+          dot((7,7));
+          draw((2,2)--(2,7)--(7,7)--(7,2)--(2,2));
+
+          draw((0,0)--(2,2),red);
+          draw((0,5)--(2,7),red);
+          draw((5,0)--(7,2),red);
+          draw((5,5)--(7,7),red);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      Then I can simply keep extending. In <m>\RR^4</m>, I will take
+      two copies of the 3D cube and connect all the matching vertices.
+      In <xref ref="figure-tesseract" />, I've shown the connecting
+      lines again in red. This diagram is a poor picture, being a 2D
+      representation of a 4D object, but it does give some idea of
+      the construction of the shape. The 4D cube is often called the
+      tesseract. I could again describe it as all vectors in
+      <m>\RR^4</m> such that <m>w \in [0,1]</m>, <m>x \in [0,1]</m>,
+      <m>y \in [0,1]</m> and <m>z \in [0,1]</m>. 
+    </p>
+    <figure xml:id="figure-tesseract">
+      <caption>The Tesseract</caption>
+      <image xml:id="figure13" width="90%">
+        <asymptote>
+          size(10cm);
+
+          dot((0,0));
+          dot((0,5));
+          dot((5,0));
+          dot((5,5));
+          draw((0,0)--(0,5)--(5,5)--(5,0)--(0,0));
+
+          dot((2,2));
+          dot((2,7));
+          dot((7,2));
+          dot((7,7));
+          draw((2,2)--(2,7)--(7,7)--(7,2)--(2,2));
+
+          draw((0,0)--(2,2));
+          draw((0,5)--(2,7));
+          draw((5,0)--(7,2));
+          draw((5,5)--(7,7));
+
+          dot((8,4));
+          dot((8,9));
+          dot((13,4));
+          dot((13,9));
+          draw((8,4)--(8,9)--(13,9)--(13,4)--(8,4));
+
+          dot((10,6));
+          dot((10,11));
+          dot((15,6));
+          dot((15,11));
+          draw((10,6)--(10,11)--(15,11)--(15,6)--(10,6));
+
+          draw((8,4)--(10,6));
+          draw((8,9)--(10,11));
+          draw((13,4)--(15,6));
+          draw((13,9)--(15,11));
+
+          draw((0,0)--(8,4),red);
+          draw((0,5)--(8,9),red);
+          draw((5,0)--(13,4),red);
+          draw((5,5)--(13,9),red);
+          draw((2,2)--(10,6),red);
+          draw((2,7)--(10,11),red);
+          draw((7,2)--(15,6),red);
+          draw((7,7)--(15,11),red);
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      There is a cube in each <m>\RR^n</m>, consisting
+      of all vectors where all components are in the interval
+      <m>[0,1]</m>. Each can be constructed by joining two
+      copies of a lower-dimensional <m>(n-1)</m>-cube with edges
+      between matching vertices. I haven't tried to draw diagrams for
+      any of these higher-dimensional cubes. 
+    </p>
+    <p>
+      The cube is an example of a solid object with flat sides and
+      sharp corners. Such objects are called polytopes (polygons in
+      two dimensions). The study of polytopes in higher dimensions is
+      itself a rich branch of mathematics with a long history.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-cross-polytopes">
+    <title>Cross-Polytopes</title>
+    <p>
+      In addition to the cubes, I want to introduce another kind of
+      higher-dimensional polytope, called the cross-polytope. It
+      generalizes the idea of a diamond shape in two and three
+      dimensions. It also lets me show another way of trying to get a
+      sense of what higher-dimensional objects look like. 
+    </p>
+    <p>
+      In <m>\RR^2</m>, the cross-polytope is the diamond with
+      vertices <m>\begin{pmatrix} 1 \\ 0 \end{pmatrix}</m> ,
+      <m>\begin{pmatrix} -1 \\ 0 \end{pmatrix}</m>,
+      <m>\begin{pmatrix} 0 \\ 1 \end{pmatrix}</m> , and
+      <m>\begin{pmatrix} 0 \\ -1 \end{pmatrix}</m> . In each
+      dimension, cross-polytopes are built by adding two vertices at
+      <m>\pm 1</m> in the new axis direction. Then, edges are added
+      connecting the two new vertices to each existing vertex (but the
+      two new vertices are not connected to each other).
+    </p>
+    <figure xml:id="figure-2-cross">
+      <caption>The 2-Cross-Polytope (Diamond)</caption>
+      <image xml:id="figure14" width="50%">
+        <asymptote>
+          size(10cm);
+
+          dot((1,0));
+          dot((2,1));
+          dot((1,2));
+          dot((0,1));
+          draw((1,0)--(2,1)--(1,2)--(0,1)--(1,0));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      In <m>\RR^3</m>, if I take the diamond, add two points on
+      either side and connect the new points to all four original
+      vertices of the diamond, I am essentially building a square
+      pyramid on either side of the diamond. The result is called the
+      octahedron and has vertices <m>\begin{pmatrix} 1 \\ 0 \\ 0
+      \end{pmatrix}</m> , <m>\begin{pmatrix} -1 \\ 0 \\ 0
+      \end{pmatrix}</m> , <m>\begin{pmatrix} 0 \\ 1 \\ 0
+      \end{pmatrix}</m>, <m>\begin{pmatrix} 0 \\ -1 \\ 0
+      \end{pmatrix}</m> , <m>\begin{pmatrix} 0 \\ 0 \\ 1
+      \end{pmatrix}</m>, and <m>\begin{pmatrix} 0 \\ 0 \\
+      -1\end{pmatrix}</m>. In <xref ref="figure-3-cross" />, I've
+      tried to draw the octahedron in perspective, to give a sense of
+      it as a 3D object. 
+    </p>
+    <figure xml:id="figure-3-cross">
+      <caption>The 3-Cross-Polytope (Octahedron)</caption>
+      <image xml:id="figure15" width="90%">
+        <asymptote>
+          size(10cm);
+
+          dot((1,0));
+          dot((0,1));
+          dot((6,1));
+          dot((5,2));
+          draw((1,0)--(6,1)--(5,2)--(0,1)--(1,0));
+
+          dot((2.6,2.8));
+          draw((2.6,2.8)--(1,0));
+          draw((2.6,2.8)--(0,1));
+          draw((2.6,2.8)--(6,1));
+          draw((2.6,2.8)--(5,2));
+
+          dot((3.4,-0.8));
+          draw((3.4,-0.8)--(1,0));
+          draw((3.4,-0.8)--(0,1));
+          draw((3.4,-0.8)--(6,1));
+          draw((3.4,-0.8)--(5,2));
+        </asymptote>
+      </image>
+    </figure>
+    <p>
+      I can continue to build cross-polytopes in higher dimensions
+      using this process: adding vertices on either side and
+      connecting the new vertices to all previous vertices (but not to
+      each other). If I choose the new vertices as points in the new
+      axis direction, then all the vertices of the
+      <m>n</m>-cross-polytope are vertices with <m>\pm 1</m> in one
+      component and zero in all other components. Each vertex is
+      connected to all other vertices except its opposite. I haven't
+      tried to draw diagrams of any of these higher cross-polytopes. 
+    </p>
+    <p>
+      One way of understanding higher-dimensional objects (since we
+      can't directly see them) is to just draw their lower-dimensional 
+      components. For polyhedra, I can do this by only
+      drawing their vertices and edges (and not trying to represent
+      the higher-dimensional structures that include those vertices
+      and edges). I'm going to do this for the
+      cross-polytopes to demonstrate the idea. The diamond
+      (2-cross-polytope) has four vertices with all connections except
+      for opposite vertices.
+      <figure xml:id="figure-2-cross-vertex">
+        <caption>The 2-Cross-Polytope (Diamond) Vertex Diagram</caption>
+        <image xml:id="figure16" width="50%"> 
+          <asymptote>
+            size(10cm);
+
+            dot((0,1));
+            dot((-1,0));
+            dot((0,-1));
+            dot((1,0));
+
+            draw((0,1)--(-1,0)--(0,-1)--(1,0)--(0,1));
+          </asymptote>
+        </image>
+      </figure>
+      The octahedron is the 3-cross polytope. I tried to draw a 3D
+      image in perspective earlier. However, if I don't try to get a
+      3D perspective and just draw the vertices and edges, I get the
+      vertex diagram. Like the diamond, all vertices except for those
+      directly opposite are connected. 
+      <figure xml:id="figure-3-cross-vertex">
+        <caption>The 3-Cross-Polytope (Octahedron) Vertex Diagram</caption>
+        <image xml:id="figure17" width="50%">
+          <asymptote>
+            size(10cm);
+
+            dot((3,1));
+            dot((2.134,0.5));
+            dot((2.134,-0.5));
+            dot((3,-1));
+            dot((3.866,-0.5));
+            dot((3.866,0.5));
+
+            draw((3,1)--(2.134,0.5));
+            draw((3,1)--(2.134,-0.5));
+            draw((3,1)--(3.866,-0.5));
+            draw((3,1)--(3.866,0.5));
+            draw((2.134,0.5)--(2.134,-0.5));
+            draw((2.134,0.5)--(3,-1));
+            draw((2.134,0.5)--(3.866,0.5));
+            draw((2.134,-0.5)--(3,-1));
+            draw((2.134,-0.5)--(3.866,-0.5));
+            draw((3,-1)--(3.866,-0.5));
+            draw((3,-1)--(3.866,0.5));
+            draw((3.866,-0.5)--(3.866,0.5));
+          </asymptote>
+        </image>
+      </figure>
+      The construction of the higher cross-polytopes, where I add two
+      vertices and connect them to all existing vertices,
+      consistently builds a set of vertices where each vertex is
+      attached, by an edge, to all other vertices except for the one
+      directly opposite it. If I collapse the vertices and edges onto
+      a 2D diagram, that means I draw all the lines between our
+      vertices except those directly opposite. The 4-cross polytope
+      has <m>8</m> vertices connected in this way. 
+      <figure xml:id="figure-4-cross-vertex">
+        <caption>The 4-Cross-Polytope Vertex Diagram</caption>
+        <image xml:id="figure18" width="50%">
+          <asymptote>
+            size(10cm);
+
+            dot((0,1));
+            dot((-0.707,0.707));
+            dot((-1,0));
+            dot((-0.707,-0.707));
+            dot((0,-1));
+            dot((0.707,-0.707));
+            dot((1,0));
+            dot((0.707,0.707));
+
+            draw((0,1)--(-0.707,0.707));
+            draw((0,1)--(-1,0));
+            draw((0,1)--(-0.707,-0.707));
+            draw((0,1)--(0.707,-0.707));
+            draw((0,1)--(1,0));
+            draw((0,1)--(0.707,0.707));
+            draw((-0.707,0.707)--(-1,0));
+            draw((-0.707,0.707)--(-0.707,-0.707));
+            draw((-0.707,0.707)--(0,-1));
+            draw((-0.707,0.707)--(1,0));
+            draw((-0.707,0.707)--(0.707,0.707));
+            draw((-1,0)--(-0.707,-0.707));
+            draw((-1,0)--(0,-1));
+            draw((-1,0)--(0.707,-0.707));
+            draw((-1,0)--(0.707,0.707));
+            draw((-0.707,-0.707)--(0,-1));
+            draw((-0.707,-0.707)--(0.707,-0.707));
+            draw((-0.707,-0.707)--(1,0));
+            draw((0,-1)--(0.707,-0.707));
+            draw((0,-1)--(1,0));
+            draw((0,-1)--(0.707,0.707));
+            draw((0.707,-0.707)--(1,0));
+            draw((0.707,-0.707)--(0.707,0.707));
+            draw((1,0)--(0.707,0.707));
+          </asymptote>
+        </image>
+      </figure>
+      The 5-cross-polytope has <m>10</m> vertices connected this way.
+      <figure xml:id="figure-5-cross-vertex">
+        <caption>The 5-Cross-Polytope Vertex Diagram</caption>
+        <image xml:id="figure19" width="50%">
+          <asymptote>
+            size(10cm);
+
+            dot((3,1));
+            dot((2.412,0.809));
+            dot((2.049,0.309));
+            dot((2.049,-0.309));
+            dot((2.412,-0.809));
+            dot((3,-1));
+            dot((3.588,-0.809));
+            dot((3.951,-0.309));
+            dot((3.951,0.309));
+            dot((3.588,0.809));
+
+            draw((3,1)--(2.412,0.809));
+            draw((3,1)--(2.049,0.309));
+            draw((3,1)--(2.049,-0.309));
+            draw((3,1)--(2.412,-0.809));
+            draw((3,1)--(3.588,-0.809));
+            draw((3,1)--(3.951,-0.309));
+            draw((3,1)--(3.951,0.309));
+            draw((3,1)--(3.588,0.809));
+            draw((2.412,0.809)--(2.049,0.309));
+            draw((2.412,0.809)--(2.049,-0.309));
+            draw((2.412,0.809)--(2.412,-0.809));
+            draw((2.412,0.809)--(3,-1));
+            draw((2.412,0.809)--(3.951,-0.309));
+            draw((2.412,0.809)--(3.951,0.309));
+            draw((2.412,0.809)--(3.588,0.809));
+            draw((2.049,0.309)--(2.049,-0.309));
+            draw((2.049,0.309)--(2.412,-0.809));
+            draw((2.049,0.309)--(3,-1));
+            draw((2.049,0.309)--(3.588,-0.809));
+            draw((2.049,0.309)--(3.951,0.309));
+            draw((2.049,0.309)--(3.588,0.809));
+            draw((2.049,-0.309)--(2.412,-0.809));
+            draw((2.049,-0.309)--(3,-1));
+            draw((2.049,-0.309)--(3.588,-0.809));
+            draw((2.049,-0.309)--(3.951,-0.309));
+            draw((2.049,-0.309)--(3.588,0.809));
+            draw((2.412,-0.809)--(3,-1));
+            draw((2.412,-0.809)--(3.588,-0.809));
+            draw((2.412,-0.809)--(3.951,-0.309));
+            draw((2.412,-0.809)--(3.951,0.309));
+            draw((3,-1)--(3.588,-0.809));
+            draw((3,-1)--(3.951,-0.309));
+            draw((3,-1)--(3.951,0.309));
+            draw((3,-1)--(3.588,0.809));
+            draw((3.588,-0.809)--(3.951,-0.309));
+            draw((3.588,-0.809)--(3.951,0.309));
+            draw((3.588,-0.809)--(3.588,0.809));
+            draw((3.951,-0.309)--(3.951,0.309));
+            draw((3.951,-0.309)--(3.588,0.809));
+            draw((3.951,0.309)--(3.588,0.809));
+          </asymptote>
+        </image>
+      </figure>
+      I can go as far as I want in this way. Each time I go up a
+      dimension, I add two vertices. The 8-cross-polytope (in
+      <m>\RR^8</m>) has <m>16</m> vertices connected this way.
+      <figure xml:id="figure-8-cross-vertex">
+        <caption>The 8-Cross-Polytope Vertex Diagram</caption>
+        <image xml:id="figure20" width="90%">
+          <asymptote>
+            size(10cm);
+
+            dot((0,1));
+            dot((-0.383,0.924));
+            dot((-0.707,0.707));
+            dot((-0.924,0.383));
+            dot((-1,0));
+            dot((-0.924,-0.383));
+            dot((-0.707,-0.707));
+            dot((-0.383,-0.924));
+            dot((0,-1));
+            dot((0.383,-0.924));
+            dot((0.707,-0.707));
+            dot((0.924,-0.383));
+            dot((1,0));
+            dot((0.383,0.924));
+            dot((0.707,0.707));
+            dot((0.924,0.383));
+            
+            draw((0,1)--(-0.383,0.924));
+            draw((0,1)--(-0.707,0.707));
+            draw((0,1)--(-0.924,0.383));
+            draw((0,1)--(-1,0));
+            draw((0,1)--(-0.924,-0.383));
+            draw((0,1)--(-0.707,-0.707));
+            draw((0,1)--(-0.383,-0.924));
+            draw((0,1)--(0.383,-0.924));
+            draw((0,1)--(0.707,-0.707));
+            draw((0,1)--(0.924,-0.383));
+            draw((0,1)--(1,0));
+            draw((0,1)--(0.383,0.924));
+            draw((0,1)--(0.707,0.707));
+            draw((0,1)--(0.924,0.383));
+            draw((-0.383,0.924)--(-0.707,0.707));
+            draw((-0.383,0.924)--(-0.924,0.383));
+            draw((-0.383,0.924)--(-1,0));
+            draw((-0.383,0.924)--(-0.924,-0.383));
+            draw((-0.383,0.924)--(-0.707,-0.707));
+            draw((-0.383,0.924)--(-0.383,-0.924));
+            draw((-0.383,0.924)--(0,-1));
+            draw((-0.383,0.924)--(0.707,-0.707));
+            draw((-0.383,0.924)--(0.924,-0.383));
+            draw((-0.383,0.924)--(1,0));
+            draw((-0.383,0.924)--(0.383,0.924));
+            draw((-0.383,0.924)--(0.707,0.707));
+            draw((-0.383,0.924)--(0.924,0.383));
+            draw((-0.707,0.707)--(-0.924,0.383));
+            draw((-0.707,0.707)--(-1,0));
+            draw((-0.707,0.707)--(-0.924,-0.383));
+            draw((-0.707,0.707)--(-0.707,-0.707));
+            draw((-0.707,0.707)--(-0.383,-0.924));
+            draw((-0.707,0.707)--(0,-1));
+            draw((-0.707,0.707)--(0.383,-0.924));
+            draw((-0.707,0.707)--(0.924,-0.383));
+            draw((-0.707,0.707)--(1,0));
+            draw((-0.707,0.707)--(0.383,0.924));
+            draw((-0.707,0.707)--(0.707,0.707));
+            draw((-0.707,0.707)--(0.924,0.383));
+            draw((-0.924,0.383)--(-1,0));
+            draw((-0.924,0.383)--(-0.924,-0.383));
+            draw((-0.924,0.383)--(-0.707,-0.707));
+            draw((-0.924,0.383)--(-0.383,-0.924));
+            draw((-0.924,0.383)--(0,-1));
+            draw((-0.924,0.383)--(0.383,-0.924));
+            draw((-0.924,0.383)--(0.707,-0.707));
+            draw((-0.924,0.383)--(1,0));
+            draw((-0.924,0.383)--(0.383,0.924));
+            draw((-0.924,0.383)--(0.707,0.707));
+            draw((-0.924,0.383)--(0.924,0.383));
+            draw((-1,0)--(-0.924,-0.383));
+            draw((-1,0)--(-0.707,-0.707));
+            draw((-1,0)--(-0.383,-0.924));
+            draw((-1,0)--(0,-1));
+            draw((-1,0)--(0.383,-0.924));
+            draw((-1,0)--(0.707,-0.707));
+            draw((-1,0)--(0.924,-0.383));
+            draw((-1,0)--(0.383,0.924));
+            draw((-1,0)--(0.707,0.707));
+            draw((-1,0)--(0.924,0.383));
+            draw((-0.924,-0.383)--(-0.707,-0.707));
+            draw((-0.924,-0.383)--(-0.383,-0.924));
+            draw((-0.924,-0.383)--(0,-1));
+            draw((-0.924,-0.383)--(0.383,-0.924));
+            draw((-0.924,-0.383)--(0.707,-0.707));
+            draw((-0.924,-0.383)--(0.924,-0.383));
+            draw((-0.924,-0.383)--(1,0));
+            draw((-0.924,-0.383)--(0.383,0.924));
+            draw((-0.924,-0.383)--(0.707,0.707));
+            draw((-0.707,-0.707)--(-0.383,-0.924));
+            draw((-0.707,-0.707)--(0,-1));
+            draw((-0.707,-0.707)--(0.383,-0.924));
+            draw((-0.707,-0.707)--(0.707,-0.707));
+            draw((-0.707,-0.707)--(0.924,-0.383));
+            draw((-0.707,-0.707)--(1,0));
+            draw((-0.707,-0.707)--(0.383,0.924));
+            draw((-0.707,-0.707)--(0.924,0.383));
+            draw((-0.383,-0.924)--(0,-1));
+            draw((-0.383,-0.924)--(0.383,-0.924));
+            draw((-0.383,-0.924)--(0.707,-0.707));
+            draw((-0.383,-0.924)--(0.924,-0.383));
+            draw((-0.383,-0.924)--(1,0));
+            draw((-0.383,-0.924)--(0.707,0.707));
+            draw((-0.383,-0.924)--(0.924,0.383));
+            draw((0,-1)--(0.383,-0.924));
+            draw((0,-1)--(0.707,-0.707));
+            draw((0,-1)--(0.924,-0.383));
+            draw((0,-1)--(1,0));
+            draw((0,-1)--(0.383,0.924));
+            draw((0,-1)--(0.707,0.707));
+            draw((0,-1)--(0.924,0.383));
+            draw((0.383,-0.924)--(0.707,-0.707));
+            draw((0.383,-0.924)--(0.924,-0.383));
+            draw((0.383,-0.924)--(1,0));
+            draw((0.383,-0.924)--(0.383,0.924));
+            draw((0.383,-0.924)--(0.707,0.707));
+            draw((0.383,-0.924)--(0.924,0.383));
+            draw((0.707,-0.707)--(0.924,-0.383));
+            draw((0.707,-0.707)--(1,0));
+            draw((0.707,-0.707)--(0.383,0.924));
+            draw((0.707,-0.707)--(0.707,0.707));
+            draw((0.707,-0.707)--(0.924,0.383));
+            draw((0.924,-0.383)--(1,0));
+            draw((0.924,-0.383)--(0.383,0.924));
+            draw((0.924,-0.383)--(0.707,0.707));
+            draw((0.924,-0.383)--(0.924,0.383));
+            draw((1,0)--(0.383,0.924));
+            draw((1,0)--(0.707,0.707));
+            draw((1,0)--(0.924,0.383));
+            draw((0.383,0.924)--(0.707,0.707));
+            draw((0.383,0.924)--(0.924,0.383));
+            draw((0.707,0.707)--(0.924,0.383));
+          </asymptote>
+        </image>
+      </figure>
+      The 16-cross-polytope (in <m>\RR^{16}</m>) has <m>32</m>
+      vertices connected this way.
+      <figure xml:id="figure-16-cross-vertex">
+        <caption>The 16-Cross-Polytope Vertex Diagram</caption>
+        <image xml:id="figure21" width="90%">
+          <asymptote>
+            size(10cm);
+
+            dot((0,1));
+            dot((-0.195,0.981));
+            dot((-0.383,0.924));
+            dot((-0.556,0.831));
+            dot((-0.707,0.707));
+            dot((-0.831,0.556));
+            dot((-0.924,0.383));
+            dot((-0.981,0.195));
+            dot((-1,0));
+            dot((-0.981,-0.195));
+            dot((-0.924,-0.383));
+            dot((-0.831,-0.556));
+            dot((-0.707,-0.707));
+            dot((-0.556,-0.831));
+            dot((-0.383,-0.924));
+            dot((-0.195,-0.981));
+            dot((0,-1));
+            dot((0.195,-0.981));
+            dot((0.383,-0.924));
+            dot((0.556,-0.831));
+            dot((0.707,-0.707));
+            dot((0.831,-0.556));
+            dot((0.924,-0.383));
+            dot((0.981,-0.195));
+            dot((1,0));
+            dot((0.195,0.981));
+            dot((0.383,0.924));
+            dot((0.556,0.831));
+            dot((0.707,0.707));
+            dot((0.831,0.556));
+            dot((0.924,0.383));
+            dot((0.981,0.195));
+
+            draw((1,0)--(0.981,0.195));
+            draw((1,0)--(0.924,0.383));
+            draw((1,0)--(0.831,0.555));
+            draw((1,0)--(0.707,0.707));
+            draw((1,0)--(0.555,0.831));
+            draw((1,0)--(0.383,0.924));
+            draw((1,0)--(0.195,0.981));
+            draw((1,0)--(0,1));
+            draw((1,0)--(-0.195,0.981));
+            draw((1,0)--(-0.383,0.924));
+            draw((1,0)--(-0.555,0.831));
+            draw((1,0)--(-0.707,0.707));
+            draw((1,0)--(-0.831,0.555));
+            draw((1,0)--(-0.924,0.383));
+            draw((1,0)--(-0.981,0.195));
+            draw((1,0)--(-0.981,-0.195));
+            draw((1,0)--(-0.924,-0.383));
+            draw((1,0)--(-0.831,-0.555));
+            draw((1,0)--(-0.707,-0.707));
+            draw((1,0)--(-0.555,-0.831));
+            draw((1,0)--(-0.383,-0.924));
+            draw((1,0)--(-0.195,-0.981));
+            draw((1,0)--(0,-1));
+            draw((1,0)--(0.195,-0.981));
+            draw((1,0)--(0.383,-0.924));
+            draw((1,0)--(0.555,-0.831));
+            draw((1,0)--(0.707,-0.707));
+            draw((1,0)--(0.831,-0.555));
+            draw((1,0)--(0.924,-0.383));
+            draw((1,0)--(0.981,-0.195));
+            draw((0.981,0.195)--(0.924,0.383));
+            draw((0.981,0.195)--(0.831,0.555));
+            draw((0.981,0.195)--(0.707,0.707));
+            draw((0.981,0.195)--(0.555,0.831));
+            draw((0.981,0.195)--(0.383,0.924));
+            draw((0.981,0.195)--(0.195,0.981));
+            draw((0.981,0.195)--(0,1));
+            draw((0.981,0.195)--(-0.195,0.981));
+            draw((0.981,0.195)--(-0.383,0.924));
+            draw((0.981,0.195)--(-0.555,0.831));
+            draw((0.981,0.195)--(-0.707,0.707));
+            draw((0.981,0.195)--(-0.831,0.555));
+            draw((0.981,0.195)--(-0.924,0.383));
+            draw((0.981,0.195)--(-0.981,0.195));
+            draw((0.981,0.195)--(-1,0));
+            draw((0.981,0.195)--(-0.924,-0.383));
+            draw((0.981,0.195)--(-0.831,-0.555));
+            draw((0.981,0.195)--(-0.707,-0.707));
+            draw((0.981,0.195)--(-0.555,-0.831));
+            draw((0.981,0.195)--(-0.383,-0.924));
+            draw((0.981,0.195)--(-0.195,-0.981));
+            draw((0.981,0.195)--(0,-1));
+            draw((0.981,0.195)--(0.195,-0.981));
+            draw((0.981,0.195)--(0.383,-0.924));
+            draw((0.981,0.195)--(0.555,-0.831));
+            draw((0.981,0.195)--(0.707,-0.707));
+            draw((0.981,0.195)--(0.831,-0.555));
+            draw((0.981,0.195)--(0.924,-0.383));
+            draw((0.981,0.195)--(0.981,-0.195));
+            draw((0.924,0.383)--(0.831,0.555));
+            draw((0.924,0.383)--(0.707,0.707));
+            draw((0.924,0.383)--(0.555,0.831));
+            draw((0.924,0.383)--(0.383,0.924));
+            draw((0.924,0.383)--(0.195,0.981));
+            draw((0.924,0.383)--(0,1));
+            draw((0.924,0.383)--(-0.195,0.981));
+            draw((0.924,0.383)--(-0.383,0.924));
+            draw((0.924,0.383)--(-0.555,0.831));
+            draw((0.924,0.383)--(-0.707,0.707));
+            draw((0.924,0.383)--(-0.831,0.555));
+            draw((0.924,0.383)--(-0.924,0.383));
+            draw((0.924,0.383)--(-0.981,0.195));
+            draw((0.924,0.383)--(-1,0));
+            draw((0.924,0.383)--(-0.981,-0.195));
+            draw((0.924,0.383)--(-0.831,-0.555));
+            draw((0.924,0.383)--(-0.707,-0.707));
+            draw((0.924,0.383)--(-0.555,-0.831));
+            draw((0.924,0.383)--(-0.383,-0.924));
+            draw((0.924,0.383)--(-0.195,-0.981));
+            draw((0.924,0.383)--(0,-1));
+            draw((0.924,0.383)--(0.195,-0.981));
+            draw((0.924,0.383)--(0.383,-0.924));
+            draw((0.924,0.383)--(0.555,-0.831));
+            draw((0.924,0.383)--(0.707,-0.707));
+            draw((0.924,0.383)--(0.831,-0.555));
+            draw((0.924,0.383)--(0.924,-0.383));
+            draw((0.924,0.383)--(0.981,-0.195));
+            draw((0.831,0.555)--(0.707,0.707));
+            draw((0.831,0.555)--(0.555,0.831));
+            draw((0.831,0.555)--(0.383,0.924));
+            draw((0.831,0.555)--(0.195,0.981));
+            draw((0.831,0.555)--(0,1));
+            draw((0.831,0.555)--(-0.195,0.981));
+            draw((0.831,0.555)--(-0.383,0.924));
+            draw((0.831,0.555)--(-0.555,0.831));
+            draw((0.831,0.555)--(-0.707,0.707));
+            draw((0.831,0.555)--(-0.924,0.383));
+            draw((0.831,0.555)--(-0.981,0.195));
+            draw((0.831,0.555)--(-1,0));
+            draw((0.831,0.555)--(-0.981,-0.195));
+            draw((0.831,0.555)--(-0.924,-0.383));
+            draw((0.831,0.555)--(-0.707,-0.707));
+            draw((0.831,0.555)--(-0.555,-0.831));
+            draw((0.831,0.555)--(-0.383,-0.924));
+            draw((0.831,0.555)--(-0.195,-0.981));
+            draw((0.831,0.555)--(0,-1));
+            draw((0.831,0.555)--(0.195,-0.981));
+            draw((0.831,0.555)--(0.383,-0.924));
+            draw((0.831,0.555)--(0.555,-0.831));
+            draw((0.831,0.555)--(0.707,-0.707));
+            draw((0.831,0.555)--(0.831,-0.555));
+            draw((0.831,0.555)--(0.924,-0.383));
+            draw((0.831,0.555)--(0.981,-0.195));
+            draw((0.707,0.707)--(0.555,0.831));
+            draw((0.707,0.707)--(0.383,0.924));
+            draw((0.707,0.707)--(0.195,0.981));
+            draw((0.707,0.707)--(0,1));
+            draw((0.707,0.707)--(-0.195,0.981));
+            draw((0.707,0.707)--(-0.383,0.924));
+            draw((0.707,0.707)--(-0.555,0.831));
+            draw((0.707,0.707)--(-0.707,0.707));
+            draw((0.707,0.707)--(-0.831,0.555));
+            draw((0.707,0.707)--(-0.924,0.383));
+            draw((0.707,0.707)--(-0.981,0.195));
+            draw((0.707,0.707)--(-1,0));
+            draw((0.707,0.707)--(-0.981,-0.195));
+            draw((0.707,0.707)--(-0.924,-0.383));
+            draw((0.707,0.707)--(-0.831,-0.555));
+            draw((0.707,0.707)--(-0.555,-0.831));
+            draw((0.707,0.707)--(-0.383,-0.924));
+            draw((0.707,0.707)--(-0.195,-0.981));
+            draw((0.707,0.707)--(0,-1));
+            draw((0.707,0.707)--(0.195,-0.981));
+            draw((0.707,0.707)--(0.383,-0.924));
+            draw((0.707,0.707)--(0.555,-0.831));
+            draw((0.707,0.707)--(0.707,-0.707));
+            draw((0.707,0.707)--(0.831,-0.555));
+            draw((0.707,0.707)--(0.924,-0.383));
+            draw((0.707,0.707)--(0.981,-0.195));
+            draw((0.555,0.831)--(0.383,0.924));
+            draw((0.555,0.831)--(0.195,0.981));
+            draw((0.555,0.831)--(0,1));
+            draw((0.555,0.831)--(-0.195,0.981));
+            draw((0.555,0.831)--(-0.383,0.924));
+            draw((0.555,0.831)--(-0.555,0.831));
+            draw((0.555,0.831)--(-0.707,0.707));
+            draw((0.555,0.831)--(-0.831,0.555));
+            draw((0.555,0.831)--(-0.924,0.383));
+            draw((0.555,0.831)--(-0.981,0.195));
+            draw((0.555,0.831)--(-1,0));
+            draw((0.555,0.831)--(-0.981,-0.195));
+            draw((0.555,0.831)--(-0.924,-0.383));
+            draw((0.555,0.831)--(-0.831,-0.555));
+            draw((0.555,0.831)--(-0.707,-0.707));
+            draw((0.555,0.831)--(-0.383,-0.924));
+            draw((0.555,0.831)--(-0.195,-0.981));
+            draw((0.555,0.831)--(0,-1));
+            draw((0.555,0.831)--(0.195,-0.981));
+            draw((0.555,0.831)--(0.383,-0.924));
+            draw((0.555,0.831)--(0.555,-0.831));
+            draw((0.555,0.831)--(0.707,-0.707));
+            draw((0.555,0.831)--(0.831,-0.555));
+            draw((0.555,0.831)--(0.924,-0.383));
+            draw((0.555,0.831)--(0.981,-0.195));
+            draw((0.383,0.924)--(0.195,0.981));
+            draw((0.383,0.924)--(0,1));
+            draw((0.383,0.924)--(-0.195,0.981));
+            draw((0.383,0.924)--(-0.383,0.924));
+            draw((0.383,0.924)--(-0.555,0.831));
+            draw((0.383,0.924)--(-0.707,0.707));
+            draw((0.383,0.924)--(-0.831,0.555));
+            draw((0.383,0.924)--(-0.924,0.383));
+            draw((0.383,0.924)--(-0.981,0.195));
+            draw((0.383,0.924)--(-1,0));
+            draw((0.383,0.924)--(-0.981,-0.195));
+            draw((0.383,0.924)--(-0.924,-0.383));
+            draw((0.383,0.924)--(-0.831,-0.555));
+            draw((0.383,0.924)--(-0.707,-0.707));
+            draw((0.383,0.924)--(-0.555,-0.831));
+            draw((0.383,0.924)--(-0.195,-0.981));
+            draw((0.383,0.924)--(0,-1));
+            draw((0.383,0.924)--(0.195,-0.981));
+            draw((0.383,0.924)--(0.383,-0.924));
+            draw((0.383,0.924)--(0.555,-0.831));
+            draw((0.383,0.924)--(0.707,-0.707));
+            draw((0.383,0.924)--(0.831,-0.555));
+            draw((0.383,0.924)--(0.924,-0.383));
+            draw((0.383,0.924)--(0.981,-0.195));
+            draw((0.195,0.981)--(0,1));
+            draw((0.195,0.981)--(-0.195,0.981));
+            draw((0.195,0.981)--(-0.383,0.924));
+            draw((0.195,0.981)--(-0.555,0.831));
+            draw((0.195,0.981)--(-0.707,0.707));
+            draw((0.195,0.981)--(-0.831,0.555));
+            draw((0.195,0.981)--(-0.924,0.383));
+            draw((0.195,0.981)--(-0.981,0.195));
+            draw((0.195,0.981)--(-1,0));
+            draw((0.195,0.981)--(-0.981,-0.195));
+            draw((0.195,0.981)--(-0.924,-0.383));
+            draw((0.195,0.981)--(-0.831,-0.555));
+            draw((0.195,0.981)--(-0.707,-0.707));
+            draw((0.195,0.981)--(-0.555,-0.831));
+            draw((0.195,0.981)--(-0.383,-0.924));
+            draw((0.195,0.981)--(0,-1));
+            draw((0.195,0.981)--(0.195,-0.981));
+            draw((0.195,0.981)--(0.383,-0.924));
+            draw((0.195,0.981)--(0.555,-0.831));
+            draw((0.195,0.981)--(0.707,-0.707));
+            draw((0.195,0.981)--(0.831,-0.555));
+            draw((0.195,0.981)--(0.924,-0.383));
+            draw((0.195,0.981)--(0.981,-0.195));
+            draw((0,1)--(-0.195,0.981));
+            draw((0,1)--(-0.383,0.924));
+            draw((0,1)--(-0.555,0.831));
+            draw((0,1)--(-0.707,0.707));
+            draw((0,1)--(-0.831,0.555));
+            draw((0,1)--(-0.924,0.383));
+            draw((0,1)--(-0.981,0.195));
+            draw((0,1)--(-1,0));
+            draw((0,1)--(-0.981,-0.195));
+            draw((0,1)--(-0.924,-0.383));
+            draw((0,1)--(-0.831,-0.555));
+            draw((0,1)--(-0.707,-0.707));
+            draw((0,1)--(-0.555,-0.831));
+            draw((0,1)--(-0.383,-0.924));
+            draw((0,1)--(-0.195,-0.981));
+            draw((0,1)--(0.195,-0.981));
+            draw((0,1)--(0.383,-0.924));
+            draw((0,1)--(0.555,-0.831));
+            draw((0,1)--(0.707,-0.707));
+            draw((0,1)--(0.831,-0.555));
+            draw((0,1)--(0.924,-0.383));
+            draw((0,1)--(0.981,-0.195));
+            draw((-0.195,0.981)--(-0.383,0.924));
+            draw((-0.195,0.981)--(-0.555,0.831));
+            draw((-0.195,0.981)--(-0.707,0.707));
+            draw((-0.195,0.981)--(-0.831,0.555));
+            draw((-0.195,0.981)--(-0.924,0.383));
+            draw((-0.195,0.981)--(-0.981,0.195));
+            draw((-0.195,0.981)--(-1,0));
+            draw((-0.195,0.981)--(-0.981,-0.195));
+            draw((-0.195,0.981)--(-0.924,-0.383));
+            draw((-0.195,0.981)--(-0.831,-0.555));
+            draw((-0.195,0.981)--(-0.707,-0.707));
+            draw((-0.195,0.981)--(-0.555,-0.831));
+            draw((-0.195,0.981)--(-0.383,-0.924));
+            draw((-0.195,0.981)--(-0.195,-0.981));
+            draw((-0.195,0.981)--(0,-1));
+            draw((-0.195,0.981)--(0.383,-0.924));
+            draw((-0.195,0.981)--(0.555,-0.831));
+            draw((-0.195,0.981)--(0.707,-0.707));
+            draw((-0.195,0.981)--(0.831,-0.555));
+            draw((-0.195,0.981)--(0.924,-0.383));
+            draw((-0.195,0.981)--(0.981,-0.195));
+            draw((-0.383,0.924)--(-0.555,0.831));
+            draw((-0.383,0.924)--(-0.707,0.707));
+            draw((-0.383,0.924)--(-0.831,0.555));
+            draw((-0.383,0.924)--(-0.924,0.383));
+            draw((-0.383,0.924)--(-0.981,0.195));
+            draw((-0.383,0.924)--(-1,0));
+            draw((-0.383,0.924)--(-0.981,-0.195));
+            draw((-0.383,0.924)--(-0.924,-0.383));
+            draw((-0.383,0.924)--(-0.831,-0.555));
+            draw((-0.383,0.924)--(-0.707,-0.707));
+            draw((-0.383,0.924)--(-0.555,-0.831));
+            draw((-0.383,0.924)--(-0.383,-0.924));
+            draw((-0.383,0.924)--(-0.195,-0.981));
+            draw((-0.383,0.924)--(0,-1));
+            draw((-0.383,0.924)--(0.195,-0.981));
+            draw((-0.383,0.924)--(0.555,-0.831));
+            draw((-0.383,0.924)--(0.707,-0.707));
+            draw((-0.383,0.924)--(0.831,-0.555));
+            draw((-0.383,0.924)--(0.924,-0.383));
+            draw((-0.383,0.924)--(0.981,-0.195));
+            draw((-0.555,0.831)--(-0.707,0.707));
+            draw((-0.555,0.831)--(-0.831,0.555));
+            draw((-0.555,0.831)--(-0.924,0.383));
+            draw((-0.555,0.831)--(-0.981,0.195));
+            draw((-0.555,0.831)--(-1,0));
+            draw((-0.555,0.831)--(-0.981,-0.195));
+            draw((-0.555,0.831)--(-0.924,-0.383));
+            draw((-0.555,0.831)--(-0.831,-0.555));
+            draw((-0.555,0.831)--(-0.707,-0.707));
+            draw((-0.555,0.831)--(-0.555,-0.831));
+            draw((-0.555,0.831)--(-0.383,-0.924));
+            draw((-0.555,0.831)--(-0.195,-0.981));
+            draw((-0.555,0.831)--(0,-1));
+            draw((-0.555,0.831)--(0.195,-0.981));
+            draw((-0.555,0.831)--(0.383,-0.924));
+            draw((-0.555,0.831)--(0.707,-0.707));
+            draw((-0.555,0.831)--(0.831,-0.555));
+            draw((-0.555,0.831)--(0.924,-0.383));
+            draw((-0.555,0.831)--(0.981,-0.195));
+            draw((-0.707,0.707)--(-0.831,0.555));
+            draw((-0.707,0.707)--(-0.924,0.383));
+            draw((-0.707,0.707)--(-0.981,0.195));
+            draw((-0.707,0.707)--(-1,0));
+            draw((-0.707,0.707)--(-0.981,-0.195));
+            draw((-0.707,0.707)--(-0.924,-0.383));
+            draw((-0.707,0.707)--(-0.831,-0.555));
+            draw((-0.707,0.707)--(-0.707,-0.707));
+            draw((-0.707,0.707)--(-0.555,-0.831));
+            draw((-0.707,0.707)--(-0.383,-0.924));
+            draw((-0.707,0.707)--(-0.195,-0.981));
+            draw((-0.707,0.707)--(0,-1));
+            draw((-0.707,0.707)--(0.195,-0.981));
+            draw((-0.707,0.707)--(0.383,-0.924));
+            draw((-0.707,0.707)--(0.555,-0.831));
+            draw((-0.707,0.707)--(0.831,-0.555));
+            draw((-0.707,0.707)--(0.924,-0.383));
+            draw((-0.707,0.707)--(0.981,-0.195));
+            draw((-0.831,0.555)--(-0.924,0.383));
+            draw((-0.831,0.555)--(-0.981,0.195));
+            draw((-0.831,0.555)--(-1,0));
+            draw((-0.831,0.555)--(-0.981,-0.195));
+            draw((-0.831,0.555)--(-0.924,-0.383));
+            draw((-0.831,0.555)--(-0.831,-0.555));
+            draw((-0.831,0.555)--(-0.707,-0.707));
+            draw((-0.831,0.555)--(-0.555,-0.831));
+            draw((-0.831,0.555)--(-0.383,-0.924));
+            draw((-0.831,0.555)--(-0.195,-0.981));
+            draw((-0.831,0.555)--(0,-1));
+            draw((-0.831,0.555)--(0.195,-0.981));
+            draw((-0.831,0.555)--(0.383,-0.924));
+            draw((-0.831,0.555)--(0.555,-0.831));
+            draw((-0.831,0.555)--(0.707,-0.707));
+            draw((-0.831,0.555)--(0.924,-0.383));
+            draw((-0.831,0.555)--(0.981,-0.195));
+            draw((-0.924,0.383)--(-0.981,0.195));
+            draw((-0.924,0.383)--(-1,0));
+            draw((-0.924,0.383)--(-0.981,-0.195));
+            draw((-0.924,0.383)--(-0.924,-0.383));
+            draw((-0.924,0.383)--(-0.831,-0.555));
+            draw((-0.924,0.383)--(-0.707,-0.707));
+            draw((-0.924,0.383)--(-0.555,-0.831));
+            draw((-0.924,0.383)--(-0.383,-0.924));
+            draw((-0.924,0.383)--(-0.195,-0.981));
+            draw((-0.924,0.383)--(0,-1));
+            draw((-0.924,0.383)--(0.195,-0.981));
+            draw((-0.924,0.383)--(0.383,-0.924));
+            draw((-0.924,0.383)--(0.555,-0.831));
+            draw((-0.924,0.383)--(0.707,-0.707));
+            draw((-0.924,0.383)--(0.831,-0.555));
+            draw((-0.924,0.383)--(0.981,-0.195));
+            draw((-0.981,0.195)--(-1,0));
+            draw((-0.981,0.195)--(-0.981,-0.195));
+            draw((-0.981,0.195)--(-0.924,-0.383));
+            draw((-0.981,0.195)--(-0.831,-0.555));
+            draw((-0.981,0.195)--(-0.707,-0.707));
+            draw((-0.981,0.195)--(-0.555,-0.831));
+            draw((-0.981,0.195)--(-0.383,-0.924));
+            draw((-0.981,0.195)--(-0.195,-0.981));
+            draw((-0.981,0.195)--(0,-1));
+            draw((-0.981,0.195)--(0.195,-0.981));
+            draw((-0.981,0.195)--(0.383,-0.924));
+            draw((-0.981,0.195)--(0.555,-0.831));
+            draw((-0.981,0.195)--(0.707,-0.707));
+            draw((-0.981,0.195)--(0.831,-0.555));
+            draw((-0.981,0.195)--(0.924,-0.383));
+            draw((-1,0)--(-0.981,-0.195));
+            draw((-1,0)--(-0.924,-0.383));
+            draw((-1,0)--(-0.831,-0.555));
+            draw((-1,0)--(-0.707,-0.707));
+            draw((-1,0)--(-0.555,-0.831));
+            draw((-1,0)--(-0.383,-0.924));
+            draw((-1,0)--(-0.195,-0.981));
+            draw((-1,0)--(0,-1));
+            draw((-1,0)--(0.195,-0.981));
+            draw((-1,0)--(0.383,-0.924));
+            draw((-1,0)--(0.555,-0.831));
+            draw((-1,0)--(0.707,-0.707));
+            draw((-1,0)--(0.831,-0.555));
+            draw((-1,0)--(0.924,-0.383));
+            draw((-1,0)--(0.981,-0.195));
+            draw((-0.981,-0.195)--(-0.924,-0.383));
+            draw((-0.981,-0.195)--(-0.831,-0.555));
+            draw((-0.981,-0.195)--(-0.707,-0.707));
+            draw((-0.981,-0.195)--(-0.555,-0.831));
+            draw((-0.981,-0.195)--(-0.383,-0.924));
+            draw((-0.981,-0.195)--(-0.195,-0.981));
+            draw((-0.981,-0.195)--(0,-1));
+            draw((-0.981,-0.195)--(0.195,-0.981));
+            draw((-0.981,-0.195)--(0.383,-0.924));
+            draw((-0.981,-0.195)--(0.555,-0.831));
+            draw((-0.981,-0.195)--(0.707,-0.707));
+            draw((-0.981,-0.195)--(0.831,-0.555));
+            draw((-0.981,-0.195)--(0.924,-0.383));
+            draw((-0.981,-0.195)--(0.981,-0.195));
+            draw((-0.924,-0.383)--(-0.831,-0.555));
+            draw((-0.924,-0.383)--(-0.707,-0.707));
+            draw((-0.924,-0.383)--(-0.555,-0.831));
+            draw((-0.924,-0.383)--(-0.383,-0.924));
+            draw((-0.924,-0.383)--(-0.195,-0.981));
+            draw((-0.924,-0.383)--(0,-1));
+            draw((-0.924,-0.383)--(0.195,-0.981));
+            draw((-0.924,-0.383)--(0.383,-0.924));
+            draw((-0.924,-0.383)--(0.555,-0.831));
+            draw((-0.924,-0.383)--(0.707,-0.707));
+            draw((-0.924,-0.383)--(0.831,-0.555));
+            draw((-0.924,-0.383)--(0.924,-0.383));
+            draw((-0.924,-0.383)--(0.981,-0.195));
+            draw((-0.831,-0.555)--(-0.707,-0.707));
+            draw((-0.831,-0.555)--(-0.555,-0.831));
+            draw((-0.831,-0.555)--(-0.383,-0.924));
+            draw((-0.831,-0.555)--(-0.195,-0.981));
+            draw((-0.831,-0.555)--(0,-1));
+            draw((-0.831,-0.555)--(0.195,-0.981));
+            draw((-0.831,-0.555)--(0.383,-0.924));
+            draw((-0.831,-0.555)--(0.555,-0.831));
+            draw((-0.831,-0.555)--(0.707,-0.707));
+            draw((-0.831,-0.555)--(0.831,-0.555));
+            draw((-0.831,-0.555)--(0.924,-0.383));
+            draw((-0.831,-0.555)--(0.981,-0.195));
+            draw((-0.707,-0.707)--(-0.555,-0.831));
+            draw((-0.707,-0.707)--(-0.383,-0.924));
+            draw((-0.707,-0.707)--(-0.195,-0.981));
+            draw((-0.707,-0.707)--(0,-1));
+            draw((-0.707,-0.707)--(0.195,-0.981));
+            draw((-0.707,-0.707)--(0.383,-0.924));
+            draw((-0.707,-0.707)--(0.555,-0.831));
+            draw((-0.707,-0.707)--(0.707,-0.707));
+            draw((-0.707,-0.707)--(0.831,-0.555));
+            draw((-0.707,-0.707)--(0.924,-0.383));
+            draw((-0.707,-0.707)--(0.981,-0.195));
+            draw((-0.555,-0.831)--(-0.383,-0.924));
+            draw((-0.555,-0.831)--(-0.195,-0.981));
+            draw((-0.555,-0.831)--(0,-1));
+            draw((-0.555,-0.831)--(0.195,-0.981));
+            draw((-0.555,-0.831)--(0.383,-0.924));
+            draw((-0.555,-0.831)--(0.555,-0.831));
+            draw((-0.555,-0.831)--(0.707,-0.707));
+            draw((-0.555,-0.831)--(0.831,-0.555));
+            draw((-0.555,-0.831)--(0.924,-0.383));
+            draw((-0.555,-0.831)--(0.981,-0.195));
+            draw((-0.383,-0.924)--(-0.195,-0.981));
+            draw((-0.383,-0.924)--(0,-1));
+            draw((-0.383,-0.924)--(0.195,-0.981));
+            draw((-0.383,-0.924)--(0.383,-0.924));
+            draw((-0.383,-0.924)--(0.555,-0.831));
+            draw((-0.383,-0.924)--(0.707,-0.707));
+            draw((-0.383,-0.924)--(0.831,-0.555));
+            draw((-0.383,-0.924)--(0.924,-0.383));
+            draw((-0.383,-0.924)--(0.981,-0.195));
+            draw((-0.195,-0.981)--(0,-1));
+            draw((-0.195,-0.981)--(0.195,-0.981));
+            draw((-0.195,-0.981)--(0.383,-0.924));
+            draw((-0.195,-0.981)--(0.555,-0.831));
+            draw((-0.195,-0.981)--(0.707,-0.707));
+            draw((-0.195,-0.981)--(0.831,-0.555));
+            draw((-0.195,-0.981)--(0.924,-0.383));
+            draw((-0.195,-0.981)--(0.981,-0.195));
+            draw((0,-1)--(0.195,-0.981));
+            draw((0,-1)--(0.383,-0.924));
+            draw((0,-1)--(0.555,-0.831));
+            draw((0,-1)--(0.707,-0.707));
+            draw((0,-1)--(0.831,-0.555));
+            draw((0,-1)--(0.924,-0.383));
+            draw((0,-1)--(0.981,-0.195));
+            draw((0.195,-0.981)--(0.383,-0.924));
+            draw((0.195,-0.981)--(0.555,-0.831));
+            draw((0.195,-0.981)--(0.707,-0.707));
+            draw((0.195,-0.981)--(0.831,-0.555));
+            draw((0.195,-0.981)--(0.924,-0.383));
+            draw((0.195,-0.981)--(0.981,-0.195));
+            draw((0.383,-0.924)--(0.555,-0.831));
+            draw((0.383,-0.924)--(0.707,-0.707));
+            draw((0.383,-0.924)--(0.831,-0.555));
+            draw((0.383,-0.924)--(0.924,-0.383));
+            draw((0.383,-0.924)--(0.981,-0.195));
+            draw((0.555,-0.831)--(0.707,-0.707));
+            draw((0.555,-0.831)--(0.831,-0.555));
+            draw((0.555,-0.831)--(0.924,-0.383));
+            draw((0.555,-0.831)--(0.981,-0.195));
+            draw((0.707,-0.707)--(0.831,-0.555));
+            draw((0.707,-0.707)--(0.924,-0.383));
+            draw((0.707,-0.707)--(0.981,-0.195));
+            draw((0.831,-0.555)--(0.924,-0.383));
+            draw((0.831,-0.555)--(0.981,-0.195));
+            draw((0.924,-0.383)--(0.981,-0.195));
+          </asymptote>
+        </image>
+      </figure>
+      These images are obviously not full pictures of these higher
+      dimensional objects, but just some kind of 2D shadows
+      which give me some information and intuition for the
+      objects. Everything in higher dimensions must be done
+      indirectly, but working indirectly, I can produce some useful
+      and interesting visualizations that let me start to understand
+      the objects. 
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,211 @@
+<section xml:id="section-kernels-and-images">
+  <title>Kernels and Images</title>
+  <subsection xml:id="subsection-row-and-column-spaces">
+    <title>Row and Column Spaces</title>
+    <definition>
+      <statement>
+        <p>
+          Let <m>M</m> be an <m>m \times n</m> matrix. The
+          <term>rowspace</term> of the matrix is the span of the rows
+          of the matrix (considered as vectors in <m>\RR^n</m>). It is
+          a subspace of <m>\RR^n</m>. The <term>columnspace</term> of
+          the matrix is the span of the columns of the matrix,
+          considering those columns as vectors in <m>\RR^m</m>. It is
+          a subspace of <m>\RR^m</m>.
+        </p>
+      </statement>
+    </definition>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>M</m> be an <m>m \times n</m> matrix. The columnspace
+          and the row spaces of <m>M</m> are linear subspaces (of
+          <m>\RR^m</m> and <m>\RR^n</m>, respectively) with dimensions
+          equal to the rank of <m>M</m>.
+        </p>
+      </statement>
+    </proposition>
+  </subsection>
+  <subsection xml:id="subsection-images">
+    <title>Images</title>
+    <p>
+      In <xref ref="section-transformations-of-spans-and-loci" />, I
+      defined the image of a matrix or transformation to be the whole
+      collection of outputs. (This is what I call the range in single
+      variable functions.) There is a nice proposition which tells me
+      how to calculate images for linear transformations.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          The image of a matrix <m>M</m> is the same as its
+          columnspace.
+        </p>
+      </statement>
+    </proposition>
+    <proof>
+      <p>
+        The image is the set of all outputs of <m>M</m>, acting on the
+        whole space <m>\RR^n</m>. I can think of <m>\RR^n</m> as the
+        span of its standard basis <m>e_1, e_2, \ldots e_n</m>. The
+        image, then, is the span of <m>Me_1, Me_2, \ldots Me_n</m>.
+        These vectors are precisely the columns of the matrix, so
+        their span is the columnspace.
+      </p>
+    </proof>
+    <example>
+      <statement>
+        <p>
+          Here is a <m>3 \times 3</m> matrix acting on the standard
+          basis of <m>\RR^3</m>. I can demonstrate how the images of
+          the basis vectors are exactly the columns of the matrix.
+          <md>
+            <mrow>
+              \begin{pmatrix} -2 \amp -2 \amp 0 \\ 7 \amp -3 \amp 2 \\
+              -4 \amp -1 \amp 2 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \\
+              0 \end{pmatrix} = \begin{pmatrix} -2 \\ 7 \\ -4
+              \end{pmatrix}
+            </mrow>
+            <mrow>
+              \begin{pmatrix} -2 \amp -2 \amp 0 \\ 7 \amp -3 \amp 2 \\
+              -4 \amp -1 \amp 2 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \\
+              0 \end{pmatrix} = \begin{pmatrix} -2 \\ -3 \\ -1
+              \end{pmatrix}
+            </mrow>
+            <mrow>
+              \begin{pmatrix} -2 \amp -2 \amp 0 \\ 7 \amp -3 \amp 2 \\
+              -4 \amp -1 \amp 2 \end{pmatrix} \begin{pmatrix} 0 \\ 0 \\
+              1 \end{pmatrix} = \begin{pmatrix} 0 \\ 2 \\ 2
+              \end{pmatrix}
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="subsection-kernels">
+    <title>Kernels</title>
+    <definition>
+      <statement>
+        <p>
+          Let <m>M</m> be an <m>m \times n</m> matrix representing a
+          transformation <m>\RR^n \rightarrow \RR^m</m>. For any <m>u
+          \in \RR^m</m>, the <term>preimage</term> of <m>u</m> is the
+          set of all vectors in <m>\RR^m</m> which are mapped to
+          <m>u</m> by <m>M</m>. It is writtem <m>M^{-1}\{u\}</m>.
+          The <term>kernel</term> or <term>nullspace</term> of
+          <m>M</m> is all vectors in <m>\RR^n</m> which are sent to
+          the zero vector under the transformation associated to
+          <m>M</m>. Combining the two terms, the kernel is the
+          preimage of the zero vector. 
+        </p>
+      </statement>
+    </definition>
+    <proposition>
+      <statement>
+        <p>
+          The preimage of <m>u</m> is the solution space of the system
+          of equations associated with the extended matrix <m>(M|u)</m>
+          where the vector <m>u</m> is added as a column to the matrix
+          <m>M</m>.
+        </p>
+      </statement>
+    </proposition>
+    <proof>
+      <p>
+        The preimage is all vectors <m>v</m> in <m>\RR^n</m> that are
+        sent to <m>u</m>. If I write <m>v</m> in coordinates <m>x_1,
+        \ldots, x_n</m>, and apply the matrix action, I get a system
+        of <m>m</m> equations with the entries of <m>u</m> as the
+        constants. The matrix encoding of this system is precisely
+        the extended matrix <m>(M|u)</m>.
+      </p>
+    </proof>
+    <p>
+      I can look at <m>\RR^2</m> to build intuition. Conider a
+      general matrix action in two variables. 
+      <me>
+        \begin{pmatrix} a \amp b \\ c \amp d \end{pmatrix}
+        \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x_0
+        \\ y_0 \end{pmatrix}
+      </me>
+    </p>
+    <p>
+      If I write this out in terms of coordinates, we get a
+      system. 
+      <md>
+        <mrow>
+          ax + by \amp  = x_0
+        </mrow>
+        <mrow>
+          cx + dy \amp  = y_0
+        </mrow>
+      </md>
+    </p>
+    <p>
+      This is the system associated to the extended matrix with
+      <m>\begin{pmatrix} x_0 \\ y_0 \end{pmatrix}</m> as constants.
+    </p>
+  </subsection>
+  <subsection xml:id="subsection-loci-preimages-systems">
+    <title>A Central Connection Idea</title>
+    <p>
+      At this point in the course, I have talked about loci, solved
+      linear systems, and now defined the preimage of a vector under a
+      transformation. Loci are very geometric, systems are very
+      algebraic, and preimages are again geometric but from a
+      different perspective (transformations instead of static
+      objects). Despite their different starting points, these three
+      are essentially all talking about the same thing. The connection
+      between all three is a major conceptual goal in this course; if
+      I can understand how these three novel and abstract definitions
+      fit together, that points me to a deep and thorough understanding
+      of the three concepts. Let me try to describe this connection.
+    </p>
+    <p>
+      Let me start with a linear system. This is a set of linear
+      equations, implicitly asking what values of the variables (if
+      any) solve all the equations simultaneously. To move to loci,
+      all I have to do is think geometrically. A locus is the set of
+      points that satisfy some equations (linear equations in this
+      course). So a locus is just the solution of a system, seen
+      geometrically. A locus is a solution space. I made this
+      connection before when I calculated the dimension of loci: the
+      dimension was the number of free parameters in the solution of
+      the associated system.
+    </p>
+    <p>
+      So what about pre-images? Conisider a <m>m \times n</m> matrix
+      <m>M</m>, representing a transformation <m>\RR^m \rightarrow
+      \RR^n</m>. For a vector <m>u</m> in <m>\RR^n</m>, I can ask for
+      the pre-image <m>M^{-1}\{ u\}</m>. This is all the vectors in
+      <m>\RR^m</m> which the matrix sends to <m>u</m> (this could
+      possibly be empty if none of the vectors are sent to <m>u</m>).
+      I can express this as a matrix equation: <m>v</m> is in the
+      preimage only if 
+      <me>
+        Mv = u
+      </me>.
+      But then I can look at the coordinates of this equation. Each
+      coordinate gives me a linear equation, so I get a system of
+      <m>m</m> linear equations (because <m>v \in \RR^m</m>, so it has
+      <m>m</m> coordinates). The constants of this linear system are
+      the components of <m>u</m>. The matrix of this linear system is
+      the extended matrix <m>(M|u)</m>. The solution to this linear
+      system can be interpreted as a locus. This locus (line, plane,
+      etc) is precisely all the points that <m>M</m> sends to
+      <m>u</m>. In this way, solutions spaces to systems, loci, and
+      preimages are all the same things and are all found by the matrix
+      <m>(M|u)</m>.
+    </p>
+    <p>
+      Specifically, the kernel is the linear space of all vectors
+      <m>v</m> with <m>Mv = 0</m>. This is a solution space for the
+      linear system with matrix <m>(M|0)</m>, where the column after
+      the dividing line is all zeroes. To calculate a kernel, I have
+      to solve a system where the constants are all zero. The matrix
+      of that system is just <m>M</m>, the matrix of the
+      transformation.
+    </p>
+  </subsection>
+</section>

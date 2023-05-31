@@ -1,0 +1,87 @@
+<!--
+  This assignment was used for the Fall 2022 term.
+-->
+<section xml:id="section-assignment-week5">
+  <title>Week 5 Assignment</title>
+  <p><ol>
+    <li>
+      <p>
+        Calculate the dimensions of these spans. (12)
+      </p>
+      <p><ol>
+        <li><me>
+          \Span \left \{
+            \begin{pmatrix}
+              0 \\ 1 \\ 0 \\ 1 
+            \end{pmatrix},
+            \begin{pmatrix}
+              3 \\ 1 \\ 0 \\ 2
+            \end{pmatrix},
+            \begin{pmatrix}
+              4 \\ 0 \\ 1 \\ -1
+            \end{pmatrix},
+            \begin{pmatrix}
+              1 \\ 0 \\ 1 \\ -2
+            \end{pmatrix},
+          \right\}
+        </me></li>
+        <li><me>
+          \Span \left \{
+            \begin{pmatrix}
+              1 \\ -1 \\ 2 
+            \end{pmatrix},
+            \begin{pmatrix}
+              3 \\ 1 \\ 1
+            \end{pmatrix},
+            \begin{pmatrix}
+              -1 \\ -2 \\ 3
+            \end{pmatrix},
+            \begin{pmatrix}
+              6 \\ -1 \\ -1 
+            \end{pmatrix},
+          \right\}
+        </me></li>
+        <li><me>
+          \Span \left \{
+            \begin{pmatrix}
+              1 \\ -1 \\ -1 \\ -1 \\ -1 
+            \end{pmatrix},
+            \begin{pmatrix}
+              0 \\ 1 \\ -1 \\ -1 \\ -1
+            \end{pmatrix},
+            \begin{pmatrix}
+              0 \\ 0 \\ 1 \\ -1 \\ -1 
+            \end{pmatrix}
+          \right\}
+        </me></li>
+      </ol></p>
+    </li>
+    <li>
+      <p>
+        Calculate the dimension of these loci. (12)
+      </p>
+      <p><ol>
+        <li>
+          The locus of the equations <m>w - x - y + z = 0</m> and
+          <m>2w + y + z = 3</m> in <m>\RR^4</m>.
+        </li>
+        <li>
+          The locus of the equations <m>x + y - z = 0</m> and <m>2x - 2y 
+          - z = 2</m> in <m>\RR^3</m>.
+        </li>
+        <li>
+          The locus of the equations <m>w - z = 0</m>, <m>w - x
+          = 0</m>, and <m>w - y = 0</m> in <m>\RR^4</m>.
+        </li>
+      </ol></p>
+    </li>
+    <li>
+      Let <m>u</m>, <m>v</m>, and <m>w</m> be vectors in
+      <m>\RR^4</m>. Prove that <m>u</m>, <m>v</m>, and <m>w</m> are
+      linearily independent if and only if there is a unique
+      direction (a unique non-zero vector up to scaling) that is
+      perpendicular to all three vectors. (Remember this is an `if
+      and only if' proof, so do both directions of implication.) (6) 
+    </li>
+  </ol></p>
+</section>

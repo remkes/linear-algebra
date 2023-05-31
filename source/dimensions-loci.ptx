@@ -1,0 +1,136 @@
+<section xml:id="section-dimensions-loci">
+  <title>Dimensions of Loci</title>
+    <p>
+      As with spans, I can use row-reduction of matrices to find the
+      dimension of a locus. In particular, I will be able to
+      determine if any of the equations are redundant. Recall that
+      I described any affine or linear subspace of <m>\RR^n</m> as
+      the locus of some finite number of linear equations: the set of
+      points that satisfy a list of equations.
+      <md>
+        <mrow>
+          a_{11} x_1 + a_{12} x_2 + \ldots a_{1n} x_n \amp  = c_1
+        </mrow>
+        <mrow>
+          a_{21} x_1 + a_{22} x_2 + \ldots a_{2n} x_n \amp  = c_2
+        </mrow>
+        <mrow>
+          \ldots \amp
+        </mrow>
+        <mrow>
+          a_{m1} x_1 + a_{m2} x_2 + \ldots a_{mn} x_n \amp  = c_m
+        </mrow>
+      </md>
+    </p>
+    <p>
+      This is just a system of linear equations, which has a
+      corresponding matrix.
+      <me>
+        \left( \begin{array}{cccc|c} 
+          a_{11} \amp a_{12} \amp \ldots \amp a_{1n} \amp c_1 \\ 
+          a_{21} \amp a_{22} \amp \ldots \amp a_{2n} \amp c_2 \\ 
+          \vdots \amp \vdots \amp \ldots \amp \vdots \amp \vdots \\ 
+          a_{11} \amp a_{12} \amp \ldots \amp a_{1n} \amp c_1 
+        \end{array} \right)
+      </me>
+    </p>
+    <p>
+      So, by definition, the locus of a set of linear equations is just
+      the geometric version of the solution space of the system of
+      linear equations. Loci and solution spaces are exactly the
+      same things; only loci are geometry, and solution spaces are
+      algebra. The dimension of a locus is the same dimension as a
+      solution space of a system. In <xref
+      ref="section-description-by-parameters" />, the dimension of a
+      solution space was determined by the free variables in the
+      reduced form of the matrix. Let me restate the result. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Consider a locus defined by a set of linear equations. Then
+          the dimension of the locus is the number of free variables
+          in the solution space of the matrix corresponding to the
+          system of the equations. If the matrix contains a row that
+          leads to a contradiction <m>0=1</m>, then the locus is
+          empty (and the dimension is not defined).
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      To understand a locus, I just solve the associated system. If
+      it has solutions, I count the free variables: that's the
+      dimension of the locus. I can get even more information from
+      this process.  When I row reduce the matrix <m>A</m>
+      corresponding to the linear system, the equations corresponding
+      to rows with leading ones (keeping track of exchanging rows, if
+      necessary) are equations that are necessary to define the
+      locus. Those that end up as rows without leading ones are
+      redundant, and the locus is unchanged if those equations are
+      removed.
+    </p>
+    <p>
+      If the ambient space is <m>\RR^n</m>, then the equations have
+      <m>n</m> variables. That is, there are <m>n</m> columns to the
+      left of the vertical line in the extended matrix. If the rank
+      of <m>A</m> is <m>k</m>, and there are no rows that reduce to
+      <m>0=1</m>, then there will be <m>n-k</m> columns without
+      leading ones, so <m>n-k</m> free variables. The dimension of
+      the locus is the ambient dimension <m>n</m> minus the rank of
+      the matrix <m>k</m>.
+    </p>
+    <p>
+      This fits the intuition for spans and loci. Spans are built up:
+      their dimension is equal to the rank of an associated matrix
+      since each leading one corresponds to a unique direction in the
+      span, adding to the dimension by one. Loci are restrictions down
+      from the total space: their dimension is the ambient dimension
+      minus the rank of an associated matrix, since each leading one
+      corresponds to a real restriction on the locus, dropping the
+      dimensions by one. In either case, the question of calculating
+      dimension boils down to the rank of an associated matrix.
+    </p>
+    <example>
+      <statement>
+        <p>
+          I'm going to repeat <xref
+          ref="example-description-by-parameters" /> to make the point
+          that nothing new is happening here: I'm just treating loci
+          as linear systems and looking at their solutions spaces.
+          Consider a locus in <m>\RR^4</m> defined by two equations.
+          <md>
+            <mrow>
+              w + 3y + 2z \amp = -3 
+            </mrow>
+            <mrow>
+              x - y - z \amp = -2 
+            </mrow>
+          </md>
+          The translation of this into a matrix is precisely the
+          matrix in <xref ref="example-description-by-parameters" />.
+          <me>
+            \left(\begin{array}{cccc|c}
+              1 \amp 0 \amp 3 \amp 2 \amp -3 \\
+              0 \amp 1 \amp -1 \amp -1 \amp -2 
+            \end{array} \right)
+          </me>
+          The equation is already in reduced row-echolon form. There
+          are two columns (other than the constant column) without
+          leading ones; therefore <m>y</m> and <m>z</m> are free
+          variables. The solution, in a description with free
+          parameters, is
+          <me>
+            \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
+            \begin{pmatrix} -3 \\ -2 \\ 0 \\ 0 \end{pmatrix} + y
+            \begin{pmatrix} -3 \\ 1 \\ 1 \\ 0 \end{pmatrix} + z
+            \begin{pmatrix} -2 \\ 1 \\ 0 \\ 1 \end{pmatrix}
+          </me>.
+        </p>
+        <p>
+          This is an affine subspace with dimension <m>2</m>. The number
+          of variables (<m>4</m>) minus the rank of the matrix
+          (<m>2</m>) also confirms this dimension. 
+        </p>
+      </statement>
+    </example>
+</section>

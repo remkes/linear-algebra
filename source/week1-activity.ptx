@@ -1,0 +1,758 @@
+<section xml:id="section-week1-activity">
+  <title>Week 1 Activity</title>
+  <subsection xml:id="subsection-activity-higher-dimensional-space">
+    <title>Higher-dimensional Space</title>
+    <activity>
+      <statement>
+        <p>
+          In 2-dimensional space, an infinitely long line divides the
+          space into two pieces: one cannot pass from one side of the
+          line to the other without crossing the line. In
+          3-dimensional space, however, an infinitely long line does
+          not do this; I can go around the line, and there isn't a
+          division of space into two halves.
+        </p>
+        <p>
+          In 3-dimensional space, an infinitely extended plane also
+          divides space into two pieces, and it is impossible to pass
+          from one side to the other without going across the plane.
+          In 4-dimensional space, does an infinitely extended plane
+          still divide it into two pieces, or can I go around it,
+          like I go around the line in 3-dimensional space?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a tricky thing to try to visualize (being that
+          4-dimensional space is not visualizable). However, I can
+          argue by analogy. How do I get around the line in
+          3-dimensions? I move to the side, then move past the line,
+          instead of running into it. I can do this because I have
+          two degrees of freedom in directions other than the direction
+          of the line.
+        </p>
+        <p>
+          The same thing works for a plane in 4-dimensional space.
+          While in 3-dimensional space, I only have one dimension of
+          movement apart from the plane. To get to the other side,
+          moving in this one degree of freedom, I have to cross the
+          plane. In 4-dimensional space, I have two other degrees of
+          freedom. Like getting around the line in 3-dimensional
+          space, I can move to the side, then move past the plane to
+          reach <q>the other side.</q> There really isn't another
+          side, much like a line in 3-dimensional space doesn't really
+          create two sides of space. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+         In 2-dimensional space, a square or rectangle is enough to
+         trap or contain something that lives in the plane. In
+         3-dimensional space, a cube (or other box) is enough to trap
+         or contain something. What do I need to contain something in
+         4-dimensional space? In 5-dimensional space?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To contain something in 4-dimensional space, I need a 
+          four dimensional box. Since I have four independent and free
+          directions of movement, I have to close of movement in all
+          four of these directions. This box will have a front/back, a
+          top/bottom, a left/right, and then an additional pair of
+          sides which block in the fourth direction of movement. In
+          five dimensional space, I need a five-dimensional box: it
+          will have a front/back, top/bottom, left/right, and two
+          other independent boundary pairs.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          In 2-dimensional space, the slices of a rectangle are lines.
+          In 3-dimensional space, the slices of a box are rectangles.
+          What are the slices of a 4-dimensional box? A 5-dimensional
+          box?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          By a <q>slice,</q> it seems I am referring to a piece of
+          the object of one smaller dimension. Therefore, the slices
+          of this four-dimensional box must be three-dimensional
+          boxes. In this way, I can think of a four-dimensional box
+          as an infinite stack of three-dimensional boxes, all stacked
+          in some new direction of movement. (The same way I can
+          think of a cube as an infinite stack of squares moving in a
+          direction perpendicular to the squares themselves).
+          Likewise, the slices of a five-dimensional box are
+          themselves four-dimensional boxes. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-vector-arithmetics">
+    <title>Vector Arithmetic</title>
+    <activity>
+      <statement>
+        <p>
+          Consider these vectors.
+          <md>
+            <mrow>
+              u \amp = \left( \begin{matrix} 3 \\ 0 \end{matrix} \right) 
+              \amp 
+              v \amp = \left( \begin{matrix} -2 \\ -1 \end{matrix} \right) 
+              \amp 
+              w \amp = \left( \begin{matrix} -3 \\ 2 \end{matrix} \right) 
+            </mrow>
+          </md>
+          Calculate and draw the following vectors. 
+          <md>
+            <mrow>
+              \amp -u 
+            </mrow>
+            <mrow>
+              \amp -v 
+            </mrow>
+            <mrow>
+              \amp -w 
+            </mrow>
+            <mrow>
+              \amp u+v
+            </mrow>
+            <mrow>
+              \amp u+w
+            </mrow>
+            <mrow>
+              \amp v+w
+            </mrow>
+            <mrow>
+              \amp u-v
+            </mrow>
+            <mrow>
+              \amp v-u
+            </mrow>
+            <mrow>
+              \amp u-w
+            </mrow>
+            <mrow>
+              \amp w-u
+            </mrow>
+            <mrow>
+              \amp v-w
+            </mrow>
+            <mrow>
+              \amp w-v
+            </mrow>
+          </md>
+          In addition, calcluate these lengths. 
+          <md>
+            <mrow>
+              \amp |u|
+            </mrow>
+            <mrow>
+              \amp |v|
+            </mrow>
+            <mrow>
+              \amp |w|
+            </mrow>
+            <mrow>
+              \amp |u-v|
+            </mrow>
+            <mrow>
+              \amp |u-w|
+            </mrow>
+            <mrow>
+              \amp |v-w|
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I'll do the arithmetic one by one. Then, at the end, all
+          the vectors will be drawn in
+          <xref ref="figure-vector-arithmetic" />.
+          <md>
+            <mrow>
+              \amp -u = - \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) = \left( \begin{matrix} -3 \\ 0 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp -v = - \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) = \left( \begin{matrix} 2 \\ 1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp -w = - \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} 3 \\ -2 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u+v = \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) + \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) = \left( \begin{matrix} 1 \\ -1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u+w = \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) + \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} 0 \\ 2 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp v+w = \left( \begin{matrix} -2 \\ - 1 \end{matrix}
+              \right) + \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} -5 \\ 1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u-v = \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) - \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) = \left( \begin{matrix} 5 \\ 1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp v-u = \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) - \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) = \left( \begin{matrix} -5 \\ -1 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u-w = \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) - \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} 6 \\ -2 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp w-u = \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) - \left( \begin{matrix} 3 \\ 0 \end{matrix}
+              \right) = \left( \begin{matrix} -6 \\ 2 \end{matrix}
+              \right)
+            </mrow>
+            <mrow>
+              \amp v-w = \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) - \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) = \left( \begin{matrix} 1 \\ -3 \end{matrix}
+              \right)
+            </mrow>
+            <mrow>
+              \amp w-v = \left( \begin{matrix} -3 \\ 2 \end{matrix}
+              \right) - \left( \begin{matrix} -2 \\ -1 \end{matrix}
+              \right) = \left( \begin{matrix} -1 \\ 3 \end{matrix}
+              \right) 
+            </mrow>
+          </md>
+        </p>
+        <figure xml:id="figure-vector-arithmetic">
+          <caption>Vector Arithmetic</caption>
+          <image xml:id="figure10" width="80%">
+            <asymptote>
+              size(12cm,8cm);
+              import graph;
+
+              xlimits(-7,7);
+              ylimits(-4,4);
+
+              xaxis("$x$",Ticks("%"));
+              yaxis("$y$",Ticks("%"));
+
+              draw((0,0)--(3,0),Arrow); 
+              draw((0,0)--(-2,-1),Arrow); 
+              draw((0,0)--(-3,2),Arrow); 
+              draw((0,0)--(-3,0),Arrow); 
+              draw((0,0)--(2,1),Arrow); 
+              draw((0,0)--(3,-2),Arrow); 
+              draw((0,0)--(1,-1),Arrow); 
+              draw((0,0)--(0,2),Arrow); 
+              draw((0,0)--(-5,1),Arrow); 
+              draw((0,0)--(5,1),Arrow); 
+              draw((0,0)--(-5,-1),Arrow); 
+              draw((0,0)--(6,-2),Arrow); 
+              draw((0,0)--(-6,2),Arrow); 
+              draw((0,0)--(1,-3),Arrow); 
+              draw((0,0)--(-1,3),Arrow); 
+              
+              draw((3,0)--(5,3),dotted);
+              draw((1,-1)--(5,-4),dotted);
+              draw((-3,0)--(-5,-3),dotted);
+              draw((0,2)--(0.5,3),dotted);
+            
+              label("$u$",(5,3),E);
+              label("$v$",(-2,-1),SW);
+              label("$w$",(-3,2),NW);
+              label("$-u$",(-6,-3),SE);
+              label("$-v$",(2,1),NE);
+              label("$-w$",(3,-2),SE);
+              label("$u+v$",(5,-4),E);
+              label("$u+w$",(0.5,3),E);
+              label("$v+w$",(-5,1),W);
+              label("$u-v$",(5,1),E);
+              label("$v-u$",(-5,-1),W);
+              label("$u-w$",(6,-2),E);
+              label("$w-u$",(-6,2),W);
+              label("$v-w$",(1.8,-3),S);
+              label("$w-v$",(-1,3),NW);
+            </asymptote>
+          </image>
+        </figure>
+        <p>
+          In addition, calcluate these lengths. 
+          <md>
+            <mrow>
+              \amp |u| = \sqrt{3^2 + 0^2} = \sqrt{9} = 3 
+            </mrow>
+            <mrow>
+              \amp |v| = \sqrt{(-2)^2 + (-1)^2} = \sqrt{5} 
+            </mrow>
+            <mrow>
+              \amp |w| = \sqrt{(-3)^2 + 2^2} = \sqrt{13} 
+            </mrow>
+            <mrow>
+              \amp |u-v| = \sqrt{5^2 + 1^2} = \sqrt{26} 
+            </mrow>
+            <mrow>
+              \amp |u-w| = \sqrt{6^2 + (-2)^2} = \sqrt{40} = 2
+              \sqrt{10} 
+            </mrow>
+            <mrow>
+              \amp |v-w| = \sqrt{1^2 + (-3)^2} = \sqrt{10} 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Consider these vectors.
+          <md>
+            <mrow>
+              u \amp = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) 
+              \amp 
+              v \amp = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
+              \end{matrix} \right) 
+              \amp 
+              w \amp = \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          Calculate the following vectors and length. (Since this is
+          in <m>\RR^5</m>, drawing these is no longer an option.)
+          <md>
+            <mrow>
+              \amp -u 
+            </mrow>
+            <mrow>
+              \amp -v 
+            </mrow>
+            <mrow>
+              \amp -w 
+            </mrow>
+            <mrow>
+              \amp u+v
+            </mrow>
+            <mrow>
+              \amp u+w
+            </mrow>
+            <mrow>
+              \amp v+w
+            </mrow>
+            <mrow>
+              \amp u-v
+            </mrow>
+            <mrow>
+              \amp v-u
+            </mrow>
+            <mrow>
+              \amp u-w
+            </mrow>
+            <mrow>
+              \amp w-u
+            </mrow>
+            <mrow>
+              \amp v-w
+            </mrow>
+            <mrow>
+              \amp w-v
+            </mrow>
+            <mrow>
+              \amp |u|
+            </mrow>
+            <mrow>
+              \amp |v|
+            </mrow>
+            <mrow>
+              \amp |w|
+            </mrow>
+            <mrow>
+              \amp |u-v|
+            </mrow>
+            <mrow>
+              \amp |u-w|
+            </mrow>
+            <mrow>
+              \amp |v-w|
+            </mrow>
+          </md>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I'll do the calculation one by one. 
+          <md>
+            <mrow>
+              \amp -u = - \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\
+              1 \end{matrix} \right) = \left( \begin{matrix} -6 \\ 0
+              \\ 1 \\ 1 \\ -1 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp -v = - \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\
+              1 \end{matrix} \right) \left( \begin{matrix} -3 \\ 3 \\
+              -1 \\ 3 \\ -1 \end{matrix} \right)
+            </mrow>
+            <mrow>
+              \amp -w = - \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
+              \end{matrix} \right) = \left( \begin{matrix} 0 \\ 1 \\ 0
+              \\ -3 \\ -5 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp u+v = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) + \left( \begin{matrix} 3 \\ -3 \\
+              1 \\ -3 \\ 1 \end{matrix} \right) = \left(
+              \begin{matrix} 9 \\ -3 \\ 0 \\ -4 \\ 2 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u+w = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) + \left( \begin{matrix} 0 \\ -1 \\
+              0 \\ 3 \\ 5 \end{matrix} \right) = \left( \begin{matrix}
+              6 \\ -1 \\ -1 \\ 2 \\ 6 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp v+w = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
+              \end{matrix} \right) + \left( \begin{matrix} 0 \\ -1 \\
+              0 \\ 3 \\ 5 \end{matrix} \right) = \left( \begin{matrix}
+              3 \\ -4 \\ 1 \\ 0 \\ 6 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp u-v = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) - \left( \begin{matrix} 3 \\ -3 \\
+              1 \\ -3 \\ 1 \end{matrix} \right) = \left(
+              \begin{matrix} 3 \\ 3 \\ -2 \\ 2 \\ 0 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp v-u = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
+              \end{matrix} \right) - \left( \begin{matrix} 6 \\ 0 \\
+              -1 \\ -1 \\ 1 \end{matrix} \right) = \left(
+              \begin{matrix} -3 \\ -3 \\ 2 \\ -2 \\ 0 \end{matrix}
+              \right) 
+            </mrow>
+            <mrow>
+              \amp u-w = \left( \begin{matrix} 6 \\ 0 \\ -1 \\ -1 \\ 1
+              \end{matrix} \right) - \left( \begin{matrix} 0 \\ -1 \\
+              0 \\ 3 \\ 5 \end{matrix} \right) = \left( \begin{matrix}
+              6 \\ 1 \\ -1 \\ -4 \\ -4 \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp w-u = \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
+              \end{matrix} \right) - \left( \begin{matrix} 6 \\ 0 \\
+              -1 \\ -1 \\ 1 \end{matrix} \right) = \left(
+              \begin{matrix} -6 \\ -1 \\ 1 \\ 4 \\ 4 \end{matrix}
+              \right)
+            </mrow>
+            <mrow>
+              \amp v-w = \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1
+              \end{matrix} \right) - \left( \begin{matrix} 0 \\ -1 \\
+              0 \\ 3 \\ 5 \end{matrix} \right) = \left( \begin{matrix}
+              3 \\ -2 \\ 1 \\ -6 \\ -4 \end{matrix} \right)
+            </mrow>
+            <mrow>
+              \amp w-v = 
+              \left( \begin{matrix} 0 \\ -1 \\ 0 \\ 3 \\ 5
+              \end{matrix} \right) - 
+              \left( \begin{matrix} 3 \\ -3 \\ 1 \\ -3 \\ 1 
+              \end{matrix} \right) =
+              \left( \begin{matrix} -3 \\ 2 \\ -1 \\ 6 \\ 4
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              \amp |u| = \sqrt{6^2 + 0^2 + (-1)^2 + (-1)^2 + 1^2} =
+              \sqrt{39} 
+            </mrow>
+            <mrow>
+              \amp |v| = \sqrt{3^2 + (-3)^2 + 1^2 + (-3)^2 + 1^2} =
+              \sqrt{29} 
+            </mrow>
+            <mrow>
+              \amp |w| = \sqrt{0^2 + (-1)^2 + 0^2 + 3^2 + 5^2} =
+              \sqrt{35} 
+            </mrow>
+            <mrow>
+              \amp |u-v| = \sqrt{3^2 + 3^2 + (-2)^2 + 2^2 + 0^2} =
+              \sqrt{26} 
+            </mrow>
+            <mrow>
+              \amp |u-w| = \sqrt{6^2 + 1^2 + (-1)^2 + (-4)^2 + (-4)^2} =
+              \sqrt{70} 
+            </mrow>
+            <mrow>
+              \amp |v-w| = \sqrt{3^2 + (-2)^2 + 1^2 + (-6)^2 + (-4)^2}
+              = \sqrt{66} 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-week1-proofs">
+    <title>Proof Questions</title>
+    <activity>
+      <statement>
+        <p>
+          If <m>a \in \RR</m> and <m>u \in \RR^3</m>, prove that <m>|au|
+          = |a||u|</m>. (Use the definition of scalar multiplication
+          and the definition of length of a vector. Start with the
+          left side and try to turn it into the right or vice-versa.
+          Do not reduce both equations to equivalent expressions --
+          that's not a valid proof technique. You may try
+          some examples out if you wish, but your final solution
+          should be general. Finally, note that the notation here is a
+          bit subtle: <m>|au|</m> and <m>|u|</m> are the lengths of
+          vectors, defined by Pythagorean calculations, but <m>|a|</m>
+          is just the absolute value of a real number.)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I will start with the left side and try to manipulate it
+          into the right side. I'll write <m>u</m> in components and
+          use the definition of the scalar multiplication to start.
+          <me>
+            |au| = \left| a \left( \begin{matrix} u_1 \\ u_2 \\ u_3
+            \end{matrix} \right) \right| = \left| \left(
+            \begin{matrix} au_1 \\ au_2 \\ au_3 \end{matrix} \right)
+            \right|
+          </me>
+          This is the definition of scalar multiplication: multiply
+          the scalar by each component of the vector. Now I use the
+          square root definition of the length of a vector. 
+          <me>
+            \left| \left( \begin{matrix} au_1 \\ au_2 \\ au_3
+            \end{matrix} \right) \right| = \sqrt{(au_1)^2 + (au_2)^2 +
+            (au_3)^2} 
+          </me>
+          Now I need to do some algebra with the square root. I can
+          distribute the exponent, using the exponent rule <m>(xy)^a =
+          x^ay^a</m>.
+          <me>
+            \sqrt{(au_1)^2 + (au_2)^2 + (au_3)^2} = \sqrt{a^2 u_1^2 +
+            a^2 u_2^2 + a_2u_3^2}
+          </me>
+          Now I can factor out the <m>a^2</m>. Once it is factored out,
+          I can also remove it from the square root. 
+          <me>
+            \sqrt{a^2 u_1^2 + a^2 u_2^2 + a_2u_3^2} = \sqrt{a^2(u_1^2
+            + u_2^2 + u_3^2)} = |a| \sqrt{u_1^2 + u_2^2 + u_3^2}
+          </me>
+          When I take <m>a^2</m> out of the square root, since the
+          square root also returns a positive number, I don't get
+          <m>a</m> back. If <m>a</m> was negative to start, then I will
+          have turned <m>a</m> from negative to positive. Therefore, I get
+          the absolute value of <m>a</m> back. Finally, I can recognize
+          the remaining term as the definition of the length of a
+          vector. 
+          <me>
+            |a| \sqrt{u_1^2 + u_2^2 + u_3^2} = |a| |u| 
+          </me>
+        </p>
+        Now I have started with the left side and produced the right.
+        This proves that <m>|au| = |a||u|</m>, as desired. 
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          If <m>u</m> and <m>v</m> are vectors in <m>\RR^3</m>, prove
+          that <m>|u-v| = |v-u|</m>. Then adapt your argument to work
+          for vectors in <m>\RR^n</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I will write <m>u</m> and <m>v</m> in components, take
+          their difference and then apply the length operation. I will
+          start with the left side and try to produce the right. 
+          <me>
+            |u-v| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ u_3
+            \end{matrix} \right) - \left( \begin{matrix} v_1 \\ v_2 \\
+            v_3 \end{matrix} \right) \right|
+          </me>
+          The difference is done componentwise. 
+          <me>
+            \left| \left( \begin{matrix} u_1 \\ u_2 \\ u_3
+            \end{matrix} \right) - \left( \begin{matrix} v_1 \\ v_2 \\
+            v_3 \end{matrix} \right) \right| = 
+            \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\ u_3
+            - v_3 \end{matrix} \right) \right| 
+          </me>
+          Then I use the square root definition of the length.
+          <me>
+            \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\ u_3
+            - v_3 \end{matrix} \right) \right| = \sqrt{(u_1-v_1)^2 +
+            (u_2-v_2)^2 + (u_3-v_3)^2}
+          </me>
+          Now, each of the three terms is square. Since they are
+          square, any positive or negative will become positive since
+          squares are always positive. Therefore, I could multiply by
+          <m>(-1)</m> inside the square root to no effect. This
+          will interchange the order of the difference in each term.
+          <me>
+            \sqrt{(u_1-v_1)^2 + (u_2-v_2)^2 + (u_3-v_3)^2} = 
+            \sqrt{(v_1-u_1)^2 + (v_2-u_2)^2 + (v_3-u_3)^2} 
+          </me>
+          Then I repeat the steps from before in reverse. This is the
+          definition of the length of a vector with the terms in the
+          squares as components. 
+          <me>
+            \sqrt{(v_1-u_1)^2 + (v_2-u_2)^2 + (v_3-u_3)^2} = \left|
+            \left( \begin{matrix} v_1 - u_1 \\ v_2 - u_2 \\ v_3 - u_3 
+            \end{matrix} \right) \right|
+          </me>
+          Since each term is a difference, I can write this as the
+          difference of two vectors. 
+          <me>
+            \left| \left( \begin{matrix} v_1 - u_1 \\ v_2 - u_2 \\ v_3
+            - u_3 \end{matrix} \right) \right| = \left| \left(
+            \begin{matrix} v_1 \\ v_2 \\ v_3 \end{matrix} \right) -
+            \left( \begin{matrix} u_1 \\ u_2 \\ u_3 \end{matrix}
+            \right) \right| 
+          </me>
+          Finally, these are just the component of the vectors
+          <m>u</m> and <m>v</m>. 
+          <me>
+            = \left| \left( \begin{matrix} v_1 \\ v_2 \\ v_3
+            \end{matrix} \right) - \left( \begin{matrix} u_1 \\ u_2 \\
+            u_3 \end{matrix} \right) \right| = |v-u|
+          </me>
+          I have started from the left and produced the right in a
+          string of equality, so I have proven the desired result. 
+        </p>
+        <p>
+          If I wanted to adapt this to a more general proof for
+          <m>\RR^n</m>, the steps of the proof would be identical, but
+          I would have vectors with <m>n</m> components instead of
+          just three components. I would use ellipses to indicate the
+          list of components. The proof would start like this.
+          <me>
+            |u-v| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots
+            \\ u_n \end{matrix} \right) - \left( \begin{matrix} v_1 \\
+            v_2 \\ \\ \vdots \\ v_n \end{matrix} \right) \right|
+          </me>
+          The difference is done componentwise. 
+          <me>
+            \left| \left( \begin{matrix} u_1 \\ u_2 \\\vdots \\  u_n
+            \end{matrix} \right) - \left( \begin{matrix} v_1 \\ v_2 \\
+            \vdots \\ v_n \end{matrix} \right) \right| = 
+            \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\
+            \vdots \\ u_n - v_n \end{matrix} \right) \right| 
+          </me>
+          I won't repeat all the steps, but they would proceed exactly
+          in the same sequence as before, resulting in <m>|v-u|</m>
+          eventually at the end. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that the zero vector is the <em>only</em> vector in 
+          <m>\RR^n</m> of length zero. (To prove that it is the only
+          vector with this property, assume that <m>u \in \RR^n</m> is
+          a vector with length zero and prove that <m>u</m> must be the
+          zero vector. This will show that the zero vector is the
+          only vector with the desired property). 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>u</m> be an arbitrary vector in <m>\RR^n</m> of
+          length 0. I will start by writing <m>u</m> in components and
+          use the definition of length. Note I need ellipses to show
+          all the components of <m>u</m>, since I am working in an
+          arbitrary dimension <m>n</m>. 
+          <me>
+            |u| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots \\
+            u_n \end{matrix} \right) \right|
+          </me>
+          Then I use the definition of length. By assumption, I set
+          this length equal to zero. 
+          <me>
+            |u| = \sqrt{(u_1)^2 + (u_2)^2 + \ldots + (u_n)^2} = 0 
+          </me>
+          I can square both sides of the equation.
+          <me>
+            \left( \sqrt{(u_1)^2 + (u_2)^2 + \ldots + (u_n)^2}
+            \right)^2 = 0^2 
+          </me>
+          The square root and squaring cancel each other out. 
+          <me>
+            (u_1)^2 + (u_2)^2 + \ldots + (u_n)^2 = 0
+          </me>
+          On the left, I have the sum of a bunch of non-negative
+          numbers (since the square of any real number must be zero or
+          postive). On the right I have zero. The only way that a
+          bunch of non-negative numbers add up to zero is if they are
+          all zero to begin with. Therefore, I see that for each
+          index <m>i</m>, the component <m>u_i</m> must be zero. But
+          that means that 
+          <me>
+            \left( \begin{matrix} u_1 \\ u_2 \\ \vdots \\ u_n 
+            \end{matrix} \right) =
+            \left( \begin{matrix} 0 \\ 0 \\ \vdots \\ 0 
+            \end{matrix} \right)
+          </me>
+          This is precisely the definition of the zero vector: the
+          vector where all components are zero. Therefore, <m>u</m>
+          must be the zero vector. To conclude, I assumed that
+          <m>u</m> had length zero and thus concluded that it must be the
+          zero vector. This proved that the zero vector is the only
+          vector with length zero. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-week1-concepts">
+    <title>Conceptual Review Questions</title>
+    <p>
+      <ul>
+        <li>
+          How is it reasonable to talk about higher-dimensional
+          geometric spaces?
+        </li>
+        <li>
+          What is cartesian or euclidean space? What are coordinates?
+        </li>
+        <li>
+          What is a vector?
+        </li>
+        <li>
+          What is a scalar?
+        </li>
+        <li>
+          How is vector arithmetic similar to and different from number
+          arithmetic.
+        </li>
+        <li>
+          What is the length of a vector? 
+        </li>
+      </ul>
+    </p>
+  </subsection>
+</section>

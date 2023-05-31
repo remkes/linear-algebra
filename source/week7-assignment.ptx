@@ -1,0 +1,129 @@
+<!--
+  This assignment was used for the Fall 2022 term.
+-->
+<section xml:id="section-assignment-week7">
+  <title>Week 7 Assignment</title>
+  <ol>
+    <li>
+      <p>
+        Invert these matrices. (Show the steps of your process, but
+        you can use a computer for the row reductions.) (9)
+        <ol>
+          <li><me>
+            \begin{pmatrix}
+              0 \amp 1 \amp 2 \\
+              -2 \amp 0 \amp -3 \\
+              1 \amp 1 \amp 3
+            \end{pmatrix}
+          </me></li>
+          <li><me>
+            \begin{pmatrix}
+              6 \amp 0 \amp 1 \\
+              -1 \amp 0 \amp 7 \\
+              2 \amp -1 \amp -2
+            \end{pmatrix}
+          </me></li>
+          <li><me>
+            \begin{pmatrix}
+              1 \amp 1 \amp 1 \amp 1 \amp -1 \\
+              1 \amp 1 \amp 1 \amp -1 \amp 1 \\
+              1 \amp 1 \amp -1 \amp 1 \amp 1 \\
+              1 \amp -1 \amp 1 \amp 1 \amp 1 \\
+              -1 \amp 1 \amp 1 \amp 1 \amp 1 \\
+            \end{pmatrix}
+          </me></li>
+        </ol>
+      </p>
+    </li>
+    <li>
+      <p>
+        Consider the transformation defined by this matrix. (6)
+        <me>
+          \begin{pmatrix}
+            0 \amp -4 \amp -4\\
+            9 \amp -1 \amp -2 \\
+            0 \amp 1 \amp 5
+          \end{pmatrix}
+        </me>
+      </p>
+      <ol>
+        <li><p>
+          What does this matrix do to this line?
+          <me>
+            \Span \left\{ \begin{pmatrix}
+              4 \\ 0 \\-7 
+            \end{pmatrix} \right\} 
+          </me>
+        </p></li>
+        <li><p>
+          What does this matrix do to the plane given by this
+          equation?
+          <me>
+            x + y + 2z  = 0 
+          </me>.
+        </p></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Consider this matrix and its associated transformation. (8) 
+        <me>
+          \begin{pmatrix}
+            -2 \amp 0 \amp 3 \\
+            1 \amp 4 \amp -1 \\
+            -1 \amp -1 \amp 2
+          \end{pmatrix}
+        </me>
+      </p>
+      <ol>
+        <li><p>
+          Find a basis for the kernel and state its dimension.
+        </p></li>
+        <li><p>
+          Find a basis for the image and state its dimension.
+        </p></li>
+        <li><p>
+          Check that the dimension of the image and the kernel add up
+          to the dimension of the domain.
+        </p></li>
+        <li><p>
+          Find the rank of the matrix. 
+        </p></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Consider this matrix and its associated transformation. (8) 
+        <me>
+          \begin{pmatrix}
+            3 \amp -1 \amp 2 \amp 0 \amp 1 \\
+            4 \amp 0 \amp 1 \amp 2 \amp 0 \\
+            0 \amp 0 \amp -3 \amp -3 \amp 1 
+          \end{pmatrix}
+        </me>
+      </p>
+      <ol>
+        <li><p>
+          Find a basis for the kernel and state its dimension.
+        </p></li>
+        <li><p>
+          Find a basis for the image and state its dimension.
+        </p></li>
+        <li><p>
+          Check that the dimension of the image and the kernel add up
+          to the dimension of the domain.
+        </p></li>
+        <li><p>
+          Find the rank of the matrix. 
+        </p></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        How many transformation <m>\RR^3 \rightarrow \RR^4</m> have a
+        trivial kernel? What about maps <m>\RR^3 \rightarrow
+        \RR^2</m>? What do these maps do, geometrically? (6)
+      </p>
+    </li>
+  </ol>
+</section>

@@ -1,0 +1,1245 @@
+<section xml:id="section-week2-activity">
+  <title>Week 2 Activity</title>
+  <subsection xml:id="subsection-activity-dot-products">
+    <title>Dot Products</title>
+    <p>
+      Thoughout this activity, (WA) means that I used Wolfram Alpha to
+      calculate an approximate value. 
+    </p>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              4 \\ -2 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              4 \\ -2 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -1 
+            \end{matrix} \right) = (4)(0) + (-2)(-1) = 2
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -2 \\ -7 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -2 \\ -7 
+            \end{matrix} \right) = (2)(-2) + (3)(-7) = -25 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              19 \\ -29 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              19 \\ -29 
+            \end{matrix} \right) = (0)(19) + (0)(-29) = 0 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              \frac{1}{4} \\ \frac{-4}{7} 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \frac{-2}{7} \\ \frac{-4}{5}
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin
+              {matrix} \frac{1}{4} \\ \frac{-4}{7} 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \frac{-2}{7} \\ \frac{-4}{5} 
+            \end{matrix} \right) = \frac{1}{4} \frac{-2}{7} +
+            \frac{-4}{7} \frac{-4}{5} = \frac{-1}{14} + \frac{16}{35}
+            = \frac{-5}{70} + \frac{32}{70} = \frac{27}{70} 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              -2 \\ 1 \\ 1 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -1 \\ 9 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              -2 \\ 1 \\ 1 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -1 \\ 9 
+            \end{matrix} \right) = (-2)(0) + (1)(-1) + (1)(9) = 8 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              4 \\ -2 \\ -6 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -6 \\ -7 \\ -2 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              4 \\ -2 \\ -6 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -6 \\ -7 \\ -2 
+            \end{matrix} \right) = (4)(-6) + (-2)(-7) + (-6)(-2) = 2
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              \sqrt{2} \\ 4 \\ \sqrt[3]{2}
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \sqrt{7} \\ \pi^2 \\ 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              \sqrt{2} \\ 4 \\ \sqrt[3]{2}
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \sqrt{7} \\ \pi^2 \\ 0 
+            \end{matrix} \right) = (\sqrt{2})(\sqrt{7}) + (4)(\pi^2) +
+            (\sqrt[3]{2})(0) = \sqrt{14} + 4 \pi^2 
+          </me>
+          There isn't really a simpler way to write this number. This
+          form is just fine. If I wanted an approximate value, I
+          could ask a computer (WA): <m>\sqrt{14} +
+          4 \pi^2 \doteq 217.78</m>. (When you write approximate
+          values, please use this equals with a dot to indicate that
+          this is approximately equal to, not exactly equal to.) 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 0 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              \sqrt{\pi} \\ \frac{1}{e^2+6} \\
+            \sqrt{1 + \sqrt{8}}
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 0 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} \sqrt{\pi} \ \frac{1}{e^2+6} \\
+            \sqrt{1 + \sqrt{8}}
+            \end{matrix} \right) = 0 
+          </me>
+          No matter how complicated the other vector is, anything
+          multiplied by zero is still zero. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              -2 \\ -3 \\ 1 \\ 4 \\ -2 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -6 \\ -5 \\ 2 \\ -2 \\ 3 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <md>
+            <mrow>
+              \left( \begin{matrix} 
+                -2 \\ -3 \\ 1 \\ 4 \\ -2 
+              \end{matrix} \right) \cdot
+              \left( \begin{matrix} 
+                -6 \\ -5 \\ 2 \\ -2 \\ 3
+              \end{matrix} \right) \amp = (-2)(-6) + (-3)(-5) + (1)(2) +
+              (4)(-2) + (-2)(3) 
+            </mrow>
+            <mrow>
+              \amp = 12 + 15 + 2 - 8 - 6 = 15
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              6 \\ -7 \\ 1 \\ 0 \\ -2 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              -2 \\ 4 \\ -3 \\ -3 \\ -4 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <md>
+            <mrow>
+             \left( \begin{matrix} 
+               6 \\ -7 \\ 1 \\ 0 \\ -2 
+             \end{matrix} \right) \cdot
+             \left( \begin{matrix} 
+                -2 \\ 4 \\ -3 \\ -3 \\ -4 
+              \end{matrix} \right) \amp = (6)(-2) + (-7)(4) + (1)(-3) +
+              (0)(-3) + (-2)(-4) 
+            </mrow>
+            <mrow>
+              \amp = -12 - 28 - 3 + 0 + 8 = -35
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate the dot product.
+          <me>
+            \left( \begin{matrix} 
+              5 \\ -3 \\ -7 \\ 10 \\ 1 \\ 0 
+            \end{matrix} \right) \cdot
+            \left( \begin{matrix} 
+              0 \\ -2 \\ 0 \\ -4 \\ -4 \\ 0
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The dot product is calculated by multiplying matching
+          components and adding these products together. 
+          <md>
+            <mrow>
+              \left( \begin{matrix} 
+                5 \\ -3 \\ -7 \\ 10 \\ 1 \\ 0 
+              \end{matrix} \right) \cdot
+              \left( \begin{matrix} 
+                0 \\ -2 \\ 0 \\ -4 \\ -4 \\ 0
+              \end{matrix} \right) \amp = (5)(0)  + (-3)(-2) + (-7)(0)
+              + (10)(-4) + (1)(-4) + (0)(0) 
+            </mrow>
+            <mrow>
+              \amp = 0 + 6 + 0 - 40 - 4 + 0 = -38 
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-angles-between-vectors">
+    <title>Angles Between Vectors</title>
+    <activity>
+      <statement>
+        <p>
+          Find the angle between these two vectors.
+          <me>
+            u = \left( \begin{matrix} 
+              -2 \\ -5 
+            \end{matrix} \right) \text{ and }
+            v = \left( \begin{matrix} 
+              3 \\ -4 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cosine of the angle between two vectors is the dot
+          product divided by the product of the lengths. I'll
+          calculate the three pieces of this and put them into the
+          expression for the cosine of the angle. 
+          <md>
+            <mrow>
+              \cos \theta \amp = \frac{u \cdot v}{|u||v|}
+            </mrow>
+            <mrow>
+              |u| \amp = \sqrt{(-2)^2 + (-5)^2} = \sqrt{29} 
+            </mrow>
+            <mrow>
+              |v| \amp = \sqrt{3^2 + (-4)^2} = \sqrt{25} = 5 
+            </mrow>
+            <mrow>
+              u \cdot v \amp = \left( \begin{matrix} 
+                -2 \\ -5 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix} 
+                3 \\ -4 
+              \end{matrix} \right) = (-2)(3) + (-5)(-4) = 14
+            </mrow>
+            <mrow>
+              \cos \theta \amp = \frac{14}{5 \sqrt{29}}
+            </mrow>
+          </md>
+          Then I can ask a computer (WA) to give me the inverse
+          cosine to get an approximation for the angle. (All angles
+          are given in radians. The inverse cosine function will give
+          an angle between 0 and <m>\pi</m>, which is good since the
+          angle between two vector should be bounded by <m>\pi</m>
+          radians.) 
+          <me>
+            \theta = \arccos \frac{14}{5\sqrt{29}} 
+            \doteq 1.024
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Find the angle between these two vectors.
+          <me>
+            u = \left( \begin{matrix} 
+              1 \\ 3 
+            \end{matrix} \right) \text{ and }
+            v = \left( \begin{matrix} 
+              1 \\ 7 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cosine of the angle between two vectors is the dot
+          product divided by the product of the lengths. I'll
+          calculate the three pieces of this and put them into the
+          expression for the cosine of the angle. 
+          <md>
+            <mrow>
+              \cos \theta \amp = \frac{u \cdot v}{|u||v|}
+            </mrow>
+            <mrow>
+              |u| \amp = \sqrt{1^2 + 3^2} = \sqrt{10} 
+            </mrow>
+            <mrow>
+              |v| \amp = \sqrt{1^2 + 7^2} = \sqrt{50} 
+            </mrow>
+            <mrow>
+              u \cdot v \amp = \left( \begin{matrix} 
+                1 \\ 3
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix} 
+                1 \\ 7 
+              \end{matrix} \right) =  (1)(1) + (3)(7) = 22
+            </mrow>
+            <mrow>
+              \cos \theta \amp = \frac{22}{\sqrt{500}} =
+              \frac{22}{10\sqrt{5}} = \frac{11}{5\sqrt{5}}
+            </mrow>
+          </md>
+          Then I can ask a computer (WA) to give me the inverse
+          cosine to get an approximation for the angle.
+          <me>
+            \theta = \arccos \frac{11}{5\sqrt{5}}
+            \doteq 0.180
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Find the angle between these two vectors.
+          <me>
+            u = \left( \begin{matrix} 
+              0 \\ 1 \\ 2 
+            \end{matrix} \right) \text{ and }
+            v = \left( \begin{matrix} 
+              1 \\ -2 \\ -2 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cosine of the angle between two vectors is the dot
+          product divided by the product of the lengths. I'll
+          calculate the three pieces of this and put them into the
+          expression for the cosine of the angle. 
+          <md>
+            <mrow>
+              \cos \theta \amp = \frac{u \cdot v}{|u||v|}
+            </mrow>
+            <mrow>
+              |u| \amp = \sqrt{0^2 + 1^2 + 2^2} = \sqrt{5} 
+            </mrow>
+            <mrow>
+              |v| \amp = \sqrt{1^2 + (-2)^2 + (-2)^2} = \sqrt{9} = 3 
+            </mrow>
+            <mrow>
+              u \cdot v \amp = \left( \begin{matrix} 
+                0 \\ 1 \\ 2
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix} 
+                1 \\ -2 \\ -2 
+              \end{matrix} \right) = (0)(1) + (1)(-2) + (2)(-2) = -6
+            </mrow>
+            <mrow>
+              \cos \theta \amp = \frac{-6}{3\sqrt{5}}
+            </mrow>
+          </md>
+          Then I can ask a computer (WA) to give me the inverse
+          cosine to get an approximation for the angle.
+          <me>
+            \theta = \arccos \frac{-6}{3\sqrt{5}}
+            \doteq 2.678
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Find the angle between these two vectors.
+          <me>
+            u = \left( \begin{matrix} 
+              -4 \\ 1 \\ 1 
+            \end{matrix} \right) \text{ and }
+            v = \left( \begin{matrix} 
+              2 \\ 4 \\ 4 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cosine of the angle between two vectors is the dot
+          product divided by the product of the lengths. I'll
+          calculate the three pieces of this and put them into the
+          expression for the cosine of the angle. 
+          <md>
+            <mrow>
+              \cos \theta \amp = \frac{u \cdot v}{|u||v|}
+            </mrow>
+            <mrow>
+              |u| \amp = \sqrt{(-4)^2 + 1^2 + 1^2} = \sqrt{18} 
+            </mrow>
+            <mrow>
+              |v| \amp = \sqrt{2^2 + 4^2 + 4^2} = \sqrt{36} = 6 
+            </mrow>
+            <mrow>
+              u \cdot v \amp = \left( \begin{matrix} 
+                -4 \\ 1 \\ 1 
+              \end{matrix} \right) \cdot 
+              \left( \begin{matrix} 
+                2 \\ 4 \\ 4 
+              \end{matrix} \right) = (-4)(2) + (1)(4) + (1)(4) = 0 
+            </mrow>
+            <mrow>
+              \cos \theta \amp = 0 
+            </mrow>
+          </md>
+          Cosine is zero when angles are perpendicular, so the angle
+          bewteen these two vectors must be <m>\frac{\pi}{2}</m>
+          radians. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-cross-products">
+    <title>Cross Product</title>
+    <activity>
+      <statement>
+        <p> 
+          Calculate this cross product.
+          <me>
+            \left( \begin{matrix} 
+              1 \\ 0 \\ -2 
+            \end{matrix} \right) \times
+            \left( \begin{matrix} 
+              -4 \\ 2 \\ 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product is calculated by a complicated
+          pattern of multiplication and addition with the components
+          as presented in the notes and the videos. 
+          <me>
+            \left( \begin{matrix} 
+              1 \\ 0 \\ -2 
+            \end{matrix} \right) \times
+            \left( \begin{matrix} 
+              -4 \\ 2 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              (0)(0) - (2)(-2) \\ (-2)(-4) - (0)(1) \\ (1)(2) - (0)(-4) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              4 \\ 8 \\ 2 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate this cross product.
+          <me>
+            \left( \begin{matrix} 
+              2 \\ -6 \\ -3 
+            \end{matrix} \right) \times
+            \left( \begin{matrix} 
+              -1 \\ -2 \\ -1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product is calculated by a complicated
+          pattern of multiplication and addition with the components
+          as presented in the notes and the videos. 
+          <me>
+            \left( \begin{matrix} 
+              2 \\ -6 \\ -3 
+            \end{matrix} \right) \times
+            \left( \begin{matrix} 
+              -1 \\ -2 \\ -1 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              (-6)(-1) - (-3)(-2) \\ (-3)(-1) - (2)(-1) \\ (2)(-2) -
+              (-6)(-1) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              0 \\ 5 \\ -10
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate this cross product.
+          <me>
+            \left( \begin{matrix}
+              0 \\ 3 \\ 8
+            \end{matrix} \right) \times
+            \left( \begin{matrix}
+              1 \\ 6 \\ -5 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product is calculated by a complicated
+          pattern of multiplication and addition with the components
+          as presented in the notes and the videos. 
+          <me>
+            \left( \begin{matrix}
+              0 \\ 3 \\ 8
+            \end{matrix} \right) \times
+            \left( \begin{matrix}
+              1 \\ 6 \\ -5 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              (3)(-5) - (8)(6) \\ (8)(1) - (0)(-5) \\ (0)(6) - (3)(1) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              -63 \\ 8 \\ -3 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p> 
+          Calculate this cross product.
+          <me>
+            \left( \begin{matrix}
+              2 \\ 1 \\ 0 
+            \end{matrix} \right) \times
+            \left( \begin{matrix}
+              -4 \\ -2 \\ 0
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product is calculated by a complicated
+          pattern of multiplication and addition with the components
+          as presented in the notes and the videos. 
+          <me>
+            \left( \begin{matrix}
+              2 \\ 1 \\ 0 
+            \end{matrix} \right) \times
+            \left( \begin{matrix}
+              -4 \\ -2 \\ 0
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              (1)(0) - (0)(-2) \\ (0)(-4) - (2)(0) \\ (2)(-2) -
+              (1)(-4) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix} 
+              0 \\ 0 \\ 0 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-sets-structure">
+    <title>Sets with Structure</title>
+    <activity>
+      <statement>
+        <p>
+          In <xref ref="section-sets-with-structure" />, I
+          introduced the abstract idea of sets with structure. In the
+          next two activities, I'm asking you to think through that
+          abstract idea. In the first activity, I've given you an
+          empty table with some number sets and some possible
+          structures.  Complete this table by writing <q>Yes</q> or
+          <q>No</q> in each space. Write <q>Yes</q> if the set in
+          question includes the structure (the structure must remain in
+          the set); write <q>No</q> if the set does not include the
+          structure. 
+        </p>
+        <p>
+          The set <m>\ZZ/12\ZZ</m> is the integers modulo 12. If this
+          set is unfamiliar, you may treat it as the numbers on the
+          clock. So, for example, if I want to add <m>7 + 9</m>, I
+          ask what time is 9 hours after 7, which is 4. Therefore <m>7
+          + 9 = 4</m> in an example of proper arithmetic for this
+          set. In general, whenever I would get a number larger than
+          <m>11</m>, I subtract multiples of <m>12</m> to reduce it
+          down to something between <m>0</m> and <m>11</m>.  For
+          another example, <m>5 \times 4 = 8</m> is also proper
+          arithmetic for this set, since <m>20 - 12 = 8</m>. Note that
+          <m>12</m> is the same thing as <m>0</m> in this set; even
+          though on a clock, I would often write <m>12</m>, in this
+          set, I usually just write <m>0</m>. So, for example, I
+          would write <m>5 + 7 = 0</m> in this set. Finally, this is
+          just integers modulo 12, so I only consider the whole
+          numbers of the clock <mdash /> I don't have minutes or any
+          other subdivisions, only hours. 
+        </p>
+        <table>
+          <title>Table for Sets with Structure</title>
+          <tabular top="minor">
+            <row bottom="minor">
+              <cell left="minor" right="minor">Structure</cell>
+              <cell right="minor"><m>\NN</m></cell>
+              <cell right="minor"><m>\ZZ</m></cell>
+              <cell right="minor"><m>\QQ</m></cell>
+              <cell right="minor"><m>\RR</m></cell>
+              <cell right="minor"><m>\ZZ/12\ZZ</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Addition</cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Subtraction</cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Multiplication</cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Division</cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Distribution </cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Absolute Value</cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Order</cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+            </row>
+            <row bottom="minor">
+              <cell left="mirow" right="minor">Zero Divisors</cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+              <cell right="minor"></cell>
+            </row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>
+          Here is the completed table. I'll comment on some specific
+          entries below.
+        </p>
+        <table>
+          <title>Table for Sets with Structure</title>
+          <tabular top="minor">
+            <row bottom="minor">
+              <cell left="minor" right="minor">Structure</cell>
+              <cell right="minor"><m>\NN</m></cell>
+              <cell right="minor"><m>\ZZ</m></cell>
+              <cell right="minor"><m>\QQ</m></cell>
+              <cell right="minor"><m>\RR</m></cell>
+              <cell right="minor"><m>\ZZ/12\ZZ</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Addition</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Subtraction</cell>
+              <cell right="minor">No</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Multiplication</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Division by Non-Zero
+              Elements</cell>
+              <cell right="minor">No</cell>
+              <cell right="minor">No</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">No</cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Multiplication
+              Distributes Over Addition</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Absolute Value</cell>
+              <cell right="minor">Yes, Trivially</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Maybe</cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Order (Greater Than,
+              Less Than)</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">Yes</cell>
+              <cell right="minor">No</cell>
+            </row>
+            <row bottom="minor">
+              <cell left="minor" right="minor">Zero Divisors</cell>
+              <cell right="minor">No</cell>
+              <cell right="minor">No</cell>
+              <cell right="minor">No</cell>
+              <cell right="minor">No</cell>
+              <cell right="minor">Yes</cell>
+            </row>
+          </tabular>
+        </table>
+        <p>
+          Hopefully, most of these answers are straightforward. I'll
+          comment on a few, though, which might be less obvious. 
+          <ul>
+            <li>
+              The natural numbers can still be said to have absolute
+              value, but the structure doesn't do anything. The
+              absolute value of a positive number is itself, so the
+              structure is very boring: all numbers are unchanged.
+              This is why I wrote <q>trivially</q>, to indicate that
+              the structure doesn't do anything. You could argue that
+              this answer should be no; I'd be willing to accept that
+              a trivial absolute value doesn't really count as a 
+              structure. 
+            </li>
+            <li>
+              Division for the integers modulo 12 is tricky. I might
+              think that since I can extend addition, subtraction and
+              multiplication just fine for modulo 12, I could extend
+              division as well. The problem is zero divisors: if I
+              allow division by zero divisors, the arithmetic breaks.
+              This is not immediatly obvious, so I didn't really expect
+              anyone to know this unless you've previously studied
+              modular arithmetic.
+            </li>
+            <li>
+              Speaking of zero divisors, take the numbers 3 and 4 in
+              the integers modulo 12. Their product is 12, which is
+              the same as 0 in that system. So, I can reasonably say
+              that <m>3 \times 4 = 0</m> in the integers modulo 12.
+              Since 3 and 4 are not also equivalent to zero
+              themselves, they are zero divisors. 
+            </li>
+            <li>
+              Whether or not there is an order relation on the integers
+              modulo 12 is also tricky. I can impose an order, saying
+              that <m>0 \lt 1 \lt 2 \lt 3 \lt \ldots \lt 11</m>.
+              However, since the numbers loop around, if I keep going
+              from 12 back to 1, this seems intuitively problematic.
+              So, even though I could impose such an order, I think it 
+              makes more sense not to. I conclude that the integers 
+              modulo 12 is not ordered. If I think about time on a 
+              clock, I think I can justify this decision.  If it is 
+              currently 10 o'clock, then there is a time before that was 
+              5 o'clock as well as a time in the future, which will also 
+              be 5 o'clock. Therefore, putting an order seems 
+              unreasonable. 
+            </li>
+          </ul>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          The structures I've included so far have mostly been binary
+          operations (the conventional four of arithmetic) and some
+          other familiar things like order and absolute value.
+          However, structures can be as complicated as I like. Here
+          are some more involved structures. For each structure, give
+          an example of a number set that has the structure. (Some of
+          these are a bit tricky: you are allowed to restrict the
+          conventional number sets to make this work. For example, the
+          set of all positive rational numbers is a number set,
+          as is the set of all natural numbers less than 40.) 
+          <ol>
+            <li>
+              Decomposition of numbers into prime factors (except for
+              0 and 1). 
+            </li>
+            <li>
+              Reciprocals of non-zero numbers.
+            </li>
+            <li>
+              The ability to do long division with a remainder. 
+            </li>
+            <li>
+              You can get the whole set just by starting with 1 and
+              allowing yourself to do any number of additions. 
+            </li>
+            <li>
+              All numbers have square roots. 
+            </li>
+            <li>
+              The existence of a maximal element (some number in the
+              set which is larger than all other numbers). 
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are a variety of possible answers, but here are my
+          suggestions for some reasonable responses.
+        </p>
+          <ol>
+            <li>
+              Decomposition of numbers into prime factors (except for
+              0 and 1): This is true of <m>\NN</m>. Positive whole
+              numbers (larger than 1) do decompose into prime factors.
+            </li>
+            <li>
+              Reciprocals of non-zero numbers: <m>\QQ</m> or
+              <m>\RR</m> would work here, since those number sets have
+              division and reciprocals are just a specific instance of
+              division. 
+            </li>
+            <li>
+              The ability to do long division with a remainder: this
+              works in <m>\NN</m>. Note that the remainder is important
+              here: division is not exact in <m>\NN</m>, since we
+              don't have fractions. However, I can say that 7 goes
+              into 40 five times, with a remainder of 5 <mdash /> that
+              still just uses whole numbers. 
+            </li>
+            <li>
+              You can get the whole set just by starting with 1 and
+              allowing yourself to do any number of additions: this is
+              true for <m>\NN</m>. Any positive number can be thought
+              of as adding 1 some number of times. For example: <m>8 =
+              1 + 1 + 1 + 1 + 1 + 1 + 1 + 1</m>. In this way, the
+              number 1 and the addition operation generate all of the
+              natural numbers. 
+            </li>
+            <li>
+              All numbers have square roots. This is a bit tricky,
+              since none of the conventional number sets have this
+              property. I have to make a restriction. I certainly
+              want to work with real numbers, since I know that
+              <m>\sqrt{2}</m> is already irrational. I'm not going to
+              find square roots in the natural numbers, the integers,
+              or the rational numbers. But the negative numbers cause
+              a problem: they do not have square roots in the real
+              numbers. I can exclude these by taking the set of all
+              positive real numbers. This set has the structure of all
+              numbers having square roots. 
+            </li>
+            <li>
+              The existence of a maximal element (some number in the
+              set which is larger than all other numbers). Again, no
+              standard number set will have this structure, since they
+              are all unbounded and keep getting larger forever.
+              However, I can make a restriction and take a bounded
+              subset. Consider, for example, all natural numbers less
+              than 40 (as I suggested in the statement of the
+              problem). This set has a maximal element of 39, since
+              everything else in the set is a whole number less than
+              or equal to 39. 
+            </li>
+          </ol>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-week2-proofs">
+    <title>Proof Questions</title>
+    <activity>
+      <statement>
+        <p>
+          This is a guided proof to prove the triangle inequality
+          using the dot product. The triangle inequality states that
+          for any vector <m>u,v \in \RR^n</m>, the length of the sum
+          is bounded by the sum of the lengths of the individual
+          vectors. In symbols:
+          <me>
+            |u+v| \leq |u| + |v|
+          </me>.
+          I'm going to give you several small steps which fit together
+          into a complete proof. I want you to write out the details
+          of each step and make it fit together into a whole argument. 
+          <ol>
+            <li>
+              Write <m>|u+v|^2</m> as a dot product.
+            </li>
+            <li>
+              Expand that dot product (distribute the pieces).
+            </li>
+            <li>
+              Replace <m>u \cdot v</m> with <m>|u||v| \cos \theta</m>. 
+            </li>
+            <li>
+              Use the fact that <m>\cos \theta \leq 1</m> to make the
+              equality into an inequality.
+            </li>
+            <li>
+              Manipulate the inequality to show that <m>|u+v|^2 \leq
+              (|u| + |v|)^2</m>.
+            </li>
+            <li>
+              Take the square root of both sides (which preserves the
+              inequality and is well defined since both sides are
+              positive). 
+            </li>
+            <li>
+              Conclude the triangle inequality. 
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I'll follow the guided steps for this proof. First, I'll
+          write <m>|u+v|^2</m> as a dot product. I use the fact that
+          the square of the length of a vector is the same as the dot
+          product of a vector with itself. 
+          <me>
+            |u+v|^2 = (u+v) \cdot (u+v)
+          </me>
+          The next step is to distribute the right side. The dot
+          product distributes over vector addition like ordinary
+          multipliction. Since the dot product is commutative, <m>u
+          \cdot v</m> is the same as <m>v \cdot u</m>, so I can
+          combine the two term when I distribute the dot product. 
+          <me>
+            |u+v|^2 = u \cdot u + 2 u \cdot v + v \cdot v 
+          </me>
+          The middle term has the dot product which I can replace as
+          instructed in the third step. 
+          <me>
+            |u+v|^2 = u \cdot u + 2 |u||v| \cos \theta + v \cdot v 
+          </me>
+          The cosine term is at most <m>1</m>, so the maximum for the
+          right side happens when I replace the cosine with 1. 
+          <me>
+            |u+v|^2 \leq u \cdot u + 2 |u||v| + v \cdot v 
+          </me>
+          Then I need to turn the right side into a square term. The
+          first step in that direction is to write the dot products
+          as squares of lengths. 
+          <me>
+            |u+v|^2 \leq |u|^2 + 2 |u||v| + |v|^2
+          </me>
+          Then the right side is the square of a binomial.
+          <me>
+            |u+v|^2 \leq \left( |u| + |v| \right)^2 
+          </me>
+          Finally, I take the square root of both sides. The square
+          root of positive numbers preserves inequalities (<m>a \leq
+          b</m> if an only if <m>\sqrt{a}\leq \sqrt{b}</m>), so
+          applying the square root is a valid operations for sovling
+          an inequality like this.
+          <me>
+            |u+v| \leq |u| + |v| 
+          </me>
+          I have produced the triangle inequality.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that the cross product is anticommutative. (Take any
+          two vectors <m>u,v \in \RR^3</m>, write them in their
+          components and prove that <m>u \times v = - (v \times
+          u)</m>.)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I will start with the right side and try to manipulate it
+          into the left side. I'll write the vectors in their
+          components, use the definition of the cross product, and
+          bring in the <m>(-1)</m> using the definition of scalar
+          multiplication. 
+          <md>
+            <mrow>
+              - (v \times u) \amp = - \left( \left( \begin{matrix}
+                v_1 \\ v_2 \\ v_3
+              \end{matrix} \right) \times \left( \begin{matrix}
+                u_1 \\ u_2 \\ u_3 
+              \end{matrix} \right) \right)
+            </mrow>
+            <mrow>
+              \amp = - \left( \left( \begin{matrix}
+                v_2 u_3 - v_3 u_2 \\
+                v_3 u_1 - v_1 u_3 \\
+                v_1 u_2 - v_2 u_1 
+              \end{matrix} \right) \right)
+            </mrow>
+            <mrow>
+              \amp = \left( \left( \begin{matrix}
+                - v_2 u_3 + v_3 u_2 \\
+                - v_3 u_1 + v_1 u_3 \\
+                - v_1 u_2 + v_2 u_1 
+              \end{matrix} \right) \right)
+            </mrow>
+          </md>
+          Now I just write each component in the other order,
+          interchanging the order of each multiplication, and
+          recognize the definition of the cross product in the result.
+          <me>
+            = \left( \left( \begin{matrix}
+              v_3 u_2 - v_2 u_3 \\
+              v_1 u_3 - v_3 u_1 \\
+              v_2 u_1 - v_1 u_2 
+            \end{matrix} \right) \right)
+            = \left( \left( \begin{matrix}
+              u_2 v_3 - u_3 v_2 \\
+              u_3 v_1 - u_1 v_3 \\
+              u_1 v_2 - u_2 v_1 
+            \end{matrix} \right) \right) = u \times v
+          </me>
+          I started with the right side and made a chain of equality
+          to the left side, thus proving the identity. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-week2-concepts">
+    <title>Conceptual Review Questions</title>
+    <p>
+      <ul>
+        <li>
+          What is a dot product? What does it mean?
+        </li>
+        <li>
+          What is a cross product? Why is it only in three dimensions?
+        </li>
+        <li>
+          What is a binary operation? 
+        </li>
+        <li>
+          What is a structure on a set (of numbers)?
+        </li>
+        <li>
+          Why do different sets (of numbers) have different structures
+          on them?
+        </li>
+      </ul>
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,1097 @@
+<section xml:id="section-week3-activity">
+  <title>Week 3 Activity</title>
+  <subsection xml:id="subsection-activity-linear-combinations">
+    <title>Linear Combinations</title>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the second
+          and third vectors. 
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I need to write the first vector as a multiple of the
+          second plus a multiple of the third.
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3 
+            \end{matrix} \right) =
+            a \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            b \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+          If I look at the components, I get two equations.
+          <md>
+            <mrow>
+              2 \amp = a + b 
+            </mrow>
+            <mrow>
+              3 \amp = -a + b 
+            </mrow>
+          </md>
+          I have to solve this system. If I isolate <m>a</m> in the
+          first equation, I get <m>a = 2-b</m>. If I replace that in
+          the second equation, I get <m>3 = -2 + b + b</m>. I can
+          solve this to get <m>b = \frac{5}{2}</m>. Then the
+          expression for <m>a</m> gives <m>a = 2 - b = 2 - \frac{5}{2}
+          = \frac{-1}{2}</m>. That lets me write the linear
+          combination. 
+          <me>
+            \left( \begin{matrix} 
+              2 \\ 3 
+            \end{matrix} \right) =
+            \frac{-1}{2} \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            \frac{5}{2} \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the second
+          and third vectors. 
+          <me>
+            \left( \begin{matrix} 
+              -4 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I need to write the first vector as a multiple of the
+          second plus a multiple of the third.
+          <me>
+            \left( \begin{matrix} 
+              -4 \\ -1 
+            \end{matrix} \right) =
+            a \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            b \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+          If I look at the components, I get two equations.
+          <md>
+            <mrow>
+              -4 \amp = a + b 
+            </mrow>
+            <mrow>
+              -1 \amp =  -a + b 
+            </mrow>
+          </md>
+          I have to solve this sytem. If I isolate <m>a</m> in the
+          first equation, I get <m>a = -4-b</m>. If I replace that in
+          the second equation, I get <m>-1 = 4 + b + b</m>. I can
+          solve this to get <m>b = \frac{-5}{2}</m>. Then the
+          expression for <m>a</m> gives <m>a = -4 - b = -4 - \frac{5}{2}
+          = \frac{-3}{2}</m>. That lets me write the linear
+          combination. 
+          <me>
+            \left( \begin{matrix} 
+              -4 \\ -1
+            \end{matrix} \right) =
+            \frac{-3}{2} \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            \frac{-5}{2} \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the second
+          and third vectors. 
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 3 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ 1
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I need to write the first vector as a multiple of the
+          second plus a multiple of the third.
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 3 
+            \end{matrix} \right) =
+            a \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            b \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+          If I look at the components, I get two equations.
+          <md>
+            <mrow>
+              0 \amp = a + b 
+            </mrow>
+            <mrow>
+              3 \amp = -a + b 
+            </mrow>
+          </md>
+          I have to solve this sytem. If I isolate <m>a</m> in the
+          first equation, I get <m>a = -b</m>. If I replace that in
+          the second equation, I get <m>3 = b + b</m>. I can
+          solve this to get <m>b = \frac{3}{2}</m>. Then the
+          expression for <m>a</m> gives <m>a = - b = - \frac{3}{2}
+          = \frac{-3}{2}</m>. That lets me write the linear
+          combination. 
+          <me>
+            \left( \begin{matrix} 
+              0 \\ 3 
+            \end{matrix} \right) =
+            \frac{-3}{2} \left( \begin{matrix} 
+              1 \\ -1 
+            \end{matrix} \right) +
+            \frac{3}{2} \left( \begin{matrix} 
+              1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the first vector as a linear combination of the second
+          third and fourth vectors. 
+          <me>
+            \left( \begin{matrix} 
+              3 \\ 0 \\ 2
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              1 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              0 \\ 1 \\ 1 
+            \end{matrix} \right),
+            \left( \begin
+              {matrix} 0 \\ -1 \\ 1
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I need to write the first vector as a multiple of the
+          second plus a multiple of the third.
+          <me>
+            \left( \begin{matrix} 
+              3 \\ 0 \\ 2
+            \end{matrix} \right) =
+            a \left( \begin{matrix} 
+              1 \\ 0 \\ 0 
+            \end{matrix} \right) +
+            b \left( \begin
+              {matrix} 0 \\ 1 \\ 1 
+            \end{matrix} \right) +
+            c \left( \begin{matrix} 
+              0 \\ -1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+          I could try to solve this by linear system as I did
+          before, but I'll try to work by inspection first, so I can see if
+          I can informally find a solution. Since the second vector
+          is the only vector of the last three that has an <m>x</m>
+          component, I know that <m>a = 3</m> is the only way to get
+          a 3 in the first coordinate. That gives me one constant.
+          Then, looking at the <m>y</m> and <m>z</m> coordinates, we
+          can see that if I simply add the third and fourth vectors
+          togother, the <m>y</m> cancels and the <m>z</m> adds to 2.
+          Therefore, I can conclude that <m>b = c = 1</m> 
+          <me>
+            \left( \begin{matrix} 
+              3 \\ 0 \\ 2
+            \end{matrix} \right) =
+            3 \left( \begin{matrix} 
+              1 \\ 0 \\ 0 
+            \end{matrix} \right) +
+            \left( \begin{matrix} 
+              0 \\ 1 \\ 1 
+            \end{matrix} \right) +
+            \left( \begin{matrix} 
+              0 \\ -1 \\ 1 
+            \end{matrix} \right) 
+          </me>
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-linear-independence">
+    <title>Linear Independence</title>
+    <activity>
+      <statement>
+        <p>
+          Determine if this set of vectors is linearly independent.
+          <me>
+            \left\{ \left( \begin{matrix}
+              4 \\ 5 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -6 \\ -9
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -3 \\ 11
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are three vectors here, but they are all vectors in
+          <m>\RR^2</m>. In two-dimensional space, there are only two
+          independent directions of movement, so three vectors can
+          never be linearly independent. I conclude that this is a
+          linearly dependent set. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine if this set of vectors is linearly independent.
+          <me>
+            \left\{ \left( \begin{matrix} 
+              5 \\ 0 \\ 1 
+            \end{matrix} \right),
+            \left( \begin{matrix} 
+              15 \\ 0 \\ 3 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -25 \\ 0 \\ -5 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The second and third vectors are multiplied (by <m>3</m> and
+          <m>(-5)</m>, respectively) of the first vector. That means
+          that all three vectors point along the same line, so these
+          are not different directions and cannot be linearly
+          independent. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine if this set of vectors is linearly independent.
+          <me>
+            \left\{ \left( \begin{matrix}
+              5 \\ 9 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 0 \\ -4 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -9 \\ 5 \\ 0 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The second vector is clearly independent of the other two
+          since it only has a <m>z</m> coordinate and the others have
+          0 in the <m>z</m> coordinate. It points in the <m>z</m>
+          direction, while the others are restricted to the <m>x-y</m>
+          plane. For the first and third vector, the dot product shows
+          that they are perpendicular, so they point in fundamentally
+          different directions. I conclude that this is a linearly
+          independent set. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine if this set of vectors is linearly independent.
+          <me>
+            \left\{ \left( \begin{matrix}
+              1 \\ 1 \\ 1 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -1 \\ 0 \\ -1 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 1 \\ 0 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Working by inspection again, I can see that the sum of the
+          first two vectors is the third vector. Any relation like
+          this, where some linear combinations of some of the vectors
+          produce another vector, means that the set is linearly
+          dependent. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-spans-and-bases">
+    <title>Spans and Bases</title>
+    <activity>
+      <statement>
+        <p>
+          Determine a basis for the given span.
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              4 \\ 1 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              -9 \\ - 4
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 5 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              6 \\ -2
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is in <m>\RR^2</m>, so the maximum number of linearly
+          independent vectors is 2. These are not all in the same
+          direction, so this span is all of <m>\RR^2</m>. I can take
+          any two of these as a basis since no vector is a multiple
+          of any other vector. Since the span is <m>\RR^2</m>, we
+          could also take the standard basis <m>\{ e_1, e_2\}</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine a basis for the given span.
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              0 \\ 4 \\ 13 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 5 \\ -6
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ -1 \\ -1 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          None of the vectors have a non-zero <m>x</m> component, so
+          this set cannot span all of <m>\RR^3</m>. However, I do
+          have different directions in the <m>yz</m> plane, so this
+          span does span all of the <m>yz</m> plane. Therefore, since none
+          of the vectors is a multiple of the others, any two vectors
+          form a basis. I can also take the subset of the standard
+          basis that spans the <m>yz</m> plane: <m>\{e_2, e_3\}</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine a basis for the given span.
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              1 \\ 0 \\ 0 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ -4 \\ 0 \\ 0 \\ 0
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 0 \\ -6 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 0 \\ 0 \\ 0 \\ -9
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          All of the vector point in axis directions in <m>\RR^5</m>,
+          and all the axis directions are different. I conclude that
+          this is a linearly independent set, so I can take all four
+          vectors as a basis. Since I get the first, second, third
+          and fifth axis directions, I could also take a portion of
+          the standard basis that spans those four directions:
+          <m>\{e_1, e_2, e_3, e_5\}</m>. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Determine a basis for the given span.
+          <me>
+            \Span \left\{ \left( \begin{matrix}
+              0 \\ 6 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ -13 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 5 \\ 0 \\ 0 
+            \end{matrix} \right),
+            \left( \begin{matrix}
+              0 \\ 34 \\ 0 \\ 0 
+            \end{matrix} \right) \right\}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          All four vectors point in the second axis direction, so they
+          are all multiples of the standard basis vector <m>e_2</m>.
+          Therefore, the span is one-dimensional and any individual
+          vector, or for that matter <m>e_2</m>, could be taken as a
+          basis. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-activity-equations-of-planes">
+    <title>Equations of Planes and Hyperplanes</title>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with normal
+          <m>
+            \left( \begin{matrix}
+              -1 \\ -1 \\ 0
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              0 \\ 1 \\ 3 
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the plane. I put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <me>
+            (-1)x + (-1)y + 0 z = d 
+          </me>
+          I can calculate the constant using the point. Put the
+          coordinates of the point into the left side of the equation
+          and calculate <m>d</m>.
+          <me>
+            d = (-1)(0) + (-1)(1) + (0)(3) = -1 
+          </me>
+          Therefore, the equation of the plane is 
+          <me>
+            - x - y = -1 
+          </me>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with normal
+          <m>
+            \left( \begin{matrix}
+              2 \\ 0 \\ 3
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              -4 \\ -1 \\ 2
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the plane. I put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <me>
+            2x + 0y + 3z = d 
+          </me>
+          I can calculate the constant using the point. Put the
+          coordinates of the point into the left side of the equation
+          and calculate <m>d</m>.
+          <me>
+            d = 2(-4) + 0(-1) + 3(2) = -2 
+          </me>
+          Therefore, the equation of the plane is 
+          <me>
+            2x + 3z = -2 
+          </me>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with local directions
+          <m>
+            \left( \begin{matrix}
+              -1 \\ -1 \\ 1 
+            \end{matrix} \right)
+          </m> 
+          and
+          <m>
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 0 
+            \end{matrix} \right)
+          </m>
+          if 
+          <m>
+            \left( \begin{matrix}
+              2 \\ 1 \\ 1
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product of the local directions gives the normal
+          to the plane. 
+          <me>
+            \left( \begin{matrix}
+              -1 \\ -1 \\ 1 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (-1)(0) - (1)(1) \\ (1)(-2) - (-1)(0) \\ (-1)(1) -
+              (-1)(-2) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              -1 \\ -2 \\ -1 
+            \end{matrix} \right) 
+          </me>
+          This is the normal. The normal determines the coefficients
+          of the equation of the plane. I put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <me>
+            -x - 2y - z = d 
+          </me>
+          I can calculate the constant using the point. Put the
+          coordinates of the point into the left side of the equation
+          and calculate <m>d</m>.
+          <me>
+            d = -(1)(2) - (2)(1) - (1) = -5
+          </me>
+          Therefore, the equation of the plane is 
+          <me>
+            -x - 2y - z = -5 
+          </me>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with local directions
+          <m>
+            \left( \begin{matrix}
+              0 \\ 1 \\ 1 
+            \end{matrix} \right)
+          </m>
+          and
+          <m>
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 1
+            \end{matrix} \right)
+          </m> 
+          if 
+          <m>
+            \left( \begin{matrix}
+              -1 \\ 0 \\ -3 
+            \end{matrix} \right)
+          </m> is a point on the plane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The cross product of the local directions gives the normal
+          to the plane. 
+          <me>
+            \left( \begin{matrix}
+              0 \\ 1 \\ 1 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              -2 \\ 1 \\ 1
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (1)(1) - (1)(1) \\ (1)(-2) - (0)(1) \\ (0)(1) - (1)(-2) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              0 \\ -2 \\ 2 
+            \end{matrix} \right) 
+          </me>
+          This is the normal. The normal determines the coefficients
+          of the equation of the plane. I put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <me>
+            0x - 2y + 2z = d 
+          </me>
+          I can calculate the constant using the point. Put the 
+          coordinates of the point into the left side of the equation
+          and calculate <m>d</m>.
+          <me>
+            d = 0(-1) - 2(0) + 2(-3) = -6 
+          </me>
+          Therefore, the equation of the plane is 
+          <me>
+            -2y + 2z = -6 
+          </me>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with points
+          <m>
+            p = \left( \begin{matrix}
+              0 \\ 1 \\ 1 
+            \end{matrix} \right)
+          </m>,
+          <m>
+            q = \left( \begin{matrix}
+              1 \\ 0 \\ 0 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            r = \left( \begin{matrix}
+              -2 \\ 1 \\ 1 
+            \end{matrix} \right)
+          </m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The local directions are given by the differences of the
+          point: <m>(q-p)</m> and <m>(r-p)</m>. I calculate those two
+          local directions.
+          <md>
+            <mrow>
+              q-p = \left( \begin{matrix}
+                1 \\ 0 \\ 0 
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                0 \\ 1 \\ 1 
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                1 \\ -1 \\ -1 
+              \end{matrix} \right) 
+            </mrow>
+            <mrow>
+              r-p = \left( \begin{matrix}
+                -2 \\ 1 \\ 1 
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                0 \\ 1 \\ 1
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                -2 \\ 0 \\ 0 
+              \end{matrix} \right) 
+            </mrow>
+          </md>
+          These are the two local directions. The cross product of the
+          local directions gives the normal to the plane. 
+          <me>
+            \left( \begin{matrix}
+              1 \\ -1 \\ -1 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              -2 \\ 0 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (-1)(0) - (-1)(0) \\ (-1)(-2) - (1)(0) \\ (1)(0) -
+              (-1)(-2) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              0 \\ 2 \\ -2 
+            \end{matrix} \right) 
+          </me>
+          This is the normal. The normal determines the coefficients
+          of the equation of the plane. I put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <me>
+            0x + 2y - 2z = d 
+          </me>
+          I can calculate the constant using the point (I can use
+          any of the three points <mdash /> all will determine the same
+          constant). Put the coordinates of the point into the left
+          side of the equation and calculate <m>d</m>.
+          <me>
+            d = (0)(0) + 2 (1) - 2(1) = 0 
+          </me>
+          Therefore, the equation of the plane is 
+          <me>
+            2y - 2z = 0 
+          </me>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the plane with points
+          <m>
+            p = \left( \begin{matrix}
+              -3 \\ -1 \\ 0 
+            \end{matrix} \right)
+          </m>,
+          <m>
+            q = \left( \begin{matrix}
+              -2 \\ 1 \\ -4 
+            \end{matrix} \right)
+          </m> and
+          <m>
+            r = \left( \begin{matrix}
+              0 \\ 5 \\ 0 
+            \end{matrix} \right)
+          </m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The local directions are given by the difference of the
+          points: <m>(q-p)</m> and <m>(r-p)</m>. I calculate those two
+          local directions.
+          <md>
+            <mrow>
+              q-p = \left( \begin{matrix}
+                -2 \\ 1 \\ -4 
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                -3 \\ -1 \\ 0 
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                1 \\ 2 \\ -4 
+              \end{matrix} \right)  
+            </mrow>
+            <mrow>
+              r-p = \left( \begin{matrix}
+                0 \\ 5 \\ 0
+              \end{matrix} \right) - 
+              \left( \begin{matrix}
+                -3 \\ -1 \\ 0
+              \end{matrix} \right) = 
+              \left( \begin{matrix}
+                3 \\ 6 \\ 0  
+              \end{matrix} \right)  
+            </mrow>
+          </md>
+          These are the two local directions. The cross product of the
+          local directions gives the normal to the plane. 
+          <me>
+            \left( \begin{matrix}
+              1 \\ 2 \\ -4 
+            \end{matrix} \right) \times 
+            \left( \begin{matrix}
+              3 \\ 6 \\ 0 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              (2)(0) - (-4)(6) \\ (-4)(3) - (1)(0) \\ (1)(6) - (2)(3) 
+            \end{matrix} \right) = 
+            \left( \begin{matrix}
+              24 \\ -12 \\ 0
+            \end{matrix} \right) 
+          </me>
+          This is the normal. The normal determines the coefficients
+          of the equation of the plane. I put those coefficients into
+          the general form, with the constant <m>d</m> undetermined.
+          <me>
+            24 x - 12 y + 0z = d 
+          </me>
+          I can calculate the constant using the point (I can use
+          any of the three points <mdash /> all will determine the same
+          constant). Put the coordinates of the point into the left
+          side of the equation and calculate <m>d</m>.
+          <me>
+            d =  24(0) - 12(5) + 0 z = -60 
+          </me>
+          Therefore, the equation of the plane is 
+          <me>
+            24 x - 12 y = -60 
+          </me>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the hyperplane with normal
+          <m>
+            \left( \begin{matrix}
+              -3 \\ 1 \\ 1 \\ 0 \\ 0 
+            \end{matrix} \right)
+          </m>
+          if 
+          <m>
+            \left( \begin{matrix}
+              4 \\ 0 \\ 1 \\ -1 \\ -2 
+            \end{matrix} \right)
+          </m> 
+          is a point on the hyperplane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the hyperplane. I put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <me>
+            -3 x_1 + 1 x_2 + 1 x_3 + 0 x_4 + 0 x_5 = d 
+          </me>
+          I can calculate the constant using the point. Put the
+          coordinates of the point into the left side of the equation
+          and calculate <m>d</m>.
+          <me>
+            d = -3 (4) + 1 (0) + 1 (1) + 0 (-1) + 0 (-2) =-11
+          </me>
+          Therefore, the equation of the hyperplane is 
+          <me>
+            -3 x_1 + 1 x_2 + 1 x_3 + 0 x_4 + 0 x_5 = -11
+          </me>.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Write the equation of the hyperplane with normal
+          <m>
+            \left( \begin{matrix}
+              -1 \\-1 \\ -4 \\ 1 \\ -2 \\ 2 
+            \end{matrix} \right)
+          </m> if 
+          <m>
+            \left( \begin{matrix}
+              3 \\ 1 \\ -2 \\ -2 \\ -6 \\ 0
+            \end{matrix} \right)
+          </m> is a point on the hyperplane. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The normal determines the coefficients of the equation of
+          the hyperplane. I put those coefficients into the general form,
+          with the constant <m>d</m> undetermined.
+          <me>
+            -1 x_1 - 1 x_2 - 4 x_3 + 1 x_4 - 2 x_5 + 2 x_6 = d
+          </me>
+          I can calculate the constant using the point. Put the
+          coordinates of the point into the left side of the equation
+          and calculate <m>d</m>.
+          <me>
+            d = -1 (3) - 1 (1) + (-4) (-2) + 1 (-2) - 2(-6) + 2(0) = 14
+          </me>
+          Therefore, the equation of the hyperplane is 
+          <me>
+            -1 x_1 - 1 x_2 - 4 x_3 + 1 x_4 - 2 x_5 + 2 x_6 = 14
+          </me>.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-week3-proofs">
+    <title>Proof Questions</title>
+    <activity>
+      <statement>
+        <p>
+          Consider a set of three vectors in <m>\RR^3</m> such that
+          all three vectors have a 0 <m>x</m> coordinate. Prove that
+          these three vectors cannot be linearly independent.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are a number of possible approaches here. First, I
+          can talk about fundamentally different directions. If all
+          three vectors have a 0 <m>x</m> component, then they are all
+          found in the <m>yz</m>. In that plane (like any plane),
+          there are only two fundamentally different directions.
+          Therefore, a set of three vectors cannot have fundamentally
+          different directions, hence cannot be linearly independent.
+        </p>
+        <p>
+          Alternatively, I could delete the first coordinate of each
+          vector and think of the resulting vectors in <m>\RR^2</m>.
+          Then I would have three vectors in <m>\RR^2</m>, so they are
+          linearly independent, and there exists a way to write one of
+          the vectors as a linear combination of the others: <m>u  =
+          av + bw</m>. Since all I did was deleted a zero component
+          from each vector, this relationship will still work with
+          the original vectors in <m>\RR^3</m>, proving that they are
+          linearly independent.
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that if a set of non-zero vectors are pairwise
+          orthogonal (the dot product of any two vectors in the set is
+          zero), then the set must be linearly independent.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Again, there are several possible approaches. First, I can
+          think about fundamentally different directions. Since all
+          the vectors in the set are perpendicular to all the other
+          vectors, there is no way that they can share any kind of
+          common direction. This means that they all need a
+          fundamentally new, perpendicular-to-all-others direction.
+          Therefore, they must be a basis.
+        </p>
+        <p>
+          More formally, I could prove by contradiction. Assume that
+          the vectors are linearly independent. Let the vectors be
+          written <m>\{v_i\}</m> (each index indicates a different
+          vector, not the components of one vector).  Linear
+          dependence means I can find constant <m>a_i</m> such that
+          not all of the <m>a_i</m> are zero and 
+          <me>
+            a_1v_1 + a_2v_2 + \ldots + a_nv_n = 0
+          </me>.
+          Now take the dot product of this equation with the vector
+          <m>v_i</m>.
+          <me>
+            v_i \cdot (a_1v_1 + a_2v_2 + \ldots + a_nv_n) = v_i \cdot 0 
+          </me>
+          On the right, the dot product of any vector with the zero
+          vector is zero. On the right, the dot product is linear, so
+          I can distribute and pull out constants. 
+          <me>
+            a_1(v_i \cdot v_1) + a_2(v_i \cdot v_2) + \ldots + a_n(v_i
+            \cdot v_n)) = v_i \cdot 0 
+          </me>
+          But all the vectors are perpendicular, so on the left,
+          everything is zero except for <m>v_i \cdot v_i</m>.
+          <me>
+            a_i (v_i \cdot v_i) = 0 
+          </me>
+          Then I can write the dot product as a length squared. 
+          <me>
+            a_i |v_i| = 0 
+          </me>
+          Since the vector <m>v_i</m> is not zero, the constant
+          <m>a_i</m> must be. But I did this arbitrarily for any
+          index <m>i</m>, so this means all of the constant <m>a_i</m>
+          must be zero. This contradicts the assumption that at least
+          one of the constants is non-zero. This contradiction means
+          that the original assumption must be wrong. I conclude that
+          the vectors are linearly independent. 
+        </p>
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        <p>
+          Prove that any linear subspace has a basis of vector which
+          all have length 1.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Any linear subspace has a basis of non-zero vectors. For any
+          linear subspace, take any basis whatever. Then, for every
+          vector <m>v</m> in that basis, replace <m>v</m> with
+          <m>\frac{1}{|v|} v</m>. This new vector is a scalar multiple
+          of the old, so it points in the same direction. Since the
+          directions have not changed, these new replacement vectors
+          are still a basis: they still all point in fundamentally
+          different directions. But, by dividing by the original
+          lengths, the lengths of these new vectors are all 1.
+          Therefore, I have constructed a basis of vectors of length
+          1. Since I made no assumption on the linear subspace, I
+          conclude that all linear subspaces have a basis of vectors
+          of length 1. 
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+  <subsection xml:id="subsection-week3-concepts">
+    <title>Conceptual Review Questions</title>
+    <p>
+      <ul>
+        <li>
+          What is a linear combination?
+        </li>
+        <li>
+          What is a span?
+        </li>
+        <li>
+          What is linear independence, and how it is checked?
+        </li>
+        <li>
+          What is a basis? What does it mean to represent a vector as
+          a linear combination of a basis?
+        </li>
+        <li>
+          What does it mean if geometrically a set of vectors is
+          linearly independent?  
+        </li>
+        <li>
+          What is a normal vector to a plane or hyperplane? Why are 
+          planes and hyperplanes determined by normals?
+        </li>
+        <li>
+          Why do cross products help calculate normals to planes in 
+          three dimensions?
+        </li>
+      </ul>
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,398 @@
+<section xml:id="section-writing-proofs">
+  <title>Writing Proofs</title>
+  <subsection xml:id="subsection-what-is-a-proof">
+    <title>What Is A Proof?</title>
+    <p>
+      In the sequence of math courses that are offered at King's, 
+      linear algebra is the most natural place to start talking about
+      mathematical proofs. The material lends itself to a number of
+      accessible proof examples and have a level of abstraction that
+      suits proof questions. The linear algebra course also serves as
+      a prerequisite for most of the other mathematic courses where
+      proof becomes quite important, including the senior calculus
+      courses, discrete mathematics, cryptography and theory of
+      computing. 
+    </p>
+    <p>
+      So what is a mathematical proof? A simple definition is hard,
+      but my best attempt is very general: a proof is a formal,
+      logical, mathematical argument that succeeds in convincing an
+      informed reader. Let me talk through this definition.
+      <ul>
+        <li>
+          First, a proof is an argument. It is persuasive: it has a
+          proposition, and it wants to convince its reader that the
+          proposition is true. In this, it shares something with all
+          the other persuasive writing through university,
+          including scientific studies, aesthetic critiques, and
+          persuasive essays.
+        </li>
+        <li>
+          Second, a proof is logical. Though mathematical discovery can
+          happen in a variety of ways, the presentation of
+          mathematical ideas happen through logic. A proof will be a
+          series of logical statements and implications. If
+          successful, the chain of logic will lead from the
+          assumptions of the proof to the desired conclusion.
+        </li>
+        <li>
+          Third, a proof is formal. Mathematics has formal
+          notations, definitions, and rules for manipulating
+          expressions. A proof follows these formalities. It can't
+          treat mathematical ideas and definitions loosely or casually;
+          <emdash /> it has to follow the rules and strict conventions
+          of mathematics.
+        </li>
+        <li>
+          Finally, it succeeds in convincing the reader. At the end of
+          a proof, the question should always be: are you convinced?
+          Proofs are accepted by the mathematical community when a
+          sufficient number of qualified readers are convinced by the
+          mathematical formality and logical sequence. In this course,
+          when I present a proof, I will try to repeatedly ask if you
+          are convinced by the proof. If you are not, either the proof
+          is flawed, or your understanding of the argument is weak
+          and you need to go back and study the assumptions,
+          notations, and structure more carefully.
+        </li>
+      </ul>
+    </p>
+  </subsection>
+  <subsection xml-id="subsection-how-to-write-proofs">
+    <title>How to Write a Proof</title>
+      <p>
+        I desperately wish there were something simple and
+        straightforward I could say here about how to write a proof. I
+        wish I could give you a reasonable three-step process 
+        that would always produce good proofs.
+        Unfortunately, no such thing exists. Writing proofs is the
+        most difficult skill in mathematics. Writing a good proof is
+        comparable to writing a good essay. I learn by reading good
+        examples, practicing my own, and being patient with the long
+        process.
+      </p>
+      <p>
+        In this course, I'm not going to give you any short, easy
+        method for writing proofs (since, as I just said, no such
+        method exists). Instead, I'm going to try to start the process
+        of exposing you to proofs. In many ways, learning to write
+        proofs is done by example <mdash /> by reading lots of proofs and
+        seeing how they work. I'll show you a bunch of short proofs in
+        this course and ask you to try to emulate them in 
+        the activities and assignments.
+      </p>
+      <p>
+        That said, I will give some pointers and ideas on how to
+        start. 
+      </p>
+      <ul>
+        <li>
+          Remember that a proof is a chain of logical arguments. You
+          should see this structure in the proofs you write. Look out
+          for any sudden jumps or gaps in the logic.
+        </li>
+        <li>
+          Use your starting assumptions. If you are proving something
+          about a prime number, but never use the fact that it is
+          prime, something very strange is going on. Either you are
+          making a mistake, or the assumption that the number is prime
+          is unnecessary.
+        </li>
+        <li>
+          Don't assume what you are trying to prove. The statement
+          that you want to prove should show up at the very end of
+          your proof. You can't start with the statement you want to
+          prove <mdash /> logical implications don't work that way.
+        </li>
+        <li>
+          There is a huge difference between the rough work that goes
+          into sketching a proof and the final proof. In the rough
+          work, I will often start with the conclusion and make various 
+          attempts to see how I might get there. I try things, play
+          around with ideas, do test cases. But when I write up a
+          proof, I take all this rough work and try to put it into
+          a formal logical chain with the desired statement coming at
+          the end, as a conclusion.
+        </li>
+        <li>
+          A good proof includes good writing as well as good
+          mathematics. Write clear, complete sentences. Treat proof-writing 
+          with the same level of care as you would any
+          academic writing. 
+        </li>
+        <li>
+          There are a number of special proof techniques that are
+          worth some attention. I'll spend the next section on two of
+          these techniques. Not all proofs need a named technique, 
+          but these two are common enough to point out at the
+          start. 
+        </li>
+      </ul>
+  </subsection>
+  <subsection xml-id="subsection-contradiction">
+    <title>Proof by Contradiction</title>
+    <p>
+      There are many common structures and techniques used with proofs.
+      I'm going to share with you two of the most common techniques.
+      The first is proof by contradiction. This technique relies on the
+      assumption that any (well-formed) statement in mathematics is
+      either true or false. To prove a statement is true, I can
+      equivalently show that it is impossible for the statement to be
+      false. 
+    </p>
+    <p>
+      To prove by contradiction, I assume the statement I want to
+      prove is false. Then, starting from that assumption, I make
+      logical conclusions. These logical conclusions lead me to an
+      impossible situation <mdash /> a contradiction. This
+      contradiction can take many forms: a contradiction of some 
+      statement I know is true, an impossibility of a statement
+      being both true and false, or some other situation which cannot
+      make sense. Since I end up with this contradiction, my
+      original assumption must have been wrong. Since I assumed
+      the statement was false, the statement must therefore be true.
+    </p>
+    <p>
+      This is perhaps easier to see in an example. I'll do two
+      examples, both of which are classic proof examples. First, I'll
+      prove that there are infinitely many prime numbers. 
+    </p>
+    <ul>
+      <li>
+        Step 1: Assume the statement is false. The statement
+        says there are infinitely many prime numbers. If that is
+        false, there must be only finitely many prime numbers. So my
+        assumption is that there are finitely many prime numbers.
+      </li>
+      <li>
+        Step 2: Work from the assumption to build a contradiction. The
+        assumption says that there are finitely many prime numbers.
+        Since there are only finitely many, I can index them: <m>p_1,
+        p_2, p_3, \ldots p_k</m>. This is a finite list of some
+        length <m>k</m>. Then consider a very large number formed by
+        multiplying these all together and adding 1. 
+        <me>
+          m = p_1p_2 \ldots p_k + 1 
+        </me>
+        What are the prime factors of this number <m>m</m>? I know
+        that all numbers break down uniquely into prime factors, so it
+        must have prime factors. However, every prime number
+        <m>p_i</m> in my list (which, by assumption, is all prime
+        numbers) is a factor of <m>m-1</m>. A prime number can't be
+        the factor of two consecutive numbers, so none of the prime
+        numbers are factors of <m>m</m>.
+      </li>
+      <li>
+        Step 3: State the contradiction. The number <m>m</m> must have
+        prime factors, but cannot have prime factors, since none of
+        the primes <m>p_i</m> are factors. This is a contradiction: the
+        number must have prime factors but has none.
+      </li>
+      <li>
+        Step 4: Conclude that the original statement was false, which
+        finishes the proof. The assumption that there were only
+        finitely many prime numbers led to a contradiction. Therefore,
+        by contradiction, I have proved that there are infinitely
+        many prime numbers. 
+      </li>
+    </ul>
+    <p>
+      This proof is <em>non-constructive</em>. It tells me that there
+      are infinitely many prime numbers, but it doesn't tell me 
+      anything about them: what they are, how to find them, how they
+      are distributed on the number line, etc. This is often a major
+      weakness of proofs by contradiction: they may not give 
+      concrete information about the objects in the proposition.
+    </p>
+    <p>
+      Another classic example is the proof that <m>\sqrt{2}</m> is
+      irrational. I will also prove this by contradiction.
+    </p>
+    <ul>
+      <li>
+        Step 1: Assume the statement is false. The statement says that
+        <m>\sqrt{2}</m> is irrational. If that is false, then
+        <m>\sqrt{2}</m> must be rational. Therefore, my assumption is
+        that <m>\sqrt{2}</m> is rational. 
+      </li>
+      <li>
+        Step 2: Work from the assumption to build a contradiction. If
+        <m>\sqrt{2}</m> is rational, then there are integers <m>a</m>
+        and <m>b</m> such that <m>\sqrt{2} = \frac{a}{b}</m>. Since
+        any fraction can be written in the simplest terms, I can assume
+        that <m>a</m> and <m>b</m> have no common factors. Then I can
+        do some arithmetic with this equation.
+        <md>
+          <mrow>
+            \sqrt{2} \amp = \frac{a}{b}
+          </mrow>
+          <mrow>
+            2 \amp = \frac{a^2}{b^2} 
+          </mrow>
+          <mrow>
+            2b^2 \amp = a^2 
+          </mrow>
+        </md>
+        <m>2</m> divides the left side of the equation, so it must
+        divide the right side as well, meaning that <m>a^2</m> must be
+        even. But the squares of odd numbers are odd, and the squares
+        of even numbers are even. Therefore, <m>a</m> must be even. I
+        can write <m>a = 2c</m> for some integer <m>c</m>. Then I'll
+        replace <m>a</m> by <m>2c</m> in the equation and do a bit more
+        arithmetic. 
+        <md>
+          <mrow>
+            2b^2 \amp = a^2 
+          </mrow>
+          <mrow>
+            2b^2 \amp = (2c)^2 
+          </mrow>
+          <mrow>
+            2b^2 \amp = 4c^2 
+          </mrow>
+          <mrow>
+            b^2 \amp = 2c^2 
+          </mrow>
+        </md>
+        Now <m>2</m> divides the right side of the equation, so it
+        must divide the left as well. That means that <m>b^2</m> is
+        even, so <m>b</m> must be even.
+      </li>
+      <li>
+        Step 3: State the contradiction. I assumed that <m>a</m>
+        and <m>b</m> have no common factors since I wrote the
+        fraction in the simplest terms. Now I have proved that both
+        numbers are even, so <m>2</m> is a factor of both. This is a
+        contradiction: <m>a</m> and <m>b</m> have no common factors,
+        but <m>2</m> is a common factor.
+      </li>
+      <li>
+        Step 4: Conclude that the original statement was false, which
+        finishes the proof. The assumption that <m>\sqrt{2}</m> was
+        rational produced to a contradiction, so I have proved that
+        <m>\sqrt{2}</m> must be irrational. 
+      </li>
+    </ul>
+    <p>
+      Proof by contradiction, as I mentioned at the start, relies on
+      the assumption that any (well-formed) statement in mathematics
+      is either true or false. That seems like a reasonable assumption
+      in a logical system, and proof by contradiction is an important
+      tool in mainstream mathematics. However, some versions of
+      mathematics have rejected this assumption. There are some
+      versions of mathematics that do not allow proof by
+      contradiction. (These are called intuitionistic or
+      constructionist mathematics). 
+    </p>
+  </subsection>
+  <subsection xml-id="subsection-induction">
+    <title>Proof by Induction</title>
+      <p>
+        Proof by induction is a method of proving statements that are
+        true for all natural numbers. When there isn't a direct
+        argument, statements such as these can be difficult to prove,
+        since there are infinitely many natural numbers to check.
+        Mathematicians agree that the following process suffices to
+        check all infinitely many cases.
+      </p>
+      <ul>
+        <li>
+          Prove a base case. Usually, I prove that the statement
+          holds for <m>n=0</m> or <m>n=1</m>, but the base case could
+          be any starting natural number. 
+        </li>
+        <li>
+          Assume that the statement is true for some number
+          <m>k</m>.
+        </li>
+        <li>
+          Using this assumption, prove that the statement holds for
+          the next number <m>k+1</m>.
+        </li>
+        <li>
+          Conclude that the statement is true for all natural numbers
+          <m>n</m>. (Or all numbers past the base case, if I started
+          at a larger number.)
+        </li>
+      </ul>
+      <p>
+        This process is called mathematical induction. (This is really
+        a terrible name. The reasoning here is still deductive
+        reasoning, not inductive reasoning. Calling it induction
+        really messes with the conventional use of the term
+        <qt>induction</qt> in logic). Mathematical induction  is
+        something like bootstrapping all the way up the natural
+        numbers. I prove the statement is true for <m>1</m>. Then I
+        have a general way of proving that if it is true for a number,
+        it is also true for the next number. Since it is true for
+        <m>1</m>, it must be true for <m>2</m>. If it is true for
+        <m>2</m>, it must be true for <m>3</m>. If it is true for
+        <m>3</m>, it must be true for <m>4</m>. This just keeps going,
+        so I conclude that it is true for all natural numbers.
+      </p>
+      <p>
+        Again, this is probably best demonstrated by example. I claim
+        that for any natural number <m>n \geq 1</m>, 
+        <me>
+          1 + 2 + 3 + 4 + \ldots + n = \frac{n(n+1)}{2}
+        </me>.
+        This is a nice identity giving me a way to quickly calculate
+        the sum of the first <m>n</m> numbers. For example
+        <me>
+          1 + 2 + 3 + 4 + \ldots + 703 = \frac{703\cdot704}{2} = 703
+          \cdot 352 = 247,456
+        </me>.
+        By doing one division and one multiplication, I know the sum
+        of the first <m>703</m> numbers. This is certainly much faster
+        than doing <m>702</m> additions. Now let's use mathematical
+        induction to prove this statement. 
+      </p>
+      <ul>
+        <li>
+          Step 1: Prove the base case. The base case here is
+          <m>n=1</m>. The left side is just <m>1</m>. The right side
+          is <m>\frac{(1)(2)}{2} = \frac{2}{2} = 1</m>. Since the left
+          side and the right side are the same, the base case holds. 
+        </li>
+        <li>
+          Step 2: Assume the statement is true for some number
+          <m>k</m>. I assume that 
+          <me>
+            1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
+          </me>
+          is true for some number <m>k</m>. (Not every number, yet,
+          just some number.) 
+        </li>
+        <li>
+          Step 3: Prove the next case. I need to prove the statement
+          is true for <m>k+1</m>. I can start with the assumption.
+          <me>
+            1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
+          </me>
+          I can add <m>(k+1)</m> to both sides. 
+          <me>
+            1 + 2 + 3 + 4 + \ldots + k + (k + 1) = \frac{k(k+1)}{2} +
+            (k+1) 
+          </me>
+          Then I can do some arithmetic with the right side, starting
+          with a common denominator. 
+          <me>
+            \frac{k(k+1)}{2} + (k+1) = \frac{k^2 + k + 2(k + 1)}{2} =
+            \frac{k^2 + 3k + 2}{2} = \frac{(k+1)(k+2)}{2}
+          </me>
+          Now I'll replace the right side with this last expression.
+          <me>
+            1 + 2 + 3 + 4 + \ldots + k + (k + 1) = \frac{(k+1)(k+1+1)}{2}
+          </me>
+          Finally, I can observe that this right side is precisely the
+          desired equation for <m>k+1</m>. I have proved the next
+          case. 
+        </li>
+        <li>
+          Since I have a base case, and I know that each base implies
+          the following case, I conclude (by mathematical induction)
+          that the statement holds for all natural numbers. 
+        </li>
+      </ul>
+  </subsection>
+</section>

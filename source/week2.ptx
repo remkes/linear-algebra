@@ -1,0 +1,9 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
+  xml:id="chapter-week2">
+  <title>Week 2</title>
+  <xi:include href="dot-product.ptx" />
+  <xi:include href="cross-product.ptx" />
+  <xi:include href="sets-structure.ptx" />
+  <xi:include href="week2-proofs.ptx" />
+  <xi:include href="week2-activity.ptx" />
+</chapter>

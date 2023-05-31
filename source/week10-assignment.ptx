@@ -1,0 +1,66 @@
+<!--
+  This assignment was used for the Fall 2022 term.
+-->
+<section xml:id="section-assignment-week10">
+  <title>Week 10 Assignment</title>
+  <p><ol>
+    <li>
+      <p>
+        Find the (real) eigenvalues and eigenvectors of this
+        matrices. Feel free to use a computer for the row reductions
+        and for the roots of the complicated polynomials, but make
+        sure you clearly indicate all the steps in the process. When
+        there are square root, give you answer in exact values (that
+        is, in terms of square roots, not decimal expansions.) (6)
+      </p>
+      <me>
+        \begin{pmatrix}
+          3 \amp -4 \\
+          0 \amp -2 
+        \end{pmatrix}
+      </me>
+    </li>
+    <li>
+      <p>
+        Find the (real) eigenvalues and eigenvectors of this
+        matrices. Feel free to use a computer for the row reductions
+        and for the roots of the complicated polynomials, but make
+        sure you clearly indicate all the steps in the process. When
+        there are square root, give you answer in exact values (that
+        is, in terms of square roots, not decimal expansions.) (8)
+      </p>
+      <me>
+        \begin{pmatrix}
+          1 \amp -2 \amp 0 \\
+          -1 \amp 0 \amp 0 \\
+          0 \amp 2 \amp 2 
+        \end{pmatrix}
+      </me>
+    </li>
+    <li>
+      <p>
+        Find the (real) eigenvalues and eigenvectors of this
+        matrices. Feel free to use a computer for the row reductions
+        and for the roots of the complicated polynomials, but make
+        sure you clearly indicate all the steps in the process. When
+        there are square root, give you answer in exact values (that
+        is, in terms of square roots, not decimal expansions.) (8)
+      </p>
+      <me>
+        \begin{pmatrix}
+          -3 \amp 0 \amp -1 \\
+          0 \amp 2 \amp 0 \\
+          1 \amp -2 \amp 4
+        \end{pmatrix}
+      </me>
+    </li>
+    <li>
+      <p>
+        What are the eigenvectors and eigenvalues of a dialation
+        matrix in <m>\RR^n</m>? (In particular, consider the special
+        case where several of the dialation coefficients are the same.
+        (6)
+      </p>
+    </li>
+  </ol></p>
+</section>

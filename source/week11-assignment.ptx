@@ -1,0 +1,133 @@
+<!--
+  This assignment was used for the Fall 2022 term.
+-->
+<section xml:id="section-assignment-week11">
+  <title>Week 11 Assignment</title>
+  <p><ol>
+    <li>
+      <p>
+        Consider the following Leslie matrices as a growth model for a
+        population with four age categories. (10)
+        <md>
+          <mrow>
+            \amp \begin{pmatrix}
+              0 \amp 1.2 \amp 0.8 \amp 0.4 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.8 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.8 \amp 0 
+            \end{pmatrix}
+            \amp \begin{pmatrix}
+              0 \amp 1.2 \amp 0.8 \amp 0.4 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.6 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.6 \amp 0 
+            \end{pmatrix}
+          </mrow>
+          <mrow>
+            \amp \begin{pmatrix}
+              0 \amp 1.6 \amp 1.2 \amp 0.4 \\
+              0.8 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.8 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.8 \amp 0 
+            \end{pmatrix}
+            \amp \begin{pmatrix}
+              0 \amp 1.2 \amp 0.8 \amp 0.4 \\
+              0.4 \amp 0 \amp 0 \amp 0 \\
+              0 \amp 0.8 \amp 0 \amp 0 \\
+              0 \amp 0 \amp 0.8 \amp 0 
+            \end{pmatrix}
+          </mrow>
+        </md>
+      </p>
+      <p><ol>
+        <li>
+          Determine the long term behaviour for each of the four
+          Leslie matrices. State the long term age profiles. 
+        </li>
+        <li>
+          The three later matrices can be interpreted as changes to
+          the first matrix. What is the result of those changes? How
+          do the structure and viability of the population change
+          going from one matrix to the next? 
+        </li>
+      </ol></p>
+    </li>
+    <li>
+      <p>
+        Consider a probability model with four states. Here is a
+        description of the transition probabilities. (10) 
+      </p>
+      <p><ul>
+        <li>
+          There is a <m>0.8</m> probability of transition from state 1 to
+          state 2. 
+        </li>
+        <li>
+          There is a <m>0.1</m> probability of transition from state 1 to
+          state 3. 
+        </li>
+        <li>
+          There is a <m>0.1</m> probability of transition from state 1 to
+          state 4. 
+        </li>
+        <li>
+          There is a <m>0.8</m> probability of transition from state 2 to
+          state 3. 
+        </li>
+        <li>
+          There is a <m>0.1</m> probability of transition from state 2 to
+          state 4. 
+        </li>
+        <li>
+          There is a <m>0.1</m> probability of transition from state 2 to
+          state 1. 
+        </li>
+        <li>
+          There is a <m>0.8</m> probability of transition from state 3 to
+          state 4. 
+        </li>
+        <li>
+          There is a <m>0.1</m> probability of transition from state 3 to
+          state 1. 
+        </li>
+        <li>
+          There is a <m>0.1</m> probability of transition from state 3 to
+          state 2. 
+        </li>
+        <li>
+          There is a <m>0.6</m> probability of transition from state 4 to
+          state 1. 
+        </li>
+        <li>
+          There is a <m>0.2</m> probability of transition from state 4 to
+          state 2. 
+        </li>
+        <li>
+          There is a <m>0.2</m> probability of transition from state 4 to
+          state 3. 
+        </li>
+        <li>
+          The probability of any state staying at itself is zero. 
+        </li>
+      </ul></p>
+      <p><ol>
+        <li>
+          Draw the probability graph. 
+        </li>
+        <li>
+          Write down the appropriate probability matrix.
+        </li>
+        <li>
+          Determine the long term behaviour of the system and the long
+          term probability of ending up in each state. 
+        </li>
+        <li>
+          Describe the typical behaviour in this probability system.
+          The transition probabilities from vertex 4 are different
+          from the others: how does this affect the long term
+          probabilities? 
+        </li>
+      </ol></p>
+    </li>
+  </ol></p>
+</section>

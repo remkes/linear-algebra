@@ -1,0 +1,183 @@
+<section xml:id="section-determinants-properties">
+  <title>Properties of Determinants</title>
+  <subsection xml:id="subsection-determinant-composition">
+    <title>Determinants and Composition</title>
+    <p>
+      Before talking about composition, there is a property of
+      determinant that follows from the cofactor expansion. I'll just
+      state it here. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          If <m>A</m> is an <m>n \times n</m> matrix, then
+          <m>\det A^{T} = \det A</m>.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      Now I can talk about composition.  Algebra considers sets with
+      structure. On the set <m>M_n(\RR)</m> of <m>n \times n</m>
+      matrices, the determinant is a new algebraic structure. I would
+      like to investigate how it interacts with existing structures,
+      starting with matrix multiplication.
+    </p>
+    <p>
+      To compose two transformations, I multiply the matrices. In this
+      composition, the effects on size should compound. If the first
+      transformation doubles size and the second triples it, the
+      composition should multiply the size by a factor of <m>6</m>.
+      Similarly, with orientation: if both preserve orientation, the
+      composition should as well. If both reverse orientation,
+      reversing twice should return to the normal orientation. So,
+      two positive or two negatives should result in a positive, and one
+      positive and one negative should result in a negative. These two
+      observations (compounding effect on sze, reversing orientation)
+      are captured in this proposition.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> and <m>B</m> be two <m>n \times n</m> matrices.
+          Then <m>\det (AB) = \det (A) \det (B)</m>.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      Here is a similar proposition about the properties
+      of determinants. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          If <m>A</m> is an invertible <m>n \times n</m> matrix, then
+          <m>\det A^{-1} = \frac{1}{\det A}</m>.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      In particular, for <m>A</m> to be invertible, it must have a
+      non-zero determinant. It turns out this property is sufficient
+      as well as necessary. A non-zero determinant preserves the
+      dimension: it may increase or decrease size, but it doesn't
+      entirely destroy it. Therefore, there is always a way to go back
+      and to reverse the process.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          A <m>n \times n</m> matrix <m>A</m> is invertible if and only
+          if <m>\det A \neq 0</m>.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      I can expand the list of criteria for invertibility by including
+      this new determinant condition. Here is the list that I
+      previously presented in <xref ref="section-proofs-week7" /> with
+      the new condition added at the end. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> be an <m>n \times n</m> matrix. All of the
+          following properties are equivalent.
+          <ul>
+            <li>
+              <m>A</m> is invertible.
+            </li>
+            <li>
+              <m>A</m> has rank <m>n</m>.
+            </li>
+            <li>
+              <m>A</m> row reduces to the identity matrix.
+            </li>
+            <li>
+              <m>\Ker(A) = \{0\}</m>.
+            </li>
+            <li>
+              <m>\Image(A) = \RR^n</m>.
+            </li>
+            <li>
+              The columnspace of <m>A</m> is <m>\RR^n</m>.
+            </li>
+            <li>
+              The columns of <m>A</m> are linearly independent.
+            </li>
+            <li>
+              The rowspace of <m>A</m> is <m>\RR^n</m>.
+            </li>
+            <li>
+              The rows of <m>A</m> are linearly independent.
+            </li>
+            <li>
+              <m>Au = v</m> has a unique solution <m>u</m> for any
+              choice of <m>v \in \RR^n</m>.
+            </li>
+            <li>
+              <m>\det A \neq 0</m>.
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </proposition>
+  </subsection>
+  <subsection xml:id="subsection-determinant-algebra">
+    <title>Other Algebraic Properties</title>
+    <p>
+      Here are two more properties of determinants.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> and <m>B</m> be <m>n \times n</m> matrices and
+          let <m>\alpha \in \RR</m> be a scalar.
+          <md>
+            <mrow>
+              \det (AB) \amp  = \det (BA)
+            </mrow>
+            <mrow>
+              \det \alpha A \amp  = \alpha^n \det A
+            </mrow>
+          </md>
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      Row reduction is an important operation on matrices. It is
+      convenient to know how the determinant changes under row
+      operations.
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          Let <m>A</m> be an <m>n \times n</m> matrix. If two rows are
+          exchanged, the determinant changes sign (positive to
+          negative, negative to positive). If a row is multiplied by a
+          constant <m>\alpha</m>, the determinant is multiplied by the
+          same constant <m>\alpha</m>. If a multiple of one row is
+          added to another, the determinant is (surprisingly) 
+          unchanged.
+        </p>
+      </statement>
+    </proposition>
+    <p>
+      All of the properties of determinant listed so far have been
+      multiplicative. The situation for matrix addition and
+      determinants is less elegant: <m>\det (A + B)</m> has no
+      pleasant identity. This is an interesting contrast from many of
+      the other things in this course: determinants are not linear
+      functions <m>M_n(\RR) \rightarrow \RR</m> since they do not act
+      nicely with addition.  Instead, they act nicely with
+      multiplication. On sets with various algebraic structures, it is
+      common for an operation to interact well with one structure but
+      poorly with the others. It is not surprisingly that the
+      determinant doesn't work well with matrix multiplication based
+      on the original observation that matrix multiplication doesn't
+      have a clear geometric meaning. The determinant is a very
+      geometric definition, so an operation that is simply algebraic
+      without a geometric meaning is unlikely to easily cooperate with
+      a strongly geometric construction. 
+    </p>
+  </subsection>
+</section>

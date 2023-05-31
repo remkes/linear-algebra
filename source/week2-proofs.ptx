@@ -1,0 +1,265 @@
+<section xml:id="section-proofs-week2">
+  <title>Proofs - Dot and Cross Products</title>
+  <subsection xml:id="subsection-dot-product-proofs">
+    <title>Prooving the Dot Product Properties</title>
+    <p>
+      In <xref ref="proposition-dot-product-properties" />, I listed
+      four properties of the dot product. In this section, I'll
+      demonstrate how to prove some of these properties. 
+    </p>
+    <proposition>
+      <statement>
+        <p>
+          The dot product is commutative. That is, if <m>u, v \in
+          \RR^n</m>, 
+          <me>
+            u \cdot v = v \cdot u
+          </me>.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          I first write the vector in coordinates. This is the full
+          generality of <m>\RR^n</m>, so I write vectors with <m>n</m>
+          coordinates using ellipses 
+          <md>
+            <mrow>
+              \amp u = \begin{pmatrix}
+                u_1 \\ u_2 \\ u_3 \\ \vdots \\ u_n
+              \end{pmatrix}
+              \amp \amp v = \begin{pmatrix}
+                v_1 \\ v_2 \\ v_3 \\ \vdots \\ v_n
+              \end{pmatrix}
+            </mrow>
+          </md>
+          Then I'll start with the left side and see if I can make a
+          chain of equality that results in the right side. 
+          First I use the definition of the dot product. 
+          <me>
+            u \cdot v = u_1v_1 + u_2v_2 + u_3v_3 + \ldots + u_nv_n
+          </me>
+          Then each of the products <m>u_iv_i</m> are products of
+          ordinary real numbers. Multiplicaton of real numbers is
+          commutative, so I can interchange the order of each of
+          these products.
+          <me>
+            u \cdot v = v_1u_1 + v_2u_2 + v_3u_3 + \ldots + v_nu_n
+          </me>
+          Then I use the definition of the dot product again. The
+          right side of the previous equation is, by definition, the
+          dot product <m>v \cdot u</m>.
+          <me>
+            u \cdot v = v \cdot u
+          </me>
+          That is the desired equality, so I have finished the proof.
+          Notice that the desired equation only shows up at the end of
+          the proof. I never start with what I want to prove.
+        </p>
+      </proof>
+    </proposition>
+    <proposition>
+      <statement>
+        <p>
+          If <m>u \in \RR^n</m>, then 
+          <me>
+            u \cdot u = |u|^2 
+          </me>
+        </p>
+      </statement>
+      <proof>
+        <p>
+          I write <m>u</m> in its coordinates.
+          <me>
+            u = \begin{pmatrix}
+              u_1 \\ u_2 \\ u_3 \\ \ldots \\ u_n
+            \end{pmatrix}
+          </me>
+          Then I'll start with the left side and use the definition of
+          the dot product. 
+          <me>
+            u \cdot u = u_1u_1 + u_2u_2 + u_3u_3 + \ldots u_nu_n
+          </me>
+          I can write these products on the left as squares.
+          <me>
+            u \cdot u = u_1^2 + u_2^2 + u_3^2 + \ldots + u_n^2
+          </me>
+          Since the right side is a sum of squares, it is a positive
+          number (or possibly zero if all the <m>u_i</m> are zero). As
+          a positive number or zero, I can square root it and then
+          square it without effect: <m>\alpha = (\sqrt{\alpha})^2</m>
+          for any non-negative <m>\alpha</m>.
+          <me>
+            u \cdot u = \left( \sqrt{u_1^2 + u_2^2 + u_3^2 + \ldots +
+            u_n^2} \right)^2 
+          </me>
+          Then the expression inside the brackets is, by definition, the
+          length of the vector <m>u</m>.
+          <me>
+            u \cdot u = \left( |u| \right)^2 = |u|^2 
+          </me>
+          This is the desired equation, so the proof is completed. 
+        </p>
+      </proof>
+    </proposition>
+    <proposition>
+      <statement>
+        <p>
+          The dot product distributes over vector addition. That is,
+          if <m>u,v,w \in \RR^n</m>, 
+          <me>
+            u \cdot (v + w) = u \cdot v + u \cdot w
+          </me>
+        </p>
+      </statement>
+      <proof>
+        <p>
+          I'll write the three vectors in components.
+          <md>
+            <mrow>
+              \amp u = \begin{pmatrix}
+                u_1 \\ u_2 \\ u_3 \\ \ldots \\ u_n
+              \end{pmatrix}
+              \amp \amp v = \begin{pmatrix}
+                v_1 \\ v_2 \\ v_3 \\ \ldots \\ v_n
+              \end{pmatrix}
+              \amp \amp w = \begin{pmatrix}
+                w_1 \\ w_2 \\ w_3 \\ \ldots \\ w_n
+              \end{pmatrix}
+            </mrow>
+          </md>
+          Then I'll start with the left side. I'll use the definition
+          of vector addition and the dot product.
+          <md>
+            <mrow>
+              u \cdot (v + w) \amp \begin{pmatrix}
+                u_1 \\ u_2 \\ u_3 \\ \ldots \\ u_n
+              \end{pmatrix} \cdot 
+              \begin{pmatrix}
+                v_1 + w_1 \\ v_2 + w_2 \\ v_3 + w_3 \\ \ldots \\ v_n +
+                w_n 
+              \end{pmatrix}
+            </mrow>
+            <mrow>
+              \amp = u_1(v_1 + w_1) + u_w(v_2 + w_2) + u_3(v_3 + w_3)
+              + \ldots + u_n(v_n + w_n)
+            </mrow>
+          </md>
+          Each of these products can be distributed, since this is all
+          arithmetic of ordinary real numbers.
+          <md>
+            <mrow>
+              u \cdot (v + w) \amp = (u_1v_1 + u_1w_1) + (u_2v_2 + u_2w_2) 
+            </mrow>
+            <mrow>
+              \amp + (u_3v_3 + u_3w_3) + \ldots + (u_nv_n + u_nw_n)
+            </mrow>
+          </md>
+          The right side is the sum of many products. I can
+          rearrange this sum as I please, so I'll put all the terms
+          with <m>v_i</m> first, then all those with <m>w_i</m>
+          afterwards.
+          <md>
+            <mrow>
+              u \cdot (v + w) \amp = (u_1v_1 + u_2v_2 + u_3v_3 +
+              \ldots + u_nv_n)
+            </mrow>
+            <mrow>
+              \amp + (u_1w_1 + u_2w_2 + u_3w_3 + \ldots + u_nw_n)
+            </mrow>
+          </md>
+          Then I can use the definition of the dot product again. On
+          the right side, the term in the first bracket is, by
+          definition, <m>u \cdot v</m>. The term in the second bracket
+          is, again by definition, <m>u \cdot w</m>.
+          <me>
+            u \cdot (v + w) = u \cdot v + u \cdot w
+          </me>
+          This is the desired equation, so the proof is finished. 
+        </p>
+      </proof>
+    </proposition>
+    <proposition>
+      <statement>
+        <p>
+          If <m>u,v \in \RR^n</m> and <m>a \in \RR</m>, then 
+          <me>
+            u \cdot (av) = (au) \cdot v = a (u \cdot v) 
+          </me>
+        </p>
+      </statement>
+      <proof>
+        <p>
+          I'll write the two vectors in components.
+          <md>
+            <mrow>
+              \amp u = \begin{pmatrix}
+                u_1 \\ u_2 \\ u_3 \\ \ldots \\ u_n
+              \end{pmatrix}
+              \amp \amp v = \begin{pmatrix}
+                v_1 \\ v_2 \\ v_3 \\ \ldots \\ v_n
+              \end{pmatrix}
+            </mrow>
+          </md>
+          Then I want to consider this sum:
+          <me>
+            au_1v_1 + au_2v_2 + au_3v_3 + \ldots au_nv_n
+          </me>.
+          I'm going to organize this sum in three different ways,
+          which will correspond to the three desired versions in the
+          equation in the proposition. Since I will only be arranging
+          brackets for addition and multiplication of numbers in
+          acceptable ways, all three of these organizations are just
+          calculating the same sum, so I can conclude that all three are
+          equal.
+        </p>
+        <p>
+          First, I'll factor the <m>a</m> out of the entire sum.
+          <me>
+            a(u_1v_2 + u_2v_2 + u_3v_3 + \ldots u _nv_n)
+          </me>
+          What is in brackets is the definition of the dot product, so
+          this is <m>a (u \cdot v)</m>. Next I'll bracket the <m>a</m>
+          with the <m>u_i</m> components.
+          <me>
+            (au_1)v_2 + (au_2)v_2 + (au_3)v_3 + \ldots (au_n)v_n
+          </me>
+          This is, by definition, also a dot product. 
+          <me>
+            \begin{pmatrix}
+              au_1 \\ au_2 \\ au_3 \\ \vdots \\ au_n 
+            \end{pmatrix} \cdot 
+            \begin{pmatrix}
+              v_1 \\ v_2 \\ v_3 \\ \vdots \\ v_n
+            \end{pmatrix}
+          </me>
+          The first vector in this dot product is, by definition, the
+          scalar multiple of <m>u</m> by <m>a</m>. Therefore, this
+          organization of the sum gives <m>(au) \cdot v</m>. Finally,
+          I'll change the order of the multiplications and group
+          <m>a</m> with the <m>v_i</m> components. 
+          <me>
+            u_1(av_2) + u_2(av_2) + u_3(av_3) + \ldots u_n(av_n)
+          </me>
+          This is, by definition, also a dot product. 
+          <me>
+            \begin{pmatrix}
+              u_1 \\ u_2 \\ u_3 \\ \vdots \\ u_n 
+            \end{pmatrix} \cdot 
+            \begin{pmatrix}
+              av_1 \\ av_2 \\ av_3 \\ \vdots \\ av_n
+            \end{pmatrix}
+          </me>
+          The second vector in this dot product is, by definition, the
+          scalar multiple of <m>v</m> by <m>a</m>. Therefore, this
+          organization of the sum gives <m>u \cdot (av)</m>. Since
+          all three organizations are valid ways of calculating the
+          sum, I conclude that 
+          <me>
+            u \cdot (av) = (au) \cdot v = a(u \cdot v)
+          </me>, 
+          which concludes the proof. 
+        </p>
+      </proof>
+    </proposition>
+  </subsection>
+</section>
