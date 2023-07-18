@@ -1,6 +1,7 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
   xml:id="chapter-week1">
   <title>Week 1</title>
+  <xi:include href="introduction.ptx" />
   <xi:include href="euclidean-space.ptx" />
   <xi:include href="vector-arithmetic.ptx" />
   <xi:include href="higher-dimensions.ptx" />

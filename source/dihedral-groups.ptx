@@ -116,7 +116,7 @@
     <title>The Group <m>D_4</m></title>
     <figure xml:id="figure-d4">>
       <caption>Symmetries of the Square</caption>
-      <image xml:id="figure22" width="80%">
+      <image xml:id="image-d4" width="80%">
         <asymptote>
           size(10cm);
 

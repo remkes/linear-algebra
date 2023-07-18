@@ -17,7 +17,7 @@
     </p>
     <figure xml:id="figure-markov1">
       <caption>Probability Graph 1</caption>
-      <image xml:id="figure23" width="80%">
+      <image xml:id="image-markov1" width="80%">
         <asymptote>
           size(12cm); 
 
@@ -278,7 +278,7 @@
       <statement>
         <figure xml:id="figure-markov2">
           <caption>Probability Graph Example 2</caption>
-          <image xml:id="figure24" witdh="80%">
+          <image xml:id="image-markov2" witdh="80%">
             <asymptote>
               size(12cm); 
 
@@ -355,7 +355,7 @@
       <statement>
         <figure xml:id="figure-markov3">
           <caption>Probability Graph Example 3</caption>
-          <image xml:id="figure25" witdh="80%">
+          <image xml:id="image-markov3" witdh="80%">
             <asymptote>
               size(12cm); 
 
@@ -484,7 +484,7 @@
     </p>
     <figure xml:id="figure-gamblers1">
       <caption>Probability Graph for a Game of Chance</caption>
-      <image xml:id="figure26" width="80%">
+      <image xml:id="image-gamblers1" width="80%">
         <asymptote>
           size(12cm); 
 

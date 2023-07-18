@@ -31,7 +31,7 @@
     </p>
     <figure xml:id="figure-visualizing-vector-addition">
       <caption>Visualizing Vector Addition</caption>
-      <image xml:id="figure04" width="80%">
+      <image xml:id="image-visualizing-vector-addition" width="80%">
         <asymptote>
           size(10cm);
           import graph;
@@ -90,7 +90,7 @@
     </p>
     <figure xml:id="figure-visualizing-scalar-multiplication">
       <caption>Visualizing Scalar Multiplication</caption>
-      <image xml:id="figure05" width="80%">
+      <image xml:id="image-visualizing-scalar-multiplication" width="80%">
         <asymptote>
           size(10cm);
           import graph;
@@ -146,7 +146,10 @@
           properties of addition and scalar multiplication, I call
           the structure <term>linear</term>. <m>\RR^n</m> is a linear
           space because vectors allow for addition and scalar
-          multiplication.
+          multiplication. As I said in <xref
+          ref="section-introduction" />, this algebraic sense of
+          linear will be a major theme in the course. This is the
+          first instance of that theme. 
         </p>
       </statement>
     </definition>
@@ -207,7 +210,7 @@
     </p>
     <figure xml:id="figure-difference-and-length">
       <caption>Visualizing Distance Between Vectors</caption>
-      <image xml:id="figure06" width="80%"> 
+      <image xml:id="image-difference-and-length" width="80%"> 
         <asymptote>
           size(10cm);
           import graph;
@@ -257,7 +260,10 @@
       number and <m>|u|</m> is the length of a vector. The fact that
       they have the same notation is frustrating, but these notations
       are common. (Some text use double bars for the length of a
-      vector, <m>||v||</m>, to avoid this particular issue.)
+      vector, <m>||v||</m>, to avoid this particular issue. Single bar
+      notation for vector length is common enought, though, that I
+      prefer to use is and risk the confusion between vector length
+      and scalar absolute value.)
     </p>
   </subsection>
 </section>

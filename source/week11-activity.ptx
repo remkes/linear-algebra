@@ -255,7 +255,7 @@
         <p>
           <figure xml:id="figure-markov-activity1">
             <caption>Probability Graph 1</caption>
-            <image xml:id="figure27" width="80%">
+            <image xml:id="image-markov-activity1" width="80%">
               <asymptote>
                 size(12cm); 
 
@@ -327,7 +327,7 @@
         <p>
           <figure xml:id="figure-markov-activity2">
             <caption>Probability Graph 1</caption>
-            <image xml:id="figure28" width="80%">
+            <image xml:id="image-markov-activity2" width="80%">
               <asymptote>
                 size(12cm); 
 
@@ -423,7 +423,7 @@
         <p>
           <figure xml:id="figure-markov-activity3">
             <caption>Probability Graph 3</caption>
-            <image xml:id="figure29" width="80%">
+            <image xml:id="image-markov-activity3" width="80%">
               <asymptote>
                 size(12cm); 
 
@@ -515,7 +515,7 @@
           about after 10 rounds?
           <figure xml:id="figure-markov-activity4">
             <caption>Probability Graph 4</caption>
-            <image xml:id="figure30" width="80%">
+            <image xml:id="image-markov-activity4" width="80%">
               <asymptote>
                 size(12cm); 
 

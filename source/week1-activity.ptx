@@ -250,7 +250,7 @@
         </p>
         <figure xml:id="figure-vector-arithmetic">
           <caption>Vector Arithmetic</caption>
-          <image xml:id="figure10" width="80%">
+          <image xml:id="image-vector-arithmetic" width="80%">
             <asymptote>
               size(12cm,8cm);
               import graph;

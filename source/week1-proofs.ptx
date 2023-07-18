@@ -3,20 +3,16 @@
   <subsection xml:id="subsection-properties-vector-arithmetic">
     <title>Properties of Vector Arithmetic</title>
     <p>
-      In the themes of the course, I said that algebra was the study
-      of structures on sets. I'll talk in more detail about this 
-      in <xref ref="section-sets-with-structure" />, but I've already
-      introduced the first important example.  In <xref
-      ref="section-vector-arithmetic" />, I introduced three
+      In ref="section-vector-arithmetic" />, I introduced three
       structures on <m>\RR^n</m>: vector addition, scalar
-      multiplication, and vector length. The abstract algebraic
+      multiplication, and vector length.  The abstract algebraic
       question that mathematicians ask at this point is: what are the
       properties of these structures? How does vector addition
       resemble normal addition (which is it named after), and how does
       it differ? How does scalar multiplication resemble normal
-      multiplication (which is it named after), and how does it differ?
-      How does the length differ from the absolute value (which shares the
-      same notation)?
+      multiplication (which is it named after), and how does it
+      differ?  How does the length differ from the absolute value
+      (which shares the same notation)? 
     </p>
     <p>
       These are abstract questions, but they are also practically
@@ -27,14 +23,14 @@
       those habits immediately transfer to these new structures. If
       the new structures resemble the old, I have to prove it to be
       sure. If they don't, I have to adjust my habits. Both 
-      situation happen in this course. In this section, I'll mostly
+      situation shappen in this course. In this section, I'll mostly
       be proving that the properties of ordinary addition and
       multiplication carry over to these new structures. Later in the
       course, I'll have new structures which have properties that are
       different from what I expect for conventional arithmetic. 
     </p>
     <p>
-      In the notes, I'm going to address three properties of scalar
+      In this section, I'm going to address three properties of scalar
       multiplication and vector addition. Some properties of the
       vector length operation are left for the activities. 
     </p>
@@ -162,11 +158,12 @@
       then <m>au</m> produces another vector. In defining scalar
       multiplication, I wrote the scalar on the left and the vector
       on the right. Right now, the expression <m>ua</m> doesn't even
-      mean anything. e could define it to mean the same thing so
-      that I could do scalar multiplication on either side, but our
-      convention is to always write the scalar on the left and the
-      vector on the right.  In this way, scalar multiplication isn't
-      commutative because of my choice of notation. 
+      mean anything. I could define it to mean the same thing so
+      that I could do scalar multiplication on either side, but the
+      mathematical notation convention is to always write the scalar
+      on the left and the vector on the right. In this way, scalar
+      multiplication isn't commutative because of the choice of
+      notation. 
     </p>
   </subsection>
   <subsection xml-id="subsection-vector-arithmetic-associativity">

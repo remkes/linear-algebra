@@ -2,11 +2,21 @@
   <title>Euclidean Space</title>
   <subsection xml:id="subsection-vector-definitions">
     <title>Definitions</title>
+    <p>
+      Euclidean or cartesian space is the environment for this course.
+      The cartesian plane is familiar to you, but I'm going to give
+      formal definitions regardless. This is part of the process of
+      learning the formal language of mathematics: of taking
+      previously known mathematical ideas and redefining them in more
+      formal, logical ways. We start that process with geometric space
+      and the vectors therein. 
+    </p>
     <definition>
       <statement>
         <p>
-          In linear algebra, ordinary numbers (integers, rational
-          numbers or real numbers) are called <term>scalars</term>.
+          In linear algebra and many other brances of mathematics,
+          ordinary numbers (integers, rational numbers or real
+          numbers) are called <term>scalars</term>.
         </p>
       </statement>
     </definition>
@@ -29,7 +39,10 @@
     </definition>
     <p>
       In this course, I will exclusively use column vectors. In many
-      other places, row vectors are common.
+      other places, row vectors are common. I find it best to choose
+      one of the two for the whole course instead of switching back
+      and forth. For reason that I'll talk about in future weeks,
+      column vectors are a good choice for this course. 
     </p>
     <definition>
       <statement>
@@ -44,11 +57,22 @@
           </me>
         </p>
         <p>
-          Since there are <m>n</m> coefficieint in its vectors, the
+          Since there are <m>n</m> coefficients in its vectors, the
           space <m>\RR^n</m> has <term>dimension</term> <m>n</m>.
         </p>
       </statement>
     </definition>
+    <p>
+      Two dimensional space, <m>\RR^2</m>, and possibly three
+      dimensional space, <m>\RR^3</m>, should be familiar. Notice,
+      though, that my new formal definitions work in any dimension.
+      This is the power of mathematical abstraction and formalization.
+      Even though we live in three dimensions and can't visualize
+      higher dimension, there are many reasons (including very
+      practical reasons) to consider higher dimensions. Therefore, my
+      definitions are flexible enough to consider four dimension
+      space, or six dimension vectors, or whatever else I need. 
+    </p>
     <definition>
       <statement>
         <p>
@@ -84,9 +108,8 @@
       </statement>
     </definition>
     <p>
-      Euclidean space, particularly the plane, is a familiar object
-      from high-school mathematics. Euclidean space is usually
-      visualized by drawing axes, one in each independent
+      This is geometry, so I want to actully see it. Euclidean space
+      is usually visualized by drawing axes, one in each independent
       perpendicular direction. In this visualization, the vector
       <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> corresponds to the
       unique point I get moving <m>a</m> units in the direction of the
@@ -96,9 +119,9 @@
     </p>
     <figure xml:id="figure-points-in-the-cartesian-plane">
       <caption>Points in <m>\RR^2</m></caption>
-      <image xml:id="figure01" width="80%">
+      <image xml:id="image-points-in-the-cartesian-plane" width="80%">
         <asymptote>
-          size(10cm);
+          size(10cm,0);
           import graph;
           usepackage("amsmath");
 
@@ -131,15 +154,12 @@
       to the right, and the <m>y</m> axis vertically, with a positive
       direction upwards. For <m>\RR^3</m>, the <m>x</m> and <m>y</m>
       axes form a flat plane, and the <m>z</m> axis extends vertically
-      from that plane. 
-      <!-- 
-        as shown in <xref ref="figure-points-in-three-space" />. 
-      -->
+      from that plane.  <xref ref="figure-points-in-three-space" />
+      shows some points in <m>\RR^3</m>
     </p>
-    <!--
     <figure xml:id="figure-points-in-three-space">
       <caption>Points in <m>\RR^3</m></caption>
-      <image xml:id="figure02" width="80%">
+      <image xml:id="image-points-in-three-space" width="80%">
         <asymptote> 
           import graph3;
           size(200,200,keepAspect=false);
@@ -177,7 +197,13 @@
       <m>\RR^n</m>. However, this doesn't prevent me from working in
       higher dimensions. I need to rely on the algebraic
       descriptions of vectors instead of the drawings and
-      visualizations of <m>\RR^2</m> and <m>\RR^3</m>.
+      visualizations of <m>\RR^2</m> and <m>\RR^3</m>. This is where
+      the algebra/geometry connection becomes truly remarkable: if I
+      build the algebra to describe two and three dimensional
+      geometry, I can use that algebra to describe four, five and
+      higher dimensional geometry as well. Even though I can't see
+      these spaces, I can understand them and work with them. It's
+      amazing. 
     </p>
     <p>
       In the visualizations of <m>\RR^2</m> and <m>\RR^3</m>, I see
@@ -206,9 +232,9 @@
     </p>
     <figure xml:id="figure-points-and-directions">
       <caption>Vectors as Points and Directions</caption>
-      <image xml:id="figure03" width="80%"> 
+      <image xml:id="image-points-and-directions" width="80%"> 
         <asymptote>
-          size(10cm);
+          size(10cm,0);
           import graph;
           usepackage("amsmath");
           
@@ -247,7 +273,7 @@
     </p>
     <figure xml:id="figure-local-direction-vectors">
       <caption>Local Direction Vectors</caption>
-      <image xml:id="figure08" width="80%">
+      <image xml:id="image-local-direction-vectors" width="80%">
         <asymptote>
           size(10cm);
           import graph;

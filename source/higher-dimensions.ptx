@@ -3,22 +3,29 @@
   <subsection xml:id="subsection-higher-dimensions">
     <title>New Environments</title>
     <p>
-      In the definitions in the previous section, I defined Euclidean
-      space was defined in any dimension. If I want to work in seven
-      dimensions, I simply need to write vectors with seven
-      components. This is a strange and new thing. Conventional
+      In the definitions in <xref ref="section-euclidean-space" />, I
+      defined vectors and Euclidean space in any dimension, not just
+      the familiar two and three dimensions. If I want
+      to work in seven dimensions, I simply need to write vectors with
+      seven components. This is a strange and new thing. Conventional
       geometry deals with things I can draw and see, which are things
       that necessarily exist in two or three dimensions. Higher
-      dimensions are something new and bizzare.
+      dimensions are something new and bizzare, but also fascinating.
+      (Higher dimensions are not just a mathematical fascination:
+      doing higher dimensional geometry is also extremely practical.
+      I'll try to provide justification for this practicality before
+      the course is finished.) 
     </p>
     <p>
       In this section, I want to talk through some constructions that
       might help to build some intuition and familiarity with higher
-      dimensions. I need indirect methods, since I can't see higher
-      dimensional spaces. 
+      dimensions. Working in higher dimensions is a new kind of
+      challenge, so buidling some intuition can be extremely valuable.
+      I do need to use indirect (mostly algebriac)methods, since I
+      can't visualize higher dimensional spaces. 
     </p>
     <p>
-      In some contexts, particularly physics after general
+      In some contexts, particularly in physics using Einstein's general
       relativility, the fourth dimension is often treated as time.
       That's not the approach in this course. I am interested in
       treating all these higher dimensions as environments for
@@ -26,8 +33,14 @@
       many other geometric ideas in these higher dimensions. In the
       applications of linear algebra, higher dimensions can be given a
       huge variety of interpretation, including treating one dimension
-      as time. Those applications come afterwards. In linear algebra,
-      I can treat all dimensions geometrically. 
+      as time. Those applications can come afterwards, after the
+      theory is well developed. In linear algebra, I treat all
+      dimensions geometrically. 
+    </p>
+    <p>
+      I'll start building higher dimensional intituion by talking
+      about how some familiar objects generalize into these higher
+      dimensions. 
     </p>
   </subsection>
   <subsection xml:id="subsection-spheres">
@@ -36,10 +49,10 @@
       In the plane, all points that are exactly one unit from the
       origin form the unit circle. In three dimensional space, all
       points that are exactly one unit from the origin form the
-      unit sphere. Following this logic, I can construct
-      <sq>spheres</sq> in higher dimensions. In any <m>\RR^n</m>, all
-      objects which are exactly one unit from the origin form the
-      sphere in that dimension. 
+      unit sphere. This is the start of a pattern. Following this
+      logic, I can construct <sq>spheres</sq> in higher dimensions. In
+      any <m>\RR^n</m>, all objects which are exactly one unit from
+      the origin form the sphere in that dimension. 
     </p>
     <p>
       The naming convention for these spheres in mathematics is
@@ -113,17 +126,22 @@
     </p>
     <p>
       This notion of slicing works in higher dimensions. The
-      <m>3</m>-sphere in <m>\RR^4</m> has slices, which are spheres.
-      That's a bizarre idea (because trying to think in four
-      dimensions is a bizarre task), and one that defies
-      visualization. But it is a way of thinking about the
-      <m>3</m>-sphere. It is an object whose slices are spheres and
-      can be thought of as infinitely many spheres stacked up. This is
-      still strange: the stacking happens in a new direction, so that
-      all points on <qt>adjacent</qt> spheres are right next to each
-      other, just like the circles stack up to make the ordinary
-      sphere are right next to each other. But maybe this helps us
-      think a bit about what kind of object the <m>3</m>-sphere is. 
+      <m>3</m>-sphere in <m>\RR^4</m> has slices, which are usual
+      three-dimensional spheres.  That's a bizarre idea, because
+      trying to think in four dimensions is a bizarre task, and one
+      that defies visualization. I can't see an infinite stack of
+      spheres all right next to each other. But this slicing into
+      spherei is a useful way of thinking about the <m>3</m>-sphere.
+      The sphere in four dimensions is an object whose slices are
+      spheres in three dimensions;  it can be thought of as infinitely
+      many spheres stacked up. This is still strange: the stacking
+      happens in a new direction, so that all points on
+      <qt>adjacent</qt> spheres are right next to each other, just
+      like the circles stack up to make the ordinary sphere are right
+      next to each other. But maybe this helps us think a bit about
+      what kind of object the <m>3</m>-sphere is. This pattern could
+      continue: the five dimensional sphere has slices which are four
+      dimensional spheres, and so on. 
     </p>
   </subsection>
   <subsection xml:id="subsection-cubes">
@@ -153,9 +171,11 @@
     </p>
     <figure xml:id="figure-square">
       <caption>The Square</caption>
-      <image xml:id="figure12" width="50%">
+      <image xml:id="image-square" width="50%">
         <asymptote>
           size(10cm);
+          
+          defaultpen(2);
 
           dot((0,0));
           dot((0,2));
@@ -167,22 +187,25 @@
       </image>
     </figure>
     <p>
-      Let's look at <m>\RR^3</m> and follow the algorithm I suggested.
-      If I take two squares and connect the matching vertices, I do
-      indeed get the ordinary cube. One of the two squares is the
-      front of the cube, and the other is the back (or top and bottom,
-      left and right, depending on how you orient the pieces). To make
-      this a bit more clear, in <xref ref="figure-cube" />, I've drawn
-      the two original squares in black and the four connecting lines
-      in red. I could also describe the cube (including its interior)
-      as all points where the coordinates satisfy <m>x \in [0,1]</m>,
-      <m>y \in [0,1]</m> and <m>z \in [0,1]</m>. 
+      Now I'll look at <m>\RR^3</m> and follow the construction
+      process.  If I take two squares and connect the matching
+      vertices, I do indeed get the ordinary cube. One of the two
+      squares is the front of the cube, and the other is the back (or
+      top and bottom, left and right, depending on how you orient the
+      pieces). To make this a bit more clear, in <xref
+      ref="figure-cube" />, I've drawn the two original squares in
+      black and the four connecting lines in red. I could also
+      describe the cube (including its interior) as all points where
+      the coordinates satisfy <m>x \in [0,1]</m>, <m>y \in [0,1]</m>
+      and <m>z \in [0,1]</m>. 
     </p>
     <figure xml:id="figure-cube">
       <caption>The Cube</caption>
-      <image xml:id="figure11" width="50%">
+      <image xml:id="image-cube" width="50%">
         <asymptote>
           size(10cm);
+
+          defaultpen(2);
 
           dot((0,0));
           dot((0,5));
@@ -216,7 +239,7 @@
     </p>
     <figure xml:id="figure-tesseract">
       <caption>The Tesseract</caption>
-      <image xml:id="figure13" width="90%">
+      <image xml:id="image-tesseract" width="90%">
         <asymptote>
           size(10cm);
 
@@ -271,13 +294,16 @@
       <m>[0,1]</m>. Each can be constructed by joining two
       copies of a lower-dimensional <m>(n-1)</m>-cube with edges
       between matching vertices. I haven't tried to draw diagrams for
-      any of these higher-dimensional cubes. 
+      any of these higher-dimensional cubes, since the diagrams
+      quickly become very difficult to parse. But, hopefully, the
+      diagram of the tesseract gives a sense of how to think about
+      this un-seeable four dimensional object. 
     </p>
     <p>
       The cube is an example of a solid object with flat sides and
       sharp corners. Such objects are called polytopes (polygons in
       two dimensions). The study of polytopes in higher dimensions is
-      itself a rich branch of mathematics with a long history.
+      itself a rich branch of mathematics with a long history. 
     </p>
   </subsection>
   <subsection xml:id="subsection-cross-polytopes">
@@ -302,7 +328,7 @@
     </p>
     <figure xml:id="figure-2-cross">
       <caption>The 2-Cross-Polytope (Diamond)</caption>
-      <image xml:id="figure14" width="50%">
+      <image xml:id="image-2-cross" width="50%">
         <asymptote>
           size(10cm);
 
@@ -331,7 +357,7 @@
     </p>
     <figure xml:id="figure-3-cross">
       <caption>The 3-Cross-Polytope (Octahedron)</caption>
-      <image xml:id="figure15" width="90%">
+      <image xml:id="image-3-cross" width="90%">
         <asymptote>
           size(10cm);
 
@@ -367,7 +393,7 @@
       tried to draw diagrams of any of these higher cross-polytopes. 
     </p>
     <p>
-      One way of understanding higher-dimensional objects (since we
+      One way of understanding higher-dimensional objects (since I
       can't directly see them) is to just draw their lower-dimensional 
       components. For polyhedra, I can do this by only
       drawing their vertices and edges (and not trying to represent
@@ -378,7 +404,7 @@
       for opposite vertices.
       <figure xml:id="figure-2-cross-vertex">
         <caption>The 2-Cross-Polytope (Diamond) Vertex Diagram</caption>
-        <image xml:id="figure16" width="50%"> 
+        <image xml:id="image-2-cross-vertex" width="50%"> 
           <asymptote>
             size(10cm);
 
@@ -392,13 +418,17 @@
         </image>
       </figure>
       The octahedron is the 3-cross polytope. I tried to draw a 3D
-      image in perspective earlier. However, if I don't try to get a
-      3D perspective and just draw the vertices and edges, I get the
-      vertex diagram. Like the diamond, all vertices except for those
-      directly opposite are connected. 
+      image in perspective in <xref ref="figure=cross=3" />. However,
+      if I don't try to get a 3D perspective and just draw the
+      vertices and edges, I get the vertex diagram instead of the
+      entire object in perspective. I've shown this vertex diagram in
+      <xref ref="figure-3-cross-vertex" />. It looks like a flattened
+      version of the octahedron, which is precisely what I want it to
+      do. Like the diamond,
+      all vertices except for those directly opposite are connected. 
       <figure xml:id="figure-3-cross-vertex">
         <caption>The 3-Cross-Polytope (Octahedron) Vertex Diagram</caption>
-        <image xml:id="figure17" width="50%">
+        <image xml:id="image-3-cross-vertex" width="50%">
           <asymptote>
             size(10cm);
 
@@ -431,10 +461,11 @@
       directly opposite it. If I collapse the vertices and edges onto
       a 2D diagram, that means I draw all the lines between our
       vertices except those directly opposite. The 4-cross polytope
-      has <m>8</m> vertices connected in this way. 
+      has <m>8</m> vertices connected in this way and its vertex
+      diagram is shown in <xref ref="figure-4-cross-vertex" />.
       <figure xml:id="figure-4-cross-vertex">
         <caption>The 4-Cross-Polytope Vertex Diagram</caption>
-        <image xml:id="figure18" width="50%">
+        <image xml:id="image-4-cross-vertex" width="50%">
           <asymptote>
             size(10cm);
 
@@ -474,10 +505,12 @@
           </asymptote>
         </image>
       </figure>
-      The 5-cross-polytope has <m>10</m> vertices connected this way.
+      Now I just keep going. In <xref ref="figure-5-cross-vertex" />,
+      I show the 5-cross-polytope, whichs <m>10</m> vertices connected
+      this way.  
       <figure xml:id="figure-5-cross-vertex">
         <caption>The 5-Cross-Polytope Vertex Diagram</caption>
-        <image xml:id="figure19" width="50%">
+        <image xml:id="image-5-cross-vertex" width="50%">
           <asymptote>
             size(10cm);
 
@@ -537,10 +570,11 @@
       </figure>
       I can go as far as I want in this way. Each time I go up a
       dimension, I add two vertices. The 8-cross-polytope (in
-      <m>\RR^8</m>) has <m>16</m> vertices connected this way.
+      <m>\RR^8</m>) has <m>16</m> vertices connected this way, as
+      shown in <xref ref="figure-8-cross-vertex" />.
       <figure xml:id="figure-8-cross-vertex">
         <caption>The 8-Cross-Polytope Vertex Diagram</caption>
-        <image xml:id="figure20" width="90%">
+        <image xml:id="image-8-cross-vertex" width="90%">
           <asymptote>
             size(10cm);
 
@@ -676,11 +710,13 @@
           </asymptote>
         </image>
       </figure>
-      The 16-cross-polytope (in <m>\RR^{16}</m>) has <m>32</m>
+      To show how wild these vertex diagrams get, consider <xref
+      ref="figure-16-cross-vertex" />, the vertex diagram of the
+      16-cross-polytope (in <m>\RR^{16}</m>), which  has <m>32</m>
       vertices connected this way.
       <figure xml:id="figure-16-cross-vertex">
         <caption>The 16-Cross-Polytope Vertex Diagram</caption>
-        <image xml:id="figure21" width="90%">
+        <image xml:id="image-16-cross-vertex" width="90%">
           <asymptote>
             size(10cm);
 
@@ -1205,7 +1241,10 @@
       objects. Everything in higher dimensions must be done
       indirectly, but working indirectly, I can produce some useful
       and interesting visualizations that let me start to understand
-      the objects. 
+      the objects. Hopefully it is a little bit interesting to have
+      some mental pictures of a 16 dimensional diamond-shaped prism,
+      even if that mental picture is just of all the corners and edges
+      collapsed down only a flat surface. 
     </p>
   </subsection>
 </section>

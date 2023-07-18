@@ -142,7 +142,7 @@
     </p>
     <figure xml:id="figure-the-cosine-law">
       <caption>The Cosine Law</caption>
-      <image xml:id="figure07" width="80%">
+      <image xml:id="image-the-cosine-law" width="80%">
         <asymptote>
           size(10cm);
           import graph;

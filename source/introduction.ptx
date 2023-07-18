@@ -1,0 +1,123 @@
+<section xml:id="section-introduction">
+  <title>Introduction</title>
+  <subsection xml:id="subsection-introduction-direct">
+    <title>Themes of Linear Algebra</title>
+    <p>
+      Most students entering this course will have experience with
+      high school mathematics and first year calculus (and maybe a
+      smattering of other experienes, such as statistics). Linear
+      algebra is not only a new topic in mathematics; compared to
+      these previous experiences, it involves a substantially new way
+      of thinking. In this introduction, I want to briefly lay out the
+      main themes and ideas that I'll be working through for the
+      entire term. I encourage you to keep these ideas in the back of
+      your head and notice how the material of the course builds up
+      these theme.
+    </p>
+    <p><ul>
+      <li>
+        <em>Geometry and Algebra</em>. Much of modern mathematics is
+        based on the cartesian coordinate system. The major strength
+        of this system is that is builds a connection between geometry
+        and algebra. Shapes are connected to their equations, so that
+        you want determine the properties of shapes by working with
+        those equations. Likewise, equations can be interpreted as
+        shapes, so that you can use geometry to visualize what is
+        happening in algebra. In calculus, this happened through
+        graphs: a graph was a geometric visualization of the behaviour
+        of a function. Linear algebra continues to build on this
+        connection, though the specific types of geometry and
+        equations are different from calculus. All of the equations
+        and algebraic manipulation in the course can be visualized
+        geometrically and, likewise, all of the geometry in the course
+        can be accessed algebraically. Though it is called an
+        <sq>algebra</sq> course, this is as much a geometry course as
+        anything. 
+      </li>
+      <li>
+        <em>Flatness</em>. If linear algebra is a geometry course,
+        what kind of geometry does it do? It does flat geometry:
+        straight lines, planes, flat surfaces, and higher dimensional
+        analogues. Flat objects are inherently more accessible and
+        understandable than more complicated curved objects, so they
+        are a natural start to geometry. Much of more complicated
+        geometry is built on the linear algebra foundation of flat
+        geometry. It's a natural place to start. 
+      </li>
+      <li>
+        <em>Linearity</em>. In geometry, the word <sq>linearity</sq>
+        refers to lines, which fits with the previous point about flat
+        objects. However, the word also has another important meaning
+        in algebra: an operation or structure is <term>linear</term>
+        if it interacts well with addition, subtraction and
+        multiplication by constant. That's a bit vague for now, but
+        I'll be developing this idea in detail over the course. From
+        the algebriac side, this course is about understanding how
+        these linear operation behave and what they can and cannot do.
+        And, of course, the geometric linear and the algebraic linear
+        do match up with each other.
+      </li>
+      <li>
+        <em>Symmetry</em>. In ordinary usage, a symmetry is a change of
+        a shape that preserves it, like a reflection. The mathematical
+        notion is similar, but not precisely the same. If I have a
+        transformation (such as a reflection), its symmetries are
+        the things its preserves. I've just flipped the definition
+        here: in conventional usage, the shape has a symmetry, but in
+        mathematical usage, the transformation (the reflection) has
+        the symmetry. Mathematically, whenever I define some kind of
+        transformation, I want to ask for its symmetries: for what is
+        preserves. If can preserve shapes, and I will talk about that
+        in detail. But it can also preserve other mathematical
+        structures, particularly algebraic structures. Do study
+        symmetry to to ask, for a mathematical operation: what is
+        preserved? Asking this quesiton can build a deep and full
+        understanding of the transformation. I'll keep coming back to
+        this question of what is perserved throughout the course.
+      </li>
+      <li>
+        <em>Definition, Rigor and Proof</em>. Mathematics is a formal
+        language, with strict rules about logic, definition and
+        arguments. You mathematical education to date has included
+        this formalization, but this course represents a sustantial
+        step up in commitment to that formalization. All the
+        definitions in the course will be given in mathematically
+        formal language. I will try to provide proofs for many of the
+        statements. I'll also ask you to try to write proofs in your
+        exercises and assignments. I'll try to convince you that
+        writing proofs, along side doing calculations or solving
+        problems, is <sq>doing mathematics</sq>. 
+      </li>
+    </ul></p>
+  </subsection>
+  <subsection xml:id="subsection-introduction-indirect">
+    <title>Mathematical Thinking and Writing</title>
+    <p>
+      The themes listed above are the content goals I have for the
+      course. However, in addition to the content of linear algebra
+      itself, I want to focus on the more general skills of
+      mathematical thinking and writing. I'm going to present material
+      more formally and expect a higher standard of formal writing
+      from you. A large part of learning mathematics is being
+      apprenticed into the way that mathematics is written and, evern
+      more so, the way that mathematics is thought. This is a much
+      trickier task than just learning how to do problems: it's
+      learning a style, not an algorithm. It's learning a way of
+      thinking, not just an individual fact. As challening as it is,
+      working on thinking and writing is a major goal of this course.
+      I hope you buy into this challenge, that you consciously work on
+      your mathematical writing and thinking. 
+    </p>
+    <p>
+      Of the undergraduate mathematics courses, linear algebra is the
+      most natural place to start talking about mathematical proofs
+      and to work on formalized mathematical writing. The material
+      lends itself to a number of accessible proof examples and have a
+      level of abstraction that suits proof questions. The linear
+      algebra course also serves as a prerequisite for most of the
+      other mathematic courses where proof becomes quite important,
+      including the senior calculus courses, discrete mathematics,
+      abstract algebra, cryptography and theory of computing. 
+    </p>
+  </subsection>
+</section>

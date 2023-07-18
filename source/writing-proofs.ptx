@@ -3,15 +3,13 @@
   <subsection xml:id="subsection-what-is-a-proof">
     <title>What Is A Proof?</title>
     <p>
-      In the sequence of math courses that are offered at King's, 
-      linear algebra is the most natural place to start talking about
-      mathematical proofs. The material lends itself to a number of
-      accessible proof examples and have a level of abstraction that
-      suits proof questions. The linear algebra course also serves as
-      a prerequisite for most of the other mathematic courses where
-      proof becomes quite important, including the senior calculus
-      courses, discrete mathematics, cryptography and theory of
-      computing. 
+      As I said in <xref ref="section-introduction" />, a major goal
+      of this course is the introduction of more formalized
+      mathematical language, particular for definitions and proofs. In
+      this section, I want to start that process. I'm going to talk
+      about several general ways to structure a proof, so that you can
+      recognize them in the course and so that you can start to
+      construct them yourself. 
     </p>
     <p>
       So what is a mathematical proof? A simple definition is hard,
@@ -23,7 +21,7 @@
           First, a proof is an argument. It is persuasive: it has a
           proposition, and it wants to convince its reader that the
           proposition is true. In this, it shares something with all
-          the other persuasive writing through university,
+          the other persuasive writing throughout  university,
           including scientific studies, aesthetic critiques, and
           persuasive essays.
         </li>
@@ -102,7 +100,10 @@
           Don't assume what you are trying to prove. The statement
           that you want to prove should show up at the very end of
           your proof. You can't start with the statement you want to
-          prove <mdash /> logical implications don't work that way.
+          prove <mdash /> logical implications don't work that way. A
+          proof should be a logical chain that starts with the
+          assumptions of the proof and end with the desired
+          conclusion.
         </li>
         <li>
           There is a huge difference between the rough work that goes
@@ -115,9 +116,9 @@
           the end, as a conclusion.
         </li>
         <li>
-          A good proof includes good writing as well as good
-          mathematics. Write clear, complete sentences. Treat proof-writing 
-          with the same level of care as you would any
+          A good proof includes good writing as well as good symbolic
+          mathematics. Write clear, complete sentences. Treat
+          proof-writing with the same level of care as you would any
           academic writing. 
         </li>
         <li>
@@ -126,6 +127,17 @@
           these techniques. Not all proofs need a named technique, 
           but these two are common enough to point out at the
           start. 
+        </li>
+        <li>
+          I can't prove by exaple. Proof is not inductive reasoning,
+          like that which is used in scientific experiments. A proof
+          should prove all possible instances of the proposition,
+          without exception. A bunch of examples are interesting and
+          can provide hints, but they never constitue a proof. (That
+          said, working with examples is often a great idea when
+          working on a proof. Example gives insight and often show the
+          way to the general arguent. They just can't be used as the
+          persuasive evidence in the proof.) 
         </li>
       </ul>
   </subsection>
@@ -154,7 +166,9 @@
     </p>
     <p>
       This is perhaps easier to see in an example. I'll do two
-      examples, both of which are classic proof examples. First, I'll
+      examples, both of which are classic proof examples. (If you've
+      study anything about proofs elsewhere, there is a good chance
+      you've seen these examples.)  First, I'll
       prove that there are infinitely many prime numbers. 
     </p>
     <ul>
@@ -202,11 +216,11 @@
       anything about them: what they are, how to find them, how they
       are distributed on the number line, etc. This is often a major
       weakness of proofs by contradiction: they may not give 
-      concrete information about the objects in the proposition.
+      concrete information about the objects in the proposition. 
     </p>
     <p>
-      Another classic example is the proof that <m>\sqrt{2}</m> is
-      irrational. I will also prove this by contradiction.
+      Another classic proof example is the proof that <m>\sqrt{2}</m>
+      is irrational. I will also prove this by contradiction.
     </p>
     <ul>
       <li>
@@ -282,18 +296,18 @@
       mathematics have rejected this assumption. There are some
       versions of mathematics that do not allow proof by
       contradiction. (These are called intuitionistic or
-      constructionist mathematics). 
+      constructivist mathematics). 
     </p>
   </subsection>
   <subsection xml-id="subsection-induction">
     <title>Proof by Induction</title>
       <p>
         Proof by induction is a method of proving statements that are
-        true for all natural numbers. When there isn't a direct
-        argument, statements such as these can be difficult to prove,
-        since there are infinitely many natural numbers to check.
-        Mathematicians agree that the following process suffices to
-        check all infinitely many cases.
+        true for all natural numbers.  Statements that apply to all
+        natural numbers can be difficult to prove, since there are
+        infinitely many natural numbers to check.  Mathematicians
+        agree that the following process suffices to check all
+        infinitely many cases.
       </p>
       <ul>
         <li>
@@ -317,10 +331,11 @@
       </ul>
       <p>
         This process is called mathematical induction. (This is really
-        a terrible name. The reasoning here is still deductive
-        reasoning, not inductive reasoning. Calling it induction
+        a terrible name. In how the terms are used in classical logic,
+        the reasoning here is still deductive reasoning, not inductive
+        reasoning. Calling it induction
         really messes with the conventional use of the term
-        <qt>induction</qt> in logic). Mathematical induction  is
+        <qt>induction</qt> in logic). Mathematical induction is
         something like bootstrapping all the way up the natural
         numbers. I prove the statement is true for <m>1</m>. Then I
         have a general way of proving that if it is true for a number,
@@ -344,7 +359,7 @@
         </me>.
         By doing one division and one multiplication, I know the sum
         of the first <m>703</m> numbers. This is certainly much faster
-        than doing <m>702</m> additions. Now let's use mathematical
+        than doing <m>702</m> additions. Now I'll use mathematical
         induction to prove this statement. 
       </p>
       <ul>
