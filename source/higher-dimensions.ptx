@@ -418,7 +418,7 @@
         </image>
       </figure>
       The octahedron is the 3-cross polytope. I tried to draw a 3D
-      image in perspective in <xref ref="figure=cross=3" />. However,
+      image in perspective in <xref ref="figure=cross-3" />. However,
       if I don't try to get a 3D perspective and just draw the
       vertices and edges, I get the vertex diagram instead of the
       entire object in perspective. I've shown this vertex diagram in

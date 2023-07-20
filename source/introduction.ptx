@@ -50,10 +50,10 @@
         objects. However, the word also has another important meaning
         in algebra: an operation or structure is <term>linear</term>
         if it interacts well with addition, subtraction and
-        multiplication by constant. That's a bit vague for now, but
+        multiplication by constants. That's a bit vague for now, but
         I'll be developing this idea in detail over the course. From
         the algebriac side, this course is about understanding how
-        these linear operation behave and what they can and cannot do.
+        these linear operations behave and what they can and cannot do.
         And, of course, the geometric linear and the algebraic linear
         do match up with each other.
       </li>
@@ -69,17 +69,17 @@
         transformation, I want to ask for its symmetries: for what is
         preserves. If can preserve shapes, and I will talk about that
         in detail. But it can also preserve other mathematical
-        structures, particularly algebraic structures. Do study
-        symmetry to to ask, for a mathematical operation: what is
-        preserved? Asking this quesiton can build a deep and full
+        structures, particularly algebraic structures. to study
+        symmetry is to ask, for a mathematical operation: what is
+        preserved? Asking this quesiton can build a deep 
         understanding of the transformation. I'll keep coming back to
         this question of what is perserved throughout the course.
       </li>
       <li>
         <em>Definition, Rigor and Proof</em>. Mathematics is a formal
         language, with strict rules about logic, definition and
-        arguments. You mathematical education to date has included
-        this formalization, but this course represents a sustantial
+        arguments. Your mathematical education to date has included
+        this formalization, but this course represents a substantial
         step up in commitment to that formalization. All the
         definitions in the course will be given in mathematically
         formal language. I will try to provide proofs for many of the
