@@ -3,7 +3,7 @@
   <subsection xml:id="subsection-properties-vector-arithmetic">
     <title>Properties of Vector Arithmetic</title>
     <p>
-      In ref="section-vector-arithmetic" />, I introduced three
+      In <xref ref="section-vector-arithmetic" />, I introduced three
       structures on <m>\RR^n</m>: vector addition, scalar
       multiplication, and vector length.  The abstract algebraic
       question that mathematicians ask at this point is: what are the

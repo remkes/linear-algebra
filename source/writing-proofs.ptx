@@ -129,7 +129,7 @@
           start. 
         </li>
         <li>
-          I can't prove by exaple. Proof is not inductive reasoning,
+          I can't prove by example. Proof is not inductive reasoning,
           like that which is used in scientific experiments. A proof
           should prove all possible instances of the proposition,
           without exception. A bunch of examples are interesting and
@@ -139,14 +139,23 @@
           way to the general arguent. They just can't be used as the
           persuasive evidence in the proof.) 
         </li>
+        <li>
+          Similarly, I can't prove by diagram, drawing or
+          illustration. Drawing pictures of what is going on is often
+          a great way to build intuition, to understand the situation.
+          It can often guild you in the right direction for
+          constructing a proof. But a visualization itself does not
+          constitute a complete logical argument. It doesn't meet the
+          standard that mathematics has set for a proof. 
+        </li>
       </ul>
   </subsection>
   <subsection xml-id="subsection-contradiction">
     <title>Proof by Contradiction</title>
     <p>
       There are many common structures and techniques used with proofs.
-      I'm going to share with you two of the most common techniques.
-      The first is proof by contradiction. This technique relies on the
+      I'm going to share with you just one of the most common
+      techniques: proof by contradiction. This technique relies on the
       assumption that any (well-formed) statement in mathematics is
       either true or false. To prove a statement is true, I can
       equivalently show that it is impossible for the statement to be
@@ -299,115 +308,117 @@
       constructivist mathematics). 
     </p>
   </subsection>
+  <!--
   <subsection xml-id="subsection-induction">
     <title>Proof by Induction</title>
-      <p>
-        Proof by induction is a method of proving statements that are
-        true for all natural numbers.  Statements that apply to all
-        natural numbers can be difficult to prove, since there are
-        infinitely many natural numbers to check.  Mathematicians
-        agree that the following process suffices to check all
-        infinitely many cases.
-      </p>
-      <ul>
-        <li>
-          Prove a base case. Usually, I prove that the statement
-          holds for <m>n=0</m> or <m>n=1</m>, but the base case could
-          be any starting natural number. 
-        </li>
-        <li>
-          Assume that the statement is true for some number
-          <m>k</m>.
-        </li>
-        <li>
-          Using this assumption, prove that the statement holds for
-          the next number <m>k+1</m>.
-        </li>
-        <li>
-          Conclude that the statement is true for all natural numbers
-          <m>n</m>. (Or all numbers past the base case, if I started
-          at a larger number.)
-        </li>
-      </ul>
-      <p>
-        This process is called mathematical induction. (This is really
-        a terrible name. In how the terms are used in classical logic,
-        the reasoning here is still deductive reasoning, not inductive
-        reasoning. Calling it induction
-        really messes with the conventional use of the term
-        <qt>induction</qt> in logic). Mathematical induction is
-        something like bootstrapping all the way up the natural
-        numbers. I prove the statement is true for <m>1</m>. Then I
-        have a general way of proving that if it is true for a number,
-        it is also true for the next number. Since it is true for
-        <m>1</m>, it must be true for <m>2</m>. If it is true for
-        <m>2</m>, it must be true for <m>3</m>. If it is true for
-        <m>3</m>, it must be true for <m>4</m>. This just keeps going,
-        so I conclude that it is true for all natural numbers.
-      </p>
-      <p>
-        Again, this is probably best demonstrated by example. I claim
-        that for any natural number <m>n \geq 1</m>, 
+    <p>
+      Proof by induction is a method of proving statements that are
+      true for all natural numbers.  Statements that apply to all
+      natural numbers can be difficult to prove, since there are
+      infinitely many natural numbers to check.  Mathematicians
+      agree that the following process suffices to check all
+      infinitely many cases.
+    </p>
+    <p><ul>
+      <li>
+        Prove a base case. Usually, I prove that the statement
+        holds for <m>n=0</m> or <m>n=1</m>, but the base case could
+        be any starting natural number. 
+      </li>
+      <li>
+        Assume that the statement is true for some number
+        <m>k</m>.
+      </li>
+      <li>
+        Using this assumption, prove that the statement holds for
+        the next number <m>k+1</m>.
+      </li>
+      <li>
+        Conclude that the statement is true for all natural numbers
+        <m>n</m>. (Or all numbers past the base case, if I started
+        at a larger number.)
+      </li>
+    </ul>
+    <p>
+      This process is called mathematical induction. (This is really
+      a terrible name. In how the terms are used in classical logic,
+      the reasoning here is still deductive reasoning, not inductive
+      reasoning. Calling it induction
+      really messes with the conventional use of the term
+      <qt>induction</qt> in logic). Mathematical induction is
+      something like bootstrapping all the way up the natural
+      numbers. I prove the statement is true for <m>1</m>. Then I
+      have a general way of proving that if it is true for a number,
+      it is also true for the next number. Since it is true for
+      <m>1</m>, it must be true for <m>2</m>. If it is true for
+      <m>2</m>, it must be true for <m>3</m>. If it is true for
+      <m>3</m>, it must be true for <m>4</m>. This just keeps going,
+      so I conclude that it is true for all natural numbers.
+    </p>
+    <p>
+      Again, this is probably best demonstrated by example. I claim
+      that for any natural number <m>n \geq 1</m>, 
+      <me>
+        1 + 2 + 3 + 4 + \ldots + n = \frac{n(n+1)}{2}
+      </me>.
+      This is a nice identity giving me a way to quickly calculate
+      the sum of the first <m>n</m> numbers. For example
+      <me>
+        1 + 2 + 3 + 4 + \ldots + 703 = \frac{703\cdot704}{2} = 703
+        \cdot 352 = 247,456
+      </me>.
+      By doing one division and one multiplication, I know the sum
+      of the first <m>703</m> numbers. This is certainly much faster
+      than doing <m>702</m> additions. Now I'll use mathematical
+      induction to prove this statement. 
+    </p>
+    <ul>
+      <li>
+        Step 1: Prove the base case. The base case here is
+        <m>n=1</m>. The left side is just <m>1</m>. The right side
+        is <m>\frac{(1)(2)}{2} = \frac{2}{2} = 1</m>. Since the left
+        side and the right side are the same, the base case holds. 
+      </li>
+      <li>
+        Step 2: Assume the statement is true for some number
+        <m>k</m>. I assume that 
         <me>
-          1 + 2 + 3 + 4 + \ldots + n = \frac{n(n+1)}{2}
-        </me>.
-        This is a nice identity giving me a way to quickly calculate
-        the sum of the first <m>n</m> numbers. For example
+          1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
+        </me>
+        is true for some number <m>k</m>. (Not every number, yet,
+        just some number.) 
+      </li>
+      <li>
+        Step 3: Prove the next case. I need to prove the statement
+        is true for <m>k+1</m>. I can start with the assumption.
         <me>
-          1 + 2 + 3 + 4 + \ldots + 703 = \frac{703\cdot704}{2} = 703
-          \cdot 352 = 247,456
-        </me>.
-        By doing one division and one multiplication, I know the sum
-        of the first <m>703</m> numbers. This is certainly much faster
-        than doing <m>702</m> additions. Now I'll use mathematical
-        induction to prove this statement. 
-      </p>
-      <ul>
-        <li>
-          Step 1: Prove the base case. The base case here is
-          <m>n=1</m>. The left side is just <m>1</m>. The right side
-          is <m>\frac{(1)(2)}{2} = \frac{2}{2} = 1</m>. Since the left
-          side and the right side are the same, the base case holds. 
-        </li>
-        <li>
-          Step 2: Assume the statement is true for some number
-          <m>k</m>. I assume that 
-          <me>
-            1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
-          </me>
-          is true for some number <m>k</m>. (Not every number, yet,
-          just some number.) 
-        </li>
-        <li>
-          Step 3: Prove the next case. I need to prove the statement
-          is true for <m>k+1</m>. I can start with the assumption.
-          <me>
-            1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
-          </me>
-          I can add <m>(k+1)</m> to both sides. 
-          <me>
-            1 + 2 + 3 + 4 + \ldots + k + (k + 1) = \frac{k(k+1)}{2} +
-            (k+1) 
-          </me>
-          Then I can do some arithmetic with the right side, starting
-          with a common denominator. 
-          <me>
-            \frac{k(k+1)}{2} + (k+1) = \frac{k^2 + k + 2(k + 1)}{2} =
-            \frac{k^2 + 3k + 2}{2} = \frac{(k+1)(k+2)}{2}
-          </me>
-          Now I'll replace the right side with this last expression.
-          <me>
-            1 + 2 + 3 + 4 + \ldots + k + (k + 1) = \frac{(k+1)(k+1+1)}{2}
-          </me>
-          Finally, I can observe that this right side is precisely the
-          desired equation for <m>k+1</m>. I have proved the next
-          case. 
-        </li>
-        <li>
-          Since I have a base case, and I know that each base implies
-          the following case, I conclude (by mathematical induction)
-          that the statement holds for all natural numbers. 
-        </li>
-      </ul>
+          1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
+        </me>
+        I can add <m>(k+1)</m> to both sides. 
+        <me>
+          1 + 2 + 3 + 4 + \ldots + k + (k + 1) = \frac{k(k+1)}{2} +
+          (k+1) 
+        </me>
+        Then I can do some arithmetic with the right side, starting
+        with a common denominator. 
+        <me>
+          \frac{k(k+1)}{2} + (k+1) = \frac{k^2 + k + 2(k + 1)}{2} =
+          \frac{k^2 + 3k + 2}{2} = \frac{(k+1)(k+2)}{2}
+        </me>
+        Now I'll replace the right side with this last expression.
+        <me>
+          1 + 2 + 3 + 4 + \ldots + k + (k + 1) = \frac{(k+1)(k+1+1)}{2}
+        </me>
+        Finally, I can observe that this right side is precisely the
+        desired equation for <m>k+1</m>. I have proved the next
+        case. 
+      </li>
+      <li>
+        Since I have a base case, and I know that each base implies
+        the following case, I conclude (by mathematical induction)
+        that the statement holds for all natural numbers. 
+      </li>
+    </ul></p>
   </subsection>
+  -->
 </section>

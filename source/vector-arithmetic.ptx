@@ -240,30 +240,24 @@
     <proposition>
       <statement>
         <p>
-          I will briefly state two properties of vector lengths without
-          proof.
+          Having defined all these operations (addition, scalar
+          multiplication, subtraction, length, distance), I want to
+          investigate their properties. For now, I'll just give one
+          example of the kind of properties I am interested in. The
+          following statement is called the <term>triangle
+          inequality</term>.
           <md>
             <mrow>
               |u+v| \amp  \leq |u| + |v| \amp  \hspace{1cm} \ \text{
               Triangle Inequality }
             </mrow> 
-            <mrow>
-              |au| \amp  = |a||u| \amp
-            </mrow>
           </md>
         </p>
       </statement>
     </proposition>
     <p>
-      The last line deserves some attention for the notation. When I
-      write <m>|a| |u|</m>, <m>|a|</m> is an absolute value of a real
-      number and <m>|u|</m> is the length of a vector. The fact that
-      they have the same notation is frustrating, but these notations
-      are common. (Some text use double bars for the length of a
-      vector, <m>||v||</m>, to avoid this particular issue. Single bar
-      notation for vector length is common enought, though, that I
-      prefer to use is and risk the confusion between vector length
-      and scalar absolute value.)
+      The proof of the triangle inequality is left to an exercise
+      later in the course.
     </p>
   </subsection>
 </section>

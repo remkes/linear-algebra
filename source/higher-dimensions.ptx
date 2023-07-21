@@ -55,27 +55,13 @@
       the origin form the sphere in that dimension. 
     </p>
     <p>
-      The naming convention for these spheres in mathematics is
-      slightly unexpected. A sphere is usually considered a hollow
-      object: it doesn't include the points inside it, which are
-      closer than one unit to the origin. The normal sphere in
-      <m>\RR^3</m> is, in this way, thought of as a two-dimensional
-      surface in three dimensions. On the surface of the sphere (like
-      on the surface of the earth), movement in a small area looks
-      like movement in two dimensions. For this reason, the sphere in
-      <m>\RR^3</m> is called the <m>2</m>-sphere. Following this
-      logic, the sphere in <m>\RR^n</m> is called the
-      <m>(n-1)</m>-sphere. 
-    </p>
-    <p>
       What do I know about these higher-dimensional spheres? First,
       I can look at their equations. In <m>\RR^2</m>,  the circle
-      has the equation <m>x^2 + y^2 = 1</m>. In <m>\RR^3</m> the sphere
-      (the <m>2</m>-sphere) has equation <m>x^2 + y^2 + z^2 = 1</m>.
-      The sphere (<m>3</m>-sphere) in <m>\RR^4</m> has equation <m>w^2
-      + x^2 + y^2 + z^2 = 1</m>. The sphere
-      (<m>(n-1)</m>-sphere) in <m>\RR^n</m> has equation <m>x_1^2 +
-      x_2^2 + \ldots + x_n^2 = 1</m>.
+      has the equation <m>x^2 + y^2 = 1</m>. In <m>\RR^3</m> the
+      sphere has equation <m>x^2 + y^2 + z^2 = 1</m>.  The sphere in
+      <m>\RR^4</m> has equation <m>w^2 + x^2 + y^2 + z^2 = 1</m>. The
+      sphere in <m>\RR^n</m> has equation <m>x_1^2 + x_2^2 + \ldots +
+      x_n^2 = 1</m>.
     </p>
     <p>
       These equations are useful for studying the algebra of the
@@ -112,36 +98,67 @@
       there are still some indirect geometric ways of thinking that
       can help me understand higher-dimensional objects. 
     </p>
+    <figure xml:id="figure-slicing-a-sphere">
+      <caption>Slicing A Sphere</caption>
+      <image xml:id="image-slicing-a-sphere" width="80%">
+        <asymptote>
+          size(300);
+          import graph3;
+          import three;
+
+          pen blue=rgb("7A8FFE");
+          
+          currentprojection=orthographic(3,2,1,up=Z);
+
+          real aS=2.5;
+          draw(Label("$x$",EndPoint),-aS*X--aS*X,black,Arrow3);
+          draw(Label("$y$",EndPoint),-aS*Y--aS*Y,black,Arrow3);
+          draw(Label("$z$",EndPoint),-aS*Z/2--aS*Z/2,black,Arrow3);
+
+          draw(unitsphere,lightblue);
+
+          surface square2=surface((1,0.75,1)--(-1,0.75,1)--(-1,0.75,-1)--(1,0.75,-1)--cycle);
+          draw(square2,opacity(0.5));
+
+          surface square3=surface((1,0.5,1)--(-1,0.5,1)--(-1,0.5,-1)--(1,0.5,-1)--cycle);
+          draw(square3,opacity(0.5));
+
+          surface square4=surface((1,0.25,1)--(-1,0.25,1)--(-1,0.25,-1)--(1,0.25,-1)--cycle);
+          draw(square4,opacity(0.5));
+        </asymptote>
+      </image>
+    </figure>
     <p>
       If I take the normal sphere in <m>\RR^3</m> and slice it
-      horizontally, each cross-section is a circle. The cross-section
-      at the widest point is a unit circle, and as I move up or down,
-      the cross-sections are smaller and smaller circles. I can think
-      of the sphere as an object whose slices are all circles (though
-      it is not the unique object with that property). I could also
-      think of the sphere as an infinite stack of infinitely thin
-      circles, starting with small circles, growing to the equator and
-      the unit circles, and then shrinking again as I move up the
-      sphere.
+      vertically, each cross-section is a circle, as illustrated in
+      <xref ref="figure-slicing-a-sphere" />.. The cross-section
+      at the widest point is a unit circle, and as I move along the
+      <m>y</m> axis, the cross-sections are smaller and smaller
+      circles. I can think of the sphere as an object whose slices are
+      all circles (though it is not the unique object with that
+      property). I could also think of the sphere as an infinite stack
+      of infinitely thin circles, starting with small circles, growing
+      to the the unit circles at the middle, and then shrinking again as
+      I move further across the sphere.
     </p>
     <p>
       This notion of slicing works in higher dimensions. The
-      <m>3</m>-sphere in <m>\RR^4</m> has slices, which are usual
+      sphere in <m>\RR^4</m> has slices, which are usual
       three-dimensional spheres.  That's a bizarre idea, because
       trying to think in four dimensions is a bizarre task, and one
       that defies visualization. I can't see an infinite stack of
       spheres all right next to each other. But this slicing into
-      spherei is a useful way of thinking about the <m>3</m>-sphere.
-      The sphere in four dimensions is an object whose slices are
-      spheres in three dimensions;  it can be thought of as infinitely
-      many spheres stacked up. This is still strange: the stacking
-      happens in a new direction, so that all points on
+      spheres is a useful way of thinking about the sphere in
+      <m>\RR^4</m>.  The sphere in four dimensions is an object whose
+      slices are spheres in three dimensions;  it can be thought of as
+      infinitely many spheres stacked up. This is still strange: the
+      stacking happens in a new direction, so that all points on
       <qt>adjacent</qt> spheres are right next to each other, just
       like the circles stack up to make the ordinary sphere are right
       next to each other. But maybe this helps us think a bit about
-      what kind of object the <m>3</m>-sphere is. This pattern could
-      continue: the five dimensional sphere has slices which are four
-      dimensional spheres, and so on. 
+      what kind of object the sphere in <m>\RR^4</m> is. This pattern
+      could continue: the five dimensional sphere has slices which are
+      four dimensional spheres, and so on. 
     </p>
   </subsection>
   <subsection xml:id="subsection-cubes">
@@ -171,7 +188,7 @@
     </p>
     <figure xml:id="figure-square">
       <caption>The Square</caption>
-      <image xml:id="image-square" width="50%">
+      <image xml:id="image-square" width="80%">
         <asymptote>
           size(10cm);
           
@@ -201,7 +218,7 @@
     </p>
     <figure xml:id="figure-cube">
       <caption>The Cube</caption>
-      <image xml:id="image-cube" width="50%">
+      <image xml:id="image-cube" width="80%">
         <asymptote>
           size(10cm);
 
@@ -328,7 +345,7 @@
     </p>
     <figure xml:id="figure-2-cross">
       <caption>The 2-Cross-Polytope (Diamond)</caption>
-      <image xml:id="image-2-cross" width="50%">
+      <image xml:id="image-2-cross" width="80%">
         <asymptote>
           size(10cm);
 
@@ -404,7 +421,7 @@
       for opposite vertices.
       <figure xml:id="figure-2-cross-vertex">
         <caption>The 2-Cross-Polytope (Diamond) Vertex Diagram</caption>
-        <image xml:id="image-2-cross-vertex" width="50%"> 
+        <image xml:id="image-2-cross-vertex" width="80%"> 
           <asymptote>
             size(10cm);
 
@@ -418,7 +435,7 @@
         </image>
       </figure>
       The octahedron is the 3-cross polytope. I tried to draw a 3D
-      image in perspective in <xref ref="figure=cross-3" />. However,
+      image in perspective in <xref ref="figure-3-cross" />. However,
       if I don't try to get a 3D perspective and just draw the
       vertices and edges, I get the vertex diagram instead of the
       entire object in perspective. I've shown this vertex diagram in
@@ -428,7 +445,7 @@
       all vertices except for those directly opposite are connected. 
       <figure xml:id="figure-3-cross-vertex">
         <caption>The 3-Cross-Polytope (Octahedron) Vertex Diagram</caption>
-        <image xml:id="image-3-cross-vertex" width="50%">
+        <image xml:id="image-3-cross-vertex" width="80%">
           <asymptote>
             size(10cm);
 
@@ -465,7 +482,7 @@
       diagram is shown in <xref ref="figure-4-cross-vertex" />.
       <figure xml:id="figure-4-cross-vertex">
         <caption>The 4-Cross-Polytope Vertex Diagram</caption>
-        <image xml:id="image-4-cross-vertex" width="50%">
+        <image xml:id="image-4-cross-vertex" width="80%">
           <asymptote>
             size(10cm);
 
@@ -510,7 +527,7 @@
       this way.  
       <figure xml:id="figure-5-cross-vertex">
         <caption>The 5-Cross-Polytope Vertex Diagram</caption>
-        <image xml:id="image-5-cross-vertex" width="50%">
+        <image xml:id="image-5-cross-vertex" width="80%">
           <asymptote>
             size(10cm);
 
@@ -574,7 +591,7 @@
       shown in <xref ref="figure-8-cross-vertex" />.
       <figure xml:id="figure-8-cross-vertex">
         <caption>The 8-Cross-Polytope Vertex Diagram</caption>
-        <image xml:id="image-8-cross-vertex" width="90%">
+        <image xml:id="image-8-cross-vertex" width="80%">
           <asymptote>
             size(10cm);
 
