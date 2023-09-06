@@ -749,6 +749,17 @@
           numbers of the clock <mdash /> I don't have minutes or any
           other subdivisions, only hours. 
         </p>
+        <p>
+          The term <sq>zero divisor</sq> is probably also unfamiliar.
+          A pair of zero divisors are numbers <m>a</m> and <m>b</m>,
+          each of them non-zero, but whose product <m>ab = 0</m>.
+          This is a strange definition, since it not a property of
+          usual numbers: for integers, rational numbers, real number,
+          two non-zero numbers cannot multiply together to produce
+          zero. However, it does happen in other sets. In the
+          activity, think about how you can find zero divisors in
+          <m>\ZZ/12\zz</m>. 
+        </p>
         <table>
           <title>Table for Sets with Structure</title>
           <tabular top="minor">
