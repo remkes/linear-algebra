@@ -758,7 +758,7 @@
           two non-zero numbers cannot multiply together to produce
           zero. However, it does happen in other sets. In the
           activity, think about how you can find zero divisors in
-          <m>\ZZ/12\zz</m>. 
+          <m>\ZZ / 12\ZZ</m>. 
         </p>
         <table>
           <title>Table for Sets with Structure</title>
