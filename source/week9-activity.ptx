@@ -10,7 +10,11 @@
           <m>i</m> indicates how many fifth of a full turn for the
           rotation. Label the reflections <m>F_i</m>; the index
           indicates reflection over a line through the <m>i</m>
-          vertex, counting counterclockwise.)
+          vertex, counting counterclockwise. Then start calculating
+          the compositions using vertex opertaions. One you have done
+          a number of these, you can start looking for patterns in the
+          multiplication table and potentially use those patterns to
+          finish the table.)
         </p>
       </statement>
       <solution>
@@ -106,9 +110,11 @@
             </mrow>
           </md>
           This is the reflection <m>F_2</m>, so <m>F_3 \circ R_2 =
-          F_2</m>.  Using similar vertex calcluation for all the
-          entries, I produce the following multiplication table for
-          <m>D_5</m>.
+          F_2</m>.  This is just a demonstration calculation: you'll
+          have to many of these to produce the whole table. Between
+          calculating compositions and using the patterns of the table
+          to fill in remaining entries, you should end up with this
+          multiplication for <m>D_5</m>.
           <table>
             <tabular bottom="minor" top="minor" left="minor"
               right="minor">
@@ -261,67 +267,149 @@
       </solution>
     </activity>
   </subsection>
-  <subsection xml:id="subsection-week9-proofs">
-    <title>Proof Questions</title>
+  <subsection xml:id="subsection-activity-polynomials">
+    <title>Linear Algebra of Polynomials</title>
+    <activity>
+      <statement>
+        Write <m>5x^4 + 2x^3</m> as a linear combination of <m>x^4 -
+        x^3 + 7x</m> and <m>x^3 -5x</m>. (Write the linear combination
+        with unknown coefficients and work with the polynomials to try
+        to figure out what the two unknown coefficients should be.) 
+      </statement>
+      <solution>
+        I need to find two constants for this equation.
+        <me>
+          5x^4 + 2x^3 = a(x^4 - x^3 + 7x) + b(x^3 - 5x) 
+        </me>
+        The only power of <m>x^4</m> in either of the two polynomials
+        is in the first. Therefore, the only way to get 5x^4 in the
+        result is for <m>a=5</m>. Let me put that value in and see
+        what the situation is. 
+        <md>
+          <mrow>
+            5x^4 + 2x^3 \amp = 5(x^4 - x^3 + 7x) + b(x^3 - 5x) = 
+          </mrow>
+          <mrow>
+            \amp = 5x^4 + (-5 + b)x^3 + (35 - 5b)x
+          </mrow>
+        </md>
+        The coefficient of <m>x^3</m> needs to be 2. The only way to
+        do this is to make <m>b = 7</m>. Let me check if this works. 
+        <md>
+          <mrow>
+            5x^4 + 2x^3 \amp = 5(x^4 - x^3 + 7x) + (-5 + 7)x^3 
+            + (35 - 5(7))x 
+          </mrow>
+          <mrow>
+            \amp = 5x^4 + 2x^3 + 0x = 5x^4 + 2x^3 
+          </mrow>
+        </md>
+        This works. 
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        Write <m>7x^5 - 7x^2 + 14</m> as a linear combination of
+        <m>4x^6 - x^3 + 1</m>, <m>x^5 + x^3</m> and <m>x^3 + x^2 -
+        2</m>.  (Write the linear combination with unknown
+        coefficients and work with the polynomials to try to figure
+        out what the two unknown coefficients should be.) 
+      </statement>
+      <solution>
+        I need to find three constants for this equation.
+        <me>
+          7x^5 - 7x^2 + 14 = a(4x^6 - x^3 + 1) + b(x^5 + x^3) + c(x^3 +
+          x^2 - 2)
+        </me>
+        There is no <m>x^6</m> in the polynomial I want to build, not
+        in any of the other terms. Therefore, <m>a=0</m> is the only
+        possibility to get ride of the <m>x^6</m>. 
+        <me>
+          7x^5 - 7x^2 + 14 = b(x^5 + x^3) + c(x^3 +
+          x^2 - 2)
+        </me>
+        Then to match the power of <m>x^5</m>, I need <m>b=7</m>. Let
+        me put that in and see what it looks like. 
+        <me>
+          7x^5 - 7x^2 + 14 = 7x^5 + (7 + c)x^3 + cx^2 - 2c
+        </me>
+        Then to get <m>0</m> as the coefficient of <m>x^3</m>, I need
+        c = -7
+        <me>
+          7x^5 - 7x^2 + 14 = 7x^5 + (7 - 7)x^3 - 7x^2 + 14 = 7x^5 -
+          7x^2 + 14 
+        </me>
+        The remaining coefficients all work out, so <m>a = 0</m>, <m>b
+        = 7</m> and <m>c = -7</m> works. 
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        What is the dimension of <m>\Span \{ x^2 - 4, x, 4, x-1, x^2 +
+        4x + 3 \}</m>. (You can do this algebraically, but it's better
+        to try to argue from the standard basis of polynomials that I
+        talked about in the notes and the video.) 
+      </statement>
+      <solution>
+        The dimension is the number of linear independent polynomials
+        that I need to make this span. I can use the fact, from the
+        notes and the videos, that the monomials are enough to span
+        the polynomials. I have <m>4</m>, <m>x</m> and <m>x^2 - 4</m>,
+        which gets me the first three monoials (I can get <m>x^2</m>
+        by subtracting <m>4</m> from <m>x^2 - 4</m>.) Between the
+        first three monomials, nothing else is needed to make any
+        degree 2 or less polynomials. Therefore, this span has
+        dimension 3. 
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        What is the dimension of the set of all polynomials with
+        degree 6 or less?
+      </statement>
+      <solution>
+        Again, I'm going to use the monomials from the video. To get
+        degree 6 polynomials, I need these monomials: <m>\{ 1, x, x^2,
+        x^3, x^4, x^5, x^6 \}</m>. These are all linearly independent
+        and their are seven of them. Therefore, the dimension of all
+        polynomials with degree 6 or less is 7. 
+      </solution>
+    </activity>
+    <activity>
+      <statement>
+        What's the dimension of the set of all odd-degree polynomials?
+      </statement>
+      <solution>
+        Since the odd degree are unbounded, this degree can be as high
+        as I want. It includes all the monomials <m>\{x, x^3, x^5, x^7
+        \ldots \}</m>. Since there are infinitely many of these
+        monomials and they are all linearly independent, the dimension
+        of the odd-degree polynomials is infinite. 
+      </solution>
+    </activity>
     <activity>
       <statement>
         <p>
-          Prove that the rotations and the reflections are the only
-          orthogonal transformations in <m>\RR^2</m>. (This one is a
-          lot trickier than the previous proofs. Give it a shot, but
-          don't distress too much if the approach is difficult to
-          find.)
+          If the set <m>\{x^6, x^4, x^3, x^2, 4x^6 + 3x^4 - 9x^3 -
+          4x^2 - 15\}</m> linearly independent?
         </p>
       </statement>
       <solution>
         <p>
-          This proof is substantially more difficult to approach than
-          the three previous one. There are many transformations in
-          <m>\RR^2</m>. I can't even just prove this for the five
-          basic types, since there are complicated transformations
-          that are combinations of the types and the combination might
-          be orthogonal even when the pieces aren't. I need to find a
-          trick or idea that lets me approach this.
+          The first four terms are different monomials, so they are
+          independent. The real question here is the last polynomial.
+          It has all the same monomials as the first four. The only
+          different is the constant, <m>-15</m>. Does that make it
+          independent? 
         </p>
         <p>
-          The idea I thought to use was acting on the standard basis:
-          <m>\{e_1, e_2\}</m>. Since these two vectors span all of
-          <m>\RR^2</m>, if I know what happens to these two vectors,
-          I know the entire transformation. First, the transformation does
-          something to <m>e_1</m>, sending it to <m>Me_1</m>. Since
-          length is preserved, this is some other unit vector. 
-        </p>
-        <p>
-          Now where can <m>e_2</m> go? There are, in fact, only two
-          choices. <m>Me_2</m> must also be a unit vector, since
-          lengths are preserved. Also, angles are preserved, so the
-          angle between the <m>Me_1</m> and <m>Me_2</m> must still be
-          <m>\frac{\pi}{2}</m> (they are still perpendicular). That
-          gives only two choices. If I face in the direction of
-          <m>Me_2</m>, then I can have the unit vector pointing in
-          the perpendicular direction to the right or to the left. 
-        </p>
-        <p>
-          If <m>Me_2</m> is the perpendicular direction to the left,
-          then <m>M</m> is a rotation. The relative positions of the
-          two vectors are preserved and they are still unit vectors,
-          so the are moved around the circle by whatever the angle is
-          between <m>e_1</m> and <m>Me_1</m>.
-        </p>
-        <p>
-          If <m>Me_2</m> is the perpendicular direction to the right,
-          then <m>M</m> is a reflection. This is a bit trickier to
-          see, but the line of reflection will be the line halfway
-          between <m>e_1</m> and <m>Me_1</m>. That line will flip
-          <m>e_1</m> into <m>Me_1</m> by construction. But the flip
-          will take anything perpendicular on the right and flip it to
-          something perpendicular on the left. So <m>e_2</m>, which
-          starts as the perpendicular vector on the right, ends up as
-          the perpendicular direction on the left. 
-        </p>
-        <p>
-          <m>M</m> must have one of these two behaviours, so <m>M</m>
-          must be a rotation or a reflection.
+          It does make the last polynomials independent. Using the
+          first first, I can build <m>4x^6 + 3x^4 - 9x^3 - 4x^2</m>,
+          but there is no way that I can make a linear combination of
+          the monomials and get the <m>-15</m>. I only get multiples
+          of the powers -- linear combinations cannot add another
+          constant. Therefore, the fifth polynomials is independent,
+          and this whole set is a linearly independent set. 
         </p>
       </solution>
     </activity>
@@ -338,7 +426,15 @@
           What does it mean to make a multiplication table?
         </li>
         <li>
-          What do linear transformations have to do with symmetry. 
+          What is an abstract vector spaces?
+        </li>
+        <li>
+          How to the definitions and ideas of linear algebra extend
+          from vectors to other environments?
+        </li>
+        <li>
+          Why do polynomials, series and functions form abstract
+          vector spaces?
         </li>
       </ul>
     </p>
