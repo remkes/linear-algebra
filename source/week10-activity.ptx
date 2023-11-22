@@ -540,24 +540,24 @@
           look at addition of function.
           <me>
             x^n (f(x) + g(x)) 
-          <me>
+          </me>
           I can just use the ordinary distribution law. This applies
           to function since it is a pointwise operation. 
           <me>
             x^n (f(x) + g(x)) = x^n f(x) + x^n g(x) 
-          <me>
+          </me>
           That's already one of the two properties. Now I look at
           scalar multiplication.
           <me>
             x^n (af(x))
-          <me>
+          </me>
           This is just a series of multiplication of functions and
           constants. I know from the study of function that I do these
           in which ever order I wish. Let me change the order and the
           brackets. 
           <me>
             x^n (af(x)) = a (x^n f(x))
-          <me>
+          </me>
           This is the second property finish. Multiplication
           <m>x^n</m> is a linear transformation.
         </p>
@@ -603,26 +603,26 @@
       </statement>
       <solution>
         <p>
-          To vertify, I just need to do four derivative of the
+          To verify, I just need to do four derivative of the
           function. Here are those four derivatives.
           <md>
             <mrow>
               \frac{d}{dx} a \sin (\sqrt{3} x) + b \cos (\sqrt{3} x)
-              \amp = \amp \sqrt{3} a \cos (\sqrt{3} x) - \sqrt{3} b
+              \amp = \sqrt{3} a \cos (\sqrt{3} x) - \sqrt{3} b
               \sin (\sqrt{3} x) 
             </mrow>
             <mrow>
               \frac{d^2}{dx^2} a \sin (\sqrt{3} x) + b \cos (\sqrt{3} x)
-              \amp = \amp -3a \sin (\sqrt{3}x) - 3b \cos (\sqrt{3} x)
+              \amp = -3a \sin (\sqrt{3}x) - 3b \cos (\sqrt{3} x)
             </mrow>
             <mrow>
               \frac{d^3}{dx^3} a \sin (\sqrt{3} x) + b \cos (\sqrt{3} x)
-              \amp = \amp -3\sqrt{3} a \cos (\sqrt{3}x) + 3\sqrt{3} b
+              \amp = -3\sqrt{3} a \cos (\sqrt{3}x) + 3\sqrt{3} b
               \sin (\sqrt{3}x) 
             </mrow>
             <mrow>
               \frac{d^4}{dx^4} a \sin (\sqrt{3} x) + b \cos (\sqrt{3} x)
-              \amp = \amp 9 a \sin (\sqrt{3} x) + 9b \cos (\sqrt{3} x) 
+              \amp = 9 a \sin (\sqrt{3} x) + 9b \cos (\sqrt{3} x) 
             </mrow>
           </md>
           This is, indeed, exactly 9 times the original function, so
