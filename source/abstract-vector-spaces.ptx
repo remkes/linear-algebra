@@ -9,9 +9,9 @@
       Instead of talking about groups, I want to talk much more
       holistically about what we've accomplished so far in this
       course. This course began with <m>\RR^n</m>, real euclidean
-      space, and I presented it all as a a geometry course: I wanted
+      space, and I presented it all as geometry: I wanted
       to understand euclidean space and its structures. What
-      structures have I found? Several, but notable these: addition of
+      structures have I found? Several, but notably these: addition of
       vectors; scalar multiplication; linear combinations; linear
       independence; spans; subspaces; and transformations. 
     </p>
@@ -19,28 +19,28 @@
       Now I want to abstract these structures. The same way a group
       was an abstraction to talk about collections of invertible
       tranformations, I want an abstraction to talk about these linear
-      algebra definition. What is the pattern that I need to use these
-      terms, these defnition? How can I use these ideas as broadly as
-      possible>
+      algebra definitions. What is the pattern that uses these
+      terms, these defnitions? How can I use these ideas as broadly as
+      possible?
     </p>
     <p>
-      This is the main strength of an abstraction: an abstraction is
-      difficult to undersatnd, being removed from its source and
-      turned into just a pattern, but the abstraction applies more
-      broadly than its source. If I abstract a structure, I can use it
-      in many places, even if it is harder to understand than just a
-      concrete instance. 
+      This is the main strength of an abstraction: it's broad
+      application. An abstraction is difficult to understand, being
+      removed from its source and turned into just a pattern, but the
+      abstraction applies more broadly than its source. If I abstract
+      a structure, I can use it in many places, even if it is harder
+      to understand than just a concrete instance.
     </p>
     <p>
       I'm looking to abstract euclindean space, the space of vectors.
-      What has the same kind of structure? It all leads to this
-      definition.
+      What other mathematical things have the same kind of structure?
+      It all leads to this definition.
     </p>
     <definition>
       <statement>
         <p>
-          A set <m>V</m> is an <term>abstract vector space</term> if it
-          satisfies three properties.
+          A set <m>V</m> is an <term>abstract vector space</term>
+          (over the real numbers) if it satisfies three properties.
         </p>
         <p><ol>
           <li>
@@ -70,16 +70,15 @@
       linear opeartions of addition and scalar multiplication, they
       act enough like vectors to use the language of linear algebra.
       Just these properties is enough to talk about linear
-      combinations, linear independence, span, bases, transformations,
+      combinations, linear independence, spans, bases, transformations,
       image, kernels, and many other terms from the course. This adds
       great value to everything we've done so far in this course,
-      because suddenly there are all these new environment for the use
+      because suddenly there are all these new environments for the use
       of these terms and ideas. In many way, this definition justified
-      the important place that linear algebra has in university
+      the important place that linear algebra has in academic
       mathematics. Vectors and their structures are important, but
       linear algebra is so central, in great part, because of
-      ubiquitous its terms are used in other settings, in other
-      abstract vector spaces. 
+      how ubiquitously its terms are used in other settings.
     </p>
     <p>
       Before, I get to examples, I must also note that something is
@@ -89,10 +88,11 @@
     <p><ul>
       <li>
         Mostly obvioulsy, the things in an abstract vector space are
-        no longer vectors: list of numbers, positions in space. 
+        no longer vectors: that is, they are not finite lists of
+        numbers and represent positions in space. 
       </li>
       <li>
-        Loosing explicit vectors means loosing geometric
+        Losing explicit vectors means losing geometric
         interpretation, for the most part. The elements of an abstract
         vector space may no longer have the geometric meaning of
         vectors. In particular, the whole structure of loci may be
@@ -102,7 +102,7 @@
         The matrix interpretation of transformations came from the
         matrix action on vectors. For other objects, that action might
         not work any more, or at least not as easily. Linear
-        transformation may no longer be matrices. 
+        transformations may no longer be matrices. 
       </li>
       <li>
         Since both matrices and geometry are lost, ideas like impact
@@ -112,7 +112,7 @@
       <li>
         Finally and most interestingly, the finite dimensional nature
         of <m>\RR^n</m> may also be lost. Many asbtract vectors spaces
-        are infinite dimension, as I'll show shortly in the examples. 
+        are infinite dimensional, as I'll show shortly in the examples. 
       </li>
     </ul></p>
   </subsection>
@@ -122,7 +122,7 @@
       <statement>
         <p>
           The set <m>P(\RR)</m> consists of all polynomial in the
-          variable <m>x</m> with real coefficient. 
+          variable <m>x</m> with real coefficients. 
         </p>
         <p><ul>
           <li>
@@ -133,13 +133,13 @@
           <li>
             I can multiply polynomials by scalars: if <m>a \in \RR</m>
             is a real number and <m>p(x)</m> is a polynomial, the
-            <m>ap(x)</m> is still a polyonomial. 
+            <m>ap(x)</m> is still a polynomial. 
           </li>
           <li>
-            Since all the opeartions here are inherited from ordinary
-            arithmetic of numbers and variables, the distributive law
-            of multiplication over addition applies to scalar
-            multiplication and polynomial addition. 
+            Since all the opeartions here are inherited from the
+            ordinary arithmetic of numbers and variables, the
+            distributive law of multiplication over addition applies
+            to scalar multiplication and polynomial addition. 
           </li>
         </ul></p>
         <p>
@@ -149,34 +149,34 @@
           <ul>
             <li>
               The polynomial <m>4x^2 - 4</m> is in <m>\Span \{x+4, x^2
-              + x + 3 \}</m>. The span is all lienar combination, so I
+              + x + 3 \}</m>. The span is all linear combinations, so I
               can justify this claim by a demonstration. 
               <me>
                 4x^2 + 4 = 4(x^2 + x + 3) - 4(x - 4)
               </me>
-              This equation shows that <m>4x^2 + 4</m> is a linar
-              combination of the spanning vectors, therefor a member
+              This equation shows that <m>4x^2 + 4</m> is a linear
+              combination of the spanning vectors, therefore a member
               of the span. 
             </li>
             <li>
              The set of polynomials <m>\{ x^3 - 4, x^5 - x^2, 3x^4
-             \}</m> is linearly independent. (To prove this, I would
+             \}</m> is linearly independent. To prove this, I would
              write the equation <m>a(x^3 - 4) + b(x^5 - x^2) + c(3x^4)
              = 0</m> and prove that the only solution is <m>a = b = c
-             = 0</m>.) 
+             = 0</m>.
             </li>
             <li>
               The set <m>\Span \{x^3, x^7, x^10, x^{12}\}</m> has
-              dimension four. (To prove this, I would have to prove
+              dimension four. To prove this, I would have to prove
               that the four polynomials are a basis, which I would do
-              by proving that they are linearly independent.)
+              by proving that they are linearly independent.
             </li>
           </ul>
         </p>
         <p>
           As I have already mentioned, one of the stranger things
           about abstract vectors spaces is that they can be infinite
-          dimensions. This space of polynomials is the first example
+          dimensional. This space of polynomials is the first example
           of an infinite dimensional vector space. What does that
           mean? Well, the definition of dimension came from a basis:
           dimensions is the number of elements in a basis. So, what is
@@ -187,10 +187,10 @@
           that any other polymomial can be built out of them. One
           clear choice are the monomials: <m>\{1, x, x^2, x^3, x^4,
           x^5, \ldots \}</m>. Is this a linearly independent set? Yes,
-          it is. There is not way to get a monomial as a sum of other
+          it is. There is no way to get a monomial as a sum of other
           monomials with different degreres. (For example, there is
           not way to write <m>x^4</m> as <m>a + bx + cx^2 + dx^3 +
-          ex^4</m> and so on. The only way to get the power <m>x^4</m>
+          ex^5</m> and so on. The only way to get the power <m>x^4</m>
           from some other monomial is to multiply or divide by the
           variable, and linear combinations are just multiplicatons by
           scalars and addition. This is a linearly independent
@@ -199,13 +199,13 @@
         <p>
           So I have this linear independent set <m>\{ 1, x, x^2, x^3,
           \ldots \}</m>. By writing it this way, I imply that the set
-          never stops, that is include <m>x^n</m> for all <m>n \in
-          \NN</m>. I implies that it is an infinite set. Does it need
+          never stops, that it includes <m>x^n</m> for all <m>n \in
+          \NN</m>. I imply that it is an infinite set. Does it need
           to be? Well, if it were finite, then there would be a
           highest monomial, some <m>x^k</m>. Even if <m>k</m> is a
           very, very large number, I can still ask about the
           polynomial <m>p(x) = x^{k+1}</m>. There is no limit on the
-          degree of a polynomial. Therefore, no finite subset work.
+          degree of a polynomial. Therefore, no finite subset works.
           All of these infinitely many monomials are necessary to
           build all the polynomials. Therefore, they are a basis.
           Since the basis is infinite, the abstract vector space is
@@ -236,33 +236,33 @@
             series. 
           </li>
           <li>
-            Since all the opeartions here are inherited from ordinary
-            arithmetic of numbers and variables, the distributive law
-            of multiplication over addition applies to scalar
-            multiplication and power series addition. 
+            Since all the opeartions here are inherited from the
+            ordinary arithmetic of numbers and variables, the
+            distributive law of multiplication over addition applies
+            to scalar multiplication and power series addition. 
           </li>
         </ul></p>
         <p>
-          Having satisfied the three criteria, this set of polynomials
-          is an abstract vector space. As with polynomials, I could
-          make linear combinations and spans, ask about linear
-          independence and bases, and otherwise use the tool of linear
-          algebra to talk about series. 
+          Having satisfied the three criteria, this set of these
+          infinite series is an abstract vector space. As with
+          polynomials, I could make linear combinations and spans, ask
+          about linear independence and bases, and otherwise use the
+          tool of linear algebra to talk about series. 
         </p>
         <p>
           Like the polynomials, this is also an infinite dimensional
           abstract vector space. Justifying this is not too difficult,
-          since any polynomials is also a zero by letting all the
+          since any polynomials is also a series by letting all the
           highter coefficient be zero, so <m>\Span \{ 1, x, x^2, x^3
           \ldots, \}</m> is already contained within the infinite series.
           If it contains infinite dimensions already, then it itself
-          must be infinite dimensional. However, actually talking
+          must be infinite dimensional. However, actually determining
           about the basis for series is tricky. First and foremost,
           why doesn't <m>\Span\{ 1, x, x^2, x^3 \ldots \}</m> produce
           all the infinite series? A series is, after all, a sum <m>
           f(x) = f_0 + f_1x + f_2x^2 + f_3x^3 + f_4x^4 + \ldots </m>.
           This looks like something I can get from the span of
-          monomials. Can't I>
+          monomials. Can't I?
         <p>
         </p>
           I can't, but the reason is a a strange subtlety, one that I
@@ -270,7 +270,7 @@
           algebra, such as the sums that make liner combinations, the
           sums must be finite. I never had to worry about this with
           actual vectors, since I never had to consider infinite sums
-          of vector. But here, an infinite defined by an infinite sum.
+          of vectors. But here, an infinite defined by an infinite sum.
           Therefore, the monomial are not a basis: series are not
           (finite) linear combinations of monomials.
         </p>
@@ -287,26 +287,27 @@
       <statement>
         <p>
           The set <m>C^0(\RR)</m> is the set of all continuous
-          function with domain <m>\RR</m>
+          function with domain <m>\RR</m>.
         </p>
         <p><ul>
           <li>
             I can add continuous function: if <m>f(x) </m> and
-            <m>g(x)</m> are two continuous function defines for all
-            real number, then <m>f(x) + g(x)</m> is still a function,
+            <m>g(x)</m> are two continuous function defined for all
+            real numbers, then <m>f(x) + g(x)</m> is still a function,
             still has domain <m>\RR</m>, and is still continuous. 
           </li>
           <li>
-            I can multiply continuous function  by scalars: if <m>a
+            I can multiply continuous functions by scalars: if <m>a
             \in \RR</m> is a real number and <m>f(x)</m> is a
-            continuous functionn, then <m>af(x)</m> is also a
-            continuous function define for all real number. 
+            continuous function, then <m>af(x)</m> is also a
+            continuous function defined for all real number. 
           </li>
           <li>
-            Since all the opeartions here are inherited from ordinary
-            arithmetic of numbers and variables, the distributive law
-            of multiplication over addition applies to scalar
-            multiplication and the addition of continuous functions. 
+            Since all the opeartions here are inherited from the
+            ordinary arithmetic of numbers and variables, the
+            distributive law of multiplication over addition applies
+            to scalar multiplication and the addition of continuous
+            functions. 
           </li>
         </ul></p>
         <p>
@@ -330,7 +331,7 @@
           The basis question here is extremely fraught, even more so
           than for infinite series. There are many, many, many
           continuous functions: any path that I can draw in R^2 that
-          extends to infinite in both directions and satisfies a
+          extends to infinity in both directions and satisfies a
           vertical line test is the graph of a continuous function.
           The variety here is, literally, endless. It's difficult to
           even consider the idea of a basis. If I were to investigate
@@ -347,15 +348,15 @@
           functions is unbelievably enormous, considering it as an
           abstract vector space is still very useful. In particular,
           the solutions to differential equations are often continuous
-          function. The space of solution (since there are often
+          functions. The space of solution (since there are often
           infnintely many solutions) is a set of function. In many
           instances, this set can be described as a span of finitely
           many functions: it has a dimension. To describe these
           solutions, I need a basis: I need to find linearly
           independent functions to span this solutions space. In this
-          way, linear algebra language gets used to describe solutions
-          to differential equations, an solution to differential
-          equations benefit from this description. 
+          way, the language of linear algebra gets used to describe
+          solutions to differential equations, and solution to
+          differential equations greatly benefit from this description. 
         </p>
       </statement>
     </example>
