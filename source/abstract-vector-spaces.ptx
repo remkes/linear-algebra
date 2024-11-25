@@ -46,7 +46,7 @@
           <li>
             There is an addition operation on <m>V</m>. For <m>u,v \in
             V</m>, I can perform <m>u + v</m> and get some other
-            element of <m>V/</m>. This addition is associative and
+            element of <m>V</m>. This addition is associative and
             commutative.
           </li>
           <li>
@@ -74,11 +74,11 @@
       image, kernels, and many other terms from the course. This adds
       great value to everything we've done so far in this course,
       because suddenly there are all these new environments for the use
-      of these terms and ideas. In many way, this definition justified
+      of these terms and ideas. In many way, this definition justifies
       the important place that linear algebra has in academic
       mathematics. Vectors and their structures are important, but
       linear algebra is so central, in great part, because of
-      how ubiquitously its terms are used in other settings.
+      how ubiquitous its terms are used in other settings.
     </p>
     <p>
       Before, I get to examples, I must also note that something is
@@ -270,9 +270,9 @@
           algebra, such as the sums that make liner combinations, the
           sums must be finite. I never had to worry about this with
           actual vectors, since I never had to consider infinite sums
-          of vectors. But here, an infinite defined by an infinite sum.
-          Therefore, the monomial are not a basis: series are not
-          (finite) linear combinations of monomials.
+          of vectors. But here, an infinite series is defined by an
+          infinite sum.  Therefore, the monomial are not a basis:
+          series are not (finite) linear combinations of monomials.
         </p>
         <p>
           So what is a basis for the infinite series? It would have to
@@ -292,7 +292,7 @@
         <p><ul>
           <li>
             I can add continuous function: if <m>f(x) </m> and
-            <m>g(x)</m> are two continuous function defined for all
+            <m>g(x)</m> are two continuous functions defined for all
             real numbers, then <m>f(x) + g(x)</m> is still a function,
             still has domain <m>\RR</m>, and is still continuous. 
           </li>
@@ -303,7 +303,7 @@
             continuous function defined for all real number. 
           </li>
           <li>
-            Since all the opeartions here are inherited from the
+            Since all the operations here are inherited from the
             ordinary arithmetic of numbers and variables, the
             distributive law of multiplication over addition applies
             to scalar multiplication and the addition of continuous
@@ -330,18 +330,19 @@
         <p>
           The basis question here is extremely fraught, even more so
           than for infinite series. There are many, many, many
-          continuous functions: any path that I can draw in R^2 that
-          extends to infinity in both directions and satisfies a
-          vertical line test is the graph of a continuous function.
-          The variety here is, literally, endless. It's difficult to
-          even consider the idea of a basis. If I were to investigate
-          this question, I would find that this abstract vector space
-          is, in fact, uncountably infinite (for those who know what
-          that means). The question as to whether such an abstract
-          vector space even has a basis is not at all clear: this
-          relates to some very deep and important questions at the
-          very core of mathematics. For more information, ask me
-          sometime about the Axiom of Choice and its implications. 
+          continuous functions: any path that I can draw in
+          <m>\RR^2</m> that extends to infinity in both directions and
+          satisfies a vertical line test is the graph of a continuous
+          function.  The variety here is, literally, endless. It's
+          difficult to even consider the idea of a basis. If I were to
+          investigate this question, I would find that this abstract
+          vector space is, in fact, uncountably infinite (for those
+          who know what that means). The question as to whether such
+          an abstract vector space even has a basis is not at all
+          clear: this relates to some very deep and important
+          questions at the very core of mathematics. For more
+          information, ask me sometime about the Axiom of Choice and
+          its implications. 
         </p>
         <p>
           Even though this abstract vector space of continuous
@@ -349,7 +350,7 @@
           abstract vector space is still very useful. In particular,
           the solutions to differential equations are often continuous
           functions. The space of solution (since there are often
-          infnintely many solutions) is a set of function. In many
+          infnintely many solutions) is a set of functions. In many
           instances, this set can be described as a span of finitely
           many functions: it has a dimension. To describe these
           solutions, I need a basis: I need to find linearly
