@@ -113,11 +113,11 @@
               v_n \end{pmatrix} 
             </mrow>
             <mrow>
-              \amp = \begin{pmatrix} u_1 + v_2  \\ u_2 + v_2 \\ 
+              \amp = \begin{pmatrix} u_1 + v_1  \\ u_2 + v_2 \\ 
               \vdots \\ u_n + v_n \end{pmatrix} 
             </mrow>
             <mrow>
-              \amp = \begin{pmatrix} v_1 + u_2  \\ v_2 + u_2 \\ 
+              \amp = \begin{pmatrix} v_1 + u_1  \\ v_2 + u_2 \\ 
               \vdots \\ v_n + u_n \end{pmatrix} 
             </mrow>
             <mrow>

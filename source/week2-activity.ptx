@@ -241,7 +241,7 @@
             \left( \begin{matrix} 
               0 \\ 0 \\ 0 
             \end{matrix} \right) \cdot
-            \left( \begin{matrix} \sqrt{\pi} \ \frac{1}{e^2+6} \\
+            \left( \begin{matrix} \sqrt{\pi} \\ \frac{1}{e^2+6} \\
             \sqrt{1 + \sqrt{8}}
             \end{matrix} \right) = 0 
           </me>
