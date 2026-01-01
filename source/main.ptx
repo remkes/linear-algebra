@@ -10,7 +10,7 @@
     </latex-image-preamble>
   </docinfo>
 
-  <book xml:id="book-calculus1">
+  <book xml:id="book-multicalculus">
     <title>Course Notes for Linear Algebra</title>
 
     <frontmatter xml:id="frontmatter">
@@ -24,23 +24,23 @@
           <today />
         </date>
         <copyright>
-          <year>2012<ndash />2025</year>
+          <year>2012<ndash />2026</year>
           <holder>Remkes Kooistra</holder>
           <shortlicense> 
             This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
           </shortlicense>
         </copyright>
-   
+        
         <titlepage>
           <titlepage-items/>
         </titlepage>
         <colophon>
           <colophon-items/>
         </colophon>
-
+  
       </bibinfo>
     </frontmatter>
-
+    
     <xi:include href="./week1.ptx" />
     <xi:include href="./week2.ptx" />
     <xi:include href="./week3.ptx" />
