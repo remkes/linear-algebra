@@ -331,7 +331,7 @@
     </p>
     <example>
       <statement>
-        <me>
+        <md>
           A = \begin{pmatrix} 
             3 \amp 1 \\ 
             1 \amp 3 
@@ -340,19 +340,19 @@
             3-\lambda \amp 1 \\ 
             1 \amp 3 - \lambda 
           \end{pmatrix} 
-        </me>
+        </md>
         <p>
           The determinant of this is <m>9 - 6\lambda + \lambda^2 - 1 =
           8-6\lambda + \lambda^2 = (\lambda-4)(\lambda-2)</m>. So the
           eigenvalues are <m>\lambda = 4</m> and <m>\lambda = 2</m>.
           I can calculate the kernel of <m>A - \lambda \Id</m> first for
           <m>\lambda = 2</m>.
-          <me>
+          <md>
             A - 2 \Id = \begin{pmatrix} 
               1 \amp 1 \\ 
               1 \amp 1
             \end{pmatrix} 
-          </me>
+          </md>
         </p>
         <p>
           The kernel of this matrix is <m>\Span \left\{
@@ -360,12 +360,12 @@
           multiples of <m>\begin{pmatrix} 1 \\ -1 \end{pmatrix}</m>
           are eigenvectors for <m>\lambda = 2</m>. Next, I move on to
           <m>\lambda = 4</m>.
-          <me>
+          <md>
             A - 4 \Id = \begin{pmatrix} 
               -1 \amp 1 \\ 
               1 \amp - 1
             \end{pmatrix}
-          </me>
+          </md>
         </p>
         <p>
           The kernel of this matrix is <m>\Span \left\{
@@ -377,7 +377,7 @@
     </example>
     <example>
       <statement>
-        <me>
+        <md>
           A = \begin{pmatrix} 
             0 \amp -2 \\ 
             2 \amp 0 
@@ -386,7 +386,7 @@
             -\lambda \amp -2 \\ 
             2 \amp -\lambda 
           \end{pmatrix} 
-        </me>
+        </md>
         <p>
           The characteristic polynomial is <m>\lambda^2 + 4 = 0</m>,
           which has no roots. Therefore, there are no eigenvalues.
@@ -397,7 +397,7 @@
       <statement>
         <p>
           Consider a diagonal matrix.
-          <me>
+          <md>
             A = \begin{pmatrix} 
               1 \amp 0 \amp 0 \amp 0 \\ 
               0 \amp -3 \amp 0 \amp 0 \\ 
@@ -409,7 +409,7 @@
               0 \amp 0 \amp 4 - \lambda \amp 0 \\ 
               0 \amp 0 \amp 0 \amp - \lambda 
             \end{pmatrix} 
-          </me>
+          </md>
         </p>
         <p>
           The characteristic polynomial is

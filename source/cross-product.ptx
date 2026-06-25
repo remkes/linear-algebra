@@ -18,10 +18,10 @@
           <term>cross product</term> of <m>u</m> and <m>v</m> is
           written <m>u \times v</m> and defined by the following
           formula.
-          <me>
+          <md>
             u \times v = \begin{pmatrix} u_2v_3 - u_3v_2 \\ u_3v_1 -
             u_1v_3 \\ u_1v_2 - u_2v_1 \end{pmatrix}
-          </me>
+          </md>
         </p>
       </statement>
     </definition>
@@ -39,9 +39,9 @@
       <m>u</m> and <m>v</m>, the dot product was expressed in terms of
       <m>\cos \theta</m>. This measures similarity, since <m>\cos 0 =
       1</m>.  There is a similar identity for the cross product.
-      <me>
+      <md>
         |u \times v| = |u||v| \sin \theta
-      </me>
+      </md>
     </p>
     <p>
       This identity tells me that the cross product measures

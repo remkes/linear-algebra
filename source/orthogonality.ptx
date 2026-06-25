@@ -25,10 +25,10 @@
           twice-indexed set of numbers <m>\delta_{ij}</m>, which
           evaluates to <m>0</m> whenever <m>i \neq j</m> and <m>1</m>
           whenever <m>i=j</m>.
-          <me>
+          <md>
             \delta_{ij} = \begin{cases} 0 \amp i \neq j \\ 1
             \amp i = j \end{cases} 
-          </me>
+          </md>
         </p>
       </statement>
     </definition>
@@ -162,13 +162,13 @@
           Even in <m>\RR^3</m>, orthogonality already gets a bit trickier
           than just the rotations/reflection of <m>\RR^2</m>. Consider
           the following matrix. 
-          <me> 
+          <md> 
             \begin{pmatrix} 
               -1 \amp  0 \amp  0 \\ 
               0 \amp  -1 \amp  0 \\ 
               0 \amp  0 \amp  -1 
             \end{pmatrix}
-          </me>
+          </md>
         </p>
         <p>
           This matrix is orthogonal, but it isn't a rotation or
@@ -191,7 +191,7 @@
         <p>
           Here is another example of an orthogonal matrix in
           <m>\RR^3</m>. 
-          <me> 
+          <md> 
             \begin{pmatrix} 
               \dfrac{5}{\sqrt{38}} \amp \dfrac{-3}{\sqrt{67}} 
                 \dfrac{-23}{\sqrt{2546}} \\[1em]
@@ -200,7 +200,7 @@
               \dfrac{-2}{\sqrt{38}} \amp \dfrac{3}{\sqrt{67}} 
                 \dfrac{-44}{\sqrt{2546}} \\
             \end{pmatrix}
-          </me>
+          </md>
         </p>
         <p>
           To check the orthogonality, I would just take the dot

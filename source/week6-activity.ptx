@@ -459,7 +459,7 @@
       <statement>
         <p>
           Calculate this matrix action.
-          <me>
+          <md>
             \left( \begin{matrix}
               -5 \amp 0 \amp 3 \amp 2 \\
               4 \amp -5 \amp -7 \amp 1 \\
@@ -468,7 +468,7 @@
             \left( \begin{matrix}
               4 \\ -1 \\ -1 \\ -1 
             \end{matrix} \right)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -505,7 +505,7 @@
       <statement>
         <p>
           Calculate this matrix action.
-          <me>
+          <md>
             \left( \begin{matrix}
               -1 \amp 6 \amp 0 \amp -4 \\
               0 \amp 3 \amp 3 \amp -12 \\
@@ -515,7 +515,7 @@
             \left( \begin{matrix}
               0 \\ 10 \\ -5 \\ -5 
             \end{matrix} \right)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -554,7 +554,7 @@
       <statement>
         <p>
           Calculate this matrix action.
-          <me>
+          <md>
             \left( \begin{matrix}
               5 \amp -3 \amp 9 \amp 0 \amp 2 \amp -7 \\
               2 \amp -2 \amp 0 \amp -5 \amp -6 \amp -9
@@ -562,7 +562,7 @@
             \left( \begin{matrix}
               0 \\ -3 \\ -3 \\ 7 \\ 2 \\ 4
             \end{matrix} \right)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -603,7 +603,7 @@
       <statement>
         <p>
           Calculate this matrix action.
-          <me>
+          <md>
             \left( \begin{matrix}
               -5 \amp 3 \amp 0 \\
               2 \amp 0 \amp -4 \\
@@ -614,7 +614,7 @@
             \left( \begin{matrix}
               1 \\ -2 \\ 0 
             \end{matrix} \right)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -658,7 +658,7 @@
       <statement>
         <p>
           Multiply these two matrices.
-          <me>
+          <md>
             \left( \begin{matrix}
               9 \amp -1 \amp -1 \\
               0 \amp 5 \amp -5 \\
@@ -669,14 +669,14 @@
               1 \amp 1 \amp -8 \\
               9 \amp 0 \amp 3 
             \end{matrix} \right)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I use the algorithm, going across the rows of the first
           matrix and down the rows of the second.
-          <me>
+          <md>
             \left( \begin{matrix}
               9 \amp -1 \amp -1 \\
               0 \amp 5 \amp -5 \\
@@ -692,7 +692,7 @@
               -40 \amp 5 \amp -55 \\
               -30 \amp 3 \amp 39 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -700,7 +700,7 @@
       <statement>
         <p>
           Multiply these two matrices.
-          <me>
+          <md>
             \left( \begin{matrix}
               7 \amp -1 \amp -1 \amp 3 \\
               5 \amp -9 \amp 0 \amp 1 
@@ -711,14 +711,14 @@
               -3 \amp -3 \\
               1 \amp 5
             \end{matrix} \right)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I use the algorithm, going across the rows of the first
           matrix and down the rows of the second.
-          <me>
+          <md>
             \left( \begin{matrix}
               7 \amp -1 \amp -1 \amp 3 \\
               5 \amp -9 \amp 0 \amp 1 
@@ -733,7 +733,7 @@
               33 \amp -10 \\
               12 \amp -15 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -751,15 +751,15 @@
       <solution>
         <p>
           The matrix for a quarter turn rotation is 
-          <me>
+          <md>
             \left( \begin{matrix}
               0 \amp -1 \\ 1 \amp 0 
             \end{matrix} \right) 
-          </me>
+          </md>
           To compose transformations we multiply matrices. To compose
           this transformation with itself, I mutiply the matrix with
           itself. 
-          <me>
+          <md>
             \left( \begin{matrix}
               0 \amp -1 \\ 1 \amp 0 
             \end{matrix} \right) 
@@ -769,12 +769,12 @@
             \left( \begin{matrix}
               -1 \amp 0 \\ 0 \amp -1 
             \end{matrix} \right) 
-          </me>
+          </md>
           The result of the matrix multiplication is indeed the
           rotation matrix for rotation by <m>\pi</m> radians. To see
           what happens after a third rotation by a quarter turn, I
           multiply this matrix by the original quarter turn matrix. 
-          <me>
+          <md>
             \left( \begin{matrix}
               -1 \amp 0 \\ 0 \amp -1 
             \end{matrix} \right) 
@@ -784,7 +784,7 @@
             \left( \begin{matrix}
               0 \amp 1 \\ -1 \amp 0
             \end{matrix} \right) 
-          </me>
+          </md>
           The result of the matrix multiplication is indeed the matrix
           of the rotation by <m>\frac{3\pi}{2}</m> radians. 
         </p>
@@ -807,19 +807,19 @@
       <solution>
         <p>
           The general form of a rotation by <m>\theta</m> is 
-          <me>
+          <md>
             \left( \begin{matrix}
               \cos \theta \amp - \sin \theta \\
               \sin \theta \amp \cos \theta
             \end{matrix} \right) 
-          </me>.
+          </md>.
           I can make the same matrix for the angle <m>\phi</m>.
-          <me>
+          <md>
             \left( \begin{matrix}
               \cos \phi \amp - \sin \phi \\
               \sin \phi \amp \cos \phi
             \end{matrix} \right) 
-          </me>.
+          </md>.
           I compose these two matrices. 
           <md>
             <mrow>
@@ -847,12 +847,12 @@
           entries is a sum identity. Replacing those according to
           identities drawn from the reference material,
           I get this matrix.
-          <me>
+          <md>
             \left( \begin{matrix}
               \cos (\theta + \phi) \amp -\sin (\theta + \phi) \\
               \sin (\theta + \phi) \amp \cos (\theta + \phi)
             \end{matrix} \right) 
-          </me>
+          </md>
           This is precisely the matrix form for rotation by the angle
           <m>(\theta + \phi)</m>. Therefore, I have proven that the
           matrix multiplication, and hence the composition, of two
@@ -874,12 +874,12 @@
           The general form for a reflection over the line spanned by the
           <emph>unit</emph> vector <m>\left( \begin{matrix} a \\ b
           \end{matrix} \right)</m> is 
-          <me>
+          <md>
             \left( \begin{matrix}
               a^2 - b^2 \amp 2ab \\ 
               2ab \amp b^2 - a^2 
             \end{matrix} \right)  
-          </me>.
+          </md>.
           Since the vector defining the line is a unit vector, I know
           <m>a^2 + b^2 =
           1</m>. This fact will be important to the proof. Now I take

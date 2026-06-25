@@ -9,21 +9,21 @@
         Invert these matrices. (Show the steps of your process, but
         you can use a computer for the row reductions.) (9)
         <ol>
-          <li><me>
+          <li><md>
             \begin{pmatrix}
               0 \amp 1 \amp 2 \\
               -2 \amp 0 \amp -3 \\
               1 \amp 1 \amp 3
             \end{pmatrix}
-          </me></li>
-          <li><me>
+          </md></li>
+          <li><md>
             \begin{pmatrix}
               6 \amp 0 \amp 1 \\
               -1 \amp 0 \amp 7 \\
               2 \amp -1 \amp -2
             \end{pmatrix}
-          </me></li>
-          <li><me>
+          </md></li>
+          <li><md>
             \begin{pmatrix}
               1 \amp 1 \amp 1 \amp 1 \amp -1 \\
               1 \amp 1 \amp 1 \amp -1 \amp 1 \\
@@ -31,49 +31,49 @@
               1 \amp -1 \amp 1 \amp 1 \amp 1 \\
               -1 \amp 1 \amp 1 \amp 1 \amp 1 \\
             \end{pmatrix}
-          </me></li>
+          </md></li>
         </ol>
       </p>
     </li>
     <li>
       <p>
         Consider the transformation defined by this matrix. (6)
-        <me>
+        <md>
           \begin{pmatrix}
             0 \amp -4 \amp -4\\
             9 \amp -1 \amp -2 \\
             0 \amp 1 \amp 5
           \end{pmatrix}
-        </me>
+        </md>
       </p>
       <ol>
         <li><p>
           What does this matrix do to this line?
-          <me>
+          <md>
             \Span \left\{ \begin{pmatrix}
               4 \\ 0 \\-7 
             \end{pmatrix} \right\} 
-          </me>
+          </md>
         </p></li>
         <li><p>
           What does this matrix do to the plane given by this
           equation?
-          <me>
+          <md>
             x + y + 2z  = 0 
-          </me>.
+          </md>.
         </p></li>
       </ol>
     </li>
     <li>
       <p>
         Consider this matrix and its associated transformation. (8) 
-        <me>
+        <md>
           \begin{pmatrix}
             -2 \amp 0 \amp 3 \\
             1 \amp 4 \amp -1 \\
             -1 \amp -1 \amp 2
           \end{pmatrix}
-        </me>
+        </md>
       </p>
       <ol>
         <li><p>
@@ -94,13 +94,13 @@
     <li>
       <p>
         Consider this matrix and its associated transformation. (8) 
-        <me>
+        <md>
           \begin{pmatrix}
             3 \amp -1 \amp 2 \amp 0 \amp 1 \\
             4 \amp 0 \amp 1 \amp 2 \amp 0 \\
             0 \amp 0 \amp -3 \amp -3 \amp 1 
           \end{pmatrix}
-        </me>
+        </md>
       </p>
       <ol>
         <li><p>

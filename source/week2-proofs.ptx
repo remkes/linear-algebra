@@ -12,9 +12,9 @@
         <p>
           The dot product is commutative. That is, if <m>u, v \in
           \RR^n</m>, 
-          <me>
+          <md>
             u \cdot v = v \cdot u
-          </me>.
+          </md>.
         </p>
       </statement>
       <proof>
@@ -35,22 +35,22 @@
           Then I'll start with the left side and see if I can make a
           chain of equality that results in the right side. 
           First I use the definition of the dot product. 
-          <me>
+          <md>
             u \cdot v = u_1v_1 + u_2v_2 + u_3v_3 + \ldots + u_nv_n
-          </me>
+          </md>
           Then each of the products <m>u_iv_i</m> are products of
           ordinary real numbers. Multiplicaton of real numbers is
           commutative, so I can interchange the order of each of
           these products.
-          <me>
+          <md>
             u \cdot v = v_1u_1 + v_2u_2 + v_3u_3 + \ldots + v_nu_n
-          </me>
+          </md>
           Then I use the definition of the dot product again. The
           right side of the previous equation is, by definition, the
           dot product <m>v \cdot u</m>.
-          <me>
+          <md>
             u \cdot v = v \cdot u
-          </me>
+          </md>
           That is the desired equality, so I have finished the proof.
           Notice that the desired equation only shows up at the end of
           the proof. I never start with what I want to prove.
@@ -61,42 +61,42 @@
       <statement>
         <p>
           If <m>u \in \RR^n</m>, then 
-          <me>
+          <md>
             u \cdot u = |u|^2 
-          </me>
+          </md>
         </p>
       </statement>
       <proof>
         <p>
           I write <m>u</m> in its coordinates.
-          <me>
+          <md>
             u = \begin{pmatrix}
               u_1 \\ u_2 \\ u_3 \\ \ldots \\ u_n
             \end{pmatrix}
-          </me>
+          </md>
           Then I'll start with the left side and use the definition of
           the dot product. 
-          <me>
+          <md>
             u \cdot u = u_1u_1 + u_2u_2 + u_3u_3 + \ldots u_nu_n
-          </me>
+          </md>
           I can write these products on the left as squares.
-          <me>
+          <md>
             u \cdot u = u_1^2 + u_2^2 + u_3^2 + \ldots + u_n^2
-          </me>
+          </md>
           Since the right side is a sum of squares, it is a positive
           number (or possibly zero if all the <m>u_i</m> are zero). As
           a positive number or zero, I can square root it and then
           square it without effect: <m>\alpha = (\sqrt{\alpha})^2</m>
           for any non-negative <m>\alpha</m>.
-          <me>
+          <md>
             u \cdot u = \left( \sqrt{u_1^2 + u_2^2 + u_3^2 + \ldots +
             u_n^2} \right)^2 
-          </me>
+          </md>
           Then the expression inside the brackets is, by definition, the
           length of the vector <m>u</m>.
-          <me>
+          <md>
             u \cdot u = \left( |u| \right)^2 = |u|^2 
-          </me>
+          </md>
           This is the desired equation, so the proof is completed. 
         </p>
       </proof>
@@ -106,9 +106,9 @@
         <p>
           The dot product distributes over vector addition. That is,
           if <m>u,v,w \in \RR^n</m>, 
-          <me>
+          <md>
             u \cdot (v + w) = u \cdot v + u \cdot w
-          </me>
+          </md>
         </p>
       </statement>
       <proof>
@@ -171,9 +171,9 @@
           the right side, the term in the first bracket is, by
           definition, <m>u \cdot v</m>. The term in the second bracket
           is, again by definition, <m>u \cdot w</m>.
-          <me>
+          <md>
             u \cdot (v + w) = u \cdot v + u \cdot w
-          </me>
+          </md>
           This is the desired equation, so the proof is finished. 
         </p>
       </proof>
@@ -182,9 +182,9 @@
       <statement>
         <p>
           If <m>u,v \in \RR^n</m> and <m>a \in \RR</m>, then 
-          <me>
+          <md>
             u \cdot (av) = (au) \cdot v = a (u \cdot v) 
-          </me>
+          </md>
         </p>
       </statement>
       <proof>
@@ -201,9 +201,9 @@
             </mrow>
           </md>
           Then I want to consider this sum:
-          <me>
+          <md>
             au_1v_1 + au_2v_2 + au_3v_3 + \ldots au_nv_n
-          </me>.
+          </md>.
           I'm going to organize this sum in three different ways,
           which will correspond to the three desired versions in the
           equation in the proposition. Since I will only be arranging
@@ -214,49 +214,49 @@
         </p>
         <p>
           First, I'll factor the <m>a</m> out of the entire sum.
-          <me>
+          <md>
             a(u_1v_2 + u_2v_2 + u_3v_3 + \ldots u _nv_n)
-          </me>
+          </md>
           What is in brackets is the definition of the dot product, so
           this is <m>a (u \cdot v)</m>. Next I'll bracket the <m>a</m>
           with the <m>u_i</m> components.
-          <me>
+          <md>
             (au_1)v_2 + (au_2)v_2 + (au_3)v_3 + \ldots (au_n)v_n
-          </me>
+          </md>
           This is, by definition, also a dot product. 
-          <me>
+          <md>
             \begin{pmatrix}
               au_1 \\ au_2 \\ au_3 \\ \vdots \\ au_n 
             \end{pmatrix} \cdot 
             \begin{pmatrix}
               v_1 \\ v_2 \\ v_3 \\ \vdots \\ v_n
             \end{pmatrix}
-          </me>
+          </md>
           The first vector in this dot product is, by definition, the
           scalar multiple of <m>u</m> by <m>a</m>. Therefore, this
           organization of the sum gives <m>(au) \cdot v</m>. Finally,
           I'll change the order of the multiplications and group
           <m>a</m> with the <m>v_i</m> components. 
-          <me>
+          <md>
             u_1(av_2) + u_2(av_2) + u_3(av_3) + \ldots u_n(av_n)
-          </me>
+          </md>
           This is, by definition, also a dot product. 
-          <me>
+          <md>
             \begin{pmatrix}
               u_1 \\ u_2 \\ u_3 \\ \vdots \\ u_n 
             \end{pmatrix} \cdot 
             \begin{pmatrix}
               av_1 \\ av_2 \\ av_3 \\ \vdots \\ av_n
             \end{pmatrix}
-          </me>
+          </md>
           The second vector in this dot product is, by definition, the
           scalar multiple of <m>v</m> by <m>a</m>. Therefore, this
           organization of the sum gives <m>u \cdot (av)</m>. Since
           all three organizations are valid ways of calculating the
           sum, I conclude that 
-          <me>
+          <md>
             u \cdot (av) = (au) \cdot v = a(u \cdot v)
-          </me>, 
+          </md>, 
           which concludes the proof. 
         </p>
       </proof>

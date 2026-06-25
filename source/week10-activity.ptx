@@ -7,26 +7,26 @@
         <p>
           Calculate the eigenvalue and eigenvectors of this matrix.
           (Give the solutions in exact values). 
-          <me>
+          <md>
             \left( \begin{matrix}
               -2 \amp 0 \amp 1 \\
               0 \amp -2 \amp 1 \\
               1 \amp 1 \amp 0 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I follow the algorithm for eigenvalue and eigenvectors. The
           first step is writing the matrix <m>A - \lambda \Id</m>. 
-          <me>
+          <md>
             \left( \begin{matrix}
               -2 - \lambda \amp 0 \amp 1 \\
               0 \amp -2 - \lambda \amp 1 \\
               1 \amp 1 \amp - \lambda 
             \end{matrix} \right) 
-          </me>
+          </md>
           Then I calculate the determinant of this matrix. I use
           cofactor expansion on the first row.
           <md>
@@ -71,10 +71,10 @@
           </md>
           By inspection or by computer, I can see that <m>\lambda =
           -2</m> is a root, so this polynomial factors as follows.
-          <me>
+          <md>
             -\lambda^3 - 4\lambda^2 - 2\lambda + 4 = -(\lambda +
             2)(\lambda^2 + 2 \lambda - 2) 
-          </me>
+          </md>
           The quadratic piece does not factor into integer roots. The
           quadratic formula gives the other roots as <m>\lambda = -1
           \pm \sqrt{3}</m>. Now I calculate the kernel of each <m>A -
@@ -209,32 +209,32 @@
         <p>
           Calculate the eigenvalue and eigenvectors of this matrix.
           (Give the solutions in exact values). 
-          <me>
+          <md>
             \left( \begin{matrix}
               0 \amp -6 \amp 0 \amp 6 \\
               0 \amp -2 \amp 0 \amp 2 \\
               0 \amp 0 \amp 2 \amp 2 \\
               0 \amp 0 \amp 0 \amp 2 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I follow the algorithm for eigenvalue and eigenvectors. The
           first step is writing the matrix <m>A - \lambda \Id</m>. 
-          <me>
+          <md>
             \left( \begin{matrix}
               -\lambda \amp -6 \amp 0 \amp 6 \\
               0 \amp -2 - \lambda \amp 0 \amp 2 \\
               0 \amp 0 \amp 2 - \lambda \amp 2 \\
               0 \amp 0 \amp 0 \amp 2 - \lambda 
             \end{matrix} \right) 
-          </me>
+          </md>
           Then I calculate the determinant of this matrix. This is an
           upper triangular matrix, so the determinant is the product
           of the diagonal entries.
-          <me>
+          <md>
             \left| \begin{matrix}
               -\lambda \amp -6 \amp 0 \amp 6 \\
               0 \amp -2 - \lambda \amp 0 \amp 2 \\
@@ -242,7 +242,7 @@
               0 \amp 0 \amp 0 \amp 2 - \lambda 
               \end{matrix} \right| = -\lambda(-2 - \lambda)(2 -
               \lambda)^2 
-          </me>
+          </md>
           This already in factored form, so I see that the eigenvalue
           are <m>\lambda = 0</m>, <m>\lambda = 2</m> and <m>\lambda =
           -2</m>. For each eigenvalue, I calculate the kernel of <m>A -
@@ -379,14 +379,14 @@
           Calculate the eigenvalues and eigenvectors of this matrix.
           Use approximate values (to three significant figures), but
           show all the steps in the algorithm.
-          <me>
+          <md>
             \left( \begin{matrix} 
               0.294 \amp 0.343 \amp 0.945 \amp 0 \\
               0.812 \amp 0 \amp 0.310 \amp 0.050 \\
               0.110 \amp 0.745 \amp 0.901 \amp 0.874 \\
               0.314 \amp 0 \amp 0 \amp 0.041 
             \end{matrix} \right)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -454,14 +454,14 @@
           Calculate the eigenvalues and eigenvectors of this matrix.
           Use approximate values (to three significant figures), but
           show all the steps in the algorithm.
-          <me>
+          <md>
             \left( \begin{matrix} 
               2.30 \amp -0.29 \amp -0.92 \amp -3.17 \\
               -1.01 \amp 1.31 \amp 3.51 \amp 4.52 \\
               -3.68 \amp -5.42 \amp 8.54 \amp -4.62 \\
               -9.54 \amp -3.33 \amp -7.54 \amp 2.50 
             \end{matrix} \right)
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -538,26 +538,26 @@
         <p>
           I need to check the two properties of linearity. First I
           look at addition of function.
-          <me>
+          <md>
             x^n (f(x) + g(x)) 
-          </me>
+          </md>
           I can just use the ordinary distribution law. This applies
           to function since it is a pointwise operation. 
-          <me>
+          <md>
             x^n (f(x) + g(x)) = x^n f(x) + x^n g(x) 
-          </me>
+          </md>
           That's already one of the two properties. Now I look at
           scalar multiplication.
-          <me>
+          <md>
             x^n (af(x))
-          </me>
+          </md>
           This is just a series of multiplication of functions and
           constants. I know from the study of function that I do these
           in which ever order I wish. Let me change the order and the
           brackets. 
-          <me>
+          <md>
             x^n (af(x)) = a (x^n f(x))
-          </me>
+          </md>
           This is the second property finish. Multiplication
           <m>x^n</m> is a linear transformation.
         </p>
@@ -721,22 +721,22 @@
           I have to prove both implications. Let me start with the
           forward implication. I assume that <m>\lambda</m> is an
           eigenvalue, so there exists a vector <m>v</m> with 
-          <me>
+          <md>
             Av = \lambda v
-          </me>
+          </md>
           Now I apply <m>A^{-1}</m> to the equation.
-          <me>
+          <md>
             A^{-1}Av = A^{-1} \lambda v
-          </me>
+          </md>
           On the left, the matrices cancel, and I just have <m>v</m>.
           on the first I can use linearity.
-          <me>
+          <md>
             v = \lambda A^{-1} v
-          </me>
+          </md>
           Then I can divide by <m>\lambda</m>.
-          <me>
+          <md>
             \frac{1}{\lambda} v = A^{-1} v
-          </me>
+          </md>
           This is the definition of an eigenvalue, so
           <m>\frac{1}{\lambda}</m> is an eigenvalue of <m>A^{-1}</m>
         </p>

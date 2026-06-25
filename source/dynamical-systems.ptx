@@ -146,10 +146,10 @@
       <m>\lambda_i</m>. Then, the long term behaviour of the system
       with the starting state <m>v</m> is indeed given by the
       eigenvalues.
-      <me>
+      <md>
         A^k v = A^k (a_1 v_1 + a_2 v_2 + \ldots + a_n v_n) = \lambda_1^k
         a_1 v_1 + \lambda_2^k a_2 v_2 + \ldots + \lambda_n^k a_n v_n 
-      </me>
+      </md>
       If any of the <m>\lambda_i</m> have an absolute value less than
       one, those terms will decay away. The eigenvalues which have an
       absolute value greater than one will grow. The largest

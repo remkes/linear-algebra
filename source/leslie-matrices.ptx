@@ -61,7 +61,7 @@
       matrix (like for all dynamical systems) takes a state vector and
       moves it ahead by one time step. If I use coordinates
       <m>w,x,y,z</m> in <m>\RR^4</m>, here is the dynamical system.
-      <me>
+      <md>
         \begin{pmatrix} 
           w_{k+1} \\ x_{k+1} \\ y_{k+1} \\ z_{k+1}
         \end{pmatrix} = 
@@ -74,7 +74,7 @@
         \begin{pmatrix} 
           w_k \\ x_k \\ y_k \\ z_k 
         \end{pmatrix}
-      </me>
+      </md>
     </p>
     <p>
       Nine of the entries must be set to zero, since they are age
@@ -122,14 +122,14 @@
     <example>
       <statement>
         <p>
-          <me>
+          <md>
             \begin{pmatrix}
               0 \amp 0 \amp 0.7 \amp 0.6 \\
               0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.6 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.7 \amp 0 \\
             \end{pmatrix} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -157,14 +157,14 @@
           This example has only changed one fecundity coefficient and
           one survival coefficient from the previous example. What is
           the effect?
-          <me>
+          <md>
             \begin{pmatrix}
               0 \amp 0 \amp 1.1 \amp 0.6 \\
               0.8 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.7 \amp 0
             \end{pmatrix} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -193,14 +193,14 @@
     <example>
       <statement>
         <p>
-          <me>
+          <md>
             \begin{pmatrix}
               0 \amp 0 \amp 2 \amp 1 \\
               0.4 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 
             \end{pmatrix} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -226,14 +226,14 @@
     <example>
       <statement>
         <p>
-          <me>
+          <md>
             \begin{pmatrix}
               0 \amp 0 \amp 150 \amp 50 \\
               0.03 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 
             \end{pmatrix} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -263,14 +263,14 @@
         <p>
           This question has reduced the fecundity compared with the
           previous example. 
-          <me>
+          <md>
             \begin{pmatrix}
               0 \amp 0 \amp 50 \amp 30 \\
               0.03 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 
             \end{pmatrix} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -298,14 +298,14 @@
         <p>
           This example has reduced the first survival coefficient
           compared to the previous example. What is the effect?
-          <me>
+          <md>
             \begin{pmatrix}
               0 \amp 0 \amp 50 \amp 30 \\
               0.01 \amp 0 \amp 0 \amp 0 \\
               0 \amp 0.9 \amp 0 \amp 0 \\
               0 \amp 0 \amp 0.9 \amp 0 
             \end{pmatrix} 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>

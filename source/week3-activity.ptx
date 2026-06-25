@@ -7,7 +7,7 @@
         <p>
           Write the first vector as a linear combination of the second
           and third vectors. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               2 \\ 3 
             \end{matrix} \right),
@@ -17,14 +17,14 @@
             \left( \begin{matrix} 
               1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I need to write the first vector as a multiple of the
           second plus a multiple of the third.
-          <me>
+          <md>
             \left( \begin{matrix} 
               2 \\ 3 
             \end{matrix} \right) =
@@ -34,7 +34,7 @@
             b \left( \begin{matrix} 
               1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
           If I look at the components, I get two equations.
           <md>
             <mrow>
@@ -51,7 +51,7 @@
           expression for <m>a</m> gives <m>a = 2 - b = 2 - \frac{5}{2}
           = \frac{-1}{2}</m>. That lets me write the linear
           combination. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               2 \\ 3 
             \end{matrix} \right) =
@@ -61,7 +61,7 @@
             \frac{5}{2} \left( \begin{matrix} 
               1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -70,7 +70,7 @@
         <p>
           Write the first vector as a linear combination of the second
           and third vectors. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               -4 \\ -1 
             \end{matrix} \right),
@@ -80,14 +80,14 @@
             \left( \begin{matrix} 
               1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I need to write the first vector as a multiple of the
           second plus a multiple of the third.
-          <me>
+          <md>
             \left( \begin{matrix} 
               -4 \\ -1 
             \end{matrix} \right) =
@@ -97,7 +97,7 @@
             b \left( \begin{matrix} 
               1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
           If I look at the components, I get two equations.
           <md>
             <mrow>
@@ -114,7 +114,7 @@
           expression for <m>a</m> gives <m>a = -4 - b = -4 - \frac{5}{2}
           = \frac{-3}{2}</m>. That lets me write the linear
           combination. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               -4 \\ -1
             \end{matrix} \right) =
@@ -124,7 +124,7 @@
             \frac{-5}{2} \left( \begin{matrix} 
               1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -133,7 +133,7 @@
         <p>
           Write the first vector as a linear combination of the second
           and third vectors. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               0 \\ 3 
             \end{matrix} \right),
@@ -143,14 +143,14 @@
             \left( \begin{matrix} 
               1 \\ 1
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I need to write the first vector as a multiple of the
           second plus a multiple of the third.
-          <me>
+          <md>
             \left( \begin{matrix} 
               0 \\ 3 
             \end{matrix} \right) =
@@ -160,7 +160,7 @@
             b \left( \begin{matrix} 
               1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
           If I look at the components, I get two equations.
           <md>
             <mrow>
@@ -177,7 +177,7 @@
           expression for <m>a</m> gives <m>a = - b = - \frac{3}{2}
           = \frac{-3}{2}</m>. That lets me write the linear
           combination. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               0 \\ 3 
             \end{matrix} \right) =
@@ -187,7 +187,7 @@
             \frac{3}{2} \left( \begin{matrix} 
               1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -196,7 +196,7 @@
         <p>
           Write the first vector as a linear combination of the second
           third and fourth vectors. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               3 \\ 0 \\ 2
             \end{matrix} \right),
@@ -209,14 +209,14 @@
             \left( \begin
               {matrix} 0 \\ -1 \\ 1
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           I need to write the first vector as a multiple of the
           second plus a multiple of the third.
-          <me>
+          <md>
             \left( \begin{matrix} 
               3 \\ 0 \\ 2
             \end{matrix} \right) =
@@ -229,7 +229,7 @@
             c \left( \begin{matrix} 
               0 \\ -1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
           I could try to solve this by linear system as I did
           before, but I'll try to work by inspection first, so I can see if
           I can informally find a solution. Since the second vector
@@ -240,7 +240,7 @@
           can see that if I simply add the third and fourth vectors
           togother, the <m>y</m> cancels and the <m>z</m> adds to 2.
           Therefore, I can conclude that <m>b = c = 1</m> 
-          <me>
+          <md>
             \left( \begin{matrix} 
               3 \\ 0 \\ 2
             \end{matrix} \right) =
@@ -253,7 +253,7 @@
             \left( \begin{matrix} 
               0 \\ -1 \\ 1 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -264,7 +264,7 @@
       <statement>
         <p>
           Determine if this set of vectors is linearly independent.
-          <me>
+          <md>
             \left\{ \left( \begin{matrix}
               4 \\ 5 
             \end{matrix} \right),
@@ -274,7 +274,7 @@
             \left( \begin{matrix}
               -3 \\ 11
             \end{matrix} \right) \right\}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -291,7 +291,7 @@
       <statement>
         <p>
           Determine if this set of vectors is linearly independent.
-          <me>
+          <md>
             \left\{ \left( \begin{matrix} 
               5 \\ 0 \\ 1 
             \end{matrix} \right),
@@ -301,7 +301,7 @@
             \left( \begin{matrix}
               -25 \\ 0 \\ -5 
             \end{matrix} \right) \right\}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -318,7 +318,7 @@
       <statement>
         <p>
           Determine if this set of vectors is linearly independent.
-          <me>
+          <md>
             \left\{ \left( \begin{matrix}
               5 \\ 9 \\ 0 
             \end{matrix} \right),
@@ -328,7 +328,7 @@
             \left( \begin{matrix}
               -9 \\ 5 \\ 0 
             \end{matrix} \right) \right\}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -348,7 +348,7 @@
       <statement>
         <p>
           Determine if this set of vectors is linearly independent.
-          <me>
+          <md>
             \left\{ \left( \begin{matrix}
               1 \\ 1 \\ 1 
             \end{matrix} \right),
@@ -358,7 +358,7 @@
             \left( \begin{matrix}
               0 \\ 1 \\ 0 
             \end{matrix} \right) \right\}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -378,7 +378,7 @@
       <statement>
         <p>
           Determine a basis for the given span.
-          <me>
+          <md>
             \Span \left\{ \left( \begin{matrix}
               4 \\ 1 
             \end{matrix} \right),
@@ -391,7 +391,7 @@
             \left( \begin{matrix}
               6 \\ -2
             \end{matrix} \right) \right\}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -409,7 +409,7 @@
       <statement>
         <p>
           Determine a basis for the given span.
-          <me>
+          <md>
             \Span \left\{ \left( \begin{matrix}
               0 \\ 4 \\ 13 
             \end{matrix} \right),
@@ -419,7 +419,7 @@
             \left( \begin{matrix}
               0 \\ -1 \\ -1 
             \end{matrix} \right) \right\}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -438,7 +438,7 @@
       <statement>
         <p>
           Determine a basis for the given span.
-          <me>
+          <md>
             \Span \left\{ \left( \begin{matrix}
               1 \\ 0 \\ 0 \\ 0 \\ 0 
             \end{matrix} \right),
@@ -451,7 +451,7 @@
             \left( \begin{matrix}
               0 \\ 0 \\ 0 \\ 0 \\ -9
             \end{matrix} \right) \right\}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -470,7 +470,7 @@
       <statement>
         <p>
           Determine a basis for the given span.
-          <me>
+          <md>
             \Span \left\{ \left( \begin{matrix}
               0 \\ 6 \\ 0 \\ 0 
             \end{matrix} \right),
@@ -483,7 +483,7 @@
             \left( \begin{matrix}
               0 \\ 34 \\ 0 \\ 0 
             \end{matrix} \right) \right\}
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -520,19 +520,19 @@
           The normal determines the coefficients of the equation of
           the plane. I put those coefficients into the general form,
           with the constant <m>d</m> undetermined.
-          <me>
+          <md>
             (-1)x + (-1)y + 0 z = d 
-          </me>
+          </md>
           I can calculate the constant using the point. Put the
           coordinates of the point into the left side of the equation
           and calculate <m>d</m>.
-          <me>
+          <md>
             d = (-1)(0) + (-1)(1) + (0)(3) = -1 
-          </me>
+          </md>
           Therefore, the equation of the plane is 
-          <me>
+          <md>
             - x - y = -1 
-          </me>.
+          </md>.
         </p>
       </solution>
     </activity>
@@ -557,19 +557,19 @@
           The normal determines the coefficients of the equation of
           the plane. I put those coefficients into the general form,
           with the constant <m>d</m> undetermined.
-          <me>
+          <md>
             2x + 0y + 3z = d 
-          </me>
+          </md>
           I can calculate the constant using the point. Put the
           coordinates of the point into the left side of the equation
           and calculate <m>d</m>.
-          <me>
+          <md>
             d = 2(-4) + 0(-1) + 3(2) = -2 
-          </me>
+          </md>
           Therefore, the equation of the plane is 
-          <me>
+          <md>
             2x + 3z = -2 
-          </me>.
+          </md>.
         </p>
       </solution>
     </activity>
@@ -600,7 +600,7 @@
         <p>
           The cross product of the local directions gives the normal
           to the plane. 
-          <me>
+          <md>
             \left( \begin{matrix}
               -1 \\ -1 \\ 1 
             \end{matrix} \right) \times 
@@ -614,23 +614,23 @@
             \left( \begin{matrix}
               -1 \\ -2 \\ -1 
             \end{matrix} \right) 
-          </me>
+          </md>
           This is the normal. The normal determines the coefficients
           of the equation of the plane. I put those coefficients into
           the general form, with the constant <m>d</m> undetermined.
-          <me>
+          <md>
             -x - 2y - z = d 
-          </me>
+          </md>
           I can calculate the constant using the point. Put the
           coordinates of the point into the left side of the equation
           and calculate <m>d</m>.
-          <me>
+          <md>
             d = -(1)(2) - (2)(1) - (1) = -5
-          </me>
+          </md>
           Therefore, the equation of the plane is 
-          <me>
+          <md>
             -x - 2y - z = -5 
-          </me>.
+          </md>.
         </p>
       </solution>
     </activity>
@@ -661,7 +661,7 @@
         <p>
           The cross product of the local directions gives the normal
           to the plane. 
-          <me>
+          <md>
             \left( \begin{matrix}
               0 \\ 1 \\ 1 
             \end{matrix} \right) \times 
@@ -674,23 +674,23 @@
             \left( \begin{matrix}
               0 \\ -2 \\ 2 
             \end{matrix} \right) 
-          </me>
+          </md>
           This is the normal. The normal determines the coefficients
           of the equation of the plane. I put those coefficients into
           the general form, with the constant <m>d</m> undetermined.
-          <me>
+          <md>
             0x - 2y + 2z = d 
-          </me>
+          </md>
           I can calculate the constant using the point. Put the 
           coordinates of the point into the left side of the equation
           and calculate <m>d</m>.
-          <me>
+          <md>
             d = 0(-1) - 2(0) + 2(-3) = -6 
-          </me>
+          </md>
           Therefore, the equation of the plane is 
-          <me>
+          <md>
             -2y + 2z = -6 
-          </me>.
+          </md>.
         </p>
       </solution>
     </activity>
@@ -746,7 +746,7 @@
           </md>
           These are the two local directions. The cross product of the
           local directions gives the normal to the plane. 
-          <me>
+          <md>
             \left( \begin{matrix}
               1 \\ -1 \\ -1 
             \end{matrix} \right) \times 
@@ -760,24 +760,24 @@
             \left( \begin{matrix}
               0 \\ 2 \\ -2 
             \end{matrix} \right) 
-          </me>
+          </md>
           This is the normal. The normal determines the coefficients
           of the equation of the plane. I put those coefficients into
           the general form, with the constant <m>d</m> undetermined.
-          <me>
+          <md>
             0x + 2y - 2z = d 
-          </me>
+          </md>
           I can calculate the constant using the point (I can use
           any of the three points <mdash /> all will determine the same
           constant). Put the coordinates of the point into the left
           side of the equation and calculate <m>d</m>.
-          <me>
+          <md>
             d = (0)(0) + 2 (1) - 2(1) = 0 
-          </me>
+          </md>
           Therefore, the equation of the plane is 
-          <me>
+          <md>
             2y - 2z = 0 
-          </me>.
+          </md>.
         </p>
       </solution>
     </activity>
@@ -833,7 +833,7 @@
           </md>
           These are the two local directions. The cross product of the
           local directions gives the normal to the plane. 
-          <me>
+          <md>
             \left( \begin{matrix}
               1 \\ 2 \\ -4 
             \end{matrix} \right) \times 
@@ -846,24 +846,24 @@
             \left( \begin{matrix}
               24 \\ -12 \\ 0
             \end{matrix} \right) 
-          </me>
+          </md>
           This is the normal. The normal determines the coefficients
           of the equation of the plane. I put those coefficients into
           the general form, with the constant <m>d</m> undetermined.
-          <me>
+          <md>
             24 x - 12 y + 0z = d 
-          </me>
+          </md>
           I can calculate the constant using the point (I can use
           any of the three points <mdash /> all will determine the same
           constant). Put the coordinates of the point into the left
           side of the equation and calculate <m>d</m>.
-          <me>
+          <md>
             d =  24(0) - 12(5) + 0 z = -60 
-          </me>
+          </md>
           Therefore, the equation of the plane is 
-          <me>
+          <md>
             24 x - 12 y = -60 
-          </me>.
+          </md>.
         </p>
       </solution>
     </activity>
@@ -890,19 +890,19 @@
           The normal determines the coefficients of the equation of
           the hyperplane. I put those coefficients into the general form,
           with the constant <m>d</m> undetermined.
-          <me>
+          <md>
             -3 x_1 + 1 x_2 + 1 x_3 + 0 x_4 + 0 x_5 = d 
-          </me>
+          </md>
           I can calculate the constant using the point. Put the
           coordinates of the point into the left side of the equation
           and calculate <m>d</m>.
-          <me>
+          <md>
             d = -3 (4) + 1 (0) + 1 (1) + 0 (-1) + 0 (-2) =-11
-          </me>
+          </md>
           Therefore, the equation of the hyperplane is 
-          <me>
+          <md>
             -3 x_1 + 1 x_2 + 1 x_3 + 0 x_4 + 0 x_5 = -11
-          </me>.
+          </md>.
         </p>
       </solution>
     </activity>
@@ -927,19 +927,19 @@
           The normal determines the coefficients of the equation of
           the hyperplane. I put those coefficients into the general form,
           with the constant <m>d</m> undetermined.
-          <me>
+          <md>
             -1 x_1 - 1 x_2 - 4 x_3 + 1 x_4 - 2 x_5 + 2 x_6 = d
-          </me>
+          </md>
           I can calculate the constant using the point. Put the
           coordinates of the point into the left side of the equation
           and calculate <m>d</m>.
-          <me>
+          <md>
             d = -1 (3) - 1 (1) + (-4) (-2) + 1 (-2) - 2(-6) + 2(0) = 14
-          </me>
+          </md>
           Therefore, the equation of the hyperplane is 
-          <me>
+          <md>
             -1 x_1 - 1 x_2 - 4 x_3 + 1 x_4 - 2 x_5 + 2 x_6 = 14
-          </me>.
+          </md>.
         </p>
       </solution>
     </activity>
@@ -1002,30 +1002,30 @@
           vector, not the components of one vector).  Linear
           dependence means I can find constant <m>a_i</m> such that
           not all of the <m>a_i</m> are zero and 
-          <me>
+          <md>
             a_1v_1 + a_2v_2 + \ldots + a_nv_n = 0
-          </me>.
+          </md>.
           Now take the dot product of this equation with the vector
           <m>v_i</m>.
-          <me>
+          <md>
             v_i \cdot (a_1v_1 + a_2v_2 + \ldots + a_nv_n) = v_i \cdot 0 
-          </me>
+          </md>
           On the right, the dot product of any vector with the zero
           vector is zero. On the right, the dot product is linear, so
           I can distribute and pull out constants. 
-          <me>
+          <md>
             a_1(v_i \cdot v_1) + a_2(v_i \cdot v_2) + \ldots + a_n(v_i
             \cdot v_n)) = v_i \cdot 0 
-          </me>
+          </md>
           But all the vectors are perpendicular, so on the left,
           everything is zero except for <m>v_i \cdot v_i</m>.
-          <me>
+          <md>
             a_i (v_i \cdot v_i) = 0 
-          </me>
+          </md>
           Then I can write the dot product as a length squared. 
-          <me>
+          <md>
             a_i |v_i| = 0 
-          </me>
+          </md>
           Since the vector <m>v_i</m> is not zero, the constant
           <m>a_i</m> must be. But I did this arbitrarily for any
           index <m>i</m>, so this means all of the constant <m>a_i</m>

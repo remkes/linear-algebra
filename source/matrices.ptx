@@ -61,14 +61,14 @@
     <p>
       If I wanted to write a general matrix, I can use a double
       subscript.
-      <me>
+      <md>
         \begin{pmatrix} 
           a_{11} \amp a_{12} \amp \ldots \amp a_{1m} \\ 
           a_{21} \amp a_{22} \amp \ldots \amp a_{2m} \\ 
           \vdots \amp \vdots \amp \vdots \amp \vdots \\ 
           a_{n1} \amp a_{n2} \amp \ldots \amp a_{nm} 
         \end{pmatrix}
-      </me>
+      </md>
     </p>
     <p>
       By convention, in an arbitrary matrix entry <m>a_{ij}</m> the
@@ -192,11 +192,11 @@
         <p>
           An <term>extended matrix</term> is a matrix with a vertical
           division separating the columns into two groups.
-          <me>
+          <md>
             \left( \begin{array}{ccc|c} -3 \amp 0 \amp 6 \amp 1 \\
             4 \amp -2 \amp 2 \amp -1 \\ 0 \amp 0 \amp 3 \amp -7
             \end{array} \right)
-          </me>
+          </md>
         </p>
       </statement>
     </definition>

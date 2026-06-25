@@ -194,9 +194,9 @@
         p_2, p_3, \ldots p_k</m>. This is a finite list of some
         length <m>k</m>. Then consider a very large number formed by
         multiplying these all together and adding 1. 
-        <me>
+        <md>
           m = p_1p_2 \ldots p_k + 1 
-        </me>
+        </md>
         What are the prime factors of this number <m>m</m>? I know
         that all numbers break down uniquely into prime factors, so it
         must have prime factors. However, every prime number
@@ -358,15 +358,15 @@
     <p>
       Again, this is probably best demonstrated by example. I claim
       that for any natural number <m>n \geq 1</m>, 
-      <me>
+      <md>
         1 + 2 + 3 + 4 + \ldots + n = \frac{n(n+1)}{2}
-      </me>.
+      </md>.
       This is a nice identity giving me a way to quickly calculate
       the sum of the first <m>n</m> numbers. For example
-      <me>
+      <md>
         1 + 2 + 3 + 4 + \ldots + 703 = \frac{703\cdot704}{2} = 703
         \cdot 352 = 247,456
-      </me>.
+      </md>.
       By doing one division and one multiplication, I know the sum
       of the first <m>703</m> numbers. This is certainly much faster
       than doing <m>702</m> additions. Now I'll use mathematical
@@ -382,33 +382,33 @@
       <li>
         Step 2: Assume the statement is true for some number
         <m>k</m>. I assume that 
-        <me>
+        <md>
           1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
-        </me>
+        </md>
         is true for some number <m>k</m>. (Not every number, yet,
         just some number.) 
       </li>
       <li>
         Step 3: Prove the next case. I need to prove the statement
         is true for <m>k+1</m>. I can start with the assumption.
-        <me>
+        <md>
           1 + 2 + 3 + 4 + \ldots + k = \frac{k(k+1)}{2}
-        </me>
+        </md>
         I can add <m>(k+1)</m> to both sides. 
-        <me>
+        <md>
           1 + 2 + 3 + 4 + \ldots + k + (k + 1) = \frac{k(k+1)}{2} +
           (k+1) 
-        </me>
+        </md>
         Then I can do some arithmetic with the right side, starting
         with a common denominator. 
-        <me>
+        <md>
           \frac{k(k+1)}{2} + (k+1) = \frac{k^2 + k + 2(k + 1)}{2} =
           \frac{k^2 + 3k + 2}{2} = \frac{(k+1)(k+2)}{2}
-        </me>
+        </md>
         Now I'll replace the right side with this last expression.
-        <me>
+        <md>
           1 + 2 + 3 + 4 + \ldots + k + (k + 1) = \frac{(k+1)(k+1+1)}{2}
-        </me>
+        </md>
         Finally, I can observe that this right side is precisely the
         desired equation for <m>k+1</m>. I have proved the next
         case. 

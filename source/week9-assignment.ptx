@@ -7,29 +7,29 @@
     <li>
       For this incomplete matrix, add a last column which makes
       the matrix orthogonal. (4)
-      <me>
+      <md>
         \begin{pmatrix}
           \dfrac{2}{\sqrt{13}} \amp \dfrac{-3}{\sqrt{14}} \amp \cdot \\
           0 \amp \dfrac{1}{\sqrt{14}} \amp \cdot \\
           \dfrac{3}{\sqrt{13}} \amp \dfrac{2}{\sqrt{14}} \amp \cdot 
         \end{pmatrix}
-      </me>
+      </md>
     </li>
     <li>
       For this incomplete matrix, add a last column which makes
       the matrix orthogonal. (4)
-      <me>
+      <md>
         \begin{pmatrix}
           \dfrac{1}{\sqrt{3}} \amp \dfrac{-4}{\sqrt{24}} \amp \cdot \\
           \dfrac{1}{\sqrt{3}} \amp \dfrac{2}{\sqrt{24}} \amp \cdot \\
           \dfrac{1}{\sqrt{3}} \amp \dfrac{2}{\sqrt{24}} \amp \cdot 
         \end{pmatrix}
-      </me>
+      </md>
     </li>
     <li>
       For this incomplete matrix, add a last row which makes
       the matrix orthogonal. (4)
-      <me>
+      <md>
         \begin{pmatrix}
           \dfrac{-3}{\sqrt{14}} \amp \dfrac{-1}{\sqrt{6}} \amp
           \dfrac{2}{\sqrt{21}} \\
@@ -37,12 +37,12 @@
           \dfrac{1}{\sqrt{21}} \\
           \cdot \amp \cdot \amp \cdot 
         \end{pmatrix}
-      </me>
+      </md>
     </li>
     <li>
       For this incomplete matrix, add a last column which makes
       the matrix orthogonal. (4)
-      <me>
+      <md>
         \begin{pmatrix}
           \dfrac{1}{2} \amp \dfrac{1}{2} \amp \dfrac{1}{2} \amp \cdot
           \\
@@ -52,7 +52,7 @@
           \\
           \dfrac{1}{2} \amp \dfrac{-1}{2} \amp \dfrac{-1}{2} \amp \cdot
         \end{pmatrix}
-      </me>
+      </md>
     </li>
     <li>
       <p>

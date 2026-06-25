@@ -16,7 +16,7 @@
           <m>A</m> on <m>v</m>, written <m>Av</m>, which defines a new
           vector in <m>\RR^m</m>. That action is given in the
           following formula.
-          <me>
+          <md>
             \begin{pmatrix} a_{11} \amp a_{12} \amp \cdots
             \amp a_{1n} \\ a_{21} \amp a_{22} \amp \cdots \amp
             a_{2n} \\ \vdots \amp \vdots \amp \vdots \amp \vdots \\
@@ -26,7 +26,7 @@
             a_{1n}v_n \\ a_{21}v_1 + a_{22}v_2 + \ldots + a_{2n}v_n \\
             \vdots \\ a_{n1}v_1 + a_{n2}v_2 + \ldots + a_{nn}v_n
             \end{pmatrix}
-          </me>
+          </md>
         </p>
         <p>
           This is a bit troubling to work out in general. Let me show
@@ -95,13 +95,13 @@
         <p>
           Let me interpret the matrix action of the zero matrix (all
           coefficient are zero).
-          <me>
+          <md>
             \begin{pmatrix} 0 \amp 0 \amp 0 \\ 0 \amp 0 \amp 0 \\ 0
             \amp 0 \amp 0 \end{pmatrix} \begin{pmatrix} x \\ y \\ z
             \end{pmatrix} = \begin{pmatrix} 0x + 0y + 0z \\ 0x + 0y +
             0z \\ 0x + 0y + 0z \end{pmatrix} = \begin{pmatrix} 0 \\ 0
             \\ 0 \end{pmatrix}
-          </me>
+          </md>
         </p>
         <p>
           The zero matrix corresponds to the transformation that sends
@@ -114,13 +114,13 @@
         <p>
           Let me also interpret the matrix action of the identity
           matrix.
-          <me>
+          <md>
             \begin{pmatrix} 1 \amp 0 \amp 0 \\ 0 \amp 1 \amp 0 \\ 0
             \amp 0 \amp 1 \end{pmatrix} \begin{pmatrix} x \\ y \\ z
             \end{pmatrix} = \begin{pmatrix} 1x + 0y + 0z \\ 0x + 1y +
             0z \\ 0x + 0y + 1z \end{pmatrix} = \begin{pmatrix} x \\ y
             \\ z \end{pmatrix}
-          </me>
+          </md>
         </p>
         <p>
           The identity matrix corresponds to the transformation which
@@ -134,13 +134,13 @@
         <p>
           I can also interpret a more general diagonal matrix. Let
           <m>a,b,c \in \RR</m> be scalars. 
-          <me>
+          <md>
             \begin{pmatrix} a \amp 0 \amp 0 \\ 0 \amp b \amp 0 \\ 0
             \amp 0 \amp c \end{pmatrix} \begin{pmatrix} x \\ y \\ z
             \end{pmatrix} = \begin{pmatrix} ax + 0y + 0z \\ 0x + by +
             0z \\ 0x + 0y + cz \end{pmatrix} = \begin{pmatrix} ax \\
             by \\ cz \end{pmatrix}
-          </me>
+          </md>
         </p>
         <p>
           This is a dilation: the <m>x</m> direction is stretched by
@@ -195,7 +195,7 @@
           With this notation, the <term>matrix multiplication</term>
           of <m>A</m> and <m>B</m> is the <m>k \times n</m> matrix
           where the entries are the dot products of rows and columns.
-          <me>
+          <md>
             AB = \begin{pmatrix} u_1 \cdot v_1 \amp u_1 \cdot
             v_2 \amp u_1 \cdot v_3 \amp \ldots \amp u_1 \cdot v_n \\
             u_2 \cdot v_1 \amp u_2 \cdot v_2 \amp u_2 \cdot v_3 \amp
@@ -204,7 +204,7 @@
             \vdots \amp  \vdots \amp  \vdots \amp  \ldots \amp  \vdots
             \\ u_k \cdot v_1 \amp u_k \cdot v_2 \amp u_k \cdot v_3
             \amp \ldots \amp u_k \cdot v_n \end{pmatrix} 
-          </me>
+          </md>
         </p>
       </statement>
     </definition>

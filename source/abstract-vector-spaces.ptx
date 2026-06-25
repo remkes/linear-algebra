@@ -151,9 +151,9 @@
               The polynomial <m>4x^2 - 4</m> is in <m>\Span \{x+4, x^2
               + x + 3 \}</m>. The span is all linear combinations, so I
               can justify this claim by a demonstration. 
-              <me>
+              <md>
                 4x^2 + 4 = 4(x^2 + x + 3) - 4(x - 4)
-              </me>
+              </md>
               This equation shows that <m>4x^2 + 4</m> is a linear
               combination of the spanning vectors, therefore a member
               of the span. 

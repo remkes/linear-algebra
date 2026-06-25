@@ -10,28 +10,28 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               4 \\ -2 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               0 \\ -1 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           The dot product is calculated by multiplying matching
           components and adding these products together. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               4 \\ -2 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               0 \\ -1 
             \end{matrix} \right) = (4)(0) + (-2)(-1) = 2
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -39,28 +39,28 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               2 \\ 3 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               -2 \\ -7 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           The dot product is calculated by multiplying matching
           components and adding these products together. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               2 \\ 3
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               -2 \\ -7 
             \end{matrix} \right) = (2)(-2) + (3)(-7) = -25 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -68,28 +68,28 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               0 \\ 0 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               19 \\ -29 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           The dot product is calculated by multiplying matching
           components and adding these products together. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               0 \\ 0 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               19 \\ -29 
             \end{matrix} \right) = (0)(19) + (0)(-29) = 0 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -97,21 +97,21 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               \frac{1}{4} \\ \frac{-4}{7} 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               \frac{-2}{7} \\ \frac{-4}{5}
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           The dot product is calculated by multiplying matching
           components and adding these products together. 
-          <me>
+          <md>
             \left( \begin
               {matrix} \frac{1}{4} \\ \frac{-4}{7} 
             \end{matrix} \right) \cdot
@@ -120,7 +120,7 @@
             \end{matrix} \right) = \frac{1}{4} \frac{-2}{7} +
             \frac{-4}{7} \frac{-4}{5} = \frac{-1}{14} + \frac{16}{35}
             = \frac{-5}{70} + \frac{32}{70} = \frac{27}{70} 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -128,28 +128,28 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               -2 \\ 1 \\ 1 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               0 \\ -1 \\ 9 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           The dot product is calculated by multiplying matching
           components and adding these products together. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               -2 \\ 1 \\ 1 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               0 \\ -1 \\ 9 
             \end{matrix} \right) = (-2)(0) + (1)(-1) + (1)(9) = 8 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -157,28 +157,28 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               4 \\ -2 \\ -6 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               -6 \\ -7 \\ -2 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           The dot product is calculated by multiplying matching
           components and adding these products together. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               4 \\ -2 \\ -6 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               -6 \\ -7 \\ -2 
             \end{matrix} \right) = (4)(-6) + (-2)(-7) + (-6)(-2) = 2
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -186,21 +186,21 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               \sqrt{2} \\ 4 \\ \sqrt[3]{2}
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               \sqrt{7} \\ \pi^2 \\ 0 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           The dot product is calculated by multiplying matching
           components and adding these products together. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               \sqrt{2} \\ 4 \\ \sqrt[3]{2}
             \end{matrix} \right) \cdot
@@ -208,7 +208,7 @@
               \sqrt{7} \\ \pi^2 \\ 0 
             \end{matrix} \right) = (\sqrt{2})(\sqrt{7}) + (4)(\pi^2) +
             (\sqrt[3]{2})(0) = \sqrt{14} + 4 \pi^2 
-          </me>
+          </md>
           There isn't really a simpler way to write this number. This
           form is just fine. If I wanted an approximate value, I
           could ask a computer (WA): <m>\sqrt{14} +
@@ -222,7 +222,7 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               0 \\ 0 \\ 0 
             \end{matrix} \right) \cdot
@@ -230,21 +230,21 @@
               \sqrt{\pi} \\ \frac{1}{e^2+6} \\
             \sqrt{1 + \sqrt{8}}
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           The dot product is calculated by multiplying matching
           components and adding these products together. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               0 \\ 0 \\ 0 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} \sqrt{\pi} \\ \frac{1}{e^2+6} \\
             \sqrt{1 + \sqrt{8}}
             \end{matrix} \right) = 0 
-          </me>
+          </md>
           No matter how complicated the other vector is, anything
           multiplied by zero is still zero. 
         </p>
@@ -254,14 +254,14 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               -2 \\ -3 \\ 1 \\ 4 \\ -2 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               -6 \\ -5 \\ 2 \\ -2 \\ 3 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -289,14 +289,14 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               6 \\ -7 \\ 1 \\ 0 \\ -2 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               -2 \\ 4 \\ -3 \\ -3 \\ -4 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -324,14 +324,14 @@
       <statement>
         <p> 
           Calculate the dot product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               5 \\ -3 \\ -7 \\ 10 \\ 1 \\ 0 
             \end{matrix} \right) \cdot
             \left( \begin{matrix} 
               0 \\ -2 \\ 0 \\ -4 \\ -4 \\ 0
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -362,14 +362,14 @@
       <statement>
         <p>
           Find the angle between these two vectors.
-          <me>
+          <md>
             u = \left( \begin{matrix} 
               -2 \\ -5 
             \end{matrix} \right) \text{ and }
             v = \left( \begin{matrix} 
               3 \\ -4 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -406,10 +406,10 @@
           an angle between 0 and <m>\pi</m>, which is good since the
           angle between two vector should be bounded by <m>\pi</m>
           radians.) 
-          <me>
+          <md>
             \theta = \arccos \frac{14}{5\sqrt{29}} 
             \doteq 1.024
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -417,14 +417,14 @@
       <statement>
         <p>
           Find the angle between these two vectors.
-          <me>
+          <md>
             u = \left( \begin{matrix} 
               1 \\ 3 
             \end{matrix} \right) \text{ and }
             v = \left( \begin{matrix} 
               1 \\ 7 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -458,10 +458,10 @@
           </md>
           Then I can ask a computer (WA) to give me the inverse
           cosine to get an approximation for the angle.
-          <me>
+          <md>
             \theta = \arccos \frac{11}{5\sqrt{5}}
             \doteq 0.180
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -469,14 +469,14 @@
       <statement>
         <p>
           Find the angle between these two vectors.
-          <me>
+          <md>
             u = \left( \begin{matrix} 
               0 \\ 1 \\ 2 
             \end{matrix} \right) \text{ and }
             v = \left( \begin{matrix} 
               1 \\ -2 \\ -2 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -509,10 +509,10 @@
           </md>
           Then I can ask a computer (WA) to give me the inverse
           cosine to get an approximation for the angle.
-          <me>
+          <md>
             \theta = \arccos \frac{-6}{3\sqrt{5}}
             \doteq 2.678
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -520,14 +520,14 @@
       <statement>
         <p>
           Find the angle between these two vectors.
-          <me>
+          <md>
             u = \left( \begin{matrix} 
               -4 \\ 1 \\ 1 
             \end{matrix} \right) \text{ and }
             v = \left( \begin{matrix} 
               2 \\ 4 \\ 4 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -571,14 +571,14 @@
       <statement>
         <p> 
           Calculate this cross product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               1 \\ 0 \\ -2 
             \end{matrix} \right) \times
             \left( \begin{matrix} 
               -4 \\ 2 \\ 0 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -586,7 +586,7 @@
           The cross product is calculated by a complicated
           pattern of multiplication and addition with the components
           as presented in the notes and the videos. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               1 \\ 0 \\ -2 
             \end{matrix} \right) \times
@@ -599,7 +599,7 @@
             \left( \begin{matrix} 
               4 \\ 8 \\ 2 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -607,14 +607,14 @@
       <statement>
         <p> 
           Calculate this cross product.
-          <me>
+          <md>
             \left( \begin{matrix} 
               2 \\ -6 \\ -3 
             \end{matrix} \right) \times
             \left( \begin{matrix} 
               -1 \\ -2 \\ -1 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -622,7 +622,7 @@
           The cross product is calculated by a complicated
           pattern of multiplication and addition with the components
           as presented in the notes and the videos. 
-          <me>
+          <md>
             \left( \begin{matrix} 
               2 \\ -6 \\ -3 
             \end{matrix} \right) \times
@@ -636,7 +636,7 @@
             \left( \begin{matrix} 
               0 \\ 5 \\ -10
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -644,14 +644,14 @@
       <statement>
         <p> 
           Calculate this cross product.
-          <me>
+          <md>
             \left( \begin{matrix}
               0 \\ 3 \\ 8
             \end{matrix} \right) \times
             \left( \begin{matrix}
               1 \\ 6 \\ -5 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -659,7 +659,7 @@
           The cross product is calculated by a complicated
           pattern of multiplication and addition with the components
           as presented in the notes and the videos. 
-          <me>
+          <md>
             \left( \begin{matrix}
               0 \\ 3 \\ 8
             \end{matrix} \right) \times
@@ -672,7 +672,7 @@
             \left( \begin{matrix} 
               -63 \\ 8 \\ -3 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -680,14 +680,14 @@
       <statement>
         <p> 
           Calculate this cross product.
-          <me>
+          <md>
             \left( \begin{matrix}
               2 \\ 1 \\ 0 
             \end{matrix} \right) \times
             \left( \begin{matrix}
               -4 \\ -2 \\ 0
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
@@ -695,7 +695,7 @@
           The cross product is calculated by a complicated
           pattern of multiplication and addition with the components
           as presented in the notes and the videos. 
-          <me>
+          <md>
             \left( \begin{matrix}
               2 \\ 1 \\ 0 
             \end{matrix} \right) \times
@@ -709,7 +709,7 @@
             \left( \begin{matrix} 
               0 \\ 0 \\ 0 
             \end{matrix} \right) 
-          </me>
+          </md>
         </p>
       </solution>
     </activity>
@@ -1086,9 +1086,9 @@
           for any vector <m>u,v \in \RR^n</m>, the length of the sum
           is bounded by the sum of the lengths of the individual
           vectors. In symbols:
-          <me>
+          <md>
             |u+v| \leq |u| + |v|
-          </me>.
+          </md>.
           I'm going to give you several small steps which fit together
           into a complete proof. I want you to write out the details
           of each step and make it fit together into a whole argument. 
@@ -1127,45 +1127,45 @@
           write <m>|u+v|^2</m> as a dot product. I use the fact that
           the square of the length of a vector is the same as the dot
           product of a vector with itself. 
-          <me>
+          <md>
             |u+v|^2 = (u+v) \cdot (u+v)
-          </me>
+          </md>
           The next step is to distribute the right side. The dot
           product distributes over vector addition like ordinary
           multipliction. Since the dot product is commutative, <m>u
           \cdot v</m> is the same as <m>v \cdot u</m>, so I can
           combine the two term when I distribute the dot product. 
-          <me>
+          <md>
             |u+v|^2 = u \cdot u + 2 u \cdot v + v \cdot v 
-          </me>
+          </md>
           The middle term has the dot product which I can replace as
           instructed in the third step. 
-          <me>
+          <md>
             |u+v|^2 = u \cdot u + 2 |u||v| \cos \theta + v \cdot v 
-          </me>
+          </md>
           The cosine term is at most <m>1</m>, so the maximum for the
           right side happens when I replace the cosine with 1. 
-          <me>
+          <md>
             |u+v|^2 \leq u \cdot u + 2 |u||v| + v \cdot v 
-          </me>
+          </md>
           Then I need to turn the right side into a square term. The
           first step in that direction is to write the dot products
           as squares of lengths. 
-          <me>
+          <md>
             |u+v|^2 \leq |u|^2 + 2 |u||v| + |v|^2
-          </me>
+          </md>
           Then the right side is the square of a binomial.
-          <me>
+          <md>
             |u+v|^2 \leq \left( |u| + |v| \right)^2 
-          </me>
+          </md>
           Finally, I take the square root of both sides. The square
           root of positive numbers preserves inequalities (<m>a \leq
           b</m> if an only if <m>\sqrt{a}\leq \sqrt{b}</m>), so
           applying the square root is a valid operations for sovling
           an inequality like this.
-          <me>
+          <md>
             |u+v| \leq |u| + |v| 
-          </me>
+          </md>
           I have produced the triangle inequality.
         </p>
       </solution>
@@ -1212,7 +1212,7 @@
           Now I just write each component in the other order,
           interchanging the order of each multiplication, and
           recognize the definition of the cross product in the result.
-          <me>
+          <md>
             = \left( \left( \begin{matrix}
               v_3 u_2 - v_2 u_3 \\
               v_1 u_3 - v_3 u_1 \\
@@ -1223,7 +1223,7 @@
               u_3 v_1 - u_1 v_3 \\
               u_1 v_2 - u_2 v_1 
             \end{matrix} \right) \right) = u \times v
-          </me>
+          </md>
           I started with the right side and made a chain of equality
           to the left side, thus proving the identity. 
         </p>

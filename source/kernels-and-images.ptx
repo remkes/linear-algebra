@@ -124,11 +124,11 @@
     <p>
       I can look at <m>\RR^2</m> to build intuition. Conider a
       general matrix action in two variables. 
-      <me>
+      <md>
         \begin{pmatrix} a \amp b \\ c \amp d \end{pmatrix}
         \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x_0
         \\ y_0 \end{pmatrix}
-      </me>
+      </md>
     </p>
     <p>
       If I write this out in terms of coordinates, we get a
@@ -183,9 +183,9 @@
       possibly be empty if none of the vectors are sent to <m>u</m>).
       I can express this as a matrix equation: <m>v</m> is in the
       preimage only if 
-      <me>
+      <md>
         Mv = u
-      </me>.
+      </md>.
       But then I can look at the coordinates of this equation. Each
       coordinate gives me a linear equation, so I get a system of
       <m>m</m> linear equations (because <m>v \in \RR^m</m>, so it has

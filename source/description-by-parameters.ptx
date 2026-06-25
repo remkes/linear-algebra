@@ -37,9 +37,9 @@
           <m>L</m> is a linear combination of the <m>v_i</m>. I can
           write any and all solutions to the system in the following
           fashion (where <m>a_i \in \RR</m>).
-          <me>
+          <md>
             u + a_1v_1 + a_2v_2 + a_3v_3 + \ldots + a_kv_k
-          </me>
+          </md>
         </p>
         <p>
           In such a description of the solution space, I call the
@@ -59,11 +59,11 @@
       <statement>
         <p>
           Let me start with a matrix that encodes a unique solution. 
-          <me>
+          <md>
             \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
             0 \amp 1 \amp 0 \amp -2 \\ 0 \amp 0 \amp 1 \amp 8
             \end{array} \right)
-          </me>
+          </md>
           This example is the easiest case: there is a leading one in
           each row and column left of the horizontal line, and I just
           read off the solution, <m>x=-3</m>, <m>y=-2</m> and
@@ -78,11 +78,11 @@
         <p>
           I might have a row of zeros in the reduced row-echelon
           form.
-          <me>
+          <md>
             \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
             0 \amp 1 \amp 0 \amp -2 \\ 0 \amp 0 \amp 1 \amp 8 \\
             0 \amp 0 \amp 0 \amp 0 \end{array} \right)
-          </me>
+          </md>
         </p>
         <p>
           This row of zeros doesn't actually change the solution at
@@ -103,11 +103,11 @@
           <m>w,x,y,z</m>. (In that order, so that the first column is
           the <m>w</m> column, the second is the <m>x</m> column, and
           so on).
-          <me>
+          <md>
             \left( \begin{array}{cccc|c} 1 \amp 0 \amp 0 \amp 0
             \amp -3 \\ 0 \amp 1 \amp 0 \amp 0 \amp -2 \\ 0 \amp
             0 \amp 1 \amp 0 \amp 8 \end{array} \right)
-          </me>
+          </md>
         </p>
         <p>
           The translation gives <m>w=-3</m>, <m>x=-2</m> and
@@ -118,11 +118,11 @@
           the solution by parameters here would show that the first
           three coefficients are constant, but <m>z</m> can be
           anything. I can express this as a sum of vectors. 
-          <me>
+          <md>
             \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
             \begin{pmatrix} -3 \\ -2 \\ 8 \\ 0 \end{pmatrix} + z
             \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix}
-          </me>
+          </md>
         </p>
       </statement>
     </example>
@@ -131,11 +131,11 @@
         <p>
           The columns of free variables need not contain all zeros.
           The following matrix is still in reduced row-echelon form.
-          <me>
+          <md>
             \left( \begin{array}{cccc|c} 1 \amp 0 \amp 0 \amp 2
             \amp -3 \\ 0 \amp 1 \amp 0 \amp -1 \amp -2 \\ 0 \amp
             0 \amp 1 \amp -1 \amp 8 \end{array} \right)
-          </me>
+          </md>
         </p>
         <p>
           Reduced row-echelon form needs a leading one in each
@@ -180,11 +180,11 @@
           makes it clear that <m>z</m> is a free parameter. I can
           write the solution as follows in terms of that free
           parameter.
-          <me>
+          <md>
             \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
             \begin{pmatrix} -3 \\ -2 \\ 8 \\ 0 \end{pmatrix} + z
             \begin{pmatrix} -2 \\ 1 \\ 1 \\ 1 \end{pmatrix}
-          </me>
+          </md>
         </p>
         <p>
           Any choice of <m>z</m> will solve this system. If I want
@@ -206,11 +206,11 @@
           The following matrix is also in reduced row-echelon form
           (again, using <m>w</m>, <m>x</m>, <m>y</m> and <m>z</m> as
           variables in that order).
-          <me>
+          <md>
             \left( \begin{array}{cccc|c} 1 \amp 0 \amp 3 \amp 2
             \amp -3 \\ 0 \amp 1 \amp -1 \amp -1 \amp -2
             \end{array} \right)
-          </me>
+          </md>
         </p>
         <p>
           Here, both the third and the fourth columns have no leading
@@ -236,12 +236,12 @@
           each equation is the equation of one of the four components
           of the vectors, filling in zeros for anything not mentioned
           in the equations. 
-          <me>
+          <md>
             \begin{pmatrix} w \\ x \\ y \\ z \end{pmatrix} =
             \begin{pmatrix} -3 \\ -2 \\ 0 \\ 0 \end{pmatrix} + y
             \begin{pmatrix} -3 \\ 1 \\ 1 \\ 0 \end{pmatrix} + z
             \begin{pmatrix} -2 \\ 1 \\ 0 \\ 1 \end{pmatrix}
-          </me>
+          </md>
         </p>
         <p>
           Any choice of <m>y</m> and <m>z</m> gives a solution. For
@@ -255,11 +255,11 @@
         <p>
           I can also have a reduced row-echelon matrix of
           the following form. 
-          <me>
+          <md>
             \left( \begin{array}{ccc|c} 1 \amp 0 \amp 0 \amp -3 \\
             0 \amp 1 \amp 0 \amp -2 \\ 0 \amp 0 \amp 1 \amp 8 \\
             0 \amp 0 \amp 0 \amp 1 \end{array} \right)
-          </me>
+          </md>
         </p>
         <p>
           The first three rows translate into equations without issue.

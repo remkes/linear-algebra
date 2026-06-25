@@ -50,9 +50,9 @@
         <p>
           Vector addition is commutative. That is, for any two vectors
           <m>u, v \in \RR^n</m>,
-          <me>
+          <md>
             u + v = v + u 
-          </me>.
+          </md>.
         </p>
       </statement>
       <proof>
@@ -173,13 +173,13 @@
       associativity. This property states that I can bracket a
       three-fold addition or multiplication either way, and the result
       is the same. For addition, this is
-      <me>
+      <md>
         a + (b + c) = (a + b) + c 
-      </me>.
+      </md>.
       For multiplication, this is similarly
-      <me>
+      <md>
         a(bc) = (ab)c
-      </me>.
+      </md>.
       To be more explicit, consider the sum <m>6 + 4 + 9</m>. I can
       add this in two ways. If I start with the left sum, I get
       <m>10 + 9 = 19</m>. If I start with the right sum, I get <m>6
@@ -199,9 +199,9 @@
       <statement>
         <p>
           If <m>u,v,w \in \RR^n</m> are vectors, then 
-          <me>
+          <md>
             (u + v) + w = u + (v + w) 
-          </me>
+          </md>
         </p>
       </statement>
     </proposition>
@@ -218,9 +218,9 @@
       <statement>
         <p>
           If <m>u\in \RR^n</m> and <m>a,b, \in \RR</m>  then 
-          <me>
+          <md>
             a(bu) = (ab)u
-          </me>
+          </md>
         </p>
       </statement>
     </proposition>
@@ -239,9 +239,9 @@
     <title>Distribution</title>
       <p>
         For real numbers, multiplication distributes over addition. 
-        <me>
+        <md>
           a(b + c) = ab + ac 
-        </me>
+        </md>
         For vector addition and scalar multiplication, distribution
         still works. There are two versions of the distributive law
         here. 
@@ -250,9 +250,9 @@
       <statement>
         <p>
           If <m>u,\in \RR^n</m> and <m>a,b \in \RR</m>, then 
-          <me>
+          <md>
             (a + b)u = au + bu 
-          </me>.
+          </md>.
         </p>
       </statement>
     </proposition>
@@ -260,9 +260,9 @@
       <statement>
         <p>
           If <m>u,v \in \RR^n</m>  and <m>a \in \RR</m>, then
-          <me>
+          <md>
             a(u + v) = au + av 
-          </me>
+          </md>
         </p>
       </statement>
     </proposition>

@@ -35,9 +35,9 @@
           Let <m>a_i</m> and <m>c</m> be real numbers. A <term>linear
           equation</term> in the variables <m>x_1, x_2, \ldots x_n</m>
           is an equation of the following form.
-          <me>
+          <md>
             a_1 x_1 + a_2 x_2 + \ldots + a_n x_n = c
-          </me>
+          </md>
         </p>
       </statement>
     </definition>

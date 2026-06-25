@@ -534,33 +534,33 @@
           I will start with the left side and try to manipulate it
           into the right side. I'll write <m>u</m> in components and
           use the definition of the scalar multiplication to start.
-          <me>
+          <md>
             |au| = \left| a \left( \begin{matrix} u_1 \\ u_2 \\ u_3
             \end{matrix} \right) \right| = \left| \left(
             \begin{matrix} au_1 \\ au_2 \\ au_3 \end{matrix} \right)
             \right|
-          </me>
+          </md>
           This is the definition of scalar multiplication: multiply
           the scalar by each component of the vector. Now I use the
           square root definition of the length of a vector. 
-          <me>
+          <md>
             \left| \left( \begin{matrix} au_1 \\ au_2 \\ au_3
             \end{matrix} \right) \right| = \sqrt{(au_1)^2 + (au_2)^2 +
             (au_3)^2} 
-          </me>
+          </md>
           Now I need to do some algebra with the square root. I can
           distribute the exponent, using the exponent rule <m>(xy)^a =
           x^ay^a</m>.
-          <me>
+          <md>
             \sqrt{(au_1)^2 + (au_2)^2 + (au_3)^2} = \sqrt{a^2 u_1^2 +
             a^2 u_2^2 + a_2u_3^2}
-          </me>
+          </md>
           Now I can factor out the <m>a^2</m>. Once it is factored out,
           I can also remove it from the square root. 
-          <me>
+          <md>
             \sqrt{a^2 u_1^2 + a^2 u_2^2 + a_2u_3^2} = \sqrt{a^2(u_1^2
             + u_2^2 + u_3^2)} = |a| \sqrt{u_1^2 + u_2^2 + u_3^2}
-          </me>
+          </md>
           When I take <m>a^2</m> out of the square root, since the
           square root also returns a positive number, I don't get
           <m>a</m> back. If <m>a</m> was negative to start, then I will
@@ -568,9 +568,9 @@
           the absolute value of <m>a</m> back. Finally, I can recognize
           the remaining term as the definition of the length of a
           vector. 
-          <me>
+          <md>
             |a| \sqrt{u_1^2 + u_2^2 + u_3^2} = |a| |u| 
-          </me>
+          </md>
         </p>
         Now I have started with the left side and produced the right.
         This proves that <m>|au| = |a||u|</m>, as desired. 
@@ -589,58 +589,58 @@
           I will write <m>u</m> and <m>v</m> in components, take
           their difference and then apply the length operation. I will
           start with the left side and try to produce the right. 
-          <me>
+          <md>
             |u-v| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ u_3
             \end{matrix} \right) - \left( \begin{matrix} v_1 \\ v_2 \\
             v_3 \end{matrix} \right) \right|
-          </me>
+          </md>
           The difference is done componentwise. 
-          <me>
+          <md>
             \left| \left( \begin{matrix} u_1 \\ u_2 \\ u_3
             \end{matrix} \right) - \left( \begin{matrix} v_1 \\ v_2 \\
             v_3 \end{matrix} \right) \right| = 
             \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\ u_3
             - v_3 \end{matrix} \right) \right| 
-          </me>
+          </md>
           Then I use the square root definition of the length.
-          <me>
+          <md>
             \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\ u_3
             - v_3 \end{matrix} \right) \right| = \sqrt{(u_1-v_1)^2 +
             (u_2-v_2)^2 + (u_3-v_3)^2}
-          </me>
+          </md>
           Now, each of the three terms is square. Since they are
           square, any positive or negative will become positive since
           squares are always positive. Therefore, I could multiply by
           <m>(-1)</m> inside the square root to no effect. This
           will interchange the order of the difference in each term.
-          <me>
+          <md>
             \sqrt{(u_1-v_1)^2 + (u_2-v_2)^2 + (u_3-v_3)^2} = 
             \sqrt{(v_1-u_1)^2 + (v_2-u_2)^2 + (v_3-u_3)^2} 
-          </me>
+          </md>
           Then I repeat the steps from before in reverse. This is the
           definition of the length of a vector with the terms in the
           squares as components. 
-          <me>
+          <md>
             \sqrt{(v_1-u_1)^2 + (v_2-u_2)^2 + (v_3-u_3)^2} = \left|
             \left( \begin{matrix} v_1 - u_1 \\ v_2 - u_2 \\ v_3 - u_3 
             \end{matrix} \right) \right|
-          </me>
+          </md>
           Since each term is a difference, I can write this as the
           difference of two vectors. 
-          <me>
+          <md>
             \left| \left( \begin{matrix} v_1 - u_1 \\ v_2 - u_2 \\ v_3
             - u_3 \end{matrix} \right) \right| = \left| \left(
             \begin{matrix} v_1 \\ v_2 \\ v_3 \end{matrix} \right) -
             \left( \begin{matrix} u_1 \\ u_2 \\ u_3 \end{matrix}
             \right) \right| 
-          </me>
+          </md>
           Finally, these are just the component of the vectors
           <m>u</m> and <m>v</m>. 
-          <me>
+          <md>
             = \left| \left( \begin{matrix} v_1 \\ v_2 \\ v_3
             \end{matrix} \right) - \left( \begin{matrix} u_1 \\ u_2 \\
             u_3 \end{matrix} \right) \right| = |v-u|
-          </me>
+          </md>
           I have started from the left and produced the right in a
           string of equality, so I have proven the desired result. 
         </p>
@@ -650,19 +650,19 @@
           I would have vectors with <m>n</m> components instead of
           just three components. I would use ellipses to indicate the
           list of components. The proof would start like this.
-          <me>
+          <md>
             |u-v| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots
             \\ u_n \end{matrix} \right) - \left( \begin{matrix} v_1 \\
             v_2 \\ \\ \vdots \\ v_n \end{matrix} \right) \right|
-          </me>
+          </md>
           The difference is done componentwise. 
-          <me>
+          <md>
             \left| \left( \begin{matrix} u_1 \\ u_2 \\\vdots \\  u_n
             \end{matrix} \right) - \left( \begin{matrix} v_1 \\ v_2 \\
             \vdots \\ v_n \end{matrix} \right) \right| = 
             \left| \left( \begin{matrix} u_1 - v_1 \\ u_2 - v_2 \\
             \vdots \\ u_n - v_n \end{matrix} \right) \right| 
-          </me>
+          </md>
           I won't repeat all the steps, but they would proceed exactly
           in the same sequence as before, resulting in <m>|v-u|</m>
           eventually at the end. 
@@ -687,24 +687,24 @@
           use the definition of length. Note I need ellipses to show
           all the components of <m>u</m>, since I am working in an
           arbitrary dimension <m>n</m>. 
-          <me>
+          <md>
             |u| = \left| \left( \begin{matrix} u_1 \\ u_2 \\ \vdots \\
             u_n \end{matrix} \right) \right|
-          </me>
+          </md>
           Then I use the definition of length. By assumption, I set
           this length equal to zero. 
-          <me>
+          <md>
             |u| = \sqrt{(u_1)^2 + (u_2)^2 + \ldots + (u_n)^2} = 0 
-          </me>
+          </md>
           I can square both sides of the equation.
-          <me>
+          <md>
             \left( \sqrt{(u_1)^2 + (u_2)^2 + \ldots + (u_n)^2}
             \right)^2 = 0^2 
-          </me>
+          </md>
           The square root and squaring cancel each other out. 
-          <me>
+          <md>
             (u_1)^2 + (u_2)^2 + \ldots + (u_n)^2 = 0
-          </me>
+          </md>
           On the left, I have the sum of a bunch of non-negative
           numbers (since the square of any real number must be zero or
           postive). On the right I have zero. The only way that a
@@ -712,12 +712,12 @@
           all zero to begin with. Therefore, I see that for each
           index <m>i</m>, the component <m>u_i</m> must be zero. But
           that means that 
-          <me>
+          <md>
             \left( \begin{matrix} u_1 \\ u_2 \\ \vdots \\ u_n 
             \end{matrix} \right) =
             \left( \begin{matrix} 0 \\ 0 \\ \vdots \\ 0 
             \end{matrix} \right)
-          </me>
+          </md>
           This is precisely the definition of the zero vector: the
           vector where all components are zero. Therefore, <m>u</m>
           must be the zero vector. To conclude, I assumed that

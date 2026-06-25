@@ -89,115 +89,115 @@
     <p>
       The rotation in <m>\RR^2</m> by the angle <m>\theta</m>
       (counter-clockwise) around the origin given by the matrix
-      <me>
+      <md>
         \begin{pmatrix}
           \cos \theta \amp - \sin \theta \\
           \sin \theta \amp \cos \theta
         \end{pmatrix}
-      </me>.
+      </md>.
       Following this formula, a quarter turn is 
-      <me>
+      <md>
         \begin{pmatrix}
           0 \amp -1 \\
           1 \amp 0 
         \end{pmatrix}
-      </me>.
+      </md>.
       Likewise, a half turn is 
-      <me>
+      <md>
         \begin{pmatrix}
           -1 \amp 0 \\
           0 \amp -1 
         \end{pmatrix}
-      </me>.
+      </md>.
       Finally, a three-quarter turn is 
-      <me>
+      <md>
         \begin{pmatrix}
           0 \amp 1 \\
           -1 \amp 0 
         \end{pmatrix}
-      </me>.
+      </md>.
     </p>
     <p>
       If <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> is a
       <em>unit</em> vector in <m>\RR^2</m>, then the reflection over
       the line in the direction of <m>\begin{pmatrix} a \\ b
       \end{pmatrix}</m> is given by the matrix
-      <me>
+      <md>
         \begin{pmatrix}
           a^2 - b^2 \amp 2ab \\
           2ab \amp b^2 - a^2
         \end{pmatrix}
-      </me>
+      </md>
       Reflection over the <m>x</m> axis is 
-      <me>
+      <md>
         \begin{pmatrix}
           1 \amp 0 \\
           0 \amp -1 
         \end{pmatrix}
-      </me>.
+      </md>.
       Reflection over the <m>y</m> axis is 
-      <me>
+      <md>
         \begin{pmatrix}
           - 1 \amp 0 \\
           0 \amp 1 
         \end{pmatrix}
-      </me>.
+      </md>.
       Reflection over the the line <m>y=x</m> is
-      <me>
+      <md>
         \begin{pmatrix}
           0 \amp 1 \\
           1 \amp 0 
         \end{pmatrix}
-      </me>.
+      </md>.
       Reflection over the line <m>y=-x</m> is 
-      <me>
+      <md>
         \begin{pmatrix}
           0 \amp -1 \\
           -1 \amp 0 
         \end{pmatrix}
-      </me>.
+      </md>.
     </p>
     <p>
       There isn't necessarily an easily describable form for all
       skews. However, I can still give some examples. A horizontal skew
       that moves the positive <m>y</m> axis in the positive <m>x</m>
       direction is
-      <me>
+      <md>
         \begin{pmatrix}
           1 \amp 0 \\
           1 \amp 1 
         \end{pmatrix}
-      </me>.
+      </md>.
       Similarly, a skew in the positive <m>y</m> direction is 
-      <me>
+      <md>
         \begin{pmatrix}
           1 \amp 1 \\
           0 \amp 1 
         \end{pmatrix}
-      </me>.
+      </md>.
     </p>
     <p>
       Dialations have two stretch factors: <m>a</m> in the <m>x</m>
       direction and <m>b</m> in the <m>y</m> direction. The matrix for
       this is 
-      <me>
+      <md>
         \begin{pmatrix}
           a \amp 0 \\
           0 \amp b 
         \end{pmatrix}
-      </me>.
+      </md>.
     </p>
     <p>
       Again, let <m>\begin{pmatrix} a \\ b \end{pmatrix}</m> be a
       <em>unit</em> vector. This unit vector defines a line through
       the origin by taking all multiples of this vector. The
       projection onto this line is given by the matrix
-      <me>
+      <md>
         \begin{pmatrix}
           a^2 \amp ab \\
           ab \amp b^2 
         \end{pmatrix}
-      </me>.
+      </md>.
       In addition, there is one other projection: the projection to
       the origin. This sends everything to zero and its matrix is the
       zero matrix. 

@@ -67,10 +67,10 @@
       v_2, \ldots, v_k\}</m>. Any element of this looks like <m>u +
       a_1v_1 + a_2v_2 + \ldots a_kv_k</m>. I can calculate where this
       linear combination goes under the action of <m>M</m>. 
-      <me>
+      <md>
         M(u + a_1v_1 + a_2v_2 + \ldots + a_kv_k) = Mu + a_1 Mv_1 +
         a_2Mv_2 + \ldots + a_kMv_k
-      </me>
+      </md>
       The offset span is still sent to an offset span, with offset
       <m>Mu</m> and spanning vectors <m>Mv_i</m>.
     </p>

@@ -45,20 +45,20 @@
           I want my proof to be completely general, so I want to work
           with arbitrary rotations. Let's say that <m>A</m> is a
           rotation by the angle <m>\theta</m>, so it has the matrix
-          <me>
+          <md>
             \begin{pmatrix}
               \cos \theta \amp - \sin \theta \\
               \sin \theta \amp \cos \theta
             \end{pmatrix}
-          </me>.
+          </md>.
           Let's also say that <m>B</m> is a rotation by the angle
           <m>\phi</m>, so it has the matrix
-          <me>
+          <md>
             \begin{pmatrix}
               \cos \phi \amp - \sin \phi \\
               \sin \phi \amp \cos \phi
             \end{pmatrix}
-          </me>.
+          </md>.
           Now I need to calculate the two matrix multiplications and
           show that the result is the same regardless of the order.
           First I will calculate <m>AB</m>.
@@ -107,14 +107,14 @@
           multiplications (which is valid since these are just
           multiplications of ordinary numbers). I can also reorder a
           couple of the additions/subtractions.
-          <me>
+          <md>
             \begin{pmatrix}
               \cos \theta \cos \phi - \sin \theta \sin \phi \amp 
               - \cos \theta \sin \phi - \sin \theta \cos \phi \\ 
               \sin \theta \cos \phi + \cos \theta \sin \phi \amp 
               -\sin \theta \sin \phi + \cos \theta \cos \phi
             \end{pmatrix} 
-          </me>.
+          </md>.
           This is the same as the result of <m>AB</m>. This concludes
           the proof, showing that the outcome of either order of
           matrix multiplication is the same.
@@ -153,17 +153,17 @@
         All I need to do for this proof is take the general matrix
         for a projection and multiply it by itself. The general matrix
         is
-        <me>
+        <md>
           A = \begin{pmatrix}
             a^2 \amp ab \\
             ab \amp b^2 
           \end{pmatrix} 
-        </me>,
+        </md>,
         remembering that the vector defining the line is a unit vector
         direction. Since it is a unit vector direction, I know that
         <m>a^2 + b^2 = 1</m>, which I will need for this proof. Now
         I'll take this matrix and multiply it by itself.
-        <me>
+        <md>
           A^2 = \begin{pmatrix}
             a^2 \amp ab \\
             ab \amp b^2 
@@ -178,24 +178,24 @@
             (ab)(a^2) + (b^2)(ab) \amp
             (ab)(ab) + (b^2)(b^2)
           \end{pmatrix}
-        </me>
+        </md>
         In each component of this matrix, I can factor out <m>a^2</m>,
         <m>b^2</m>, or <m>ab</m>. 
-        <me>
+        <md>
           = \begin{pmatrix}
             a^2(a^2 + b^2) \amp 
             ab(a^2 + b^2) \\
             ab(a^2 + b^2) \amp
             b^2(a^2 + b^2)
           \end{pmatrix}
-        </me>
+        </md>
         Then I can use the fact that <m>a^2 + b^2 = 1</m>.
-        <me>
+        <md>
           = \begin{pmatrix}
             a^2 \amp ab \\ 
             ab \amp b^2 
           \end{pmatrix} = A 
-        </me>
+        </md>
         This is the same as the starting matrix. I've proved that
         <m>AA=A</m>, which was the goal of the proposition.
       </proof>

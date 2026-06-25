@@ -11,28 +11,28 @@
         the determinant using some other properties. (12). 
       </p>
       <p><ol>
-        <li><me>
+        <li><md>
           \begin{pmatrix}
             -6 \amp 0 \amp 1 \\
             3 \amp 4 \amp -2 \\
             5 \amp -1 \amp -1 
           \end{pmatrix} 
-        </me></li>
-        <li><me>
+        </md></li>
+        <li><md>
           \begin{pmatrix}
             \dfrac{1}{3} \amp 0 \amp \dfrac{-1}{3} \\
             \dfrac{4}{5} \amp \dfrac{-3}{5} \amp \dfrac{1}{2} \\
             \dfrac{-2}{3} \amp \dfrac{7}{2} \amp \dfrac{1}{2}
           \end{pmatrix} 
-        </me></li>
-        <li><me>
+        </md></li>
+        <li><md>
           \begin{pmatrix}
             1 \amp 3125 \amp 67989 \\
             0 \amp 1 \amp 1037529\\
             0 \amp 0 \amp 19 
           \end{pmatrix} 
-        </me></li>
-        <li><me>
+        </md></li>
+        <li><md>
           \begin{pmatrix}
             1 \amp 1 \amp 1 \amp 1 \amp 1 \\
             1 \amp 1 \amp 0 \amp 1 \amp 1 \\
@@ -40,7 +40,7 @@
             0 \amp 1 \amp 1 \amp 1 \amp 1 \\
             0 \amp 0 \amp 1 \amp 0 \amp 0 
           \end{pmatrix} 
-        </me></li>
+        </md></li>
       </ol></p>
     </li>
     <li>
@@ -49,27 +49,27 @@
         following matrices invertible? (12) 
       </p>
       <p><ol>
-        <li><me>
+        <li><md>
           \begin{pmatrix}
             0 \amp 1 \amp a \\
             0 \amp 2 \amp b \\
             3 \amp 1 \amp 1 
           \end{pmatrix} 
-        </me></li>
-        <li><me>
+        </md></li>
+        <li><md>
           \begin{pmatrix}
             a \amp 0 \amp 0 \\
             0 \amp a \amp b \\
             b \amp b \amp a 
           \end{pmatrix} 
-        </me></li>
-        <li><me>
+        </md></li>
+        <li><md>
           \begin{pmatrix}
             a \amp ab \amp b \\
             ab \amp b \amp b \\
             0 \amp 0 \amp 1 
           \end{pmatrix} 
-        </me></li>
+        </md></li>
       </ol></p>
     </li>
     <li>

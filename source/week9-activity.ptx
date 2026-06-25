@@ -278,9 +278,9 @@
       </statement>
       <solution>
         I need to find two constants for this equation.
-        <me>
+        <md>
           5x^4 + 2x^3 = a(x^4 - x^3 + 7x) + b(x^3 - 5x) 
-        </me>
+        </md>
         The only power of <m>x^4</m> in either of the two polynomials
         is in the first. Therefore, the only way to get 5x^4 in the
         result is for <m>a=5</m>. Let me put that value in and see
@@ -317,28 +317,28 @@
       </statement>
       <solution>
         I need to find three constants for this equation.
-        <me>
+        <md>
           7x^5 - 7x^2 + 14 = a(4x^6 - x^3 + 1) + b(x^5 + x^3) + c(x^3 +
           x^2 - 2)
-        </me>
+        </md>
         There is no <m>x^6</m> in the polynomial I want to build, not
         in any of the other terms. Therefore, <m>a=0</m> is the only
         possibility to get ride of the <m>x^6</m>. 
-        <me>
+        <md>
           7x^5 - 7x^2 + 14 = b(x^5 + x^3) + c(x^3 +
           x^2 - 2)
-        </me>
+        </md>
         Then to match the power of <m>x^5</m>, I need <m>b=7</m>. Let
         me put that in and see what it looks like. 
-        <me>
+        <md>
           7x^5 - 7x^2 + 14 = 7x^5 + (7 + c)x^3 + cx^2 - 2c
-        </me>
+        </md>
         Then to get <m>0</m> as the coefficient of <m>x^3</m>, I need
         c = -7
-        <me>
+        <md>
           7x^5 - 7x^2 + 14 = 7x^5 + (7 - 7)x^3 - 7x^2 + 14 = 7x^5 -
           7x^2 + 14 
-        </me>
+        </md>
         The remaining coefficients all work out, so <m>a = 0</m>, <m>b
         = 7</m> and <m>c = -7</m> works. 
       </solution>

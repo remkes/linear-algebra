@@ -57,38 +57,38 @@
         </p>
         <p> 
           A hyperplane is the locus of one linear equation.
-          <me>
+          <md>
             a_1x_1 + a_2x_2 + \ldots a_nx_n = c 
-          </me>
+          </md>
           However, if the hyperplane contains the origin, the constant
           <m>c</m> must be zero. (I stated this earlier; I could
           argue this by saying that if all the <m>x_i</m> are set to
           zero, the left side of the equation is zero, so the right
           side must also be zero). 
-          <me>
+          <md>
             a_1x_1 + a_2x_2 + \ldots a_nx_n = 0 
-          </me>
+          </md>
           All points on the hyperplane satisfy this equation, and I
           will use this fact to prove the proposition. To make this
           easier, I will write the equation in terms of dot products.
           If <m>n</m> is the vector with all the <m>a_i</m> (<m>n</m>
           for normal) and <m>x</m> is the vector with all the
           <m>x_i</m>, then the equation is 
-          <me>
+          <md>
             n \cdot x = 0 
-          </me>.
+          </md>.
         </p>
         <p>
           Let <m>u</m> and <m>v</m> be vectors on the hyperplane,
           then <m>n \cdot u = 0</m> and <m>n \cdot v = 0</m>. Then I
           can consider 
-          <me>
+          <md>
             n \cdot (u + v) 
-          </me>.
+          </md>.
           The dot product is linear, so it distributes here.
-          <me>
+          <md>
             = n \cdot u + n \cdot v 
-          </me>
+          </md>
           I just said that both of these dot products are zero, so
           the equation gives <m>0 + 0 = 0</m>. Therefore, <m>u + v</m>
           also satisfies the equation of the hyperplane, so is
@@ -101,14 +101,14 @@
           <m>a</m> is a scalar, consider the vector <m>au</m> to see
           if it satisfies the equation of the hyperplane. I start with
           the dot product with the normal. 
-          <me>
+          <md>
             n \cdot (au)
-          </me>
+          </md>
           By the properties of the dot product, again, I can pull out
           the scalar.
-          <me>
+          <md>
             = a (n \cdot u)
-          </me>
+          </md>
           Then I get <m>a(0)</m>, since <m>u</m> is on the hyperplane.
           This shows that the scalar multiple is also on the
           hyperplane.

@@ -17,12 +17,12 @@
           The <term>dot product</term> or <term>inner product</term>
           or <term>scalar product</term> of two vectors <m>u</m> and
           <m>v</m> is given by the following formula.
-          <me>
+          <md>
             u \cdot v = \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n
             \end{pmatrix} \cdot \begin{pmatrix} v_1 \\ v_2 \\ \vdots
             \\ v_n \end{pmatrix} = u_1 v_1 + u_2 v_2 + \ldots + u_n
             v_n
-          </me>
+          </md>
         </p>
       </statement>
     </definition>
@@ -43,9 +43,9 @@
           The <term>angle</term> <m>\theta</m> between two non-zero
           vectors <m>u</m> and <m>v</m> in <m>\RR^n</m> is given by
           the follow equation.
-          <me>
+          <md>
             \cos \theta = \frac{u \cdot v}{|u||v|}
-          </me>
+          </md>
         </p>
       </statement>
     </definition>
@@ -171,10 +171,10 @@
       <statement>
         <p>
           Let <m>u</m> and <m>v</m> be vectors in <m>\RR^n</m>.
-          <me>
+          <md>
             |u-v|^2 = |u|^2 + |v|^2 - 2|u||v| \cos \theta = |u|^2 +
             |v|^2 - 2 u \cdot v
-          </me>
+          </md>
         </p>
       </statement>
       <proof>
@@ -185,33 +185,33 @@
           ref="proposition-dot-product-properties" />. Then I can go
           through some algebraic manipulation with the dot product.
           First, I'll distribute the dot product.
-           <me>
+           <md>
             |u-v|^2 = (u-v) \cdot (u-v) = u \cdot u - v \cdot u - u \cdot
             v + v \cdot v
-          </me>
+          </md>
           Then I can interchange the order of the second term, since the
           dot product is commutative.
-          <me>
+          <md>
             |u-v|^2 = u \cdot u - u \cdot v - u \cdot v + v \cdot v
-          </me>
+          </md>
           Then I can group the middle terms.
-          <me>
+          <md>
             |u-v|^2 = u \cdot u - 2u \cdot v + v \cdot v
-          </me>
+          </md>
           Then I can interpret the first and last terms as length squared. 
-          <me>
+          <md>
             |u-v|^2 = |u|^2 - 2u \cdot v + |v|^2 
-          </me>
+          </md>
           Then I can reorder the terms.
-          <me>
+          <md>
             |u-v|^2 = |u|^2 + |v|^2 - 2u \cdot v 
-          </me>
+          </md>
           Finally, using the definition of angle, I can replace the dot
           product with <m>|u||v| \cos \theta</m>, where <m>\theta</m> is
           the angle between the two vectors. 
-          <me>
+          <md>
             |u-v|^2 = |u|^2 + |v|^2 - 2|u||v| \cos \theta
-          </me>
+          </md>
           This is the cosine law.
         </p>
       </proof>

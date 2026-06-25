@@ -82,7 +82,7 @@
       <m>A_{ij}</m> in the matrix is the probability of transition
       from vertex <m>j</m> to vertex <m>i</m>, so the number on the
       arrow from <m>j</m> to <m>i</m>. 
-      <me>
+      <md>
         \begin{pmatrix}
           0.2 \amp 0.5 \amp 0.2 \\
           0.4 \amp 0.2 \amp 0.4 \\
@@ -94,7 +94,7 @@
         \begin{pmatrix}
           x_{k+1} \\ y_{k+1} \\ z_{k+1} 
         \end{pmatrix} 
-      </me>
+      </md>
       The columns of this matrix add to <m>1</m>. That's the same fact
       that I mentioned in the previous paragraph, that the outgoing
       probabilities from any vertex must add to one. The columns are
@@ -325,24 +325,24 @@
       <solution>
         <p>
           First, I need to write down the stochastic matrix. 
-          <me>
+          <md>
             \begin{pmatrix}
               0 \amp 0.9 \amp 0.8 \\
               0.3 \amp 0 \amp 0 \\
               0.7 \amp 0.1 \amp 0.2 
             \end{pmatrix}
-          </me>
+          </md>
           Then I calculate (by computer) the dominant eigenvector. I
           scale the result the computer gave me to give a stochastic
           vector.
-          <me>
+          <md>
             \begin{pmatrix}
               1.09589 \\ 0.328786 \\ 1
             \end{pmatrix} \mapsto 
             \begin{pmatrix}
               0.452 \\ 0.136 \\ 0.412
             \end{pmatrix}
-          </me>
+          </md>
           This gives me the long-term probability distribution. There
           is an approximately <m>45.2\%</m> chance of ending up on
           vertex <m>1</m>, an approximately <m>13.6\%</m> chance of
@@ -423,7 +423,7 @@
       <solution>
         <p>
           First, I need to write down the stochastic matrix. 
-          <me>
+          <md>
             \begin{pmatrix}
               0.1 \amp 0.3 \amp 0 \amp 0 \amp 0.4 \\
               0.6 \amp 0.3 \amp 0.8 \amp 0 \amp 0.5 \\
@@ -431,18 +431,18 @@
               0.1 \amp 0  \amp 0.2 \amp 0.2 \amp 0 \\
               0.2 \amp 0.4 \amp 0 \amp 0.5 \amp 0.1
             \end{pmatrix}
-          </me>
+          </md>
           Then I calculate (by computer) the dominant eigenvector. (I
           scale the result given to me from the computer to get a
           stochastic vector.
-          <me>
+          <md>
             \begin{pmatrix}
               0.976673 \\ 1.59669 \\ 0.0395948 \\ 0.131983 \\ 1
             \end{pmatrix} \mapsto
             \begin{pmatrix}
               0.261 \\ 0.426 \\ 0.011 \\ 0.035 \\ 0.267
             \end{pmatrix}
-          </me>
+          </md>
           This gives me the long-term probability distribution. The
           approximate percentage chance of ending at each vertex is,
           in order, <m>26.1\%</m>, <m>42.6\%</m>, <m>1.1\%</m>,
@@ -530,7 +530,7 @@
     </figure>
     <p>
       Here is the accompanying stochastic matrix.
-      <me>
+      <md>
         \begin{pmatrix}
           1 \amp L \amp 0 \amp 0 \amp 0 \\
           0 \amp 0 \amp L \amp 0 \amp 0 \\
@@ -538,14 +538,14 @@
           0 \amp 0 \amp W \amp 0 \amp 0 \\
           0 \amp 0 \amp 0 \amp W \amp 1 \\
         \end{pmatrix}
-      </me>
+      </md>
     </p>
     <p>
       Now we need to work out the model with actual winning and losing
       percentages. First, I'll start with a completly fair game so
       that <m>W = 0.5</m> and <m>L = 0.5</m>. Here is that stochastic
       matrix.
-      <me>
+      <md>
         \begin{pmatrix}
           1 \amp 0.5 \amp 0 \amp 0 \amp 0 \\
           0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
@@ -553,7 +553,7 @@
           0 \amp 0 \amp 0.5 \amp 0 \amp 0 \\
           0 \amp 0 \amp 0 \amp 0.5 \amp 1 \\
         \end{pmatrix}
-      </me>
+      </md>
       I asked a computer for the dominant eigenvalues.  This is a
       little tricky, since there are actually two linearly independent
       eigenvalueS. (The problem is that this matrix is not actually
@@ -766,7 +766,7 @@
       me increase the stopping condition to five stakes. Here is the
       new matrix, with the action (with twenty iterations) on the
       starting vector with <m>w</m> stakes.
-      <me>
+      <md>
         \begin{pmatrix}
           1 \amp 0.5 \amp 0 \amp 0 \amp 0 \amp 0 \\
           0 \amp 0 \amp 0.5 \amp 0 \amp 0 \amp 0 \\
@@ -781,14 +781,14 @@
         \begin{pmatrix}
           0.5924 \\ 0 \\ 0.0104 \\ 0 \\ 0.0065 \\ 0.3907
         \end{pmatrix} 
-      </me>
+      </md>
       This hasn't entirely stabilized after twenty iterations, but I
       can see that the winning percentage has dropped from <m>50\%</m>
       to somewhere around <m>39\%</m>. Now I will increase the
       stopping condition to six stakes and rerun the system (I'll need
       to go to thirty iterations to get it to stabilize to a tenth of
       a percent).
-      <me>
+      <md>
         \begin{pmatrix}
           1 \amp 0.5 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\
           0 \amp 0 \amp 0.5 \amp 0 \amp 0 \amp 0 \amp 0 \\
@@ -804,7 +804,7 @@
         \begin{pmatrix}
           0.6600 \\ 0 \\ 0.007 \\ 0 \\ 0.007 \\ 0 \\ 0.3267
         \end{pmatrix} 
-      </me>
+      </md>
       Now the winning percentage has dropped again to about
       <m>33\%</m>. 
     </p>

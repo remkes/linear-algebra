@@ -7,11 +7,11 @@
       starting with <m>2 \times 2</m> matrices. Therefore, I need to
       first show how to calculate the determinant of a <m>2 \times
       2</m> matrix. 
-      <me>
+      <md>
         \det \left( \begin{matrix} a \amp  b \\ c \amp  d \end{matrix}
         \right) = \left| \begin{matrix} a \amp  b \\ c \amp  d
         \end{matrix} \right| = ad-bc
-      </me>
+      </md>
     </p>
     <example>
       <statement>
@@ -48,12 +48,12 @@
       coefficients, with a pattern of <m>\pm</m> signs. That pattern of
       <m>\pm</m> signs is a checkerboard pattern, as in the following
       <m>5 \times 5</m> matrix.
-      <me>
+      <md>
         \left( \begin{matrix} + \amp  - \amp  + \amp  - \amp  + \\ -
         \amp  + \amp  - \amp  + \amp  - \\ + \amp  - \amp  + \amp  -
         \amp  + \\ - \amp  + \amp  - \amp  + \amp  - \\ + \amp  - \amp
         + \amp  - \amp  + \end{matrix} \right)
-      </me>
+      </md>
     </p>
     <p>
       That's a hard algorithm to intuit from the formal description.
@@ -92,11 +92,11 @@
     <p>
       If I did co-factor expansion of an arbitrary <m>3 \times 3</m>
       matrix, I would get a direct expression for the determinant.
-      <me>
+      <md>
         \left| \begin{matrix} a \amp  b \amp  c \\ d \amp  e \amp  f \\
         g \amp  h \amp  i \end{matrix} \right| = aei - ahf - bdi + bfg +
         cdh - ceg
-      </me>
+      </md>
     </p>
     <p>
       I could use this formula for <m>3 \times 3</m> matrices if I
