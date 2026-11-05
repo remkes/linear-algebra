@@ -675,7 +675,7 @@
       <solution>
         <p>
           I use the algorithm, going across the rows of the first
-          matrix and down the rows of the second.
+          matrix and down the columns of the second.
           <md>
             \left( \begin{matrix}
               9 \amp -1 \amp -1 \\
@@ -717,7 +717,7 @@
       <solution>
         <p>
           I use the algorithm, going across the rows of the first
-          matrix and down the rows of the second.
+          matrix and down the columns of the second.
           <md>
             \left( \begin{matrix}
               7 \amp -1 \amp -1 \amp 3 \\
